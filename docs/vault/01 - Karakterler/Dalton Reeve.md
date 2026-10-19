@@ -1,11 +1,18 @@
-# 🎖️ Dalton Reeve
+---
+aliases:
+  - K-4
+  - Dalton Reeve
+tags:
+  - karakter
+  - kuzey
+  - k-4
+---
 
-#karakter #vaka3 #kurban
+# 🎯 Dalton Reeve (K-4)
 
-- **Geçmiş:** 1944 Kuzey Operasyonu eski subayı.
-- **Rolü:** [[Vaka 03 - Kör Nokta]] Cinayetinin Maktulü.
-- **Mekan:** [[Kraliyet Operası]] — Kraliyet Locası
+#karakter #vaka3 #kurban #kuzey #k4
 
-## Ölüm Ayrıntısı
-- Operanın 112. ölçüsündeki top sesine denk getirilen tek kurşunla vuruldu.
-- Cebinden çıkan cep saati 20:52'de durmuştu ve arkasında 'K-4' gravürü vardı.
+- **Askerî Kod:** `K-4`
+- **Rütbe:** Çavuş, Keskin Nişancı
+- **1944 Suçu:** Birliğin geri çekilişini kollamadı; mevzisini ve tüfeğini bırakıp kaçtı.
+- **Kaderi:** [[Vaka 03 - Kör Nokta]]'da Kraliyet Operası locasında kendi bıraktığı K-4 tüfeğiyle [[Elias Wren|Elias Wren (K-2)]] tarafından vuruldu.

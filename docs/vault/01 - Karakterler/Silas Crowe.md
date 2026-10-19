@@ -1,17 +1,33 @@
-# Silas Crowe
+---
+aliases:
+  - K-1
+  - Silas Crowe
+tags:
+  - karakter
+  - kuzey
+  - k-1
+---
 
-#karakter #protagonist
+# 🕵️ Silas Crowe (K-1)
 
-- **Meslek:** Özel Soruşturma Ajanı / Dedektif
-- **Geçmiş:** Kraliyet Piyadeleri eski askeri (İstihbarat / Keşif).
+#karakter #protagonist #kuzey #k1
+
+- **Askerî Kod:** `K-1`
+- **Rütbe:** Yüzbaşı, Kuzey Operasyonu Birlik Komutanı
+- **Meslek:** Özel Dedektif (Greywater)
 - **Merkez:** [[Silas Dedektiflik Ofisi]]
 
-## Özellikleri
-- Sakin, metodik ve gözlemci.
-- Yağmurlu günlerde bacağındaki eski şarapnel yarası sızlar.
-- Defterine aldığı notlar ve deliller arasında mantıksal bağ kurarak gerçeğe ulaşır ([[Dedüksiyon Tahtası]]).
+---
 
-## Dahil Olduğu Olaylar
-- [[Vaka 01 - Karanlık Malikâne]] — Lord Harlow'un şüpheli ölümünü araştırır.
-- [[Vaka 02 - Sisli Liman]] — Eski cephe arkadaşı [[Teddy Marsh]]'ın cinayetini çözer.
-- [[Vaka 03 - Kör Nokta]] — Operadaki keskin nişancı [[Gölgedeki Keskin Nişancı]] ile yüzleşir.
+## 🧠 Psikolojik Portre ve Sırrı
+Silas dışarıdan soğukkanlı, zeki bir noir dedektif gibi görünse de içten içe derin bir suçluluk duygusu ve TSSB (Travma Sonrası Stres Bozukluğu) ile boğuşmaktadır:
+1. **Sol Elin Titremesi:** Gök gürültüsünde veya yağmur şiddetlendiğinde sol eli istemsizce titrer. Doktorlar siper şoku dese de, Silas bunun o gece Elias'ın elini bırakıp kaçtığı için titrediğini bilir.
+2. **03:12'de Durmuş Cep Saati:** Yelek cebinde taşıdığı K-1 saati sığınak patladığından beri 03:12'yi gösterir.
+3. **Ofisteki Telefon:** Çalan her telefonun ardında geçmişin intikam fısıltısını duyar.
+
+---
+
+## 🔗 Bağlantılar
+- [[Elias Wren|Elias Wren (K-2)]] — Baş düşmanı ve terk ettiği teğmeni
+- [[Kuzey Operasyonu (1944)]]
+- [[03-12'de Durmuş Saat ve Tik-Taklar]]
