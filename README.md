@@ -15,17 +15,14 @@
 1. **Bölüm 1: Karanlık Malikâne (Harlow Cinayeti)**
    - *Yer:* Fırtınanın yolları kapattığı izole Harlow Malikânesi.
    - *Olay:* Lord Edmund Harlow kilitli çalışma odasında ölü bulunur.
-   - *Özellikler:* 4 haneli döner kasa kadranı şifresi (`1944`), digitalis zehri analizi, 4 şüpheli sorgusu ve daktilo notunun gizemi.
 
 2. **Bölüm 2: Sisli Liman (Teddy Marsh Cinayeti)**
    - *Yer:* Greywater Rıhtımı ve yük ambarları.
    - *Olay:* Silas'ın eski ordu telsizcisi tonlarca çelik vinç yükünün altında ezilir.
-   - *Özellikler:* 3 fazlı vinç şalter panosu (`230`), asit yanığı tahlili, gece geçiş kartı, karaborsa mühimmat sandığı ve liman mafyası.
 
 3. **Bölüm 3: Kör Nokta (Kraliyet Operası Suikastı)**
    - *Yer:* Greywater Kraliyet Operası.
    - *Olay:* 112. ölçüdeki tiyatral top sesinin ses perdesi olarak kullanıldığı profesyonel bir keskin nişancı suikastı.
-   - *Özellikler:* 3 haneli tambur kilit (`1-1-2`), optik ışık köprüsü / spot kör nokta simülasyonu, çatı parapetinde Elias Wren yüzleşmesi ve 3 durmuş saat finali.
 
 ---
 
