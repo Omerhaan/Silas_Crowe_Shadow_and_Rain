@@ -1,7 +1,31 @@
-# Gölge ve Yağmur — Vaka 1: "Karanlık Malikane"
-*2D Pixel Art Noir Dedektiflik ve Araştırma Oyunu (Godot 4.3 — GDScript)*
+# Gölge ve Yağmur (Shadow & Rain) — Silas Crowe Vakaları (1-3)
+*2D Pixel-Art Noir Dedektiflik ve Araştırma Oyunu (Godot 4.3 — GDScript)*
 
-Bu proje, 1940'lar noir atmosferinde geçen, derin hikâye anlatımına ve adil dedüksiyon (fair-play) mekaniklerine sahip bir cinayet & gizem çözme oyunudur.
+![Godot Engine](https://img.shields.io/badge/Godot-v4.3--stable-478cbf?logo=godotengine&logoColor=white)
+![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Android-green)
+![Tests](https://img.shields.io/badge/Tests-100%25%20Passing-brightgreen)
+![License](https://img.shields.io/badge/License-MIT-blue)
+
+1940'lar savaş sonrası İngiltere'sinde, geçmişiyle yüzleşen eski asker ve özel dedektif **Silas Crowe**'un adımlarını takip edin. Dinmeyen yağmur, karanlık sırlar, döner diskli çelik kasalar, vinç kalibrasyonları ve optik kör nokta bulmacalarıyla örülü 3 kapsamlı cinayet soruşturmasını çözün.
+
+---
+
+## 🕵️ Vakalar (Sezon 1)
+
+1. **Bölüm 1: Karanlık Malikâne (Harlow Cinayeti)**
+   - *Yer:* Fırtınanın yolları kapattığı izole Harlow Malikânesi.
+   - *Olay:* Lord Edmund Harlow kilitli çalışma odasında ölü bulunur.
+   - *Özellikler:* 4 haneli döner kasa kadranı şifresi (`1944`), digitalis zehri analizi, 4 şüpheli sorgusu ve daktilo notunun gizemi.
+
+2. **Bölüm 2: Sisli Liman (Teddy Marsh Cinayeti)**
+   - *Yer:* Greywater Rıhtımı ve yük ambarları.
+   - *Olay:* Silas'ın eski ordu telsizcisi tonlarca çelik vinç yükünün altında ezilir.
+   - *Özellikler:* 3 fazlı vinç şalter panosu (`230`), asit yanığı tahlili, gece geçiş kartı, karaborsa mühimmat sandığı ve liman mafyası.
+
+3. **Bölüm 3: Kör Nokta (Kraliyet Operası Suikastı)**
+   - *Yer:* Greywater Kraliyet Operası.
+   - *Olay:* 112. ölçüdeki tiyatral top sesinin ses perdesi olarak kullanıldığı profesyonel bir keskin nişancı suikastı.
+   - *Özellikler:* 3 haneli tambur kilit (`1-1-2`), optik ışık köprüsü / spot kör nokta simülasyonu, çatı parapetinde Elias Wren yüzleşmesi ve 3 durmuş saat finali.
 
 ---
 
@@ -11,61 +35,40 @@ Bu proje, 1940'lar noir atmosferinde geçen, derin hikâye anlatımına ve adil 
 | :--- | :--- | :--- |
 | **Yürüme** | **A / D** veya **← / →** | Zemine dokun (Tap-to-move) |
 | **Etkileşim / İnceleme** | **E** veya **Boşluk** | Nesneye dokun (Tap-to-interact) |
-| **Kapı / Geçiş** | **W** veya **↑** | Kapıya dokun |
-| **Dedektif Defteri** | **TAB** | Ekranda sabit **Defter** butonu |
-| **Katili Suçla** | — | Üst bardaki **Suçla** butonu |
-| **İptal / Menü** | **ESC** | Ekranda **⚙ (Menü)** butonu |
+| **Kapı / Oda Geçişi** | **W** veya **↑** | Kapıya dokun |
+| **Dedektif Defteri** | **TAB** veya **Q** | Üst bardaki **Defter** butonu |
+| **Hızlı Oda Geçişi (HUD)** | **1 / 2 / 3** | Alt gezinme butonları (kilit korumalı) |
+| **Şifre / Minigame Girişi** | **Rakam Tuşları + Enter** | Ekrana dokunarak çevirme / kaydırma |
+| **İptal / Menüden Çıkış** | **ESC** | Ekrandaki **Kapat / Menü** butonu |
 
 ---
 
-## 🔍 Temel Sistemler ve Mekanikler
+## 🛠️ Temel Sistemler ve Mimari
 
-1. **İkili Girdi Mimarisi (`InputManager`):** Klavye, fare ve dokunmatik girişleri tek bir soyutlama katmanından geçirir; hiçbir mekanik hover bağımlı değildir. Tüm butonlar minimum 24x24 oyun pikseli boyutundadır.
-2. **Prolog & Telefon Açılışı:** Silas'ın dairesinde başlayan açılış sinematiği, 3 seçenekli ikna diyaloğu ve köprünün çöküşü ile Harlow Malikanesi'ne varış.
-3. **Yakın Plan İnceleme (`InspectView`):** Kanıtları (kırık cep saati, konyak kadehi, yırtık reçete vb.) yakından inceleme ve arka kapağı açarak `K-5` askerî oymasını keşfetme.
-4. **Flashback Sistemi (FB01 "Kar"):** E16 rozeti bulunduğunda tetiklenen, solgun paletli, şok dalgalı ve çift anlamlı *"Git!"* anısı.
-5. **Dedektif Defteri (6 Sekme):**
-   - *Kanıtlar:* 17 kanıtın listesi ve yakın plan incelemesi.
-   - *İfadeler:* Şüphelilerin ifade tutanakları.
-   - *Zaman Çizelgesi:* 20:00 - 23:00 kronolojik akış.
-   - *Çıkarımlar (Dedüksiyon):* Tap-to-select ile iki kanıtı eşleştirip `Birleştir` butonuyla D1-D10 çıkarımlarını yapma.
-   - *Şüpheliler:* Margaret, Julian, Dr. Hale ve Raymond Pike profilleri.
-   - *Harita:* Malikanenin 2 katlı kesit şeması ve mevcut konum göstergesi.
-6. **Sorgulama & İtiraz (Objection):** Şüphelilere ifade ve çelişkilerine göre toplanan delilleri sunma mekanizması.
-7. **Suçlama & Yüzleşme Finali:** Katil, yöntem ve 3 kilit delili seçerek Dr. Hale ile yüzleşme.
-8. **Anı Duvarı & Hatıra Rafı:** Hub'a dönüşte 9 saat yuvası (K-1 ve K-5 dolu, K-2 boş), birlik fotoğrafı ve seçilen hatıra eşyası.
-9. **İkinci Telefon Araması:** Vaka tamamlandığında çalan ikinci arama: *"İlk kapı açıldı. Sıradaki seni bekliyor."*
+- **Tam Modüler Vaka Mimarisi:** Her vaka kendi odalarını, delillerini, şüphelilerini, diyaloglarını ve sinematiklerini bağımsız JSON/TSCN modülleri olarak taşır.
+- **Fair-Play Dedüksiyon Sistemi:** Tahmin yok; toplanan fiziksel delilleri Defter üzerinden birleştirerek mantıksal çıkarımlar (`D1-D306`) üretme.
+- **İnteraktif Minigameler:**
+  - Harlow çelik kasa kadranı (rotary dial).
+  - Rıhtım vinç şalteri (crane winch phase controller).
+  - Tiyatro alet sandığı mekanik tambur kilidi (tumbler lock).
+  - Opera ışık köprüsü aydınlatma & kör nokta matrisi (light-range matrix).
+- **Zil Sesi, Titreşim ve Sinematik Geçiş Akışı:** Her vaka Silas'ın ofisinde çalan telefonla başlar; ses ve görsel efektlerin ardından sinematik yolculuk ve olay yerine varış gerçekleşir.
+- **Çift Dil Desteği:** Türkçe ve İngilizce tam yerelleştirme desteği (`LocalizationManager`).
+- **Otomasyon Testleri:** Headless olarak çalışan 4 ayrı regresyon ve mantık doğrulama test süiti (%100 geçiş).
 
 ---
 
-## 📁 Proje Klasör Yapısı
+## 🚀 Projeyi Çalıştırma
 
+### Godot Editörü ile:
+1. [Godot Engine 4.3 Stable](https://godotengine.org) sürümünü indirin.
+2. `project.godot` dosyasını Godot ile açın.
+3. `F5` tuşuna basarak oyunu başlatın.
+
+### Testleri Çalıştırma (Headless):
+```bash
+godot --headless --scene "res://tests/test_menu_and_case_flow.tscn"
+godot --headless --scene "res://tests/test_all_cases_progression.tscn"
+godot --headless --scene "res://tests/test_minigame_effects_and_nav_locks.tscn"
+godot --headless --scene "res://tests/test_case03_full_puzzles.tscn"
 ```
-├── data/                      # Tüm JSON veri tabanları (Sıfır hardcoded metin)
-│   ├── cases/case01/          # Vaka 1 kanıt, şüpheli, dedüksiyon ve diyalogları
-│   ├── cutscenes/             # Sinematik ve flashback JSON verileri
-│   ├── hub/                   # Başarım ve hatıra verileri
-│   └── story/                 # Gizli Kuzey Birimi arka plan verisi
-├── scenes/                    # Godot .tscn sahne dosyaları
-│   ├── cutscenes/             # Sinematikler (Giriş, FB01, Yüzleşme, İkinci Arama)
-│   ├── entities/              # Oyuncu, kapı ve etkileşimli nesneler
-│   ├── hub/                   # Silas'ın ofisi, Anı Duvarı ve Hatıra Rafı
-│   ├── rooms/                 # Harlow Malikanesi 7 odası
-│   ├── tests/                 # Otomasyon test sahneleri
-│   ├── ui/                    # HUD, Defter, İnceleme, Sorgulama ve Suçlama modalları
-│   └── main.tscn              # Ana oyun sahnesi
-├── scripts/                   # GDScript kaynak kodları
-│   ├── autoload/              # EventBus, GameState, InputManager, AudioManager, vb.
-│   └── ...                    # Modüler kontrolcü sınıfları
-├── godot_oyna.bat             # Tek tıkla oyunu başlatan Windows betiği
-└── project.godot              # Godot 4.3 proje yapılandırması
-```
-
----
-
-## 🚀 Oyunu Başlatma
-
-Windows ortamında oyunu çalıştırmak için:
-
-1. Masaüstündeki proje klasöründe bulunan **`godot_oyna.bat`** dosyasına çift tıklayın.
-2. Veya Godot Editor içerisinden `scenes/main.tscn` sahnesini çalıştırın.
