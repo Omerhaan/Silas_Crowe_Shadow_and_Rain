@@ -14,4 +14,4 @@
 ## Dahil Olduğu Olaylar
 - [[Vaka 01 - Karanlık Malikâne]] — Lord Harlow'un şüpheli ölümünü araştırır.
 - [[Vaka 02 - Sisli Liman]] — Eski cephe arkadaşı [[Teddy Marsh]]'ın cinayetini çözer.
-- [[Vaka 03 - Kör Nokta]] — Operadaki keskin nişancı [[Elias Wren]] ile yüzleşir.
+- [[Vaka 03 - Kör Nokta]] — Operadaki keskin nişancı [[Gölgedeki Keskin Nişancı]] ile yüzleşir.
