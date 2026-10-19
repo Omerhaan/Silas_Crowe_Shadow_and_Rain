@@ -36,4 +36,7 @@ desktop.ini
 test_output.txt
 test_clean_raw.png*
 test_silas_*.png*
+scratch/
+paylasim/
+
 

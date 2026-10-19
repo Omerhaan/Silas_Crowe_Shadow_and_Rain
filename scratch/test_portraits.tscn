@@ -1,6 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://test_portraits_01"]
-
-[ext_resource type="Script" path="res://scratch/test_portraits.gd" id="1_test"]
-
-[node name="TestPortraits" type="Node2D"]
-script = ExtResource("1_test")
