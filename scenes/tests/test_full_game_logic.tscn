@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dfullgamelogictest01"]
+
+[ext_resource type="Script" path="res://scripts/tests/test_full_game_logic.gd" id="1_test"]
+
+[node name="TestFullGameLogic" type="Node"]
+script = ExtResource("1_test")

@@ -1,0 +1,44 @@
+[
+  {
+    "id": "D201",
+    "inputs": ["E201", "E203"],
+    "baslik": "Kasıtlı Sabotaj ve Cinayet",
+    "aciklama": "Kurban önce fenerle bayıltılmış, ardından vinç halatı zayıflatılarak kaza süsü verilmiş.",
+    "ic_ses": "\"Bu bir kaza değil, iki adımlı soğukkanlı bir cinayet.\""
+  },
+  {
+    "id": "D202",
+    "inputs": ["E201", "E202"],
+    "baslik": "Kuzey Sevkiyatının Kaçırılması",
+    "aciklama": "Vinç çöküşü kargaşa yaratmak ve mühürsüz askerî sandığın taşınmasını örtbas etmek için yapılmış.",
+    "ic_ses": "\"Kuzey Operasyonu'nun çalınan mirası bu rıhtımda el değiştiriyor.\""
+  },
+  {
+    "id": "D203",
+    "inputs": ["E201", "E204"],
+    "baslik": "Katilin İmzası: Kaptan Vance",
+    "aciklama": "Vance'in ceketindeki asit yanığı ve çelik tozu kopan halattaki kimyasal aşınmayla birebir örtüşüyor.",
+    "ic_ses": "\"Vance'in seyir defteri yalan söylüyor. Halatı bizzat kendi elleriyle eritti.\""
+  },
+  {
+    "id": "D204",
+    "inputs": ["E205", "E207"],
+    "baslik": "Gölgedeki Kuklacının Oyunu",
+    "aciklama": "Vance cinayeti kendi kararıyla işlemedi. İsimsiz daktilo mektubu onu panikletip cinayete sürükledi. İpleri çeken gizli bir kuklacı var.",
+    "ic_ses": "\"Aşağı kayan 'r' harfi... Tıpkı Hale'e gelen not gibi! İsimsiz mektubu yazan gölge, Kaptan Vance'i de kendi celladına dönüştürdü.\""
+  },
+  {
+    "id": "D205",
+    "inputs": ["E206", "E210"],
+    "baslik": "Morris'in Masumiyeti (Rüşvetçi Bürokrat)",
+    "aciklama": "Morris'in paniği cinayet yüzünden değil; mafyadan aldığı rüşvet çetelesi ortaya çıkacak diyeydi.",
+    "ic_ses": "\"Morris bir katil değil, sadece korkudan tir tir titreyen rüşvetçi bir memur.\""
+  },
+  {
+    "id": "D206",
+    "inputs": ["E211", "E206"],
+    "baslik": "Kaptan Vance'in Çöken iddiası",
+    "aciklama": "Gelgit tablosundaki cinayet saati ile seyir defterine sonradan eklenen 23:15-23:50 kayıtları karşılaştırıldığında Vance'in kamarada olduğu iddiası çöküyor.",
+    "ic_ses": "\"Seyir defteri sonradan doldurulmuş. Gelgit suları yükselirken Vance kamarada değil, rıhtımda cinayet mahallindeydi.\""
+  }
+]

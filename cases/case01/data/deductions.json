@@ -1,0 +1,72 @@
+[
+  {
+    "id": "D1",
+    "inputs": ["E02", "E15"],
+    "baslik": "İçeriden Kilitlenen Kapı",
+    "aciklama": "Kapı içeriden kilitli ve mermer holdeki tek ıslak iz bana ait. Harlow, katil odadan ayrıldıktan sonra kapıyı kendisi kilitledi.",
+    "ic_ses": "\"Kilitli oda bir numara değilmiş. Harlow korkusundan kapıyı kendisi sürgülemiş.\""
+  },
+  {
+    "id": "D2",
+    "inputs": ["E04", "E05"],
+    "baslik": "Gecikmeli Zehirlenme Yöntemi",
+    "aciklama": "Harlow'un kadehine ve günlük kalp damlalarına ölümcül dozda digitalis karıştırılmış. Zehir odanın dışında veya Harlow güven duyarken verildi.",
+    "ic_ses": "\"Katil içeri zorla girmedi. İlacını kendi eliyle içirdi.\""
+  },
+  {
+    "id": "D3",
+    "inputs": ["E01", "E08"],
+    "baslik": "Sahte Ölüm Saati",
+    "aciklama": "Kırık saat 22:10'u gösterse de masadaki mumun sadece bir saatlik yanmış olması ölümün 21:30 - 21:45 arasında gerçekleştiğini kanıtlıyor.",
+    "ic_ses": "\"Saat bir yanıltmaca. Ya düşerken çok sonra durdu ya da bilerek ayarlandı.\""
+  },
+  {
+    "id": "D4",
+    "inputs": ["D3", "E03"],
+    "baslik": "Gerçek Cinayet Penceresi",
+    "aciklama": "Ölüm saati 21:00 - 21:45 arası. Harlow akşam yemeğinden hemen sonra çalışma odasında tek başınayken nöbet geçirdi.",
+    "ic_ses": "\"Herkesin dağıldığı o sessiz kırk beş dakika... Avukatına mektup yazarken çöktü.\""
+  },
+  {
+    "id": "D5",
+    "inputs": ["E06", "E05"],
+    "baslik": "Dr. Hale'in Yalanı",
+    "aciklama": "Çalışma odasına hiç girmediğini söyleyen Dr. Hale'in 20:50 saatli reçete parçası odadaki sepette bulundu. Odaya bizzat girdi.",
+    "ic_ses": "\"Odaya adım atmadım diyen bir doktorun reçete taslağı kurbanın masasının dibinde yatıyor. Yalan yakalandı.\""
+  },
+  {
+    "id": "D6",
+    "inputs": ["E09", "E10"],
+    "baslik": "Kütüphane delilinin Çöküşü",
+    "aciklama": "Hale buz gibi, hiç yakılmamış kütüphanede saatlerce kitap okumadı; sadece boş zehir flakonunu şömine pervazına gizlemek için oraya uğradı.",
+    "ic_ses": "\"Kütüphane mezar gibi soğuk. Oraya kitap okumak için değil, zehir şişesini saklamak için gitmiş.\""
+  },
+  {
+    "id": "D7",
+    "inputs": ["D1", "D2", "D5", "D6"],
+    "baslik": "NİHAİ DEDÜKSİYON: KATİL DR. HALE",
+    "aciklama": "Dr. Hale saat 20:45'te odaya girip kadehe ve ilaca aşırı doz digitalis kattı. Harlow şüphelenmeyip ilacı içti, ardından korkuyla kapısını kilitleyip 21:40 civarında vefat etti.",
+    "ic_ses": "\"Parçalar oturdu. Soru katilin odaya nasıl girdiği değil, zehrin nasıl girdiğiydi. Katil Dr. Victor Hale!\""
+  },
+  {
+    "id": "D8",
+    "inputs": ["E07", "E13"],
+    "baslik": "Tehdit Mektuplarının Kaynağı (Kızıl Ringa)",
+    "aciklama": "Mektupları Pike kendi daktilosuyla yazmış. Fakat amacı cinayet değil, eski alacağını tahsil etmek için Harlow'u sindirmekti.",
+    "ic_ses": "\"Pike hırslı ve öfkeli bir adam, ama bir zehirci değil. Mektuplar cinayetle değil, parayla ilgili.\""
+  },
+  {
+    "id": "D9",
+    "inputs": ["E11", "E12"],
+    "baslik": "Julian'ın Yalanı",
+    "aciklama": "Julian bilardo odasında tek başına içiyordu. Kumar borcunun öğrenilmesinden korktuğu için Pike ile berabermiş gibi yalan söyledi.",
+    "ic_ses": "\"Julian mirasa muhtaç bir kumarbaz. Yalan söylüyor çünkü korkuyor, katil olduğu için değil.\""
+  },
+  {
+    "id": "D10",
+    "inputs": ["E17", "E15"],
+    "baslik": "İmkânsız Telefon Araması",
+    "aciklama": "Malikanenin telefon hattı 20:00'den beri kopuktu ve dışarıdan yeni bir iz gelmedi. Silas'ı 21:30'da arayan gizemli ses kesinlikle malikanenin içinden aramadı.",
+    "ic_ses": "\"Telefon hattı kopuk. Dışarıdan giren yok. Beni çağıran ses nereden konuştu?\""
+  }
+]

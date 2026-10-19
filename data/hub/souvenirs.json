@@ -1,0 +1,23 @@
+[
+  {
+    "id": "crystal_pen_holder",
+    "ad": "Harlow'un Kristal Kalem Tutucusu",
+    "aciklama": "Çalışma masasında duran ağır kurşunlu kristal kalemlik. Kurbanın son imzasını attığı kalem buradaydı.",
+    "ic_ses": "\"Zenginlik... Öldükten sonra masanda kalan soğuk bir kristal parçasından ibaret.\"",
+    "achievement_id": "A05"
+  },
+  {
+    "id": "manor_old_key",
+    "ad": "Malikanenin Paslı Eski Anahtarı",
+    "aciklama": "Giriş holündeki pirinç askılıkta unutulmuş, kullanılmayan antika bir demir anahtar.",
+    "ic_ses": "\"Eski kilitlerin açamadığı çok az kapı vardır. Bu anahtar geçmişe ait.\"",
+    "achievement_id": "A05"
+  },
+  {
+    "id": "billiard_chalk",
+    "ad": "Julian'ın Mavi Bilardo Tebeşiri",
+    "aciklama": "Bilardo masasının köşesinde unutulmuş ufalanmış mavi tebeşir küpü.",
+    "ic_ses": "\"Korkak bir mirasçının ellerindeki titremeyi saklamak için sıktığı tebeşir tozu.\"",
+    "achievement_id": "A05"
+  }
+]

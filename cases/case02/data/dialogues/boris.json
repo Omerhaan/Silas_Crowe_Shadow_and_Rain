@@ -1,0 +1,63 @@
+{
+  "suspect_id": "boris",
+  "name": "'Kaya' Boris",
+  "topics": [
+    {
+      "id": "offer_night_pass",
+      "label": "Mühürlü Gece İzin Belgesini Ver",
+      "label_en": "Present Sealed Night Permit",
+      "required_item": "night_pass",
+      "hide_if_flag": "boris_allowed",
+      "hide_if_unmet": true,
+      "set_flag": "boris_allowed",
+      "statement_yield": "Fedai Boris, mühürlü gece izin belgesini aldıktan sonra demir kapıyı açtı ve geçişe izin verdi.",
+      "statement_yield_en": "Bouncer Boris inspected the night permit and cleared the doorway to the saloon.",
+      "response": "(Mühürlü kâğıdı eline alır, mührü kontrol eder) Hah... Şef Morris sonunda imzalamış. Pekâlâ Crowe, geç bakalım. Kapı açık. Ama uyarayım; patronun canını sıkma.",
+      "response_en": "(Inspects the red wax seal) Hah... Chief Morris stamped it at last. Very well Crowe, step through. Door is clear. But heed this: do not cross the boss.",
+      "emotion": "normal"
+    },
+    {
+      "id": "block_path",
+      "label": "Yolumu Aç",
+      "label_en": "Clear the Way",
+      "response": "Patron bu gece kimseyi kabul etmiyor dedektif. Rüzgâr al da git, başını belaya sokma.",
+      "response_en": "The boss receives no callers tonight, detective. Catch a breeze and move along before trouble finds you.",
+      "statement_yield": "Boris, patronun kimseyle görüşmek istemediğini belirterek geçişe izin vermedi.",
+      "statement_yield_en": "Boris refused entry, stating his boss would receive no visitors tonight."
+    },
+    {
+      "id": "pass_requirement",
+      "label": "Nasıl Geçerim?",
+      "label_en": "How Do I Pass?",
+      "response": "Gümrük İdaresi'nden mühürlü 'Gece İzin Belgesi' getirmedikçe bu demir kapıdan sinek bile geçemez.",
+      "response_en": "Until you bring a stamped 'Night Permit' from Customs, not a fly buzzes past this iron door.",
+      "statement_yield": "Boris, geçiş için Arthur Morris in ofisinden alınacak mühürlü izin belgesini şart koştu.",
+      "statement_yield_en": "Boris demanded an official night permit from Arthur Morris's office before granting passage."
+    },
+    {
+      "id": "present_evidence",
+      "label": "İzin Göster",
+      "label_en": "Present Permit",
+      "response": "Gümrükten bir evrakın var mı, yoksa boş laf mı ediyorsun?",
+      "response_en": "Got papers from the harbor master, or just blowing hot air?",
+      "statement_yield": ""
+    }
+  ],
+  "evidence_reactions": {
+    "E209": {
+      "response": "(Mühürlü belgeyi eline alır, gözlerini kısarak inceler) Hah... Şef Morris sonunda mührü basmış. Pekâlâ Crowe, geç bakalım. Kapı açık. Ama uyarayım; patronun canını sıkarsan rıhtımdan seni de vinçle toplarlar.",
+      "response_en": "(Squints at the crimson customs stamp) Hah... Chief Morris stamped it at last. Very well Crowe, step through. The latch is up. But cross the boss, and they'll fish you out of the harbor with a winch.",
+      "statement": "Fedai Boris, mühürlü gece izin belgesini aldıktan sonra demir kapıyı açtı ve geçişe izin verdi.",
+      "statement_en": "Bouncer Boris inspected the sealed night permit and cleared the doorway to the saloon.",
+      "emotion": "normal",
+      "set_flag": "boris_allowed",
+      "refresh_topics": true
+    },
+    "default": {
+      "response": "Bunu bana değil, rıhtımdaki martılara göster dedektif. İzin belgesi olmadan geçemezsin.",
+      "response_en": "Show that to the harbor gulls, detective. No night permit, no passage.",
+      "statement": "",
+      "emotion": "defensive"
+    }
+  }
+}

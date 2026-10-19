@@ -1,0 +1,74 @@
+[
+  {
+    "id": "unknown_sniper",
+    "ad": "Kimliği Belirsiz Tetikçi",
+    "yas": 35,
+    "rol": "Gölgedeki Keskin Nişancı",
+    "initial_trust": 0,
+    "gorunur_motif": "1944 Kuzey Operasyonu'nda terk edilen intikam hesabı.",
+    "gercek": "KATİL. Dalton Reeve'in 1944'te karlar altında bıraktığı K-4 tüfeğini kullanarak ışık köprüsünden tek bir kurşun sıktı ve orkestranın top sesini perde olarak kullandı.",
+    "alibi_ozeti": "Cinayetten hemen sonra opera çatısına çıkıp yangın merdiveninden kaçtı.",
+    "kilit_nokta": "Işık köprüsündeki .303 kovan, çatıdaki K-4 tüfeği ve aşağı kayık 'r' harfli daktilo notu.",
+    "initial_room": "opera_roof"
+  },
+  {
+    "id": "finch",
+    "ad": "Arthur Finch",
+    "yas": 44,
+    "rol": "Sahne ve Işık Amiri",
+    "initial_trust": 35,
+    "gorunur_motif": "Ağır kumar borçları var; ışık köprüsünün tek anahtarı onda.",
+    "gercek": "Masum. Anahtarını bir hafta önce kaybetmiş ve ertesi gün marangoz atölyesinde bulmuştu. Anahtar balmumuyla kopyalandı.",
+    "alibi_ozeti": "Atış anında sahne arkasında cue panosunun başında spot ışıklarını yönlendiriyordu.",
+    "kilit_nokta": "Kilitte balmumu izi var. Finch anahtarını kaybetmiş ve hırsız kopyalamış.",
+    "initial_room": "backstage"
+  },
+  {
+    "id": "elena",
+    "ad": "Elena Vane",
+    "yas": 31,
+    "rol": "Başsoprano",
+    "initial_trust": 45,
+    "gorunur_motif": "Kurban Dalton Reeve ile geçmişte fırtınalı ve yarım kalmış bir aşk ilişkisi vardı.",
+    "gercek": "Masum. Sahnede aryasını söylerken 'ışık köprüsünde bir parıltı gördüm' der; ancak yüzüne vuran 2000 vatlık projektörler bunu fiziksel olarak imkânsız kılar.",
+    "alibi_ozeti": "20:52'de yüzlerce seyircinin gözü önünde sahnenin tam ortasında arya söylüyordu.",
+    "kilit_nokta": "İfadesi şok ve panikten kaynaklanan bir yanılsama; spot jelleri köprüyü görünmez kılıyordu.",
+    "initial_room": "backstage"
+  },
+  {
+    "id": "sterling",
+    "ad": "Cyril Sterling",
+    "yas": 53,
+    "rol": "Kraliyet Locası Sahibi ve Mühimmat Tüccarı",
+    "initial_trust": 30,
+    "gorunur_motif": "Reeve onun savaş sırasındaki kaçak mühimmat sevkiyatları hakkında bilgi sahibiydi.",
+    "gercek": "Masum. Kibirli ve soğuk bir tüccar, ancak cinayet anında locasında 100 görgü tanığının ve eşinin önünde alkış tutuyordu.",
+    "alibi_ozeti": "Locada ön sıradaydı, yüzlerce konuk ve protokolün gözü önündeydi.",
+    "kilit_nokta": "Reeve vurulduğunda onunla aynı locadaydı, kurşunun kendisini sıyırmasından ödü koptu.",
+    "initial_room": "royal_box"
+  },
+  {
+    "id": "patch",
+    "ad": "Barnaby 'Patch' Miller",
+    "yas": 48,
+    "rol": "Ses ve Efekt Teknisyeni",
+    "initial_trust": 50,
+    "gorunur_motif": "Savaş gazisi, kulakları ağır işitir, kurbanla aynı birlikte bulunmuş olabilir.",
+    "gercek": "Görgü tanığı. 112. ölçüdeki barutlu teatral top efektini patlatan kişi. Top patlarken tiz ve kuru ikinci bir patlama sesi duyduğunu iddia eden tek kişi.",
+    "alibi_ozeti": "Aksesuar odasının yanındaki efekt balkonunda top düzeneğini ateşliyordu.",
+    "kilit_nokta": "Topun dumanı ile tüfeğin kovanı aynı anda patladı; atış anını saniyesi saniyesine doğruluyor.",
+    "initial_room": "prop_room"
+  },
+  {
+    "id": "henderson",
+    "ad": "Archie Henderson",
+    "yas": 60,
+    "rol": "Fuaye Kapıcısı ve Gişe Sorumlusu",
+    "initial_trust": 60,
+    "gorunur_motif": "Yok. Yaşlı, emektar bir tiyatro çalışanı.",
+    "gercek": "Atmosferik NPC. Dışarıdaki fırtınayı, locaya giren çıkan protokolü ve temsil öncesinde içeri giren şüpheli silüetleri aktarır.",
+    "alibi_ozeti": "Bütün gece ana giriş kapısında bilet kontrol ediyordu.",
+    "kilit_nokta": "Opera çatısına açılan yangın çıkış kapısının kilidinin dışarıdan zorlandığını fark etmiş.",
+    "initial_room": "opera_foyer"
+  }
+]

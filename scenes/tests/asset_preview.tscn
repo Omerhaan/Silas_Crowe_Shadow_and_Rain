@@ -1,0 +1,278 @@
+[gd_scene load_steps=6 format=3 uid="uid://bassetprev01"]
+
+[ext_resource type="Script" path="res://scripts/tests/asset_preview.gd" id="1_prev"]
+[ext_resource type="SpriteFrames" path="res://assets/sprites/characters/silas_frames.tres" id="2_silas_frames"]
+[ext_resource type="PackedScene" uid="uid://bambientvfx01" path="res://scenes/vfx/ambient_vfx.tscn" id="3_ambient"]
+[ext_resource type="Script" path="res://scripts/tests/room_stage.gd" id="4_room_stage"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bg"]
+bg_color = Color(0.0431373, 0.0588235, 0.101961, 1)
+
+[node name="AssetPreview" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_prev")
+
+[node name="Viewports" type="Node" parent="."]
+
+[node name="ViewportStudy" type="SubViewport" parent="Viewports"]
+size = Vector2i(320, 180)
+render_target_update_mode = 3
+
+[node name="RoomStageStudy" type="Node2D" parent="Viewports/ViewportStudy"]
+script = ExtResource("4_room_stage")
+
+[node name="ViewportHall" type="SubViewport" parent="Viewports"]
+size = Vector2i(320, 180)
+render_target_update_mode = 3
+
+[node name="RoomStageHall" type="Node2D" parent="Viewports/ViewportHall"]
+script = ExtResource("4_room_stage")
+room_id = "main_hall"
+
+[node name="Background" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_bg")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_scroll_mode = 0
+
+[node name="VBox" type="VBoxContainer" parent="ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 8
+
+[node name="HeaderLabel" type="Label" parent="ScrollContainer/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.909804, 0.784314, 0.447059, 1)
+theme_override_font_sizes/font_size = 8
+text = "GÖLGE VE YAĞMUR — REVİZYON 2 ODA VE ASSET ÖNİZLEMESİ"
+horizontal_alignment = 1
+
+[node name="RoomSection" type="VBoxContainer" parent="ScrollContainer/VBox"]
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="SectionTitle" type="Label" parent="ScrollContainer/VBox/RoomSection"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.964706, 0.890196, 0.631373, 1)
+theme_override_font_sizes/font_size = 7
+text = "★ ODA YERLEŞİMİ VE ARKA PLAN (320x180, Y=168 Zemin Çizgisi)"
+
+[node name="RoomButtons" type="HBoxContainer" parent="ScrollContainer/VBox/RoomSection"]
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="BtnStudy1x" type="Button" parent="ScrollContainer/VBox/RoomSection/RoomButtons"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 5
+text = "Çalışma Odası 1x"
+
+[node name="BtnStudy4x" type="Button" parent="ScrollContainer/VBox/RoomSection/RoomButtons"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 5
+text = "Çalışma Odası 4x"
+
+[node name="BtnHall1x" type="Button" parent="ScrollContainer/VBox/RoomSection/RoomButtons"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 5
+text = "Ana Hol 1x"
+
+[node name="BtnHall4x" type="Button" parent="ScrollContainer/VBox/RoomSection/RoomButtons"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 5
+text = "Ana Hol 4x"
+
+[node name="ScaleLabel" type="Label" parent="ScrollContainer/VBox/RoomSection"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.68, 0.72, 0.78, 1)
+theme_override_font_sizes/font_size = 5
+text = "Çalışma Odası (1x: 320x180)"
+
+[node name="PreviewScroll" type="ScrollContainer" parent="ScrollContainer/VBox/RoomSection"]
+custom_minimum_size = Vector2(0, 184)
+layout_mode = 2
+
+[node name="PreviewTexture" type="TextureRect" parent="ScrollContainer/VBox/RoomSection/PreviewScroll"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="PaletteSection" type="VBoxContainer" parent="ScrollContainer/VBox"]
+layout_mode = 2
+
+[node name="SectionTitle" type="Label" parent="ScrollContainer/VBox/PaletteSection"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.541176, 0.52549, 0.568627, 1)
+theme_override_font_sizes/font_size = 6
+text = "1. PALET (32 Renk: 24 Base + 8 Orta Ton)"
+
+[node name="PaletteGrid" type="GridContainer" parent="ScrollContainer/VBox/PaletteSection"]
+layout_mode = 2
+theme_override_constants/h_separation = 3
+theme_override_constants/v_separation = 3
+columns = 8
+
+[node name="CharacterSection" type="VBoxContainer" parent="ScrollContainer/VBox"]
+layout_mode = 2
+
+[node name="SectionTitle" type="Label" parent="ScrollContainer/VBox/CharacterSection"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.541176, 0.52549, 0.568627, 1)
+theme_override_font_sizes/font_size = 6
+text = "2. KARAKTERLER (Silas 28x48, NPC'ler 32x48) & KODLA ANİMASYON"
+
+[node name="CharacterRow" type="HBoxContainer" parent="ScrollContainer/VBox/CharacterSection"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="SilasDemo" type="HBoxContainer" parent="ScrollContainer/VBox/CharacterSection"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="SpriteContainer" type="Control" parent="ScrollContainer/VBox/CharacterSection/SilasDemo"]
+custom_minimum_size = Vector2(40, 56)
+layout_mode = 2
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="ScrollContainer/VBox/CharacterSection/SilasDemo/SpriteContainer"]
+position = Vector2(20, 28)
+sprite_frames = ExtResource("2_silas_frames")
+animation = &"idle_right"
+
+[node name="Buttons" type="VBoxContainer" parent="ScrollContainer/VBox/CharacterSection/SilasDemo"]
+layout_mode = 2
+theme_override_constants/separation = 2
+
+[node name="BtnIdle" type="Button" parent="ScrollContainer/VBox/CharacterSection/SilasDemo/Buttons"]
+custom_minimum_size = Vector2(100, 16)
+layout_mode = 2
+theme_override_font_sizes/font_size = 5
+text = "Idle Nefes (±1px)"
+
+[node name="BtnWalk" type="Button" parent="ScrollContainer/VBox/CharacterSection/SilasDemo/Buttons"]
+custom_minimum_size = Vector2(100, 16)
+layout_mode = 2
+theme_override_font_sizes/font_size = 5
+text = "Yürü (Sekme/Eğilme)"
+
+[node name="BtnLean" type="Button" parent="ScrollContainer/VBox/CharacterSection/SilasDemo/Buttons"]
+custom_minimum_size = Vector2(100, 16)
+layout_mode = 2
+theme_override_font_sizes/font_size = 5
+text = "İncele Eğilme (-2px)"
+
+[node name="BtnShudder" type="Button" parent="ScrollContainer/VBox/CharacterSection/SilasDemo/Buttons"]
+custom_minimum_size = Vector2(100, 16)
+layout_mode = 2
+theme_override_font_sizes/font_size = 5
+text = "Titreme (El/Soğuk)"
+
+[node name="PropsSection" type="VBoxContainer" parent="ScrollContainer/VBox"]
+layout_mode = 2
+
+[node name="SectionTitle" type="Label" parent="ScrollContainer/VBox/PropsSection"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.541176, 0.52549, 0.568627, 1)
+theme_override_font_sizes/font_size = 6
+text = "3. PROSEDÜREL PROPLAR (1px Kontur + 3 Tonlu Gölgelendirme)"
+
+[node name="Scroll" type="ScrollContainer" parent="ScrollContainer/VBox/PropsSection"]
+custom_minimum_size = Vector2(0, 56)
+layout_mode = 2
+vertical_scroll_mode = 0
+
+[node name="PropsContainer" type="HBoxContainer" parent="ScrollContainer/VBox/PropsSection/Scroll"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="InspectSection" type="VBoxContainer" parent="ScrollContainer/VBox"]
+layout_mode = 2
+
+[node name="SectionTitle" type="Label" parent="ScrollContainer/VBox/InspectSection"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.541176, 0.52549, 0.568627, 1)
+theme_override_font_sizes/font_size = 6
+text = "4. YAKIN PLAN ÇİZİM ALANI (INSPECTVIEW 192x128)"
+
+[node name="InspectRect" type="ColorRect" parent="ScrollContainer/VBox/InspectSection"]
+custom_minimum_size = Vector2(192, 128)
+layout_mode = 2
+size_flags_horizontal = 4
+color = Color(0.0509804, 0.0745098, 0.129412, 1)
+
+[node name="CenterContainer" type="CenterContainer" parent="ScrollContainer/VBox/InspectSection/InspectRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="ScrollContainer/VBox/InspectSection/InspectRect/CenterContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.419608, 0.560784, 0.639216, 1)
+theme_override_font_sizes/font_size = 6
+text = "192x128 Inspect Alanı (Örn. K-5 Cep Saati / Kadeh)"
+
+[node name="UISection" type="VBoxContainer" parent="ScrollContainer/VBox"]
+layout_mode = 2
+
+[node name="SectionTitle" type="Label" parent="ScrollContainer/VBox/UISection"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.541176, 0.52549, 0.568627, 1)
+theme_override_font_sizes/font_size = 6
+text = "5. KODLA ÇİZİLEN UI (Kompakt Üst Bar & 9-Slice & 16x16 İkonlar)"
+
+[node name="UIBox" type="VBoxContainer" parent="ScrollContainer/VBox/UISection"]
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="AmbientSection" type="VBoxContainer" parent="ScrollContainer/VBox"]
+layout_mode = 2
+
+[node name="SectionTitle" type="Label" parent="ScrollContainer/VBox/AmbientSection"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.541176, 0.52549, 0.568627, 1)
+theme_override_font_sizes/font_size = 6
+text = "6. ATMOSFER & IŞIK KATMANI"
+
+[node name="AmbientControls" type="HBoxContainer" parent="ScrollContainer/VBox/AmbientSection"]
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="BtnLightning" type="Button" parent="ScrollContainer/VBox/AmbientSection/AmbientControls"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 5
+text = "Şimşek Çaktır"
+
+[node name="BtnRain" type="Button" parent="ScrollContainer/VBox/AmbientSection/AmbientControls"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 5
+text = "Yağmur Aç/Kapa"
+
+[node name="BtnGrain" type="Button" parent="ScrollContainer/VBox/AmbientSection/AmbientControls"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 5
+text = "Grain Aç/Kapa"
+
+[node name="BtnVignette" type="Button" parent="ScrollContainer/VBox/AmbientSection/AmbientControls"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 5
+text = "Vignette Aç/Kapa"
+
+[node name="AmbientVFX" parent="." instance=ExtResource("3_ambient")]

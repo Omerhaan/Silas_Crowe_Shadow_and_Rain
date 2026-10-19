@@ -1,0 +1,44 @@
+[
+  {
+    "id": "D301",
+    "inputs": ["E306", "E309"],
+    "baslik": "Ses Perdesi ve Kusursuz Zamanlama",
+    "aciklama": "Dalton Reeve'in işaretli partisyonu ve 20:52'de duran K-4 cep saati, atışın 112. ölçüdeki teatral top atışının gürültüsüne tamı tamına denk getirildiğini kanıtlıyor.",
+    "ic_ses": "\"Mermi tam top patladığı anda namludan çıkmış. Orkestranın sesi suikastın perdesi oldu.\""
+  },
+  {
+    "id": "D302",
+    "inputs": ["E302", "E303"],
+    "baslik": "Kör Nokta Atış Hattı",
+    "aciklama": "Işık cue defteri ve köprüdeki boş kovan, Spot A söndürülüp Spot B açıldığında ışık köprüsünün kuzey ucunun mutlak bir kör noktaya dönüştüğünü ve locaya doğrudan ateş hattı verdiğini gösteriyor.",
+    "ic_ses": "\"Spot ışıkları salondakileri kör ederken, ışık köprüsü tam bir kör nokta ve kusursuz bir atış hattı oluşturmuş.\""
+  },
+  {
+    "id": "D303",
+    "inputs": ["E304", "E305"],
+    "baslik": "Kopyalanmış Anahtar (Finch'in Aklanması)",
+    "aciklama": "Köprü kapısındaki kilit zorlanmamış çünkü atölyedeki balmumu kalıbı anahtarın bir hafta önce gizlice kopyalandığını ortaya koyuyor. Sahne amiri Arthur Finch masum.",
+    "ic_ses": "\"Finch anahtarını kaybettiğinde kalıp çıkarılmış. Kapı zorlanmadı ama katil Finch değil.\""
+  },
+  {
+    "id": "D304",
+    "inputs": ["E301", "E308"],
+    "baslik": "1944 Kuzey İntikamı",
+    "aciklama": "Çatıdaki K-4 gravürlü tüfek ve dipçiğindeki daktilo notu, cinayetin 1944 Kuzey Operasyonu'nda geride bırakılan bir hayaletin intikamı olduğunu kanıtlıyor.",
+    "ic_ses": "\"Tüfeğe sarılı nottaki o aşağı kayan 'r' harfi... Bu cinayet de aynı görünmez elin intikam zincirinin bir halkası.\""
+  },
+  {
+    "id": "D305",
+    "inputs": ["E303", "E307"],
+    "baslik": "Elena'nın İmkânsız İfadesi",
+    "aciklama": "Karartılmış spot jeli ve sahne ışıklarının açısı, başsoprano Elena Vane'in sahneden ışık köprüsündeki dürbün parıltısını görmesini imkânsız kılıyor. İfadesi panik kaynaklı bir göz aldanması.",
+    "ic_ses": "\"Elena sahne ışıklarının kör edici parıltısı altında hiçbir şey göremezdi. İfadesi korkudan kaynaklanan bir yanılsama.\""
+  },
+  {
+    "id": "D306",
+    "inputs": ["D302", "D304"],
+    "baslik": "Kayıp Hayalet: Kimliği Belirsiz Tetikçi",
+    "aciklama": "Katil operadaki şüphelilerden hiçbiri değil. Işık köprüsünü kör nokta olarak kullanan, 1944'ün intikam tüfeğini ateşleyen ve çatıdan sislerin içine kaçan kimliği belirsiz profesyonel bir tetikçi.",
+    "ic_ses": "\"Katil salonda değil. Operanın ışıklarını santim santim hesaplayıp çatıdan sislere karışan o hayalet... Geçmişten gelen bir intikam gölgesi!\""
+  }
+]

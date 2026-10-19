@@ -1,0 +1,102 @@
+[
+  {
+    "id": "E301",
+    "ad": "K-4 Gravürlü Keskin Nişancı Tüfeği",
+    "aciklama": "Çatı parapetine bırakılmış, namlusu soğumuş keskin nişancı tüfeği. Kundak kısmına elle kazınmış 'K-4' damgası var. Reeve'in 1944 Kuzey dağlarında bıraktığı silah.",
+    "bulundugu_yer": "opera_roof",
+    "nasil_bulunur": "Çatı bacasının arkasındaki brandayı kaldır",
+    "ic_ses_yorumu": "\"K-4 damgası... Dalton Reeve'in 1944 kışında arkasında bıraktığı tüfek. Birisi o silahı karların altından çıkarıp sahibine geri getirmiş.\"",
+    "kritik_mi": true,
+    "kizil_ringa_mi": false
+  },
+  {
+    "id": "E302",
+    "ad": "Sıcak Pirinç .303 Kovan",
+    "aciklama": "Işık köprüsünün kuzey ucundaki metal ızgaraların arasına sıkışmış boş mermi kovanı. Barut kokusu henüz tamamen uçmamış.",
+    "bulundugu_yer": "light_bridge",
+    "nasil_bulunur": "Işık köprüsünün kuzey ucundaki demir ızgarayı incele",
+    "ic_ses_yorumu": "\".303 kalibre bir kovan. Tetikçi tam buradan, spot ışıklarının arkasına gizlenerek Kraliyet Locası'na nişan almış.\"",
+    "kritik_mi": true,
+    "kizil_ringa_mi": false
+  },
+  {
+    "id": "E303",
+    "ad": "Işık Cue Defteri",
+    "aciklama": "Sahne arkasındaki ışık masasında duran resmi not defteri. '20:51 - Spot A söndürülür, Spot B locayı gölgede bırakacak şekilde açılır' talimatı yazılı.",
+    "bulundugu_yer": "backstage",
+    "nasil_bulunur": "Işık kontrol konsolundaki cue defterini aç",
+    "ic_ses_yorumu": "\"20:51'de A spotu kapanıp B spotu açılmış. Bu açı, ışık köprüsünün kuzey ucunu salondaki herkes için mutlak bir karanlığa gömmüş.\"",
+    "kritik_mi": true,
+    "kizil_ringa_mi": false
+  },
+  {
+    "id": "E304",
+    "ad": "Zorlanmamış Ağır Asma Kilit",
+    "aciklama": "Işık köprüsüne çıkan demir merdivenin kilitli kapısı. Kilit mekanizmasında hiçbir zorlama, çizik ya da maymuncuk izi yok; orijinal anahtar profiliyle açılmış.",
+    "bulundugu_yer": "light_bridge",
+    "nasil_bulunur": "Köprü girişindeki asma kilidi incele",
+    "ic_ses_yorumu": "\"Kilit zorlanmamış. İçeriye giren kişi ya Finch'in anahtarını kullandı ya da mükemmel bir kopyasını.\"",
+    "kritik_mi": true,
+    "kizil_ringa_mi": false
+  },
+  {
+    "id": "E305",
+    "ad": "Balmumu Kalıbı ve Kilit İzi",
+    "aciklama": "Aksesuar atölyesindeki marangoz tezgahında bulunmuş sertleşmiş balmumu parçası. Üzerinde köprü kilidinin diş izleri ve pirinç talaşı kalıntıları var.",
+    "bulundugu_yer": "prop_room",
+    "nasil_bulunur": "Dekor masasının çekmecesini araştır",
+    "ic_ses_yorumu": "\"Balmumunda köprü kilidinin dişi var. Birisi Finch'in anahtarını bir hafta önce çalıp bu kalıbı çıkarmış, sonra da anahtarı fark ettirmeden yerine koymuş.\"",
+    "kritik_mi": true,
+    "kizil_ringa_mi": false
+  },
+  {
+    "id": "E306",
+    "ad": "İşaretli Partisyon ve 'Burada mı?' Notu",
+    "aciklama": "Locadaki masada duran, kurbanın kanıyla lekelenmiş '1812 Tören Uvertürü' partisyonu. 112. ölçüdeki orkestra top atışının altı kırmızıyla çizilmiş ve el yazısıyla 'Burada mı?' yazılmış.",
+    "bulundugu_yer": "royal_box",
+    "nasil_bulunur": "Loca masasındaki kanlı müzik notasını incele",
+    "ic_ses_yorumu": "\"112. ölçü... Tiyatral top atışının yapılacağı an. Reeve tehdit aldığını ve vurulacağı anı biliyordu. Ama tetiğin nereden çekileceğini bilemedi.\"",
+    "kritik_mi": true,
+    "kizil_ringa_mi": false
+  },
+  {
+    "id": "E307",
+    "ad": "Karartılmış Spot Işık Jeli",
+    "aciklama": "Köprü üzerindeki projektörün önüne takılmış koyu filtre. Normal cam jelin üzeri siyah is ve keçeli boyayla karartılmış, ışığın bir kısmını kasıtlı olarak emmiş.",
+    "bulundugu_yer": "light_bridge",
+    "nasil_bulunur": "Projektörün jellerini kontrol et",
+    "ic_ses_yorumu": "\"Spotun jeli islenmiş. Işık hüzmesi sahneye vururken tetikçinin bulunduğu iskele zifiri karanlıkta kalmış. Kusursuz bir kör nokta mühendisliği.\"",
+    "kritik_mi": false,
+    "kizil_ringa_mi": false
+  },
+  {
+    "id": "E308",
+    "ad": "Tüfeğe Sarılı İntikam Notu",
+    "aciklama": "Tüfeğin dipçiğine yağlı iple bağlanmış daktilo notu: 'Gözünü kırptın ve beni görmezden geldin.' Metindeki küçük 'r' harfi satır çizgisinin altına kaymış.",
+    "bulundugu_yer": "opera_roof",
+    "nasil_bulunur": "Tüfeğin dipçiğindeki ipi çöz",
+    "ic_ses_yorumu": "\"Aşağı kayan 'r' harfi... Dr. Hale'in şantaj mektubu ve Vance'in odasındaki tehdit notuyla aynı daktilo! Bu cinayetlerin arkasındaki gölge aynı kişi.\"",
+    "kritik_mi": true,
+    "kizil_ringa_mi": false
+  },
+  {
+    "id": "E309",
+    "ad": "K-4 Askerî Cep Saati",
+    "aciklama": "Kurban Dalton Reeve'in yelek cebindeki gümüş kaplama askerî saat. Merminin göğse saplandığı basınçla camı çatlamış, yelkovan tam 20:52'de durmuş.",
+    "bulundugu_yer": "royal_box",
+    "nasil_bulunur": "Reeve'in yelek cebini ara",
+    "ic_ses_yorumu": "\"Saat tam 20:52'de durmuş. Partisyondaki 112. ölçü, yani sahnedeki o büyük top patlamasıyla tamı tamına aynı saniye.\"",
+    "kritik_mi": true,
+    "kizil_ringa_mi": false
+  },
+  {
+    "id": "E310",
+    "ad": "Islak Ayak İzleri ve Deri Eldiven",
+    "aciklama": "Çatı oluğunun kenarındaki kiremitlerde taze çamurlu postal izleri ve kaçarken düşürülmüş tek bir siyah deri eldiven. Yağmur izleri yavaş yavaş siliyor.",
+    "bulundugu_yer": "opera_roof",
+    "nasil_bulunur": "Yangın merdiveni çıkışındaki çatı oluğunu ara",
+    "ic_ses_yorumu": "\"Tetikçi buradan çatı penceresine ve yangın merdivenine tırmanıp arka sokağın sislerine karışmış. Profesyonel, çevik ve acımasız.\"",
+    "kritik_mi": true,
+    "kizil_ringa_mi": false
+  }
+]

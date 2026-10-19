@@ -1,0 +1,31 @@
+{
+  "cutscene_id": "prologue_intro",
+  "title": "Açılış",
+  "title_en": "Prologue",
+  "slides": [
+    {
+      "text": "1948 Sonbaharı. Şehir yağmura teslim olmuştu.",
+      "en": "Autumn 1948. The city had surrendered to the endless rain.",
+      "duration": 3.0,
+      "sfx": "rain_loop",
+      "image": "res://assets/sprites/cinematics/cinematic_prologue_01.png",
+      "speaker": "SILAS"
+    },
+    {
+      "text": "Tek bir lamba. Masada yarım kalmış bir kadeh ucuz viski ve Bakanlığın ret mektupları.",
+      "en": "A single lamp. An unfinished glass of cheap whiskey and the Ministry's rejection letters on the desk.",
+      "duration": 3.0,
+      "sfx": "thunder_soft",
+      "image": "res://assets/sprites/inspect/inspect_silas_ministry_desk.png",
+      "speaker": "SILAS"
+    },
+    {
+      "text": "Ve yelek cebimden masaya bıraktığım o gümüş cep saati.\nAkrep ve yelkovan yıllardır aynı noktada donup kalmıştı: 03:12.",
+      "en": "And the silver pocket watch I placed on the desk from my vest pocket.\nThe hands had been frozen at the exact same moment for years: 03:12.",
+      "duration": 3.5,
+      "sfx": "",
+      "image": "res://assets/sprites/story/story_pocket_watch_front.png",
+      "speaker": "SILAS"
+    }
+  ]
+}

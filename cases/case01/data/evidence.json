@@ -1,0 +1,172 @@
+[
+  {
+    "id": "E01",
+    "ad": "Kırık cep saati (\"K-5\" / 22:10)",
+    "aciklama": "Harlow'un yelek cebindeki altın kaplama cep saati. Camı çatlamış, akrep ve yelkovan 22:10'da kilitlenmiş. Arka kapağında küçük bir oyma var: 'K-5'.",
+    "bulundugu_yer": "study",
+    "nasil_bulunur": "Cesedi incele",
+    "ic_ses_yorumu": "\"Bu yüzü bir yerden... Hayır, çıkaramıyorum. 22:10... Arka kapakta bir gravür: 'K-5'. Cebimdeki saati çıkarıp bakıyorum: K-1. Aynı model, aynı askerî oyma. Bu tesadüf olamaz.\"",
+    "kritik_mi": false,
+    "kizil_ringa_mi": true
+  },
+  {
+    "id": "E02",
+    "ad": "Kilitte duran anahtar (içeriden)",
+    "aciklama": "Ağır meşe kapının iç tarafındaki pirinç anahtar. Omuzlanarak kırıldığında eğrilmiş ama hala yuvasında.",
+    "bulundugu_yer": "study",
+    "nasil_bulunur": "Çalışma odası kapısını incele",
+    "ic_ses_yorumu": "\"Anahtar iç tarafta, yuvasında takılı. Dışarıdan biri kilitleyip anahtarı içeri atamaz. Harlow kapıyı bizzat kilitledi... Korktuğu biri vardı.\"",
+    "kritik_mi": true,
+    "kizil_ringa_mi": false
+  },
+  {
+    "id": "E03",
+    "ad": "Yarım kalmış avukat notu",
+    "aciklama": "Masanın üzerindeki antetli kağıt. 'Sayın Vane, vasiyetnamemi derhal değiştirmem gerekiyor. Üvey kardeşim Julian ve...' cümlesi yarım kalmış.",
+    "bulundugu_yer": "study",
+    "nasil_bulunur": "Çalışma masasını incele",
+    "ic_ses_yorumu": "\"Mürekkep dağılmış. Harlow yazarken nöbet geçirmiş olmalı. Julian'ı mirastan çıkaracaktı... ya da başka birini.\"",
+    "kritik_mi": false,
+    "kizil_ringa_mi": false
+  },
+  {
+    "id": "E04",
+    "ad": "Konyak kadehi (acı kokulu kalıntı)",
+    "aciklama": "Kristal kadehin dibinde kurumuş kehribar renkli sıvı. Buruk, hafif acı badem ve ilaç kokusu yayılıyor.",
+    "bulundugu_yer": "study",
+    "nasil_bulunur": "Kadehi incele",
+    "ic_ses_yorumu": "\"İyi konyak bu kadar keskin ve acı kokmaz. Kadehin içine sonradan bir şey damlatılmış.\"",
+    "kritik_mi": true,
+    "kizil_ringa_mi": false
+  },
+  {
+    "id": "E05",
+    "ad": "Kalp damlası şişesi (normalden hafif)",
+    "aciklama": "Çalışma masası çekmecesindeki reçeteli digitalis damlalığı. Neredeyse tamamen boşaltılmış.",
+    "bulundugu_yer": "study",
+    "nasil_bulunur": "Gizli çekmeceyi aç",
+    "ic_ses_yorumu": "\"Harlow'un günlük kalp damlası. Normalde birkaç damla yetmeliydi. Şişenin tamamı kadehe veya ilaca dökülmüş.\"",
+    "kritik_mi": true,
+    "kizil_ringa_mi": false
+  },
+  {
+    "id": "E06",
+    "ad": "Çöp sepetinde yırtık reçete parçası (\"20:50\")",
+    "aciklama": "Doktor reçetesi kağıdının yırtık köşesi. Doktor Hale'in el yazısıyla '...gece dozu verilecek - 20:50' notu.",
+    "bulundugu_yer": "study",
+    "nasil_bulunur": "Çöp sepetini incele",
+    "ic_ses_yorumu": "\"20:50. Hale çalışma odasına hiç girmediğini iddia etmişti. İşte masasında kendi el yazısıyla saat damgalı bir reçete parçası.\"",
+    "kritik_mi": true,
+    "kizil_ringa_mi": false
+  },
+  {
+    "id": "E07",
+    "ad": "Tehdit mektupları (3 adet)",
+    "aciklama": "Gazete harfleri yerine eski bir daktiloyla yazılmış üç öfkeli mektup. 'Hesap günü yaklaşıyor, borcunu ödeyeceksin Harlow!'",
+    "bulundugu_yer": "study",
+    "nasil_bulunur": "Portre arkasındaki gizli kasayı aç",
+    "ic_ses_yorumu": "\"Daktilo şeridi yıpranmış, 'e' harfinin üst halkası mürekkeple tıkanmış. Katil bir katil gibi değil, hırslı bir alacaklı gibi yazmış.\"",
+    "kritik_mi": false,
+    "kizil_ringa_mi": true
+  },
+  {
+    "id": "E08",
+    "ad": "Mum boyu ve yanma durumu",
+    "aciklama": "Pirinç şamdandaki balmumu mum. Eriyen parafine bakılırsa yaklaşık 50-60 dakika yanmış.",
+    "bulundugu_yer": "study",
+    "nasil_bulunur": "Duvardaki şamdan ve mumu incele",
+    "ic_ses_yorumu": "\"Mum yaklaşık bir saat yanmış. Harlow 20:40'ta odaya geçtiyse, mum 21:40 civarında sönmüş olmalı. Ölüm saati 21:40 civarı.\"",
+    "kritik_mi": true,
+    "kizil_ringa_mi": false
+  },
+  {
+    "id": "E09",
+    "ad": "Boş digitalis flakonu",
+    "aciklama": "Kütüphanedeki söndürülmüş şöminenin tuğla kenarına gizlenmiş küçük koyu cam tıbbi ampul.",
+    "bulundugu_yer": "library",
+    "nasil_bulunur": "Kütüphane şöminesinin pervazını incele",
+    "ic_ses_yorumu": "\"Tıbbi digitalis ampulü. Etiketi kısmen kazınmış ama eczane mührü duruyor. Buraya alelacele tıkılmış.\"",
+    "kritik_mi": true,
+    "kizil_ringa_mi": false
+  },
+  {
+    "id": "E10",
+    "ad": "Soğuk ve yakılmamış şömine",
+    "aciklama": "Kütüphanedeki şöminenin ızgarasında sadece eski tozlu küller var. Akşam boyunca ateş yakılmamış.",
+    "bulundugu_yer": "library",
+    "nasil_bulunur": "Kütüphane şöminesinin içini incele",
+    "ic_ses_yorumu": "\"Buz gibi bir fırtına gecesinde saatlerce bu odada kitap okuduğunu söyleyen biri şömineyi yakmaz mı? Hale yalan söylüyor. Kütüphanede oturmadı.\"",
+    "kritik_mi": true,
+    "kizil_ringa_mi": false
+  },
+  {
+    "id": "E11",
+    "ad": "Bilardo odasında 2 kadeh ve tek kişilik ayak izi",
+    "aciklama": "Yeşil çuhanın yanındaki sehpada iki viski bardağı. Fakat tozlarda ve halıda sadece tek bir kişinin bot izleri var.",
+    "bulundugu_yer": "billiard_room",
+    "nasil_bulunur": "Bilardo sehpasını incele",
+    "ic_ses_yorumu": "\"Julian ve Pike birlikte içtiklerini iddia etmişti. Ama odaya sadece tek kişi girmiş. İkisi de delillerini örtbas etmek için uyduruyor.\"",
+    "kritik_mi": false,
+    "kizil_ringa_mi": false
+  },
+  {
+    "id": "E12",
+    "ad": "Julian'ın kumar borcu mektubu",
+    "aciklama": "Julian'ın odasındaki çekmecede tefecilerden gelen tehditkar bir ihtarname: 'Bu gece yarısına kadar 5.000 sterlin, yoksa hayatın kararır.'",
+    "bulundugu_yer": "julian_room",
+    "nasil_bulunur": "Julian'ın komodinini incele",
+    "ic_ses_yorumu": "\"Julian'ın boynuna kadar borca battığı açık. Üvey abisinin mirasına muhtaçtı. Ama birini zehirleyecek kadar soğukkanlı mı?\"",
+    "kritik_mi": false,
+    "kizil_ringa_mi": true
+  },
+  {
+    "id": "E13",
+    "ad": "Pike'ın daktilo şeridi ve mürekkep lekesi",
+    "aciklama": "Raymond Pike'ın odasındaki seyahat daktilosu. 'e' harfinin mürekkep tıkacı tehdit mektuplarıyla birebir örtüşüyor.",
+    "bulundugu_yer": "pike_room",
+    "nasil_bulunur": "Pike'ın masasını incele",
+    "ic_ses_yorumu": "\"Tehdit mektuplarının yazarı Pike. Harlow'u korkutup parasını geri almak istemiş. Ama tehdit başka şey, cinayet başka şey.\"",
+    "kritik_mi": false,
+    "kizil_ringa_mi": true
+  },
+  {
+    "id": "E14",
+    "ad": "Margaret'ın kovulma bildirimi taslağı",
+    "aciklama": "Mutfak dolabının altına sıkıştırılmış buruşuk bir mektup taslağı. Harlow, Margaret'ı hırsızlık şüphesiyle işten çıkarmayı planlamış.",
+    "bulundugu_yer": "kitchen",
+    "nasil_bulunur": "Mutfak kilerini incele",
+    "ic_ses_yorumu": "\"30 yıllık hizmetin karşılığı bir kovulma kağıdı. Margaret gururlu bir kadın, ama bir katil mi?\"",
+    "kritik_mi": false,
+    "kizil_ringa_mi": true
+  },
+  {
+    "id": "E15",
+    "ad": "Giriş holündeki yağmur izleri",
+    "aciklama": "Ana giriş kapısının içindeki mermer zeminde yalnızca Silas'ın varışta bıraktığı tek yönlü çamur izi var. Dışarıdan başka kimse girmemiş.",
+    "bulundugu_yer": "main_hall",
+    "nasil_bulunur": "Giriş kapısı paspasını incele",
+    "ic_ses_yorumu": "\"Dışarıdan kimse içeri sızmadı. Köprü çöktükten sonra malikaneye giren tek yabancı benim. Katil içeridekilerden biri.\"",
+    "kritik_mi": true,
+    "kizil_ringa_mi": false
+  },
+  {
+    "id": "E16",
+    "ad": "Yırtık birlik fotoğrafı ve sağlık astsubayı rozeti",
+    "aciklama": "Harlow'un yatak odasındaki gizli kilitli kutuda 'Kuzey Operasyonu - 1944' yazılı yırtık bir fotoğraf parçası ve sağlık rozeti. Fotoğrafta sadece Silas ve Harlow'un olduğu köşe sağlam kalmış.",
+    "bulundugu_yer": "harlow_bedroom",
+    "nasil_bulunur": "Harlow'un kilitli çekmecesini aç",
+    "ic_ses_yorumu": "\"Bu fotoğraf parçası... 1944 Kuzey Operasyonu. Harlow o birliğin sağlık astsubayıydı. Arayan 'Kuzey' derken boşuna konuşmuyordu. Anılar... zihnimde bir şeyler kıpırdıyor.\"",
+    "kritik_mi": true,
+    "kizil_ringa_mi": false
+  },
+  {
+    "id": "E17",
+    "ad": "Kopuk telefon hattı",
+    "aciklama": "Ana holdeki antika telefon sehpası. Ahize açık bırakılmış, kablo fırtınada kopmuş. Saat 20:00'den beri hat tamamen ölü.",
+    "bulundugu_yer": "main_hall",
+    "nasil_bulunur": "Telefon sehpasını incele",
+    "ic_ses_yorumu": "\"Hat saatlerdir ölü. Bu malikaneden kimse dışarıyı arayamazdı. Ama beni çağıran ses... benim telefonumda çaldı.\"",
+    "kritik_mi": false,
+    "kizil_ringa_mi": false
+  }
+]

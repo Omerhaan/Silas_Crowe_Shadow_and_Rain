@@ -1,0 +1,113 @@
+[gd_scene load_steps=8 format=3 uid="uid://bdocksaloon01"]
+
+[ext_resource type="Script" path="res://scripts/core/room_background.gd" id="1_bg"]
+[ext_resource type="PackedScene" uid="uid://bdoor01" path="res://scenes/entities/door.tscn" id="2_door"]
+[ext_resource type="PackedScene" uid="uid://d2m0tcvj7ds4k" path="res://scenes/entities/interactable.tscn" id="3_interact"]
+[ext_resource type="PackedScene" uid="uid://bnpcentity01" path="res://scenes/entities/npc.tscn" id="4_npc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_floor"]
+size = Vector2(480, 26)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wall"]
+size = Vector2(16, 270)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_door"]
+size = Vector2(36, 110)
+
+[node name="DockSaloon" type="Node2D"]
+
+[node name="RoomBackground" type="Node2D" parent="."]
+script = ExtResource("1_bg")
+room_theme = "dock_saloon"
+
+[node name="Walls" type="StaticBody2D" parent="."]
+
+[node name="FloorShape" type="CollisionShape2D" parent="Walls"]
+position = Vector2(240, 260)
+shape = SubResource("RectangleShape2D_floor")
+
+[node name="LeftWall" type="CollisionShape2D" parent="Walls"]
+position = Vector2(8, 135)
+shape = SubResource("RectangleShape2D_wall")
+
+[node name="RightWall" type="CollisionShape2D" parent="Walls"]
+position = Vector2(472, 135)
+shape = SubResource("RectangleShape2D_wall")
+
+[node name="Spawn_default" type="Marker2D" parent="."]
+position = Vector2(340, 245)
+
+[node name="Spawn_from_warehouse" type="Marker2D" parent="."]
+position = Vector2(340, 245)
+
+[node name="Door_To_Warehouse" parent="." instance=ExtResource("2_door")]
+position = Vector2(395, 245)
+target_room_id = "dock_warehouse"
+target_spawn = "from_saloon"
+door_name = "Liman Ambarı"
+
+[node name="WarehouseDoorCollision" type="CollisionShape2D" parent="Door_To_Warehouse"]
+position = Vector2(0, -55)
+shape = SubResource("RectangleShape2D_door")
+
+[node name="NPC_Corley" parent="." instance=ExtResource("4_npc")]
+position = Vector2(245, 230)
+character_id = "npc_corley"
+display_name = "Victor 'Kuzgun' Corley"
+character_name = "Victor 'Kuzgun' Corley"
+
+[node name="Prop_PokerTable" parent="." instance=ExtResource("3_interact")]
+position = Vector2(245, 185)
+object_id = "poker_table"
+display_name = "Kumar Masası"
+prop_type = "drawer"
+is_hotspot = true
+hotspot_size = Vector2(55, 25)
+
+[node name="Prop_Mobster1" parent="." instance=ExtResource("3_interact")]
+position = Vector2(165, 210)
+object_id = "mobster_1"
+display_name = "Silahlı Koruma"
+prop_type = "armchair"
+is_hotspot = true
+hotspot_size = Vector2(22, 38)
+
+[node name="Prop_Mobster2" parent="." instance=ExtResource("3_interact")]
+position = Vector2(305, 210)
+object_id = "mobster_2"
+display_name = "Kağıt Dağıtıcı"
+prop_type = "armchair"
+is_hotspot = true
+hotspot_size = Vector2(22, 38)
+
+[node name="Prop_BarCabinet" parent="." instance=ExtResource("3_interact")]
+position = Vector2(50, 150)
+object_id = "bar_cabinet"
+display_name = "Kaçak İçki Dolabı"
+prop_type = "bookshelf"
+is_hotspot = true
+hotspot_size = Vector2(36, 45)
+
+[node name="Prop_Gramophone" parent="." instance=ExtResource("3_interact")]
+position = Vector2(115, 185)
+object_id = "saloon_gramophone"
+display_name = "Cızırtılı Gramofon"
+custom_inner_voice = "\"Eski bir caz plağı dönüyor; loş salonun sisli havasına hüzünlü ve boğuk bir trompet melodisi yayılıyor.\""
+is_hotspot = true
+hotspot_size = Vector2(24, 20)
+
+[node name="Prop_AccountBook" parent="." instance=ExtResource("3_interact")]
+position = Vector2(145, 170)
+object_id = "account_book"
+display_name = "Gizli Rüşvet Defteri"
+custom_inner_voice = "\"Corley'nin yeşil deri kaplı hesap defteri. Liman polis memurlarının isimleri ve haftalık rüşvet payları yazılı.\""
+is_hotspot = true
+hotspot_size = Vector2(20, 16)
+
+[node name="Prop_WallClock" parent="." instance=ExtResource("3_interact")]
+position = Vector2(245, 90)
+object_id = "saloon_clock"
+display_name = "Pirinç Bar Duvar Saati"
+custom_inner_voice = "\"Tuzlu deniz buharından camı buğulanmış antika saat. Tik-takları barda ağır bir ölüm sessizliği gibi çınlıyor.\""
+is_hotspot = true
+hotspot_size = Vector2(24, 28)

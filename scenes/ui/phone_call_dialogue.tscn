@@ -1,0 +1,51 @@
+[gd_scene load_steps=3 format=3 uid="uid://bphonecall01"]
+
+[ext_resource type="Script" path="res://scripts/ui/phone_call_dialogue.gd" id="1_phone"]
+[ext_resource type="PackedScene" uid="uid://bdialoguebox01" path="res://scenes/ui/dialogue_box.tscn" id="2_dbox"]
+
+[node name="PhoneCallDialogue" type="CanvasLayer"]
+layer = 30
+visible = false
+script = ExtResource("1_phone")
+
+[node name="DimOverlay" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.02, 0.03, 0.05, 0.9)
+
+[node name="BackdropTexture" type="TextureRect" parent="."]
+modulate = Color(1, 1, 1, 0.5)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(240, 135)
+texture_filter = 1
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Container" type="VBoxContainer" parent="."]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -190.0
+offset_top = -110.0
+offset_right = 190.0
+offset_bottom = -10.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 4
+
+[node name="DialogueBox" parent="Container" instance=ExtResource("2_dbox")]
+layout_mode = 2
+
+[node name="ChoiceContainer" type="VBoxContainer" parent="Container"]
+visible = false
+layout_mode = 2
+theme_override_constants/separation = 2

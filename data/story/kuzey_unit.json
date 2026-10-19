@@ -1,0 +1,89 @@
+{
+  "unit_name": "Kuzey Operasyonu Keşif Birimi (1944)",
+  "total_members": 9,
+  "incident_date": "1944-12-14",
+  "incident_time": "03:12",
+  "members": [
+    {
+      "k_id": "K-1",
+      "name": "Silas Crowe",
+      "rank": "Yüzbaşı",
+      "role": "Birlik Komutanı",
+      "status": "Hayatta (Dedektif)",
+      "watch_status": "Durmuş (03:12)",
+      "crime_in_wren_eyes": "Elias'ın elini bıraktı, 'Git!' dedi"
+    },
+    {
+      "k_id": "K-2",
+      "name": "Elias Wren",
+      "rank": "Teğmen",
+      "role": "İkinci Komutan",
+      "status": "Hayatta (Gizli Arayan / İntikamcı)",
+      "watch_status": "Çalışıyor (Tik tak sesi)",
+      "crime_in_wren_eyes": "Geride bırakılan kurban"
+    },
+    {
+      "k_id": "K-3",
+      "name": "Teddy Marsh",
+      "rank": "Onbaşı",
+      "role": "Telsizci",
+      "status": "Maktul (Vaka 2)",
+      "watch_status": "Bilinmiyor (Doklarda)",
+      "crime_in_wren_eyes": "Destek çağrısını gönderemedi / telsizi kapattı"
+    },
+    {
+      "k_id": "K-4",
+      "name": "Dalton Reeve",
+      "rank": "Çavuş",
+      "role": "Keskin Nişancı",
+      "status": "Hedef (Vaka 3)",
+      "watch_status": "Bilinmiyor",
+      "crime_in_wren_eyes": "Mevziyi terk etti, kimseyi kollamadı"
+    },
+    {
+      "k_id": "K-5",
+      "name": "Edmund Harlow",
+      "rank": "Astsubay",
+      "role": "Sağlık Astsubayı",
+      "status": "Maktul (Vaka 1)",
+      "watch_status": "Kırık (K-5 arka kapak)",
+      "crime_in_wren_eyes": "Nabza bakıp 'Öldü' dedi"
+    },
+    {
+      "k_id": "K-6",
+      "name": "Gideon Pratt",
+      "rank": "Çavuş",
+      "role": "İstihkâm / Mühendis",
+      "status": "Maktul (Kenarda / Taş Ocağı)",
+      "watch_status": "Parçalanmış",
+      "crime_in_wren_eyes": "Sığınak patikasını patlattı, dönülemez yaptı"
+    },
+    {
+      "k_id": "K-7",
+      "name": "Ambrose Quill",
+      "rank": "Teğmen",
+      "role": "Tercüman / Arşivci",
+      "status": "Hedef (Vaka 5)",
+      "watch_status": "Bilinmiyor",
+      "crime_in_wren_eyes": "Operasyonu kayıtlardan sildi, gerçeği örttü"
+    },
+    {
+      "k_id": "K-8",
+      "name": "Felix Arden",
+      "rank": "Onbaşı",
+      "role": "Şifre Uzmanı",
+      "status": "Hedef (Vaka 4)",
+      "watch_status": "Bilinmiyor",
+      "crime_in_wren_eyes": "Sahte emri tekrarlayıp onayladı"
+    },
+    {
+      "k_id": "K-9",
+      "name": "Tommy Ashby",
+      "rank": "Er",
+      "role": "Yaver / Koruma",
+      "status": "Hayatta (Vaka 6 - Sanatoryum)",
+      "watch_status": "Bilinmiyor",
+      "crime_in_wren_eyes": "Silas'ı kolundan çekip götürdü"
+    }
+  ]
+}

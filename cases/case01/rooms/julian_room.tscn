@@ -1,0 +1,81 @@
+[gd_scene load_steps=7 format=3 uid="uid://bjulianroom01"]
+
+[ext_resource type="Script" path="res://scripts/core/room_background.gd" id="1_bg"]
+[ext_resource type="PackedScene" uid="uid://bdoor01" path="res://scenes/entities/door.tscn" id="2_door"]
+[ext_resource type="PackedScene" uid="uid://d2m0tcvj7ds4k" path="res://scenes/entities/interactable.tscn" id="3_interact"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_floor"]
+size = Vector2(480, 26)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wall"]
+size = Vector2(16, 270)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_door"]
+size = Vector2(36, 100)
+
+[node name="JulianRoom" type="Node2D"]
+
+[node name="RoomBackground" type="Node2D" parent="."]
+script = ExtResource("1_bg")
+room_theme = "julian_room"
+
+[node name="Walls" type="StaticBody2D" parent="."]
+
+[node name="FloorShape" type="CollisionShape2D" parent="Walls"]
+position = Vector2(240, 260)
+shape = SubResource("RectangleShape2D_floor")
+
+[node name="LeftWall" type="CollisionShape2D" parent="Walls"]
+position = Vector2(8, 135)
+shape = SubResource("RectangleShape2D_wall")
+
+[node name="RightWall" type="CollisionShape2D" parent="Walls"]
+position = Vector2(472, 135)
+shape = SubResource("RectangleShape2D_wall")
+
+[node name="Spawn_default" type="Marker2D" parent="."]
+position = Vector2(45, 245)
+
+[node name="Spawn_from_upper_floor" type="Marker2D" parent="."]
+position = Vector2(45, 245)
+
+[node name="Door_To_Upper" parent="." instance=ExtResource("2_door")]
+position = Vector2(18, 245)
+target_room_id = "upper_floor"
+target_spawn = "from_julian_room"
+door_name = "Koridor"
+
+[node name="DoorCollision" type="CollisionShape2D" parent="Door_To_Upper"]
+position = Vector2(0, -50)
+shape = SubResource("RectangleShape2D_door")
+
+[node name="Prop_JulianBed" parent="." instance=ExtResource("3_interact")]
+position = Vector2(170, 205)
+object_id = "julian_bed"
+display_name = "Dağınık Yatak"
+prop_type = "bed"
+is_hotspot = true
+hotspot_size = Vector2(110, 60)
+custom_inner_voice = "\"Çarşaflar buruşuk. Julian aceleyle kalkmış ya da valizini burada hazırlamış.\""
+
+[node name="Evidence_E12" parent="." instance=ExtResource("3_interact")]
+position = Vector2(152, 230)
+object_id = "upper_vintage_trunk"
+display_name = "Julian'ın Seyahat Sandığı (E12 Kumar Borcu)"
+evidence_id = "E12"
+prop_type = "drawer"
+is_secret_drawer = true
+is_hotspot = true
+hotspot_size = Vector2(36, 26)
+custom_inner_voice = "\"Sandığın gizli gözünde tefecilerden gelen tehditkar bir ihtarname: 'Bu gece yarısına kadar 5.000 sterlin, yoksa hayatın kararır.'\""
+required_key_id = "key_chest"
+locked_message = "Sandık kilitli. Julian anahtarı bilardo odasında bir yerlere saklamış olmalı."
+
+[node name="Prop_JulianDesk" parent="." instance=ExtResource("3_interact")]
+position = Vector2(380, 190)
+object_id = "julian_desk"
+display_name = "Julian'ın Yazı Masası"
+prop_type = "desk"
+is_hotspot = true
+hotspot_size = Vector2(70, 50)
+custom_inner_voice = "\"Masanın üzerinde kumar borçlarıyla ilgili notlar ve darmadağınık kağıtlar var.\""

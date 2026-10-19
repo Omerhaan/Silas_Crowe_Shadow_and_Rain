@@ -1,0 +1,28 @@
+{
+  "id": "case02",
+  "title": "Sisli Liman",
+  "subtitle": "Teddy Marsh Cinayeti ve Kayıp Sevkiyat",
+  "location": "Greywater Rıhtımı",
+  "starting_room": "silas_office",
+  "starting_position": { "x": 160, "y": 245 },
+  "timeline_bounds": { "start": "22:00", "end": "01:30" },
+  "rooms": {
+    "dock_warehouse": "res://cases/case02/rooms/dock_warehouse.tscn",
+    "dock_pier": "res://cases/case02/rooms/dock_pier.tscn",
+    "dock_office": "res://cases/case02/rooms/dock_office.tscn",
+    "dock_saloon": "res://cases/case02/rooms/dock_saloon.tscn",
+    "captain_cabin": "res://cases/case02/rooms/captain_cabin.tscn"
+  },
+  "methods": [
+    { "id": "cargo_crane_sabotage", "tr": "• Vinç Kablosu Sabotajı / Ağır Yük Düşürme", "en": "• Cargo Crane Sabotage / Dropped Heavy Load" },
+    { "id": "blunt_force_sea", "tr": "• Başa Künt Cisim Darbesi ve Denize Atma", "en": "• Blunt Force Trauma and Disposal in Sea" },
+    { "id": "close_range_gunshot", "tr": "• Susturuculu Tabanca ile Yakın Mesafe Atış", "en": "• Close-Range Shot with Silenced Pistol" },
+    { "id": "poison_whisky", "tr": "• Kaçak Viskiye Zehir Karıştırma", "en": "• Poison Mixed into Contraband Whisky" }
+  ],
+  "solution": {
+    "killer_id": "vance",
+    "weapon_method": "cargo_crane_sabotage",
+    "required_evidence": ["E201", "E204", "E207"],
+    "required_deduction": "D203"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "case03",
+  "title": "Kör Nokta",
+  "subtitle": "Kraliyet Operası Suikastı",
+  "location": "Greywater Kraliyet Operası",
+  "starting_room": "opera_foyer",
+  "starting_position": { "x": 160, "y": 245 },
+  "timeline_bounds": { "start": "20:00", "end": "22:00" },
+  "rooms": {
+    "opera_foyer": "res://cases/case03/rooms/opera_foyer.tscn",
+    "opera_auditorium": "res://cases/case03/rooms/opera_auditorium.tscn",
+    "royal_box": "res://cases/case03/rooms/royal_box.tscn",
+    "backstage": "res://cases/case03/rooms/backstage.tscn",
+    "prop_room": "res://cases/case03/rooms/prop_room.tscn",
+    "light_bridge": "res://cases/case03/rooms/light_bridge.tscn",
+    "opera_roof": "res://cases/case03/rooms/opera_roof.tscn"
+  },
+  "methods": [
+    { "id": "light_bridge_sniper", "tr": "• Işık Köprüsünden Kör Nokta Atışı", "en": "• Blind Spot Shot from Light Bridge" },
+    { "id": "balcony_sniper", "tr": "• Karşı Balkondan Keskin Nişancı Atışı", "en": "• Sniper Shot from Opposite Balcony" },
+    { "id": "backstage_pistol", "tr": "• Sahne Arkasından Susturuculu Tabanca", "en": "• Silenced Pistol from Backstage" },
+    { "id": "poison_prop", "tr": "• Sahne Kadehlerine Zehir Karıştırma", "en": "• Poison in Prop Goblet" }
+  ],
+  "solution": {
+    "killer_id": "unknown_sniper",
+    "weapon_method": "light_bridge_sniper",
+    "required_evidence": ["E302", "E306", "E308"],
+    "required_deduction": "D306"
+  }
+}

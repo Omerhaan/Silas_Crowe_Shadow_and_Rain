@@ -1,0 +1,124 @@
+[gd_scene load_steps=8 format=3 uid="uid://bdockoffice01"]
+
+[ext_resource type="Script" path="res://scripts/core/room_background.gd" id="1_bg"]
+[ext_resource type="PackedScene" uid="uid://bdoor01" path="res://scenes/entities/door.tscn" id="2_door"]
+[ext_resource type="PackedScene" uid="uid://d2m0tcvj7ds4k" path="res://scenes/entities/interactable.tscn" id="3_interact"]
+[ext_resource type="PackedScene" uid="uid://bnpcentity01" path="res://scenes/entities/npc.tscn" id="4_npc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_floor"]
+size = Vector2(480, 26)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wall"]
+size = Vector2(16, 270)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_door"]
+size = Vector2(36, 110)
+
+[node name="DockOffice" type="Node2D"]
+
+[node name="RoomBackground" type="Node2D" parent="."]
+script = ExtResource("1_bg")
+room_theme = "dock_office"
+
+[node name="Walls" type="StaticBody2D" parent="."]
+
+[node name="FloorShape" type="CollisionShape2D" parent="Walls"]
+position = Vector2(240, 260)
+shape = SubResource("RectangleShape2D_floor")
+
+[node name="LeftWall" type="CollisionShape2D" parent="Walls"]
+position = Vector2(8, 135)
+shape = SubResource("RectangleShape2D_wall")
+
+[node name="RightWall" type="CollisionShape2D" parent="Walls"]
+position = Vector2(472, 135)
+shape = SubResource("RectangleShape2D_wall")
+
+[node name="Spawn_default" type="Marker2D" parent="."]
+position = Vector2(415, 245)
+
+[node name="Spawn_from_pier" type="Marker2D" parent="."]
+position = Vector2(415, 245)
+
+[node name="Door_To_Pier" parent="." instance=ExtResource("2_door")]
+position = Vector2(460, 245)
+target_room_id = "dock_pier"
+target_spawn = "from_office"
+door_name = "Sisli Rıhtım"
+
+[node name="PierDoorCollision" type="CollisionShape2D" parent="Door_To_Pier"]
+position = Vector2(0, -55)
+shape = SubResource("RectangleShape2D_door")
+
+[node name="NPC_Morris" parent="." instance=ExtResource("4_npc")]
+position = Vector2(175, 245)
+character_id = "npc_morris"
+display_name = "Arthur Morris"
+character_name = "Arthur Morris"
+
+[node name="Evidence_E206" parent="." instance=ExtResource("3_interact")]
+position = Vector2(195, 95)
+object_id = "tide_chart"
+display_name = "Gelgit Tablosu"
+evidence_id = "E206"
+prop_type = "portrait"
+is_hotspot = true
+hotspot_size = Vector2(40, 30)
+
+[node name="Evidence_E209" parent="." instance=ExtResource("3_interact")]
+position = Vector2(285, 175)
+object_id = "desk_pass_permit"
+display_name = "Mühürlü Gece İzin Belgesi"
+evidence_id = "E209"
+prop_type = "drawer"
+is_hotspot = true
+hotspot_size = Vector2(22, 16)
+
+[node name="Evidence_E210" parent="." instance=ExtResource("3_interact")]
+position = Vector2(75, 170)
+object_id = "bribe_ledger"
+display_name = "Gümrük Rüşvet Çetelesi"
+evidence_id = "E210"
+prop_type = "drawer"
+is_hotspot = true
+hotspot_size = Vector2(24, 28)
+
+[node name="Prop_Safe" parent="." instance=ExtResource("3_interact")]
+position = Vector2(75, 190)
+object_id = "office_safe"
+display_name = "Morris'in Dosya Dolabı & Kasası"
+custom_inner_voice = "\"Gümrük ofisinin ağır çelik dosya dolabı. Üzerindeki çekmeceler kilitli; gizli konşimentolar ve nakit para burada olmalı.\""
+is_hotspot = true
+hotspot_size = Vector2(26, 30)
+
+[node name="Prop_SeaMap" parent="." instance=ExtResource("3_interact")]
+position = Vector2(285, 80)
+object_id = "sea_map"
+display_name = "Greywater Seyir Haritası"
+custom_inner_voice = "\"İrlanda Denizi ve Greywater kıyı şeridini gösteren harita. Sığlık kayalıklar kırmızı kalemle işaretlenmiş.\""
+is_hotspot = true
+hotspot_size = Vector2(36, 26)
+
+[node name="Prop_Typewriter" parent="." instance=ExtResource("3_interact")]
+position = Vector2(235, 160)
+object_id = "typewriter"
+display_name = "Underwood Daktilo"
+custom_inner_voice = "\"Daktilo silindirine takılı kağıtta yarım kalmış bir sahte kargo bildirimi var. Şerit mürekkebi henüz taze.\""
+is_hotspot = true
+hotspot_size = Vector2(24, 18)
+
+[node name="Prop_CoatRack" parent="." instance=ExtResource("3_interact")]
+position = Vector2(125, 160)
+object_id = "coat_rack"
+display_name = "Morris'in Islak Pardösüsü"
+custom_inner_voice = "\"Askılıkta asılı su damlatan koyu yeşil pardösü. Ceplerinde kömür isi ve gümrük kurşun mühürleri var.\""
+is_hotspot = true
+hotspot_size = Vector2(20, 42)
+
+[node name="Prop_OfficeWindow" parent="." instance=ExtResource("3_interact")]
+position = Vector2(380, 130)
+object_id = "office_window"
+display_name = "Yağmurlu Rıhtım Penceresi"
+custom_inner_voice = "\"Pencereden dışarı bakınca 4 No'lu rıhtımın dev vinçleri ve fırtınada çalkalanan karanlık deniz görünüyor.\""
+is_hotspot = true
+hotspot_size = Vector2(30, 40)

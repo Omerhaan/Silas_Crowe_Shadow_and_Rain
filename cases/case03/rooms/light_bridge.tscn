@@ -1,0 +1,110 @@
+[gd_scene load_steps=7 format=3 uid="uid://cyxwconp47rom"]
+
+[ext_resource type="Script" path="res://scripts/core/room_background.gd" id="1_bg"]
+[ext_resource type="PackedScene" uid="uid://bdoor01" path="res://scenes/entities/door.tscn" id="2_door"]
+[ext_resource type="PackedScene" uid="uid://d2m0tcvj7ds4k" path="res://scenes/entities/interactable.tscn" id="3_interact"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_floor"]
+size = Vector2(480, 26)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wall"]
+size = Vector2(16, 270)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_door"]
+size = Vector2(36, 110)
+
+[node name="LightBridge" type="Node2D"]
+
+[node name="RoomBackground" type="Node2D" parent="."]
+script = ExtResource("1_bg")
+room_theme = "light_bridge"
+
+[node name="Walls" type="StaticBody2D" parent="."]
+
+[node name="FloorShape" type="CollisionShape2D" parent="Walls"]
+position = Vector2(240, 260)
+shape = SubResource("RectangleShape2D_floor")
+
+[node name="LeftWall" type="CollisionShape2D" parent="Walls"]
+position = Vector2(8, 135)
+shape = SubResource("RectangleShape2D_wall")
+
+[node name="RightWall" type="CollisionShape2D" parent="Walls"]
+position = Vector2(472, 135)
+shape = SubResource("RectangleShape2D_wall")
+
+[node name="Spawn_default" type="Marker2D" parent="."]
+position = Vector2(51, 188)
+
+[node name="Spawn_from_backstage" type="Marker2D" parent="."]
+position = Vector2(413, 188)
+
+[node name="Spawn_from_roof" type="Marker2D" parent="."]
+position = Vector2(187, 188)
+
+[node name="Door_To_Backstage" parent="." instance=ExtResource("2_door")]
+position = Vector2(445, 219)
+target_room_id = "backstage"
+target_spawn = "from_light_bridge"
+door_name = "Kulise İniş Merdiveni"
+
+[node name="BackstageDoorCollision" type="CollisionShape2D" parent="Door_To_Backstage"]
+position = Vector2(1, -36)
+shape = SubResource("RectangleShape2D_door")
+
+[node name="Door_To_Roof" parent="." instance=ExtResource("2_door")]
+position = Vector2(201, 122)
+target_room_id = "opera_roof"
+target_spawn = "from_light_bridge"
+door_name = "Çatı Kapağı"
+is_locked = true
+locked_message = "Çatı kapağı içeriden demir sürgüyle sıkışmış ve paslanmış. Kanırtıp açmak için çelik bir sahne manivelası gerekiyor."
+required_key_id = "stage_lever"
+
+[node name="RoofDoorCollision" type="CollisionShape2D" parent="Door_To_Roof"]
+position = Vector2(-1, -58)
+shape = SubResource("RectangleShape2D_door")
+
+[node name="Evidence_E302" parent="." instance=ExtResource("3_interact")]
+position = Vector2(159, 182)
+object_id = "brass_303_casing"
+display_name = "Sıcak .303 Kovan"
+evidence_id = "E302"
+prop_type = "clock"
+is_hotspot = true
+hotspot_size = Vector2(22, 16)
+
+[node name="Evidence_E304" parent="." instance=ExtResource("3_interact")]
+position = Vector2(371, 131)
+object_id = "padlock_unforced"
+display_name = "Ağır Asma Kilit"
+evidence_id = "E304"
+prop_type = "drawer"
+is_hotspot = true
+hotspot_size = Vector2(24, 28)
+
+[node name="Evidence_E307" parent="." instance=ExtResource("3_interact")]
+position = Vector2(244, 135)
+object_id = "smoked_spot_gel"
+display_name = "Karartılmış Spot Jeli"
+evidence_id = "E307"
+prop_type = "portrait"
+is_hotspot = true
+hotspot_size = Vector2(30, 30)
+
+[node name="Prop_Spotlights" parent="." instance=ExtResource("3_interact")]
+position = Vector2(280, 128)
+rotation = -2.43526
+scale = Vector2(2.9207, 1)
+object_id = "bridge_spotlights"
+display_name = "Tiyatro Projektörleri"
+is_hotspot = true
+hotspot_size = Vector2(50, 40)
+
+[node name="Prop_BridgeRailing" parent="." instance=ExtResource("3_interact")]
+position = Vector2(108, 159)
+object_id = "bridge_railing"
+display_name = "Kuzey İskele Korkulukları"
+prop_type = "chair"
+is_hotspot = true
+hotspot_size = Vector2(40, 30)

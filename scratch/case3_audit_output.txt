@@ -1,0 +1,139 @@
+============================================================
+ROOM: backstage.tscn
+============================================================
+  Backstage                    pos=NO_POS             obj=                   ev=       char=             door=: hotspot= sz=
+  RoomBackground               pos=NO_POS             obj=                   ev=       char=             door=: hotspot= sz=
+  Walls                        pos=NO_POS             obj=                   ev=       char=             door=: hotspot= sz=
+  FloorShape                   pos=Vector2(240, 260)  obj=                   ev=       char=             door=: hotspot= sz=
+  LeftWall                     pos=Vector2(8, 135)    obj=                   ev=       char=             door=: hotspot= sz=
+  RightWall                    pos=Vector2(472, 135)  obj=                   ev=       char=             door=: hotspot= sz=
+  Spawn_default                pos=Vector2(62, 245)   obj=                   ev=       char=             door=: hotspot= sz=
+  Spawn_from_auditorium        pos=Vector2(32, 245)   obj=                   ev=       char=             door=: hotspot= sz=
+  Spawn_from_prop_room         pos=Vector2(439, 243)  obj=                   ev=       char=             door=: hotspot= sz=
+  Spawn_from_light_bridge      pos=Vector2(193, 245)  obj=                   ev=       char=             door=: hotspot= sz=
+  Door_To_Auditorium           pos=Vector2(22, 246)   obj=                   ev=       char=             door=opera_foyer:from_backstage2 hotspot= sz=
+  AuditoriumDoorCollision      pos=Vector2(-1, -55)   obj=                   ev=       char=             door=: hotspot= sz=
+  Door_To_Prop_Room            pos=Vector2(461, 245)  obj=                   ev=       char=             door=prop_room:from_backstage hotspot= sz=
+  PropRoomDoorCollision        pos=Vector2(0, -55)    obj=                   ev=       char=             door=: hotspot= sz=
+  Door_To_Light_Bridge         pos=Vector2(191, 205)  obj=                   ev=       char=             door=light_bridge:from_backstage hotspot= sz=
+  LightBridgeDoorCollision     pos=Vector2(0, -55)    obj=                   ev=       char=             door=: hotspot= sz=
+  NPC_Finch                    pos=Vector2(136, 245)  obj=                   ev=       char=npc_finch    door=: hotspot= sz=
+  NPC_Elena                    pos=Vector2(339, 246)  obj=                   ev=       char=npc_elena    door=: hotspot= sz=
+  Evidence_E303                pos=Vector2(94, 163)   obj=light_cue_book     ev=E303   char=             door=: hotspot=true sz=Vector2(30, 24)
+  Prop_LightConsole            pos=Vector2(53, 151)   obj=light_range_board  ev=       char=             door=: hotspot=true sz=Vector2(46, 36)
+  Prop_DressingMirror          pos=Vector2(385, 170)  obj=dressing_mirror    ev=       char=             door=: hotspot=true sz=Vector2(40, 50)
+============================================================
+ROOM: light_bridge.tscn
+============================================================
+  LightBridge                  pos=NO_POS             obj=                   ev=       char=             door=: hotspot= sz=
+  RoomBackground               pos=NO_POS             obj=                   ev=       char=             door=: hotspot= sz=
+  Walls                        pos=NO_POS             obj=                   ev=       char=             door=: hotspot= sz=
+  FloorShape                   pos=Vector2(240, 260)  obj=                   ev=       char=             door=: hotspot= sz=
+  LeftWall                     pos=Vector2(8, 135)    obj=                   ev=       char=             door=: hotspot= sz=
+  RightWall                    pos=Vector2(472, 135)  obj=                   ev=       char=             door=: hotspot= sz=
+  Spawn_default                pos=Vector2(51, 188)   obj=                   ev=       char=             door=: hotspot= sz=
+  Spawn_from_backstage         pos=Vector2(413, 188)  obj=                   ev=       char=             door=: hotspot= sz=
+  Spawn_from_roof              pos=Vector2(187, 188)  obj=                   ev=       char=             door=: hotspot= sz=
+  Door_To_Backstage            pos=Vector2(445, 219)  obj=                   ev=       char=             door=backstage:from_light_bridge hotspot= sz=
+  BackstageDoorCollision       pos=Vector2(1, -36)    obj=                   ev=       char=             door=: hotspot= sz=
+  Door_To_Roof                 pos=Vector2(201, 122)  obj=                   ev=       char=             door=opera_roof:from_light_bridge hotspot= sz=
+  RoofDoorCollision            pos=Vector2(-1, -58)   obj=                   ev=       char=             door=: hotspot= sz=
+  Evidence_E302                pos=Vector2(159, 182)  obj=brass_303_casing   ev=E302   char=             door=: hotspot=true sz=Vector2(22, 16)
+  Evidence_E304                pos=Vector2(371, 131)  obj=padlock_unforced   ev=E304   char=             door=: hotspot=true sz=Vector2(24, 28)
+  Evidence_E307                pos=Vector2(244, 135)  obj=smoked_spot_gel    ev=E307   char=             door=: hotspot=true sz=Vector2(30, 30)
+  Prop_Spotlights              pos=Vector2(280, 128)  obj=bridge_spotlights  ev=       char=             door=: hotspot=true sz=Vector2(50, 40)
+  Prop_BridgeRailing           pos=Vector2(108, 159)  obj=bridge_railing     ev=       char=             door=: hotspot=true sz=Vector2(40, 30)
+============================================================
+ROOM: opera_auditorium.tscn
+============================================================
+  OperaAuditorium              pos=NO_POS             obj=                   ev=       char=             door=: hotspot= sz=
+  RoomBackground               pos=NO_POS             obj=                   ev=       char=             door=: hotspot= sz=
+  Walls                        pos=NO_POS             obj=                   ev=       char=             door=: hotspot= sz=
+  FloorShape                   pos=Vector2(240, 269)  obj=                   ev=       char=             door=: hotspot= sz=
+  LeftWall                     pos=Vector2(8, 135)    obj=                   ev=       char=             door=: hotspot= sz=
+  RightWall                    pos=Vector2(78, 132)   obj=                   ev=       char=             door=: hotspot= sz=
+  Spawn_default                pos=Vector2(50, 264)   obj=                   ev=       char=             door=: hotspot= sz=
+  Spawn_from_foyer             pos=Vector2(50, 264)   obj=                   ev=       char=             door=: hotspot= sz=
+  Door_To_Foyer                pos=Vector2(25, 264)   obj=                   ev=       char=             door=opera_foyer:from_auditorium hotspot= sz=
+  FoyerDoorCollision           pos=Vector2(0, -55)    obj=                   ev=       char=             door=: hotspot= sz=
+  Prop_OrchestraPit            pos=Vector2(310, 219)  obj=orchestra_pit      ev=       char=             door=: hotspot=true sz=Vector2(60, 30)
+  Prop_StageCurtain            pos=Vector2(370, 158)  obj=stage_curtain      ev=       char=             door=: hotspot=true sz=Vector2(50, 90)
+  Prop_AuditoriumSeats         pos=Vector2(70, 153)   obj=auditorium_seats   ev=       char=             door=: hotspot=true sz=Vector2(50, 40)
+============================================================
+ROOM: opera_foyer.tscn
+============================================================
+  OperaFoyer                   pos=NO_POS             obj=                   ev=       char=             door=: hotspot= sz=
+  RoomBackground               pos=NO_POS             obj=                   ev=       char=             door=: hotspot= sz=
+  Walls                        pos=NO_POS             obj=                   ev=       char=             door=: hotspot= sz=
+  FloorShape                   pos=Vector2(240, 260)  obj=                   ev=       char=             door=: hotspot= sz=
+  LeftWall                     pos=Vector2(8, 135)    obj=                   ev=       char=             door=: hotspot= sz=
+  RightWall                    pos=Vector2(472, 135)  obj=                   ev=       char=             door=: hotspot= sz=
+  Spawn_default                pos=Vector2(72, 245)   obj=                   ev=       char=             door=: hotspot= sz=
+  Spawn_from_auditorium        pos=Vector2(400, 245)  obj=                   ev=       char=             door=: hotspot= sz=
+  Door_To_Auditorium           pos=Vector2(450, 245)  obj=                   ev=       char=             door=opera_auditorium:from_foyer hotspot= sz=
+  AuditoriumDoorCollision      pos=Vector2(0, -55)    obj=                   ev=       char=             door=: hotspot= sz=
+  NPC_Henderson                pos=Vector2(168, 245)  obj=                   ev=       char=npc_henderson door=: hotspot= sz=
+  Prop_TicketBooth             pos=Vector2(67, 173)   obj=ticket_booth       ev=       char=             door=: hotspot=true sz=Vector2(44, 40)
+  Prop_PosterBoard             pos=Vector2(218, 141)  obj=opera_poster       ev=       char=             door=: hotspot=true sz=Vector2(36, 48)
+  Prop_Chandelier              pos=Vector2(240, 64)   obj=crystal_chandelier ev=       char=             door=: hotspot=true sz=Vector2(50, 40)
+  Spawn_from_royal_box         pos=Vector2(355, 245)  obj=                   ev=       char=             door=: hotspot= sz=
+  Door_To_Royal_Box            pos=Vector2(368, 233)  obj=                   ev=       char=             door=royal_box:from_foyer hotspot= sz=
+  RoyalBoxDoorCollision        pos=Vector2(0, -56)    obj=                   ev=       char=             door=: hotspot= sz=
+  Spawn_from_backstage2        pos=Vector2(278, 245)  obj=                   ev=       char=             door=: hotspot= sz=
+  Door_To_Backstage2           pos=Vector2(289, 210)  obj=                   ev=       char=             door=backstage:from_foyer hotspot= sz=
+  BackstageDoorCollision       pos=Vector2(0, -55)    obj=                   ev=       char=             door=: hotspot= sz=
+============================================================
+ROOM: opera_roof.tscn
+============================================================
+  OperaRoof                    pos=NO_POS             obj=                   ev=       char=             door=: hotspot= sz=
+  RoomBackground               pos=NO_POS             obj=                   ev=       char=             door=: hotspot= sz=
+  Walls                        pos=NO_POS             obj=                   ev=       char=             door=: hotspot= sz=
+  FloorShape                   pos=Vector2(240, 233.5) obj=                   ev=       char=             door=: hotspot= sz=
+  LeftWall                     pos=Vector2(256, 135)  obj=                   ev=       char=             door=: hotspot= sz=
+  RightWall                    pos=Vector2(472, 135)  obj=                   ev=       char=             door=: hotspot= sz=
+  Spawn_default                pos=Vector2(444, 172)  obj=                   ev=       char=             door=: hotspot= sz=
+  Spawn_from_light_bridge      pos=Vector2(446, 172)  obj=                   ev=       char=             door=: hotspot= sz=
+  Door_To_Light_Bridge         pos=Vector2(454, 173)  obj=                   ev=       char=             door=light_bridge:from_roof hotspot= sz=
+  LightBridgeDoorCollision     pos=Vector2(0, -55)    obj=                   ev=       char=             door=: hotspot= sz=
+  Evidence_E301                pos=Vector2(383, 178)  obj=k4_sniper_rifle    ev=E301   char=             door=: hotspot=true sz=Vector2(36, 24)
+  Evidence_E308                pos=Vector2(285, 173)  obj=typed_revenge_note ev=E308   char=             door=: hotspot=true sz=Vector2(24, 20)
+  Evidence_E310                pos=Vector2(322, 174)  obj=wet_footprints_glove ev=E310   char=             door=: hotspot=true sz=Vector2(30, 24)
+  Prop_Gargoyle                pos=Vector2(274, 121)  obj=roof_gargoyle      ev=       char=             door=: hotspot=true sz=Vector2(40, 50)
+  Prop_FireEscape              pos=Vector2(423, 188)  obj=roof_fire_escape   ev=       char=             door=: hotspot=true sz=Vector2(40, 50)
+  Prop_RoofParapet             pos=Vector2(128, 90)   obj=roof_parapet       ev=       char=             door=: hotspot=true sz=Vector2(50, 40)
+============================================================
+ROOM: prop_room.tscn
+============================================================
+  PropRoom                     pos=NO_POS             obj=                   ev=       char=             door=: hotspot= sz=
+  RoomBackground               pos=NO_POS             obj=                   ev=       char=             door=: hotspot= sz=
+  Walls                        pos=NO_POS             obj=                   ev=       char=             door=: hotspot= sz=
+  FloorShape                   pos=Vector2(240, 260)  obj=                   ev=       char=             door=: hotspot= sz=
+  LeftWall                     pos=Vector2(8, 135)    obj=                   ev=       char=             door=: hotspot= sz=
+  RightWall                    pos=Vector2(472, 135)  obj=                   ev=       char=             door=: hotspot= sz=
+  Spawn_default                pos=Vector2(400, 245)  obj=                   ev=       char=             door=: hotspot= sz=
+  Spawn_from_backstage         pos=Vector2(60, 245)   obj=                   ev=       char=             door=: hotspot= sz=
+  Door_To_Backstage            pos=Vector2(20, 245)   obj=                   ev=       char=             door=backstage:from_prop_room hotspot= sz=
+  BackstageDoorCollision       pos=Vector2(0, -55)    obj=                   ev=       char=             door=: hotspot= sz=
+  NPC_Patch                    pos=Vector2(180, 245)  obj=                   ev=       char=npc_patch    door=: hotspot= sz=
+  Evidence_E305                pos=Vector2(313, 208)  obj=wax_mold_key       ev=E305   char=             door=: hotspot=true sz=Vector2(28, 20)
+  Prop_TheatricalCannon        pos=Vector2(258, 193)  obj=theatrical_cannon  ev=       char=             door=: hotspot=true sz=Vector2(50, 40)
+  Prop_ArmorRacks              pos=Vector2(84, 197)   obj=armor_racks        ev=       char=             door=: hotspot=true sz=Vector2(40, 60)
+  Prop_Workbench               pos=Vector2(423, 190)  obj=prop_workbench     ev=       char=             door=: hotspot=true sz=Vector2(50, 30)
+============================================================
+ROOM: royal_box.tscn
+============================================================
+  RoyalBox                     pos=NO_POS             obj=                   ev=       char=             door=: hotspot= sz=
+  RoomBackground               pos=NO_POS             obj=                   ev=       char=             door=: hotspot= sz=
+  Walls                        pos=NO_POS             obj=                   ev=       char=             door=: hotspot= sz=
+  FloorShape                   pos=Vector2(240, 260)  obj=                   ev=       char=             door=: hotspot= sz=
+  LeftWall                     pos=Vector2(25, 135)   obj=                   ev=       char=             door=: hotspot= sz=
+  RightWall                    pos=Vector2(347, 135)  obj=                   ev=       char=             door=: hotspot= sz=
+  Spawn_default                pos=Vector2(60, 245)   obj=                   ev=       char=             door=: hotspot= sz=
+  Spawn_from_auditorium        pos=Vector2(60, 245)   obj=                   ev=       char=             door=: hotspot= sz=
+  Door_To_Auditorium           pos=Vector2(30, 245)   obj=                   ev=       char=             door=opera_foyer:from_royal_box hotspot= sz=
+  AuditoriumDoorCollision      pos=Vector2(0, -55)    obj=                   ev=       char=             door=: hotspot= sz=
+  NPC_Sterling                 pos=Vector2(274, 249)  obj=                   ev=       char=npc_sterling door=: hotspot= sz=
+  Evidence_E306                pos=Vector2(317, 223)  obj=marked_score       ev=E306   char=             door=: hotspot=true sz=Vector2(30, 24)
+  Evidence_E309                pos=Vector2(170, 225)  obj=reeve_pocket_watch ev=E309   char=             door=: hotspot=true sz=Vector2(24, 24)
+  Prop_ReeveCorpse             pos=Vector2(130, 196)  obj=reeve_corpse       ev=       char=             door=: hotspot=true sz=Vector2(40, 46)
+  Prop_ChampagneTable          pos=Vector2(203, 196)  obj=champagne_table    ev=       char=             door=: hotspot=true sz=Vector2(38, 30)

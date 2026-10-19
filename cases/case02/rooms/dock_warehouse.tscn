@@ -1,0 +1,140 @@
+[gd_scene load_steps=9 format=3 uid="uid://bdockwarehouse01"]
+
+[ext_resource type="Script" path="res://cases/case02/rooms/dock_warehouse.gd" id="1_dw"]
+[ext_resource type="Script" path="res://scripts/core/room_background.gd" id="1_bg"]
+[ext_resource type="PackedScene" uid="uid://bdoor01" path="res://scenes/entities/door.tscn" id="2_door"]
+[ext_resource type="PackedScene" uid="uid://d2m0tcvj7ds4k" path="res://scenes/entities/interactable.tscn" id="3_interact"]
+[ext_resource type="PackedScene" uid="uid://bnpcentity01" path="res://scenes/entities/npc.tscn" id="4_npc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_floor"]
+size = Vector2(480, 26)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wall"]
+size = Vector2(16, 270)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_door"]
+size = Vector2(36, 110)
+
+[node name="DockWarehouse" type="Node2D"]
+script = ExtResource("1_dw")
+
+[node name="RoomBackground" type="Node2D" parent="."]
+script = ExtResource("1_bg")
+room_theme = "dock_warehouse"
+
+[node name="Walls" type="StaticBody2D" parent="."]
+
+[node name="FloorShape" type="CollisionShape2D" parent="Walls"]
+position = Vector2(240, 260)
+shape = SubResource("RectangleShape2D_floor")
+
+[node name="LeftWall" type="CollisionShape2D" parent="Walls"]
+position = Vector2(8, 135)
+shape = SubResource("RectangleShape2D_wall")
+
+[node name="RightWall" type="CollisionShape2D" parent="Walls"]
+position = Vector2(472, 135)
+shape = SubResource("RectangleShape2D_wall")
+
+[node name="Spawn_default" type="Marker2D" parent="."]
+position = Vector2(65, 245)
+
+[node name="Spawn_from_pier" type="Marker2D" parent="."]
+position = Vector2(65, 245)
+
+[node name="Spawn_from_saloon" type="Marker2D" parent="."]
+position = Vector2(340, 245)
+
+[node name="Door_To_Pier" parent="." instance=ExtResource("2_door")]
+position = Vector2(25, 245)
+target_room_id = "dock_pier"
+target_spawn = "from_warehouse"
+door_name = "Sisli Rıhtım"
+
+[node name="PierDoorCollision" type="CollisionShape2D" parent="Door_To_Pier"]
+position = Vector2(0, -55)
+shape = SubResource("RectangleShape2D_door")
+
+[node name="Door_To_Saloon" parent="." instance=ExtResource("2_door")]
+position = Vector2(395, 245)
+target_room_id = "dock_saloon"
+target_spawn = "from_warehouse"
+door_name = "Tuzlu Çapa Barı"
+is_locked = true
+required_key_id = "night_pass"
+locked_message = "Fedai Boris yolu kesiyor: 'Gümrükten mühürlü Gece İzin Belgesi getirmedikçe buradan geçemezsin!'"
+
+[node name="SaloonDoorCollision" type="CollisionShape2D" parent="Door_To_Saloon"]
+position = Vector2(0, -55)
+shape = SubResource("RectangleShape2D_door")
+
+[node name="Evidence_E201" parent="." instance=ExtResource("3_interact")]
+position = Vector2(236, 160)
+object_id = "crane_cable"
+display_name = "Kopmuş Vinç Halatı"
+evidence_id = "E201"
+prop_type = "clock"
+is_hotspot = true
+hotspot_size = Vector2(26, 40)
+
+[node name="Evidence_E205" parent="." instance=ExtResource("3_interact")]
+position = Vector2(115, 210)
+object_id = "radio_desk"
+display_name = "Telsiz Masası"
+evidence_id = "E205"
+prop_type = "drawer"
+is_hotspot = true
+hotspot_size = Vector2(28, 24)
+
+[node name="NPC_Brandt" parent="." instance=ExtResource("4_npc")]
+position = Vector2(150, 245)
+character_id = "npc_brandt"
+display_name = "Colin Brandt"
+character_name = "Colin Brandt"
+
+[node name="NPC_Boris" parent="." instance=ExtResource("4_npc")]
+position = Vector2(360, 245)
+character_id = "npc_boris"
+display_name = "Fedai Boris"
+character_name = "Fedai Boris"
+has_physical_collision = true
+
+[node name="Prop_Lantern" parent="." instance=ExtResource("3_interact")]
+position = Vector2(284, 115)
+object_id = "dock_lantern"
+display_name = "Fırtına Feneri"
+prop_type = "candlestick"
+is_hotspot = true
+hotspot_size = Vector2(18, 22)
+
+[node name="Prop_Forklift" parent="." instance=ExtResource("3_interact")]
+position = Vector2(35, 120)
+object_id = "warehouse_hoist"
+display_name = "Paslı Yük Ceraskalı"
+custom_inner_voice = "\"Ağır kargo kasalarını çekmek için kullanılan eski bir ceraskal. Dişlileri yağsız ve gıcırdıyor.\""
+is_hotspot = true
+hotspot_size = Vector2(22, 34)
+
+[node name="Prop_SmuggleCrates" parent="." instance=ExtResource("3_interact")]
+position = Vector2(75, 200)
+object_id = "smuggle_crates"
+display_name = "Kaçak Mühimmat Sandıkları"
+custom_inner_voice = "\"Kahve çekirdeği çuvallarının arkasına gizlenmiş mühürsüz askeri sandıklar. Üzerinde Lee-Enfield mühürleri var.\""
+is_hotspot = true
+hotspot_size = Vector2(40, 32)
+
+[node name="Prop_FuseBox" parent="." instance=ExtResource("3_interact")]
+position = Vector2(405, 160)
+object_id = "fuse_box"
+display_name = "Elektrik & Şalter Panosu"
+custom_inner_voice = "\"Vincin güç şalteri bu panodan indirilmiş. Emniyet sigortaları yerinden kasten sökülmüş.\""
+is_hotspot = true
+hotspot_size = Vector2(18, 24)
+
+[node name="Prop_GuardDesk" parent="." instance=ExtResource("3_interact")]
+position = Vector2(315, 225)
+object_id = "guard_desk"
+display_name = "Boris'in Nöbet Masası"
+custom_inner_voice = "\"Yarım kalmış bir iskambil destesi, boş bir rom şişesi ve masanın kenarına sıkıştırılmış pirinç muşta.\""
+is_hotspot = true
+hotspot_size = Vector2(26, 20)

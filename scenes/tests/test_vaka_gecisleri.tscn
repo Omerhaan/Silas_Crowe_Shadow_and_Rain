@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://btestvakagecisleri"]
+
+[ext_resource type="Script" path="res://scripts/tests/test_vaka_gecisleri.gd" id="1_test"]
+
+[node name="TestVakaGecisleri" type="Node"]
+script = ExtResource("1_test")

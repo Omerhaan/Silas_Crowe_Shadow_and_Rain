@@ -1,0 +1,101 @@
+{
+  "suspect_id": "margaret",
+  "name": "Margaret Doyle",
+  "topics": [
+    {
+      "id": "night_events",
+      "label": "Olay Gecesi",
+      "label_en": "Night of the Crime",
+      "response": "Yemek bittikten sonra saat 20:30 civarı mutfağa geçip bulaşıkları yıkadım. Sonra efendinin akşam çayını ve damlalarını hazırladım.",
+      "response_en": "After dinner ended around 20:30, I went to the kitchen and washed the dishes. Then I prepared the master's evening tea and drops.",
+      "statement_yield": "Margaret saat 20:30 dan sonra mutfakta bulaşık yıkadığını söylüyor.",
+      "statement_yield_en": "Margaret states she was washing dishes in the kitchen after 20:30."
+    },
+    {
+      "id": "harlow_relation",
+      "label": "Harlow ile İlişkisi",
+      "label_en": "Relationship with Harlow",
+      "response": "Otuz yıldır bu evin kâhyasıyım efendim. Merhum babasına da hizmet ettim. Edmund sert bir adamdı, ama evin direğiydi. Ona canım gibi bakardım.",
+      "response_en": "I've been the housekeeper of this estate for thirty years, sir. I served his late father before him. Edmund was a stern man, but the pillar of this household. I cared for him like family.",
+      "statement_yield": "Margaret 30 yıldır aileye hizmet ettiğini ve evin tüm düzenini bildiğini ifade ediyor.",
+      "statement_yield_en": "Margaret testifies she has served the family for 30 years and knows the entire manor's routine."
+    },
+    {
+      "id": "alibi",
+      "label": "Neredeydiniz?",
+      "label_en": "Your Whereabouts",
+      "response": "Tepsiyi saat 20:45 gibi çalışma odasına bıraktım. Doktor Hale de içerideydi. Sonra doğruca mutfağa inip çayımı yudumladım, mutfaktan hiç çıkmadım.",
+      "response_en": "I brought the tray to his study around 20:45. Dr. Hale was inside as well. Afterwards, I went straight down to the kitchen to sip my tea and never stepped foot out.",
+      "statement_yield": "Margaret 20:45 te tepsiyi bırakıp mutfağa döndüğünü ve oradan çıkmadığını söylüyor.",
+      "statement_yield_en": "Margaret states she dropped off the tray at 20:45 and remained in the kitchen afterwards."
+    },
+    {
+      "id": "who_called",
+      "label": "Beni Siz mi Çağırdınız?",
+      "label_en": "Did You Call Me?",
+      "response": "Kimse sizi aramadı efendim! Fırtına başladığında, saat 20:00 sularında telefon hattı koptu. Buradan kimsenin dışarıyı araması imkânsızdı.",
+      "response_en": "No one phoned you, sir! When the storm hit around 20:00, the telephone line snapped. It was utterly impossible for anyone here to dial outside.",
+      "statement_yield": "Margaret, malikanenin telefonunun saat 20:00 den beri kesik olduğunu ve kimsenin Silas ı aramadığını söylüyor.",
+      "statement_yield_en": "Margaret confirms the manor's telephone has been dead since 20:00 and no one could have phoned Silas."
+    },
+    {
+      "id": "keys",
+      "label": "Konak Anahtarları",
+      "label_en": "Manor Keys",
+      "required_evidence": "E14",
+      "alt_required_flag": "margaret_confronted_e14",
+      "locked_response": "Margaret ellerini önlüğüne silerek başını sallar: 'Efendi Harlow misafir odalarını kilitlememi sıkı sıkıya tembihledi dedektif bey. Güvenmeden konak anahtarlarını veremem.' (Margaret'a samimiyetinizi kanıtlayacak veya onu sarsacak bir şey gerekiyor.)",
+      "locked_response_en": "Margaret wipes her hands on her apron: 'Master Harlow strictly forbade me from opening the guest chambers, detective. I cannot hand over the manor key ring without cause.'",
+      "locked_emotion": "defensive",
+      "response": "(Margaret'ın gözleri dolar) Demek beni kovacaktı... 30 yıllık emeğimin karşılığı bu soğuk kâğıt parçası mıydı? Mösyö Harlow'un kesin talimatı vardı ama... madem dedektifsiniz, işte misafir odalarının yedek anahtarlığı. Pike'ın odasını bununla açabilirsiniz.",
+      "response_en": "(Tears well in Margaret's eyes) So he was going to dismiss me... Was this cold slip of paper the reward for thirty years of devotion? Master Harlow gave strict orders, but... seeing you are a detective, here is the spare key ring for the guest rooms. You may unlock Pike's room with this.",
+      "statement_yield": "Margaret, kovulma gerçeğini öğrenince konuk odalarının yedek anahtar bağını Silas'a teslim etti.",
+      "statement_yield_en": "Margaret handed over the spare key ring for the guest bedrooms to Silas upon learning of her dismissal.",
+      "item_yield": "key_ring",
+      "item_yield_name": "Konak Anahtarlığı",
+      "item_yield_name_en": "Manor Key Ring",
+      "set_flag": "margaret_gave_keys"
+    },
+    {
+      "id": "present_evidence",
+      "label": "Kanıt Göster",
+      "label_en": "Present Evidence",
+      "response": "Eğer evde bulduğunuz bir şey varsa lütfen gösterin dedektif bey. Elimden gelen her şeyi anlatırım.",
+      "response_en": "If you found anything around the estate, please show it, detective. I will tell you everything I can.",
+      "statement_yield": "",
+      "statement_yield_en": ""
+    }
+  ],
+  "evidence_reactions": {
+    "E05": {
+      "response": "Evet! Tepsiyi götürdüğümde Doktor Hale tam masanın önündeydi! Efendiye damlalarını uzatıyordu. Yalan söylemiyorum dedektif!",
+      "response_en": "Yes! When I delivered the tray, Dr. Hale was standing right in front of the desk! He was handing Master Harlow his drops. I am not lying, detective!",
+      "statement": "Margaret, Dr. Hale'in ilacı verirken masanın başında olduğunu doğruladı.",
+      "statement_en": "Margaret confirmed Dr. Hale was at the desk handing Harlow his medicine.",
+      "emotion": "nervous"
+    },
+    "E06": {
+      "response": "Evet! Tepsiyi götürdüğümde Doktor Hale tam masanın önündeydi! Efendiye damlalarını uzatıyordu. Yalan söylemiyorum dedektif!",
+      "response_en": "Yes! When I delivered the tray, Dr. Hale was standing right in front of the desk! He was handing Master Harlow his drops. I am not lying, detective!",
+      "statement": "Margaret, Dr. Hale'in ilacı verirken masanın başında olduğunu doğruladı.",
+      "statement_en": "Margaret confirmed Dr. Hale was at the desk handing Harlow his medicine.",
+      "emotion": "nervous"
+    },
+    "E14": {
+      "response": "(Margaret'ın gözleri dolar) Evet... beni kovacaktı. Haksız yere! 30 yılımı verdim bu eve ben... Ama ona asla kötülük yapmadım, tanrı şahidimdir!",
+      "response_en": "(Tears well in Margaret's eyes) Yes... he was going to dismiss me. Unjustly! I gave thirty years of my life to this house... But I would never do him harm, God is my witness!",
+      "statement": "Margaret kovulma bildirisini itiraf etti ama cinayetle ilgisi olmadığını söyledi.",
+      "statement_en": "Margaret confessed to the dismissal notice but insisted she had no part in the murder.",
+      "emotion": "nervous",
+      "set_flag": "margaret_confronted_e14",
+      "refresh_topics": true
+    },
+    "default": {
+      "response": "Bunun hakkında bir şey bilmiyorum dedektif.",
+      "response_en": "I don't know what to say about this, sir.",
+      "statement": "",
+      "statement_en": "",
+      "emotion": "normal"
+    }
+  }
+}

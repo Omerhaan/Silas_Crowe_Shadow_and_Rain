@@ -1,0 +1,51 @@
+{
+  "dialogue_id": "prologue_phone_call",
+  "caller_name": "???",
+  "opening_lines": [
+    { "speaker": "SILAS", "text": "Crowe.", "en": "Crowe." },
+    { "speaker": "???", "text": "Bay Crowe. Bu saatte rahatsız ettiğim için özür dilerim.", "en": "Mr. Crowe. My apologies for disturbing you at this hour." },
+    { "speaker": "SILAS", "text": "Kim arıyor?", "en": "Who is this?" },
+    { "speaker": "???", "text": "Önemli değil. Edmund Harlow öldü.", "en": "Doesn't matter. Edmund Harlow is dead." },
+    { "speaker": "INNER_VOICE", "text": "\"Harlow. Bu ismi bir yerde duydum. Nerede?\"", "en": "\"Harlow. I've heard that name somewhere. But where?\"" },
+    { "speaker": "SILAS", "text": "Harlow mu? Polise haber verin.", "en": "Harlow? Call the police." },
+    { "speaker": "???", "text": "Köprü kapanıyor. Sabaha kadar kimse gelemez. Sabah olduğunda herkes kendi hikâyesini uydurmuş olacak.", "en": "The bridge is washing out. No one can reach here till morning. By daylight, everyone will have concocted their own story." }
+  ],
+  "choices": [
+    {
+      "id": "choice_why_me",
+      "text": "[1] \"Neden ben?\"",
+      "en": "[1] \"Why me?\"",
+      "attitude": "curious",
+      "caller_reply": "Çünkü kapalı kapıların nasıl açıldığını bilen son kişisin. Kuzey'den beri.",
+      "caller_reply_en": "Because you are the last man who knows how locked doors open. Not since the North.",
+      "inner_voice": "\"Kuzey mi? Bu kelimeyi ağzına nasıl aldı?\"",
+      "inner_voice_en": "\"The North. How did that word cross their lips?\""
+    },
+    {
+      "id": "choice_find_other",
+      "text": "[2] \"Başka birini bulun.\"",
+      "en": "[2] \"Find someone else.\"",
+      "attitude": "reluctant",
+      "caller_reply": "Başka kimse yok, Crowe. Hiç olmadı.",
+      "caller_reply_en": "There is no one else, Crowe. There never was.",
+      "inner_voice": "\"Sesi... alıştığım bir yorgunluk taşıyor.\"",
+      "inner_voice_en": "\"That voice... it carries a fatigue I recognize all too well.\""
+    },
+    {
+      "id": "choice_tomorrow",
+      "text": "[3] \"Yarın konuşalım.\"",
+      "en": "[3] \"Let's talk tomorrow.\"",
+      "attitude": "avoidant",
+      "caller_reply": "Yarın çok geç olacak. Geç kaldığımız bir şey zaten var, hatırlıyor musun?",
+      "caller_reply_en": "Tomorrow will be too late. We're already late for something else, remember?",
+      "inner_voice": "\"Hatırlamıyorum. Ya da hatırlamak istemiyorum.\"",
+      "inner_voice_en": "\"I don't remember. Or perhaps I choose not to.\""
+    }
+  ],
+  "closing_lines": [
+    { "speaker": "???", "text": "Köprü kapanmadan gitmelisin. Saatin dolmadan.", "en": "You must go before the bridge washes out. Before your time runs out." },
+    { "speaker": "SILAS", "text": "Hangi saat?", "en": "What time?" },
+    { "speaker": "SYSTEM", "text": "[Hat kapanır. Ahizeden sadece ritmik bir tik tak sesi gelir. Silas cep saatine bakar: 03:12.]", "en": "[The line goes dead. Only a rhythmic ticking comes through the receiver. Silas glances at his pocket watch: 03:12.]" },
+    { "speaker": "INNER_VOICE", "text": "\"Saat durmuş... ama telefonun ucunda biri tik tak diyordu.\"", "en": "\"The watch is frozen... yet someone on the other end was whispering tick tock.\"" }
+  ]
+}

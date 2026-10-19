@@ -1,0 +1,177 @@
+[gd_scene load_steps=2 format=3 uid="uid://cinterrog01"]
+
+[ext_resource type="Script" path="res://scripts/ui/interrogation.gd" id="1_interrog"]
+
+[node name="Interrogation" type="Control"]
+process_mode = 3
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_interrog")
+
+[node name="Backdrop" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.02, 0.03, 0.05, 0.85)
+
+[node name="InterrogationPanel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -150.0
+offset_top = -85.0
+offset_right = 150.0
+offset_bottom = 85.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HeaderBox" type="VBoxContainer" parent="InterrogationPanel"]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 6.0
+offset_right = 230.0
+offset_bottom = 26.0
+
+[node name="NameLabel" type="Label" parent="InterrogationPanel/HeaderBox"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 8
+theme_override_colors/font_color = Color(0.95, 0.85, 0.6, 1)
+text = "ŞÜPHELİ ADI"
+
+[node name="RoleLabel" type="Label" parent="InterrogationPanel/HeaderBox"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 6
+theme_override_colors/font_color = Color(0.7, 0.75, 0.8, 1)
+text = "Rol / Tanım"
+
+[node name="PortraitBox" type="Control" parent="InterrogationPanel"]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 28.0
+offset_right = 58.0
+offset_bottom = 76.0
+
+[node name="PortraitRect" type="ColorRect" parent="InterrogationPanel/PortraitBox"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.12, 0.14, 0.18, 1)
+
+[node name="PortraitTexture" type="TextureRect" parent="InterrogationPanel/PortraitBox"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="DialogueScroll" type="ScrollContainer" parent="InterrogationPanel"]
+layout_mode = 0
+offset_left = 56.0
+offset_top = 28.0
+offset_right = 290.0
+offset_bottom = 80.0
+
+[node name="DialogueLabel" type="Label" parent="InterrogationPanel/DialogueScroll"]
+custom_minimum_size = Vector2(226, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 6
+theme_override_colors/font_color = Color(0.9, 0.92, 0.95, 1)
+text = "\"Sorularınızı bekliyorum dedektif.\""
+autowrap_mode = 2
+
+[node name="TopicsScroll" type="ScrollContainer" parent="InterrogationPanel"]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 84.0
+offset_right = 190.0
+offset_bottom = 162.0
+
+[node name="TopicsList" type="VBoxContainer" parent="InterrogationPanel/TopicsScroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ActionButtons" type="VBoxContainer" parent="InterrogationPanel"]
+layout_mode = 0
+offset_left = 196.0
+offset_top = 95.0
+offset_right = 290.0
+offset_bottom = 162.0
+
+[node name="PresentEvidenceBtn" type="Button" parent="InterrogationPanel/ActionButtons"]
+custom_minimum_size = Vector2(0, 26)
+layout_mode = 2
+theme_override_font_sizes/font_size = 6
+theme_override_colors/font_color = Color(0.9, 0.75, 0.4, 1)
+text = "Kanıt Sun (İtiraz)"
+
+[node name="ExitBtn" type="Button" parent="InterrogationPanel/ActionButtons"]
+custom_minimum_size = Vector2(0, 26)
+layout_mode = 2
+theme_override_font_sizes/font_size = 6
+text = "Sorgudan Ayrıl"
+
+[node name="EvidencePanel" type="Panel" parent="InterrogationPanel"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="EvTitle" type="Label" parent="InterrogationPanel/EvidencePanel"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 6.0
+offset_right = 200.0
+offset_bottom = 18.0
+theme_override_font_sizes/font_size = 7
+theme_override_colors/font_color = Color(0.95, 0.85, 0.5, 1)
+text = "Şüpheliye Sunulacak Kanıtı Seçin:"
+
+[node name="CloseEvidenceBtn" type="Button" parent="InterrogationPanel/EvidencePanel"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -32.0
+offset_top = 4.0
+offset_right = -6.0
+offset_bottom = 28.0
+grow_horizontal = 0
+theme_override_font_sizes/font_size = 7
+text = "X"
+
+[node name="Scroll" type="ScrollContainer" parent="InterrogationPanel/EvidencePanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 8.0
+offset_top = 26.0
+offset_right = -8.0
+offset_bottom = -8.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="EvidenceList" type="VBoxContainer" parent="InterrogationPanel/EvidencePanel/Scroll"]
+layout_mode = 2
+size_flags_horizontal = 3

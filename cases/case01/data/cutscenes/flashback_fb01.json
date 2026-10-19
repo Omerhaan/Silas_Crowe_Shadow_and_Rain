@@ -1,0 +1,50 @@
+{
+  "id": "FB01",
+  "title": "Kar",
+  "duration_seconds": 10.0,
+  "skippable": true,
+  "palette": {
+    "background": "#0b1016",
+    "snow": "#e8f0f8",
+    "fog": "#8ba4b4",
+    "highlight_accent": "#d9383a"
+  },
+  "sequence": [
+    {
+      "time": 0.0,
+      "text": "",
+      "action": "snowfall_dense",
+      "visual": "wind_and_snow",
+      "speaker": "SYSTEM"
+    },
+    {
+      "time": 2.5,
+      "text": "1944 Kışı... Kuzey.",
+      "action": "reveal_badge",
+      "visual": "red_medic_badge_in_snow",
+      "speaker": "INNER_VOICE"
+    },
+    {
+      "time": 5.0,
+      "text": "",
+      "action": "silhouette_hand",
+      "visual": "curled_fingers_reaching",
+      "note": "Ambiguous gesture: fingers slightly curled, could be pushing away or holding on",
+      "speaker": "SYSTEM"
+    },
+    {
+      "time": 7.5,
+      "text": "\"Geri Çekilinn!\"",
+      "action": "voice_echo",
+      "visual": "curled_fingers_reaching",
+      "speaker": "???"
+    },
+    {
+      "time": 9.0,
+      "text": "",
+      "action": "flash_explosion",
+      "visual": "white_out_fade_to_black",
+      "speaker": "SYSTEM"
+    }
+  ]
+}

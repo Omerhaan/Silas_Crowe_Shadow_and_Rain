@@ -1,0 +1,79 @@
+[
+  {
+    "speaker": "Silas Crowe",
+    "text": "Atış salondan yapılmadı. Kopyalanmış bir anahtarla ışık köprüsüne sızdın ve Spot A'nın sönüp Spot B'nin yandığı o tek saniyeyi bekledin.",
+    "en": "The shot wasn't fired from the hall. You slipped onto the light bridge with a copied key and waited for the exact second Spot A dimmed and Spot B flared.",
+    "portrait": "silas",
+    "image": "res://cases/case03/assets/cinematics/cinematic_case03_05_roof_standoff.jpg"
+  },
+  {
+    "speaker": "Silas Crowe",
+    "text": "112. ölçüdeki tiyatral top efekti patladığında tek bir .303 sıktın. Dalton Reeve neyin geldiğini bile anlamadı... Ama korktuğu anın o olduğunu biliyordu.",
+    "en": "When the measure 112 cannon roared, you fired a single .303 round. Dalton Reeve never saw it coming... yet he knew this was the exact moment he feared.",
+    "portrait": "silas",
+    "image": "res://cases/case03/assets/cinematics/cinematic_case03_05_roof_standoff.jpg"
+  },
+  {
+    "speaker": "Silas Crowe",
+    "text": "Tüfeği çatıya bıraktın... K-4 gravürlü tüfeği. Reeve'in 1944 kışında karlar altında bıraktığı silahı ve dipçiğine sardığın o daktilo notunu: 'Gözünü kırptın ve beni görmezden geldin.'",
+    "en": "You abandoned the rifle on the roof... the rifle engraved 'K-4'. The very weapon Reeve cast into the snow in 1944, along with your typed note: 'You blinked and ignored me.'",
+    "portrait": "silas",
+    "image": "res://cases/case03/assets/cinematics/cinematic_case03_05_roof_standoff.jpg"
+  },
+  {
+    "speaker": "Gölgedeki Tetikçi",
+    "text": "(Çatı parapetindeki sisli silüet yavaşça geriye döner. Yağmur damlaları şapkasının kenarından süzülmektedir.)",
+    "en": "(The shadowy silhouette on the roof parapet turns slowly. Rain pours from the brim of his fedora.)",
+    "portrait": "unknown_sniper",
+    "image": "res://cases/case03/assets/cinematics/cinematic_case03_05_roof_standoff.jpg"
+  },
+  {
+    "speaker": "Gölgedeki Tetikçi",
+    "text": "Her şeyi birleştirdin Crowe. Dedektiflik unvanını gerçekten hak ediyorsun. Ama çok geç kaldın.",
+    "en": "You pieced it all together, Crowe. You truly earned that detective badge. But you are far too late.",
+    "portrait": "unknown_sniper",
+    "image": "res://cases/case03/assets/cinematics/cinematic_case03_05_roof_standoff.jpg"
+  },
+  {
+    "speaker": "Silas Crowe",
+    "text": "Dur! Kaçamazsın! Aşağıda yüzlerce polis var... Kimsin sen?!",
+    "en": "Stop! You cannot escape! The streets below are crawling with police... Who are you?!",
+    "portrait": "silas",
+    "image": "res://cases/case03/assets/cinematics/cinematic_case03_05_roof_standoff.jpg"
+  },
+  {
+    "speaker": "Gölgedeki Tetikçi",
+    "text": "Beni çok iyi tanıyorsun Silas. 1944 kışında o dondurucu sığınakta, emri verip arkana bile bakmadan koştuğun o çocuğu hatırla. Gözünü kırptın.",
+    "en": "You know me well, Silas. Remember the dying boy in that frozen shelter in 1944, the one you abandoned without looking back. You blinked.",
+    "portrait": "unknown_sniper",
+    "image": "res://cases/case03/assets/cinematics/cinematic_case03_05_roof_standoff.jpg"
+  },
+  {
+    "speaker": "Silas Crowe",
+    "text": "Elias... Sen ölmüştün!",
+    "en": "Elias... You died out there!",
+    "portrait": "silas",
+    "image": "res://cases/case03/assets/cinematics/cinematic_case03_05_roof_standoff.jpg"
+  },
+  {
+    "speaker": "Gölgedeki Tetikçi",
+    "text": "Ölen bendim... Ama geriye dönen intikamın ta kendisi. Bu sadece bir başlangıçtı Crowe. Birliğin günahları henüz ödenmedi.",
+    "en": "The boy died... but what returned is vengeance incarnate. This was only the prologue, Crowe. The unit's sins are far from settled.",
+    "portrait": "unknown_sniper",
+    "image": "res://cases/case03/assets/cinematics/cinematic_case03_05_roof_standoff.jpg"
+  },
+  {
+    "speaker": "Silas Crowe",
+    "text": "(Tetikçi yangın merdiveninin korkuluklarından yağmurun ve sisin içine atlar. Silas çatı kenarına koşar ama sadece boş bir ıslak sokak kalmıştır.)",
+    "en": "(The sniper drops over the fire escape railing into the mist and downpour. Silas rushes to the parapet, but only an empty, glistening alley remains.)",
+    "portrait": "silas",
+    "image": "res://cases/case03/assets/cinematics/cinematic_case03_06_sniper_escapes.jpg"
+  },
+  {
+    "speaker": "Silas Crowe",
+    "text": "\"Reeve'in 20:52'de duran K-4 saati avucumda... Katil kaçtı ama sis artık aralandı. Karşımdaki gölgenin adını biliyorum: Elias Wren. Ve bu oyun burada bitmedi.\"",
+    "en": "\"Reeve's K-4 watch frozen at 20:52 lies in my palm... The killer escaped, yet the veil is lifted. I know the shadow's name: Elias Wren. And this hunt has only begun.\"",
+    "portrait": "silas",
+    "image": "res://cases/case03/assets/cinematics/cinematic_case03_07_three_watches.jpg"
+  }
+]

@@ -1,0 +1,53 @@
+{
+  "suspect_id": "henderson",
+  "name": "Archie Henderson",
+  "topics": [
+    {
+      "id": "night_events",
+      "label": "Olay Gecesi",
+      "response": "Fuaye girişinde biletleri kontrol ediyordum. Dışarıda öyle bir fırtına vardı ki son konuklar içeri girdiğinde sırılsıklamdı.",
+      "statement_yield": "Henderson, gece boyunca mermer fuayede konukları karşıladığını belirtti."
+    },
+    {
+      "id": "suspicious_stranger",
+      "label": "Şüpheli Yabancı",
+      "response": "Temsil başlamadan yarım saat önce, siyah pardösülü, şapkasını gözlerine kadar indirmiş uzun boylu bir silüet gördüm. Personel kapısına doğru hızla yürüdü. Sahne teknisyeni sanmıştım...",
+      "statement_yield": "Henderson, temsil öncesinde arka koridora doğru sızan şüpheli bir yabancı gördüğünü bildirdi."
+    },
+    {
+      "id": "fire_escape",
+      "label": "Çatı ve Yangın Çıkışı",
+      "response": "Operanın çatıya çıkan yangın merdiveni arka sokağın çıkmazına iner. Normalde asma kilitle kilitlidir ama az önce kontrol ettiğimde kilidin kesilmiş olduğunu gördüm.",
+      "statement_yield": "Henderson, arka yangın çıkışındaki asma kilidin kesildiğini açıkladı."
+    },
+    {
+      "id": "alibi",
+      "label": "Neredeydiniz?",
+      "response": "Kırk yıldır bu mermer fuayedeyim dedektif. Bu yaşlı dizlerle merdiven bile çıkamam.",
+      "statement_yield": "Henderson'ın gece boyu fuaye gişesinde olduğu kesin."
+    },
+    {
+      "id": "present_evidence",
+      "label": "Kanıt Göster",
+      "response": "Gözlerim eskisi kadar keskin değil dedektif, ama bir bakayım.",
+      "statement_yield": ""
+    }
+  ],
+  "evidence_reactions": {
+    "E310": {
+      "response": "(Gözlerini kısarak eldivene bakar) İşte bu eldiven! O pardösülü yabancının elinde tam olarak bu siyah deri eldivenler vardı! Yangın merdiveninden kaçarken düşürmüş olmalı!",
+      "statement": "Henderson, çatıdaki deri eldivenin şüpheli yabancıya ait olduğunu teşhis etti.",
+      "emotion": "shocked"
+    },
+    "E308": {
+      "response": "'Gözünü kırptın ve beni görmezden geldin'... Tüyler ürpertici bir soğukluk. Kırk yıllık memuriyetimde böyle bir nefret görmedim.",
+      "statement": "Henderson, intikam mektubunu okuyunca dehşete düştü.",
+      "emotion": "nervous"
+    },
+    "default": {
+      "response": "Bunu fuayede ya da gişede kimsede görmedim dedektif.",
+      "statement": "",
+      "emotion": "normal"
+    }
+  }
+}

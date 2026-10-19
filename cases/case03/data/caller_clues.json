@@ -1,0 +1,26 @@
+[
+  {
+    "id": "C301",
+    "baslik": "Operadaki Gizemli Arama",
+    "aciklama": "Ofis telefonu temsil başlamadan hemen önce çaldı: 'Operada son perde oynanıyor Crowe... Üçüncü adam locada can verecek.'",
+    "kilitli": false
+  },
+  {
+    "id": "C302",
+    "baslik": "Kusursuz Ses Perdesi",
+    "aciklama": "Arayan ses: 'Top patladığında dikkatle dinle... Kulakları sağır eden gürültünün ardında tek bir kurşun saklı.'",
+    "kilitli": false
+  },
+  {
+    "id": "C303",
+    "baslik": "Daktilonun İmzası",
+    "aciklama": "Dr. Hale, Kaptan Vance ve Dalton Reeve... Üç kurbana da aynı daktilodan çıkan, 'r' harfi aşağı kaymış soğuk intikam notları yollandı.",
+    "kilitli": true
+  },
+  {
+    "id": "C304",
+    "baslik": "Kuzeyin Terk Edilen Hayaleti",
+    "aciklama": "1944 kışında sığınakta arkada bırakılan keskin nişancı... Elias Wren. Bizi birer birer avlıyor.",
+    "kilitli": true
+  }
+]

@@ -1,0 +1,49 @@
+{
+  "id": "FB03",
+  "title": "Dürbün (Kuzey 1944)",
+  "duration_seconds": 16.0,
+  "skippable": true,
+  "palette": {
+    "background": "#080c10",
+    "snow": "#e8f0f8",
+    "fog": "#50687c",
+    "highlight_accent": "#d98238"
+  },
+  "sequence": [
+    {
+      "time": 0.0,
+      "text": "14 Aralık 1944... Kuzey Sırtı, 1200 Rakım. Kar fırtınası görüşü sıfıra indirmişti.",
+      "action": "snowfall_dense",
+      "visual": "wind_and_snow",
+      "speaker": "INNER_VOICE"
+    },
+    {
+      "time": 3.5,
+      "text": "Dalton Reeve tüfeğinin dürbününü karlı vadiye doğrultmuştu: 'Geri çekiliyoruz Crowe! Emri ben verdim, arkana bakma!'",
+      "action": "sniper_scope",
+      "visual": "scope_crosshair_snow",
+      "speaker": "INNER_VOICE"
+    },
+    {
+      "time": 7.0,
+      "text": "Dürbünün ucunda, sığınağın karlı çıkıntısında tek bir silüet kaldı. Elias Wren. K-2... Yaralı bacağıyla karların üzerine diz çökmüştü.",
+      "action": "scope_silhouette",
+      "visual": "distant_figure_in_snow",
+      "speaker": "INNER_VOICE"
+    },
+    {
+      "time": 10.5,
+      "text": "'Reeve! Onu orada bırakamayız!' diye bağırdım. Reeve tüfeğini omzuna astı: 'O öldü bile Crowe. Gözünü kırp ve yoluna devam et.'",
+      "action": "rifle_lowered",
+      "visual": "hand_pulling_bolt",
+      "speaker": "INNER_VOICE"
+    },
+    {
+      "time": 13.5,
+      "text": "Reeve'in tüfeğini karların arasına fırlatıp koştuğunu hatırlıyorum. O gece gözümüzü kırptık... Ve o hayalet sekiz yıl sonra bizi buldu.",
+      "action": "snow_blur",
+      "visual": "footsteps_lost_in_blizzard",
+      "speaker": "INNER_VOICE"
+    }
+  ]
+}

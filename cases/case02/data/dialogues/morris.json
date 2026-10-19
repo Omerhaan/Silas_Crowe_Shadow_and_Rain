@@ -1,0 +1,47 @@
+{
+  "suspect_id": "morris",
+  "name": "Arthur Morris",
+  "topics": [
+    {
+      "id": "night_events",
+      "label": "Olay Gecesi",
+      "response": "Gümrük binasında nöbetteydim. Gece yarısı fırtına bastırınca masamda evrak başında uyuyakalmışım.",
+      "statement_yield": "Morris, olay saatinde gümrük binasında uyuduğunu ve dışarı çıkmadığını söylüyor."
+    },
+    {
+      "id": "victim_relation",
+      "label": "Teddy Marsh ile İlişkisi",
+      "response": "Teddy bazen gümrük telgrafını kullanırdı. Kumar borçları yüzünden hep tedirgindi, ama kimseye zararı yoktu.",
+      "statement_yield": "Morris, Teddy Marsh ın kumar borçları olduğunu ve son günlerde çok tedirgin göründüğünü doğruladı."
+    },
+    {
+      "id": "pass_permit",
+      "label": "Gece Giriş İzni",
+      "response": "Arka ambara geçiş iznini sadece sendika ve liman idaresi verir. Çekmecemde mühürlü bir kopya olmalı.",
+      "statement_yield": "Morris, arka kapıdan geçiş sağlayan mühürlü izin belgesinin çekmecesinde olduğunu belirtti."
+    },
+    {
+      "id": "present_evidence",
+      "label": "Kanıt Göster",
+      "response": "Liman evraklarıyla ilgili bir şey mi buldunuz dedektif?",
+      "statement_yield": ""
+    }
+  ],
+  "evidence_reactions": {
+    "E210": {
+      "response": "(Mendiliyle alnını siler, titreyen elleriyle kapıyı kilitler) Tanrım... Lütfen sesinizi alçaltın Crowe! Evet, Corley ve Vance ten para aldım... İnkâr edemem! Ama yemin ederim cinayetle ilgim yok! Çekmecedeki izin belgesini alın, Boris sizi içeri bırakır... Yeter ki beni polise teslim etmeyin!",
+      "statement": "Arthur Morris rüşvet aldığını itiraf etti ve kapıyı tutan fedai Boris için gece izin belgesini verdi.",
+      "emotion": "nervous"
+    },
+    "E202": {
+      "response": "O sandıkların evraklarını Kaptan Vance getirdi. Ben sadece mührü bastım... İçinde ne olduğunu sormak bu limanda insanın canına mal olur!",
+      "statement": "Morris, askerî mühimmat sandıklarının Kaptan Vance tarafından limana sokulduğunu doğruladı.",
+      "emotion": "shocked"
+    },
+    "default": {
+      "response": "Bunun gümrük kayıtlarıyla bir bağlantısını göremiyorum dedektif.",
+      "statement": "",
+      "emotion": "normal"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "case01",
+  "title": "Karanlık Malikâne",
+  "subtitle": "Edmund Harlow Cinayeti",
+  "location": "Harlow Malikânesi",
+  "starting_room": "main_hall",
+  "starting_position": { "x": 160, "y": 120 },
+  "timeline_bounds": { "start": "20:00", "end": "23:00" },
+  "rooms": {
+    "main_hall": "res://cases/case01/rooms/main_hall.tscn",
+    "study": "res://cases/case01/rooms/study.tscn",
+    "library": "res://cases/case01/rooms/library.tscn",
+    "dining_room": "res://cases/case01/rooms/dining_room.tscn",
+    "kitchen": "res://cases/case01/rooms/kitchen.tscn",
+    "billiard_room": "res://cases/case01/rooms/billiard_room.tscn",
+    "upper_floor": "res://cases/case01/rooms/upper_floor.tscn",
+    "harlow_bedroom": "res://cases/case01/rooms/harlow_bedroom.tscn",
+    "julian_room": "res://cases/case01/rooms/julian_room.tscn",
+    "pike_room": "res://cases/case01/rooms/pike_room.tscn"
+  },
+  "methods": [
+    { "id": "digitalis_poison", "tr": "• Gecikmeli Zehirleme ", "en": "• Delayed Poisoning " },
+    { "id": "strangulation", "tr": "• Boğma / Nefessiz Bırakma", "en": "• Strangulation / Suffocation" },
+    { "id": "stabbing", "tr": "• Bıçaklama", "en": "• Stabbing" },
+    { "id": "gunshot", "tr": "• Ateşli Silah", "en": "• Firearm" }
+  ],
+  "solution": {
+    "killer_id": "hale",
+    "weapon_method": "digitalis_poison",
+    "required_evidence": ["E06", "E09", "E10"],
+    "required_deduction": "D7"
+  }
+}

@@ -1,0 +1,292 @@
+[gd_scene load_steps=3 format=3 uid="uid://ccaseselectmodal01"]
+
+[ext_resource type="Script" path="res://scripts/ui/case_select_modal.gd" id="1_casesel"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_card"]
+bg_color = Color(0.07, 0.09, 0.13, 0.95)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.32, 0.36, 0.42, 0.55)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[node name="CaseSelectModal" type="Control"]
+process_mode = 3
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_casesel")
+
+[node name="Backdrop" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.02, 0.03, 0.05, 0.9)
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -220.0
+offset_top = -122.0
+offset_right = 220.0
+offset_bottom = 122.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Title" type="Label" parent="Panel"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 8.0
+offset_bottom = 21.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.95, 0.85, 0.6, 1)
+theme_override_font_sizes/font_size = 9
+text = "VAKA DOSYALARI & BÖLÜM SEÇİMİ"
+horizontal_alignment = 1
+
+[node name="Subtitle" type="Label" parent="Panel"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 21.0
+offset_bottom = 32.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.65, 0.7, 0.75, 1)
+theme_override_font_sizes/font_size = 5
+text = "Soruşturmak istediğiniz vaka dosyasını seçin."
+horizontal_alignment = 1
+
+[node name="CloseBtn" type="Button" parent="Panel"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -26.0
+offset_top = 6.0
+offset_right = -10.0
+offset_bottom = 22.0
+grow_horizontal = 0
+theme_override_font_sizes/font_size = 8
+text = "✕"
+
+[node name="CardsContainer" type="HBoxContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -207.0
+offset_top = -80.0
+offset_right = 207.0
+offset_bottom = 85.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 8
+alignment = 1
+
+[node name="CardCase01" type="PanelContainer" parent="Panel/CardsContainer"]
+custom_minimum_size = Vector2(130, 165)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_card")
+
+[node name="Margin" type="MarginContainer" parent="Panel/CardsContainer/CardCase01"]
+layout_mode = 2
+theme_override_constants/margin_left = 6
+theme_override_constants/margin_top = 6
+theme_override_constants/margin_right = 6
+theme_override_constants/margin_bottom = 6
+
+[node name="VBox" type="VBoxContainer" parent="Panel/CardsContainer/CardCase01/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 3
+
+[node name="TitleLabel" type="Label" parent="Panel/CardsContainer/CardCase01/Margin/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.96, 0.9, 0.75, 1)
+theme_override_font_sizes/font_size = 7
+text = "Bölüm 1: Karanlık Malikâne"
+autowrap_mode = 2
+
+[node name="SubLabel" type="Label" parent="Panel/CardsContainer/CardCase01/Margin/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.7, 0.75, 0.8, 1)
+theme_override_font_sizes/font_size = 5
+text = "Edmund Harlow Cinayeti (1946)"
+autowrap_mode = 2
+
+[node name="DescLabel" type="Label" parent="Panel/CardsContainer/CardCase01/Margin/VBox"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.55, 0.6, 0.65, 1)
+theme_override_font_sizes/font_size = 5
+text = "Harlow malikânesindeki kilitli oda cinayeti ve zehirli kadeh sırrı."
+autowrap_mode = 2
+
+[node name="HSeparator" type="HSeparator" parent="Panel/CardsContainer/CardCase01/Margin/VBox"]
+layout_mode = 2
+
+[node name="StatusLabel" type="Label" parent="Panel/CardsContainer/CardCase01/Margin/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.65, 0.85, 0.7, 1)
+theme_override_font_sizes/font_size = 6
+text = "🔓 Açık"
+horizontal_alignment = 1
+
+[node name="PlayBtn" type="Button" parent="Panel/CardsContainer/CardCase01/Margin/VBox"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+theme_override_font_sizes/font_size = 6
+text = "Bölümü Başlat ▶"
+
+[node name="CardCase02" type="PanelContainer" parent="Panel/CardsContainer"]
+custom_minimum_size = Vector2(130, 165)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_card")
+
+[node name="Margin" type="MarginContainer" parent="Panel/CardsContainer/CardCase02"]
+layout_mode = 2
+theme_override_constants/margin_left = 6
+theme_override_constants/margin_top = 6
+theme_override_constants/margin_right = 6
+theme_override_constants/margin_bottom = 6
+
+[node name="VBox" type="VBoxContainer" parent="Panel/CardsContainer/CardCase02/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 3
+
+[node name="TitleLabel" type="Label" parent="Panel/CardsContainer/CardCase02/Margin/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.96, 0.9, 0.75, 1)
+theme_override_font_sizes/font_size = 7
+text = "Bölüm 2: Sisli Liman"
+autowrap_mode = 2
+
+[node name="SubLabel" type="Label" parent="Panel/CardsContainer/CardCase02/Margin/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.7, 0.75, 0.8, 1)
+theme_override_font_sizes/font_size = 5
+text = "Rıhtım Cinayeti ve Kayıp Sevkiyat (1946)"
+autowrap_mode = 2
+
+[node name="DescLabel" type="Label" parent="Panel/CardsContainer/CardCase02/Margin/VBox"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.55, 0.6, 0.65, 1)
+theme_override_font_sizes/font_size = 5
+text = "Greywater rıhtımındaki şüpheli vinç kazası ve çalınan askeri sandık."
+autowrap_mode = 2
+
+[node name="HSeparator" type="HSeparator" parent="Panel/CardsContainer/CardCase02/Margin/VBox"]
+layout_mode = 2
+
+[node name="StatusLabel" type="Label" parent="Panel/CardsContainer/CardCase02/Margin/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.75, 0.45, 0.45, 0.9)
+theme_override_font_sizes/font_size = 6
+text = "🔒 Kilitli"
+horizontal_alignment = 1
+
+[node name="PlayBtn" type="Button" parent="Panel/CardsContainer/CardCase02/Margin/VBox"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+theme_override_font_sizes/font_size = 6
+text = "Kilitli 🔒"
+
+[node name="CardCase03" type="PanelContainer" parent="Panel/CardsContainer"]
+custom_minimum_size = Vector2(130, 165)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_card")
+
+[node name="Margin" type="MarginContainer" parent="Panel/CardsContainer/CardCase03"]
+layout_mode = 2
+theme_override_constants/margin_left = 6
+theme_override_constants/margin_top = 6
+theme_override_constants/margin_right = 6
+theme_override_constants/margin_bottom = 6
+
+[node name="VBox" type="VBoxContainer" parent="Panel/CardsContainer/CardCase03/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 3
+
+[node name="TitleLabel" type="Label" parent="Panel/CardsContainer/CardCase03/Margin/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.96, 0.9, 0.75, 1)
+theme_override_font_sizes/font_size = 7
+text = "Bölüm 3: Kuzey Operasyonu"
+autowrap_mode = 2
+
+[node name="SubLabel" type="Label" parent="Panel/CardsContainer/CardCase03/Margin/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.7, 0.75, 0.8, 1)
+theme_override_font_sizes/font_size = 5
+text = "Bakanlık Arşivi ve Gizli Dosyalar (1947)"
+autowrap_mode = 2
+
+[node name="DescLabel" type="Label" parent="Panel/CardsContainer/CardCase03/Margin/VBox"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.55, 0.6, 0.65, 1)
+theme_override_font_sizes/font_size = 5
+text = "1941 Kuzey Birliği'nin gizli belgeleri ve bakanlıktaki casus ağı."
+autowrap_mode = 2
+
+[node name="HSeparator" type="HSeparator" parent="Panel/CardsContainer/CardCase03/Margin/VBox"]
+layout_mode = 2
+
+[node name="StatusLabel" type="Label" parent="Panel/CardsContainer/CardCase03/Margin/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.75, 0.45, 0.45, 0.9)
+theme_override_font_sizes/font_size = 6
+text = "🔒 Kilitli"
+horizontal_alignment = 1
+
+[node name="PlayBtn" type="Button" parent="Panel/CardsContainer/CardCase03/Margin/VBox"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+theme_override_font_sizes/font_size = 6
+text = "Kilitli 🔒"
+
+[node name="FooterBox" type="HBoxContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 16.0
+offset_top = -28.0
+offset_right = -16.0
+offset_bottom = -8.0
+grow_horizontal = 2
+grow_vertical = 0
+alignment = 1
+
+[node name="InfoLabel" type="Label" parent="Panel/FooterBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.55, 0.6, 0.65, 0.85)
+theme_override_font_sizes/font_size = 5
+text = "Bir vakayı tamamladığınızda sıradaki bölümün kilidi otomatik olarak açılır."
+vertical_alignment = 1
+
+[node name="BackBtn" type="Button" parent="Panel/FooterBox"]
+custom_minimum_size = Vector2(60, 20)
+layout_mode = 2
+theme_override_font_sizes/font_size = 7
+text = "← Geri"

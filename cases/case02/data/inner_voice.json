@@ -1,0 +1,20 @@
+{
+  "war_memories": [
+    "Limanın sisli havası bana Kuzey'deki o karlı rıhtımları ve donmuş sığınağı hatırlatıyor.",
+    "Deniz kokusu bile barut dumanını ve karların kokusunu unutturamıyor.",
+    "Telsizin sustuğu o an... Teddy kulaklıklarını fırlatıp 'Bizi unuttular!' diye bağırmıştı."
+  ],
+  "generic_inspection": [
+    "Paslı demirler ve deniz tuzu... Burada hiçbir şey uzun süre temiz kalmaz.",
+    "Liman gece vakti hayaletli bir kasabadan farksız. Gölgeler sisin içinde kıpırdıyor.",
+    "Rüzgâr vinç halatlarına çarptıkça iniltiye benzer sesler çıkarıyor."
+  ],
+  "wrong_deduction": [
+    "Bu iki parça birbirine uymuyor. Başka bir bağ olmalı.",
+    "Mantık zincirinde bir halka eksik. Yeniden düşün Crowe."
+  ],
+  "correct_deduction": [
+    "Parçalar yerine oturuyor. Sis aralanmaya başladı.",
+    "Kusursuz bir mantık bağı. Bir sonraki adım netleşti."
+  ]
+}

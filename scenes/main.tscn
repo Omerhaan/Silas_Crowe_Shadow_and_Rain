@@ -1,0 +1,96 @@
+[gd_scene load_steps=24 format=3 uid="uid://bmainscene01"]
+
+[ext_resource type="Script" path="res://scripts/main.gd" id="1_main"]
+[ext_resource type="PackedScene" uid="uid://bplayer01" path="res://scenes/entities/player.tscn" id="2_player"]
+[ext_resource type="PackedScene" uid="uid://bhud01" path="res://scenes/ui/hud.tscn" id="3_hud"]
+[ext_resource type="PackedScene" uid="uid://bfade01" path="res://scenes/ui/fade_transition.tscn" id="4_fade"]
+[ext_resource type="PackedScene" uid="uid://bcutscene01" path="res://scenes/cutscenes/story_cutscene.tscn" id="5_cutscene"]
+[ext_resource type="PackedScene" uid="uid://bphonecall01" path="res://scenes/ui/phone_call_dialogue.tscn" id="6_phone"]
+[ext_resource type="PackedScene" uid="uid://barrival01" path="res://scenes/cutscenes/arrival_dialogue.tscn" id="7_arrival"]
+[ext_resource type="PackedScene" uid="uid://cinspect01" path="res://scenes/ui/inspect_view.tscn" id="8_inspect"]
+[ext_resource type="PackedScene" uid="uid://bfb01scene" path="res://scenes/cutscenes/flashback_fb01.tscn" id="9_fb01"]
+[ext_resource type="PackedScene" uid="uid://cnotebook01" path="res://scenes/ui/notebook.tscn" id="10_notebook"]
+[ext_resource type="PackedScene" uid="uid://cinterrog01" path="res://scenes/ui/interrogation.tscn" id="11_interrog"]
+[ext_resource type="PackedScene" uid="uid://caccus01" path="res://scenes/ui/accusation_modal.tscn" id="12_accus"]
+[ext_resource type="PackedScene" uid="uid://b8v2jpujofmxo" path="res://scenes/cutscenes/confrontation_hale.tscn" id="13_conf"]
+[ext_resource type="PackedScene" uid="uid://cmemorywall01" path="res://scenes/hub/memory_wall.tscn" id="14_memwall"]
+[ext_resource type="PackedScene" uid="uid://csouvenir01" path="res://scenes/hub/souvenir_modal.tscn" id="15_souv"]
+[ext_resource type="PackedScene" uid="uid://csecondcall01" path="res://scenes/cutscenes/second_call.tscn" id="16_sec_call"]
+[ext_resource type="PackedScene" uid="uid://bambientvfx01" path="res://scenes/vfx/ambient_vfx.tscn" id="17_ambient"]
+[ext_resource type="PackedScene" uid="uid://cpausemenu01" path="res://scenes/ui/pause_menu.tscn" id="18_pause"]
+[ext_resource type="PackedScene" uid="uid://cmainmenu01" path="res://scenes/ui/main_menu.tscn" id="19_menu"]
+[ext_resource type="PackedScene" uid="uid://ccuqehqnhdnyq" path="res://scenes/ui/debug_overlay.tscn" id="20_debug"]
+[ext_resource type="PackedScene" uid="uid://bintroscene01" path="res://scenes/intro/intro.tscn" id="21_intro"]
+[ext_resource type="PackedScene" uid="uid://ccaseending01" path="res://scenes/ui/case_ending_modal.tscn" id="22_ending"]
+[ext_resource type="PackedScene" uid="uid://cfbobscsrjmq7" path="res://scenes/ui/light_range_modal.tscn" id="23_lrange"]
+[ext_resource type="PackedScene" path="res://scenes/ui/tumbler_lock_modal.tscn" id="24_tlock"]
+[ext_resource type="PackedScene" path="res://scenes/ui/safe_dial_modal.tscn" id="25_sdial"]
+[ext_resource type="PackedScene" path="res://scenes/ui/crane_winch_modal.tscn" id="26_cwinch"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_main")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(240, 135)
+
+[node name="RoomContainer" type="Node2D" parent="."]
+
+[node name="Player" parent="." instance=ExtResource("2_player")]
+position = Vector2(240, 245)
+
+[node name="AmbientVFX" parent="." instance=ExtResource("17_ambient")]
+
+[node name="HUD" parent="." instance=ExtResource("3_hud")]
+
+[node name="StoryCutscene" parent="." instance=ExtResource("5_cutscene")]
+
+[node name="PhoneCallDialogue" parent="." instance=ExtResource("6_phone")]
+
+[node name="ArrivalDialogue" parent="." instance=ExtResource("7_arrival")]
+
+[node name="UIOverlays" type="CanvasLayer" parent="."]
+layer = 15
+
+[node name="InspectView" parent="UIOverlays" instance=ExtResource("8_inspect")]
+
+[node name="FlashbackFB01" parent="UIOverlays" instance=ExtResource("9_fb01")]
+
+[node name="Interrogation" parent="UIOverlays" instance=ExtResource("11_interrog")]
+
+[node name="Notebook" parent="UIOverlays" instance=ExtResource("10_notebook")]
+
+[node name="AccusationModal" parent="UIOverlays" instance=ExtResource("12_accus")]
+
+[node name="ConfrontationHale" parent="UIOverlays" instance=ExtResource("13_conf")]
+
+[node name="MemoryWall" parent="UIOverlays" instance=ExtResource("14_memwall")]
+
+[node name="SouvenirModal" parent="UIOverlays" instance=ExtResource("15_souv")]
+
+[node name="SecondCall" parent="UIOverlays" instance=ExtResource("16_sec_call")]
+
+[node name="PauseMenu" parent="UIOverlays" instance=ExtResource("18_pause")]
+
+[node name="MainMenu" parent="UIOverlays" instance=ExtResource("19_menu")]
+
+[node name="Intro" parent="UIOverlays" instance=ExtResource("21_intro")]
+visible = false
+
+[node name="CaseEndingModal" parent="UIOverlays" instance=ExtResource("22_ending")]
+
+[node name="LightRangeModal" parent="UIOverlays" instance=ExtResource("23_lrange")]
+visible = false
+
+[node name="TumblerLockModal" parent="UIOverlays" instance=ExtResource("24_tlock")]
+visible = false
+
+[node name="SafeDialModal" parent="UIOverlays" instance=ExtResource("25_sdial")]
+visible = false
+
+[node name="CraneWinchModal" parent="UIOverlays" instance=ExtResource("26_cwinch")]
+visible = false
+
+
+[node name="FadeTransition" parent="." instance=ExtResource("4_fade")]
+
+[node name="DebugOverlay" parent="." instance=ExtResource("20_debug")]

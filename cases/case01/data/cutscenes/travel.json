@@ -1,0 +1,47 @@
+{
+  "cutscene_id": "travel",
+  "title": "Karanlık Yolda",
+  "title_en": "On the Dark Road",
+  "slides": [
+    {
+      "text": "Eski arabanın silecekleri fırtınanın hızına yetişemiyordu.",
+      "en": "The old coupe's wipers struggled against the fury of the torrential storm.",
+      "duration": 2.5,
+      "sfx": "rain_loop",
+      "image": "res://assets/sprites/cinematics/cinematic_prologue_03.png",
+      "speaker": "SILAS"
+    },
+    {
+      "text": "Kıyı şeridindeki sarp kayalıklar... Telefonun diğer ucundaki sesin söylediği yöne doğru sürdüm.",
+      "en": "Rugged cliffs along the coastline... I drove straight toward the direction given by the voice on the phone.",
+      "duration": 3.0,
+      "sfx": "thunder_soft",
+      "image": "res://assets/sprites/cinematics/cinematic_prologue_04.png",
+      "speaker": "SILAS"
+    },
+    {
+      "text": "Harlow Malikanesi'nin taş köprüsünü geçer geçmez arkamda bir gürültü koptu.\nŞimşek çaktı... Sel suları köprüyü yuttu ve geride sadece uçurum kaldı.",
+      "en": "The moment I crossed the suspension bridge to Harlow Manor, a deafening crash erupted behind me.\nLightning flashed... Flooding waters devoured the bridge, leaving only an abyss.",
+      "duration": 3.5,
+      "sfx": "thunder",
+      "image": "res://assets/sprites/cinematics/cinematic_prologue_05.png",
+      "speaker": "SILAS"
+    },
+    {
+      "text": "Artık dönüş yoktu. Bu malikaneden ancak gerçekle ya da bir tabutla çıkılabilirdi.",
+      "en": "There was no turning back now. One could only leave this manor with the truth — or in a pine box.",
+      "duration": 3.0,
+      "sfx": "",
+      "image": "res://assets/sprites/cinematics/cinematic_prologue_06.png",
+      "speaker": "SILAS"
+    },
+    {
+      "text": "Harlow Malikanesi. Yedi oda, onlarca sır ve kilitli çalışma odasında yatan bir ceset...",
+      "en": "Harlow Manor. Seven rooms, dozens of secrets, and a corpse lying behind a locked study door...",
+      "duration": 3.5,
+      "sfx": "",
+      "image": "res://assets/sprites/cinematics/cinematic_prologue_07.png",
+      "speaker": "SILAS"
+    }
+  ]
+}

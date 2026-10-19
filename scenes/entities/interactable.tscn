@@ -1,0 +1,48 @@
+[gd_scene load_steps=3 format=3 uid="uid://d2m0tcvj7ds4k"]
+
+[ext_resource type="Script" path="res://scripts/entities/interactable.gd" id="1_interact"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_box"]
+size = Vector2(26, 26)
+
+[node name="Interactable" type="Node2D"]
+script = ExtResource("1_interact")
+
+[node name="Sprite" type="ColorRect" parent="."]
+visible = false
+offset_left = -8.0
+offset_top = -8.0
+offset_right = 8.0
+offset_bottom = 8.0
+color = Color(0.8, 0.7, 0.4, 0.8)
+
+[node name="PropSprite" type="Sprite2D" parent="."]
+visible = false
+
+[node name="NPCSprite" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(0, -6)
+
+[node name="Highlight" type="ReferenceRect" parent="."]
+visible = false
+offset_left = -11.0
+offset_top = -11.0
+offset_right = 11.0
+offset_bottom = 11.0
+border_color = Color(1, 0.85, 0.2, 1)
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_box")
+
+[node name="PromptLabel" type="Label" parent="."]
+offset_left = -70.0
+offset_top = -22.0
+offset_right = 70.0
+offset_bottom = -9.0
+theme_override_font_sizes/font_size = 7
+text = "[E]"
+horizontal_alignment = 1

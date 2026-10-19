@@ -1,0 +1,256 @@
+[gd_scene load_steps=2 format=3 uid="uid://csettingsmodal01"]
+
+[ext_resource type="Script" path="res://scripts/ui/settings_modal.gd" id="1_sett"]
+
+[node name="SettingsModal" type="Control"]
+process_mode = 3
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_sett")
+
+[node name="Backdrop" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.02, 0.03, 0.05, 0.88)
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -120.0
+offset_top = -118.0
+offset_right = 120.0
+offset_bottom = 118.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Title" type="Label" parent="Panel"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 6.0
+offset_bottom = 18.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.95, 0.85, 0.6, 1)
+theme_override_font_sizes/font_size = 8
+text = "AYARLAR"
+horizontal_alignment = 1
+
+[node name="CloseBtn" type="Button" parent="Panel"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -24.0
+offset_top = 4.0
+offset_right = -6.0
+offset_bottom = 20.0
+grow_horizontal = 0
+theme_override_font_sizes/font_size = 7
+text = "X"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 12.0
+offset_top = -92.0
+offset_right = -12.0
+offset_bottom = 86.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 3
+
+[node name="MasterBox" type="HBoxContainer" parent="Panel/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Panel/VBoxContainer/MasterBox"]
+custom_minimum_size = Vector2(70, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 6
+text = "Ana Ses:"
+
+[node name="MasterSlider" type="HSlider" parent="Panel/VBoxContainer/MasterBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+max_value = 100.0
+value = 100.0
+
+[node name="MasterVal" type="Label" parent="Panel/VBoxContainer/MasterBox"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 6
+text = "%100"
+horizontal_alignment = 2
+
+[node name="MusicBox" type="HBoxContainer" parent="Panel/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Panel/VBoxContainer/MusicBox"]
+custom_minimum_size = Vector2(70, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 6
+text = "Noir Piyano BGM:"
+
+[node name="MusicSlider" type="HSlider" parent="Panel/VBoxContainer/MusicBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+max_value = 100.0
+value = 75.0
+
+[node name="MusicVal" type="Label" parent="Panel/VBoxContainer/MusicBox"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 6
+text = "%75"
+horizontal_alignment = 2
+
+[node name="AmbianceBox" type="HBoxContainer" parent="Panel/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Panel/VBoxContainer/AmbianceBox"]
+custom_minimum_size = Vector2(70, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 6
+text = "Yağmur/Ambiyans:"
+
+[node name="AmbianceSlider" type="HSlider" parent="Panel/VBoxContainer/AmbianceBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+max_value = 100.0
+value = 80.0
+
+[node name="AmbianceVal" type="Label" parent="Panel/VBoxContainer/AmbianceBox"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 6
+text = "%80"
+horizontal_alignment = 2
+
+[node name="SfxBox" type="HBoxContainer" parent="Panel/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Panel/VBoxContainer/SfxBox"]
+custom_minimum_size = Vector2(70, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 6
+text = "Ses Efektleri:"
+
+[node name="SfxSlider" type="HSlider" parent="Panel/VBoxContainer/SfxBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+max_value = 100.0
+value = 100.0
+
+[node name="SfxVal" type="Label" parent="Panel/VBoxContainer/SfxBox"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 6
+text = "%100"
+horizontal_alignment = 2
+
+[node name="TogglesRow" type="HBoxContainer" parent="Panel/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="SubtitleBox" type="HBoxContainer" parent="Panel/VBoxContainer/TogglesRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="Panel/VBoxContainer/TogglesRow/SubtitleBox"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 6
+text = "Altyazılar:"
+
+[node name="SubtitleBtn" type="Button" parent="Panel/VBoxContainer/TogglesRow/SubtitleBox"]
+custom_minimum_size = Vector2(44, 16)
+layout_mode = 2
+theme_override_font_sizes/font_size = 6
+text = "AÇIK"
+
+[node name="FullscreenBox" type="HBoxContainer" parent="Panel/VBoxContainer/TogglesRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="Panel/VBoxContainer/TogglesRow/FullscreenBox"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 6
+text = "Tam Ekran:"
+
+[node name="FullscreenBtn" type="Button" parent="Panel/VBoxContainer/TogglesRow/FullscreenBox"]
+custom_minimum_size = Vector2(44, 16)
+layout_mode = 2
+theme_override_font_sizes/font_size = 6
+text = "KAPALI"
+
+[node name="LanguageBox" type="HBoxContainer" parent="Panel/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Panel/VBoxContainer/LanguageBox"]
+custom_minimum_size = Vector2(70, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 6
+text = "Dil / Language:"
+
+[node name="LanguageBtn" type="Button" parent="Panel/VBoxContainer/LanguageBox"]
+custom_minimum_size = Vector2(76, 16)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.96, 0.89, 0.63, 1)
+theme_override_font_sizes/font_size = 6
+text = "Türkçe [TR]"
+
+[node name="FontSizeBox" type="HBoxContainer" parent="Panel/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Panel/VBoxContainer/FontSizeBox"]
+custom_minimum_size = Vector2(70, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 6
+text = "Yazı Boyutu:"
+
+[node name="FontSizeBtn" type="Button" parent="Panel/VBoxContainer/FontSizeBox"]
+custom_minimum_size = Vector2(76, 16)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.96, 0.89, 0.63, 1)
+theme_override_font_sizes/font_size = 6
+text = "Orta"
+
+[node name="ReplayIntroBtn" type="Button" parent="Panel/VBoxContainer"]
+custom_minimum_size = Vector2(0, 16)
+layout_mode = 2
+theme_override_font_sizes/font_size = 6
+text = "Giriş Hikayesini Tekrar İzle"
+
+[node name="SaveBtn" type="Button" parent="Panel"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -45.0
+offset_top = -22.0
+offset_right = 45.0
+offset_bottom = -5.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 7
+text = "Kaydet"

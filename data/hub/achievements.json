@@ -1,0 +1,44 @@
+[
+  {
+    "id": "A01",
+    "ad": "İlk Kan",
+    "aciklama": "Harlow Malikanesi cinayetini çöz ve katili adalete teslim et.",
+    "tamamlandi": false
+  },
+  {
+    "id": "A02",
+    "ad": "Titiz",
+    "aciklama": "Olay mahallindeki 17 kanıtın tamamını defterine kaydet.",
+    "tamamlandi": false
+  },
+  {
+    "id": "A03",
+    "ad": "Doğru Teşhis",
+    "aciklama": "İlk denemede hiçbir dedüksiyon hatası yapmadan katili suçla.",
+    "tamamlandi": false
+  },
+  {
+    "id": "A04",
+    "ad": "Kızıl Ringa Avcısı",
+    "aciklama": "Raymond Pike'ın tehdit mektuplarını yazdığını ama katil olmadığını kanıtla.",
+    "tamamlandi": false
+  },
+  {
+    "id": "A05",
+    "ad": "Hatıra Koleksiyoncusu",
+    "aciklama": "Dedektifin evindeki hatıra rafına malikaneden bir nesne yerleştir.",
+    "tamamlandi": false
+  },
+  {
+    "id": "A06",
+    "ad": "Sessiz Gözlemci",
+    "aciklama": "Odalarda nesneleri inceleyerek Silas'ın iç sesini en az 10 kez dinle.",
+    "tamamlandi": false
+  },
+  {
+    "id": "A07",
+    "ad": "Gizli Çekmeceler",
+    "aciklama": "Malikanedeki 3 gizli bölme ve çekmecenin hepsini keşfet.",
+    "tamamlandi": false
+  }
+]

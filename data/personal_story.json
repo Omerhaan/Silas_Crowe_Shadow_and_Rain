@@ -1,0 +1,20 @@
+[
+  {
+    "id": "pocket_watch",
+    "baslik": "03:12'de Durmuş Saat",
+    "metin": "Yeleğimin sol cebinde duran gümüş cep saati. Yıllardır 03:12'yi gösteriyor. O gece sığınak çöktüğünde saniyeler durdu. Kurmalı çarkı çevirsem de akrep kıpırdamıyor.",
+    "kilitli": false
+  },
+  {
+    "id": "operation_north",
+    "baslik": "Kuzey Operasyonu (1944)",
+    "metin": "İstihbarat birimiyle karların altında kaldığımız o kış... Ekipteki on iki kişiden sadece ben ve birkaç gölge geri döndük. Harlow masamda bu adı fısıldadığında kanım dondu.",
+    "kilitli": true
+  },
+  {
+    "id": "shaking_hand",
+    "baslik": "Sol Elin Titremesi",
+    "metin": "Gök gürültüsünde parmaklarım istemsizce geriliyor. Doktorlar buna 'siper şoku' diyor. Ben ise sadece hatırlama refleksi olduğunu biliyorum.",
+    "kilitli": false
+  }
+]

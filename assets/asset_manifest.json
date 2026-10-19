@@ -1,0 +1,4747 @@
+{
+  "_comment": "Gölge ve Yağmur Asset Manifest - Central Asset Registry (Brief Section 8)",
+  "assets": {
+    "char_silas_idle": {
+      "id": "char_silas_idle",
+      "type": "sprite",
+      "path": "res://assets/sprites/characters/silas_idle_right.png",
+      "size": [
+        32,
+        48
+      ],
+      "status": "final",
+      "description": "Silas Crowe yan duruş sprite"
+    },
+    "char_silas_phone": {
+      "id": "char_silas_phone",
+      "type": "sprite",
+      "path": "res://assets/sprites/characters/silas_phone.png",
+      "size": [
+        32,
+        48
+      ],
+      "status": "placeholder",
+      "description": "Silas telefonda ahize tutan poz"
+    },
+    "char_hale": {
+      "id": "char_hale",
+      "type": "sprite",
+      "path": "res://assets/sprites/characters/hale_idle_right.png",
+      "size": [
+        32,
+        48
+      ],
+      "status": "final",
+      "description": "Dr. Victor Hale yan duruş"
+    },
+    "char_margaret": {
+      "id": "char_margaret",
+      "type": "sprite",
+      "path": "res://assets/sprites/characters/margaret_idle_right.png",
+      "size": [
+        32,
+        48
+      ],
+      "status": "final",
+      "description": "Margaret Doyle yan duruş"
+    },
+    "char_julian": {
+      "id": "char_julian",
+      "type": "sprite",
+      "path": "res://assets/sprites/characters/julian_idle_right.png",
+      "size": [
+        32,
+        48
+      ],
+      "status": "final",
+      "description": "Julian Harlow yan duruş"
+    },
+    "char_pike": {
+      "id": "char_pike",
+      "type": "sprite",
+      "path": "res://assets/sprites/characters/pike_idle_right.png",
+      "size": [
+        32,
+        48
+      ],
+      "status": "final",
+      "description": "Raymond Pike yan duruş"
+    },
+    "portrait_silas": {
+      "id": "portrait_silas",
+      "type": "ui",
+      "path": "res://assets/portraits/silas.png",
+      "size": [
+        48,
+        48
+      ],
+      "status": "final",
+      "description": "Silas Crowe diyalog portresi"
+    },
+    "portrait_hale": {
+      "id": "portrait_hale",
+      "type": "ui",
+      "path": "res://cases/case01/assets/characters/hale.png",
+      "size": [
+        48,
+        48
+      ],
+      "status": "final",
+      "description": "Dr. Hale diyalog portresi"
+    },
+    "portrait_margaret": {
+      "id": "portrait_margaret",
+      "type": "ui",
+      "path": "res://cases/case01/assets/characters/margaret.png",
+      "size": [
+        48,
+        48
+      ],
+      "status": "final",
+      "description": "Margaret Doyle diyalog portresi"
+    },
+    "portrait_julian": {
+      "id": "portrait_julian",
+      "type": "ui",
+      "path": "res://cases/case01/assets/characters/julian.png",
+      "size": [
+        48,
+        48
+      ],
+      "status": "final",
+      "description": "Julian Harlow diyalog portresi"
+    },
+    "portrait_pike": {
+      "id": "portrait_pike",
+      "type": "ui",
+      "path": "res://cases/case01/assets/characters/pike.png",
+      "size": [
+        48,
+        48
+      ],
+      "status": "final",
+      "description": "Raymond Pike diyalog portresi"
+    },
+    "bg_study": {
+      "id": "bg_study",
+      "type": "bg",
+      "path": "res://assets/backgrounds/bg_study.png",
+      "size": [
+        320,
+        180
+      ],
+      "status": "placeholder",
+      "description": "Çalışma odası yandan kesit arka planı"
+    },
+    "bg_hub": {
+      "id": "bg_hub",
+      "type": "bg",
+      "path": "res://assets/backgrounds/bg_hub.png",
+      "size": [
+        320,
+        180
+      ],
+      "status": "placeholder",
+      "description": "Silas'ın ofisi hub arka planı"
+    },
+    "bg_main_hall": {
+      "id": "bg_main_hall",
+      "type": "bg",
+      "path": "res://assets/backgrounds/bg_main_hall.png",
+      "size": [
+        320,
+        180
+      ],
+      "status": "placeholder",
+      "description": "Ana Hol arka planı"
+    },
+    "bg_library": {
+      "id": "bg_library",
+      "type": "bg",
+      "path": "res://assets/backgrounds/bg_library.png",
+      "size": [
+        320,
+        180
+      ],
+      "status": "placeholder",
+      "description": "Kütüphane arka planı"
+    },
+    "bg_dining_room": {
+      "id": "bg_dining_room",
+      "type": "bg",
+      "path": "res://assets/backgrounds/bg_dining_room.png",
+      "size": [
+        320,
+        180
+      ],
+      "status": "placeholder",
+      "description": "Yemek odası arka planı"
+    },
+    "bg_kitchen": {
+      "id": "bg_kitchen",
+      "type": "bg",
+      "path": "res://assets/backgrounds/bg_kitchen.png",
+      "size": [
+        320,
+        180
+      ],
+      "status": "placeholder",
+      "description": "Mutfak arka planı"
+    },
+    "bg_billiard_room": {
+      "id": "bg_billiard_room",
+      "type": "bg",
+      "path": "res://assets/backgrounds/bg_billiard_room.png",
+      "size": [
+        320,
+        180
+      ],
+      "status": "placeholder",
+      "description": "Bilardo odası arka planı"
+    },
+    "bg_upper_floor": {
+      "id": "bg_upper_floor",
+      "type": "bg",
+      "path": "res://assets/backgrounds/bg_upper_floor.png",
+      "size": [
+        320,
+        180
+      ],
+      "status": "placeholder",
+      "description": "Üst kat holü arka planı"
+    },
+    "prop_silas_desk": {
+      "id": "prop_silas_desk",
+      "type": "prop",
+      "path": "res://assets/sprites/props/silas_desk.png",
+      "size": [
+        64,
+        34
+      ],
+      "status": "final",
+      "description": "Silas'ın çalışma masası"
+    },
+    "prop_silas_telephone": {
+      "id": "prop_silas_telephone",
+      "type": "prop",
+      "path": "res://assets/sprites/props/silas_telephone.png",
+      "size": [
+        24,
+        28
+      ],
+      "status": "final",
+      "description": "Sehpa üstünde siyah antika telefon"
+    },
+    "prop_silas_window": {
+      "id": "prop_silas_window",
+      "type": "prop",
+      "path": "res://assets/sprites/props/silas_window.png",
+      "size": [
+        36,
+        44
+      ],
+      "status": "placeholder",
+      "description": "Yağmurlu ofis penceresi"
+    },
+    "prop_study_desk": {
+      "id": "prop_study_desk",
+      "type": "prop",
+      "path": "res://assets/sprites/props/study_desk.png",
+      "size": [
+        64,
+        34
+      ],
+      "status": "final",
+      "description": "Harlow'un çalışma masası"
+    },
+    "prop_study_door": {
+      "id": "study_door",
+      "type": "prop",
+      "path": "res://assets/sprites/props/door_standard.png",
+      "size": [
+        40,
+        76
+      ],
+      "status": "final",
+      "description": "Real asset from new_assets for study_door"
+    },
+    "prop_study_drawer": {
+      "id": "prop_study_drawer",
+      "type": "prop",
+      "path": "res://assets/sprites/props/study_drawer.png",
+      "size": [
+        20,
+        18
+      ],
+      "status": "placeholder",
+      "description": "Gizli bölmeli çekmece"
+    },
+    "prop_study_glass": {
+      "id": "prop_study_glass",
+      "type": "prop",
+      "path": "res://assets/sprites/props/study_glass.png",
+      "size": [
+        12,
+        14
+      ],
+      "status": "placeholder",
+      "description": "Zehirli konyak kadehi"
+    },
+    "prop_study_watch": {
+      "id": "prop_study_watch",
+      "type": "prop",
+      "path": "res://assets/sprites/props/study_watch.png",
+      "size": [
+        12,
+        12
+      ],
+      "status": "placeholder",
+      "description": "K-5 oymalı durmuş cep saati"
+    },
+    "prop_study_candle": {
+      "id": "prop_study_candle",
+      "type": "prop",
+      "path": "res://assets/sprites/props/study_candle.png",
+      "size": [
+        10,
+        18
+      ],
+      "status": "placeholder",
+      "description": "Masadaki şamdan ve mum"
+    },
+    "prop_study_trash": {
+      "id": "prop_study_trash",
+      "type": "prop",
+      "path": "res://assets/sprites/props/study_waste_basket.png",
+      "size": [
+        14,
+        16
+      ],
+      "status": "final",
+      "description": "Real asset from new_assets for prop_study_trash"
+    },
+    "prop_armchair": {
+      "id": "prop_armchair",
+      "type": "prop",
+      "path": "res://assets/sprites/props/study_armchair.png",
+      "size": [
+        64,
+        34
+      ],
+      "status": "final",
+      "description": "Real asset from new_assets for prop_armchair"
+    },
+    "prop_bookcase": {
+      "id": "prop_bookcase",
+      "type": "prop",
+      "path": "res://assets/sprites/props/study_bookcase.png",
+      "size": [
+        56,
+        90
+      ],
+      "status": "final",
+      "description": "Real asset from new_assets for prop_bookcase"
+    },
+    "prop_fireplace": {
+      "id": "prop_fireplace",
+      "type": "prop",
+      "path": "res://assets/sprites/props/fireplace.png",
+      "size": [
+        56,
+        44
+      ],
+      "status": "final",
+      "description": "Yanan klasik taş şömine"
+    },
+    "prop_lamp": {
+      "id": "prop_lamp",
+      "type": "prop",
+      "path": "res://assets/sprites/props/study_lamp.png",
+      "size": [
+        12,
+        28
+      ],
+      "status": "final",
+      "description": "Real asset from new_assets for prop_lamp"
+    },
+    "prop_billiard_table": {
+      "id": "prop_billiard_table",
+      "type": "prop",
+      "path": "res://assets/sprites/props/billiard_table.png",
+      "size": [
+        72,
+        34
+      ],
+      "status": "final",
+      "description": "Yeşil çuha kaplı bilardo masası"
+    },
+    "ui_dialog_box": {
+      "id": "ui_dialog_box",
+      "type": "ui",
+      "path": "res://assets/ui/dialog_box.png",
+      "size": [
+        304,
+        48
+      ],
+      "status": "placeholder",
+      "description": "9-slice diyalog kutusu"
+    },
+    "ui_inner_voice_box": {
+      "id": "ui_inner_voice_box",
+      "type": "ui",
+      "path": "res://assets/ui/inner_voice_box.png",
+      "size": [
+        304,
+        48
+      ],
+      "status": "placeholder",
+      "description": "İç ses diyalog kutusu"
+    },
+    "ui_icon_notebook": {
+      "path": "res://assets/sprites/ui/ui_icon_notebook.png",
+      "size": [
+        24,
+        24
+      ],
+      "display_name": "Defter İkonu",
+      "category": "ui_icon",
+      "sheet": "N"
+    },
+    "ui_icon_accuse": {
+      "path": "res://assets/sprites/ui/ui_icon_accuse.png",
+      "size": [
+        24,
+        24
+      ],
+      "display_name": "Suçlama / İşaret Parmağı",
+      "category": "ui_icon",
+      "sheet": "N"
+    },
+    "inspect_brandy_glass": {
+      "id": "inspect_brandy_glass",
+      "type": "inspect",
+      "path": "res://assets/inspect/brandy_glass.png",
+      "size": [
+        192,
+        128
+      ],
+      "status": "placeholder",
+      "description": "Kadehteki acı badem tortusu yakın planı"
+    },
+    "inspect_pocket_watch": {
+      "id": "inspect_pocket_watch",
+      "type": "inspect",
+      "path": "res://assets/inspect/pocket_watch.png",
+      "size": [
+        192,
+        128
+      ],
+      "status": "placeholder",
+      "description": "K-5 oyuntulu kapak ve kırık cam yakın planı"
+    },
+    "prop_silas_lamp": {
+      "id": "prop_silas_lamp",
+      "type": "prop",
+      "path": "res://assets/sprites/props/silas_lamp.png",
+      "size": [
+        12,
+        28
+      ],
+      "status": "final",
+      "description": "Yeşil pirinç banker lamba"
+    },
+    "prop_silas_memory_wall": {
+      "id": "prop_silas_memory_wall",
+      "type": "prop",
+      "path": "res://assets/sprites/props/silas_memory_wall.png",
+      "size": [
+        48,
+        32
+      ],
+      "status": "final",
+      "description": "İğneli anı ve ipucu panosu"
+    },
+    "prop_silas_typewriter": {
+      "id": "prop_silas_typewriter",
+      "type": "prop",
+      "path": "res://assets/sprites/props/silas_typewriter.png",
+      "size": [
+        20,
+        16
+      ],
+      "status": "final",
+      "description": "Eski yazı daktilosu"
+    },
+    "prop_silas_pocket_watch": {
+      "id": "silas_pocket_watch",
+      "type": "prop",
+      "path": "res://assets/sprites/props/silas_pocket_watch.png",
+      "size": [
+        8,
+        8
+      ],
+      "status": "final",
+      "description": "Real asset from new_assets for silas_pocket_watch"
+    },
+    "prop_silas_rejection_letter": {
+      "id": "prop_silas_rejection_letter",
+      "type": "prop",
+      "path": "res://assets/sprites/props/silas_rejection_letter.png",
+      "size": [
+        14,
+        10
+      ],
+      "status": "final",
+      "description": "Kırmızı mühürlü Bakanlık ret mektubu"
+    },
+    "prop_silas_drawer": {
+      "id": "prop_silas_drawer",
+      "type": "prop",
+      "path": "res://assets/sprites/props/silas_drawer.png",
+      "size": [
+        18,
+        12
+      ],
+      "status": "final",
+      "description": "Real asset from new_assets for prop_silas_drawer"
+    },
+    "prop_silas_armchair": {
+      "id": "prop_silas_armchair",
+      "type": "prop",
+      "path": "res://assets/sprites/props/silas_armchair.png",
+      "size": [
+        64,
+        34
+      ],
+      "status": "final",
+      "description": "Deri berjer koltuk ve sehpa"
+    },
+    "prop_study_armchair": {
+      "id": "prop_study_armchair",
+      "type": "prop",
+      "path": "res://assets/sprites/props/study_armchair.png",
+      "size": [
+        40,
+        36
+      ],
+      "status": "final",
+      "description": "Harlow'un deri koltuğu"
+    },
+    "prop_study_bookcase": {
+      "id": "prop_study_bookcase",
+      "type": "prop",
+      "path": "res://assets/sprites/props/study_bookcase.png",
+      "size": [
+        56,
+        90
+      ],
+      "status": "final",
+      "description": "Masif ceviz kitaplık"
+    },
+    "prop_study_lamp": {
+      "id": "prop_study_lamp",
+      "type": "prop",
+      "path": "res://assets/sprites/props/study_lamp.png",
+      "size": [
+        12,
+        16
+      ],
+      "status": "final",
+      "description": "Pirinç şamdan ve yanan mum"
+    },
+    "prop_library_bookcase": {
+      "id": "prop_library_bookcase",
+      "type": "prop",
+      "path": "res://assets/sprites/props/library_bookcase.png",
+      "size": [
+        56,
+        90
+      ],
+      "status": "final",
+      "description": "Oymalı ceviz kütüphane kitaplığı"
+    },
+    "prop_dining_table": {
+      "id": "prop_dining_table",
+      "type": "prop",
+      "path": "res://assets/sprites/props/dining_table.png",
+      "size": [
+        72,
+        34
+      ],
+      "status": "final",
+      "description": "Beyaz örtülü, kadehler ve şamdanlı ziyafet masası"
+    },
+    "prop_kitchen_stove": {
+      "id": "prop_kitchen_stove",
+      "type": "prop",
+      "path": "res://assets/sprites/props/kitchen_stove.png",
+      "size": [
+        48,
+        44
+      ],
+      "status": "final",
+      "description": "Döküm demir kuzine ve çaydanlık"
+    },
+    "prop_kitchen_counter": {
+      "id": "prop_kitchen_counter",
+      "type": "prop",
+      "path": "res://assets/sprites/props/kitchen_counter.png",
+      "size": [
+        64,
+        34
+      ],
+      "status": "final",
+      "description": "Ahşap hazırlık tezgahı"
+    },
+    "prop_window": {
+      "id": "prop_window",
+      "type": "prop",
+      "path": "res://assets/sprites/props/window_mansion.png",
+      "size": [
+        48,
+        56
+      ],
+      "status": "final",
+      "description": "Real asset from new_assets for prop_window"
+    },
+    "prop_door": {
+      "id": "prop_door",
+      "type": "prop",
+      "path": "res://assets/sprites/props/door_standard.png",
+      "size": [
+        40,
+        76
+      ],
+      "status": "final",
+      "description": "Real asset from new_assets for prop_door"
+    },
+    "prop_door_standard": {
+      "id": "prop_door_standard",
+      "type": "prop",
+      "path": "res://assets/sprites/props/door_standard.png",
+      "size": [
+        40,
+        76
+      ],
+      "status": "final",
+      "description": "Ağır malikane giriş kapısı"
+    },
+    "door_standard": {
+      "id": "prop_door_standard",
+      "type": "prop",
+      "path": "res://assets/sprites/props/door_standard.png",
+      "size": [
+        40,
+        76
+      ],
+      "status": "final",
+      "description": "Ağır malikane giriş kapısı"
+    },
+    "prop_window_mansion": {
+      "id": "prop_window_mansion",
+      "type": "prop",
+      "path": "res://assets/sprites/props/window_mansion.png",
+      "size": [
+        48,
+        56
+      ],
+      "status": "final",
+      "description": "Gotik kemerli malikane penceresi"
+    },
+    "window_mansion": {
+      "id": "prop_window_mansion",
+      "type": "prop",
+      "path": "res://assets/sprites/props/window_mansion.png",
+      "size": [
+        48,
+        56
+      ],
+      "status": "final",
+      "description": "Gotik kemerli malikane penceresi"
+    },
+    "prop_window_single": {
+      "id": "prop_window_single",
+      "type": "prop",
+      "path": "res://assets/sprites/props/window_single.png",
+      "size": [
+        28,
+        56
+      ],
+      "status": "final",
+      "description": "Tek kanatlı dar pencere"
+    },
+    "window_single": {
+      "id": "prop_window_single",
+      "type": "prop",
+      "path": "res://assets/sprites/props/window_single.png",
+      "size": [
+        28,
+        56
+      ],
+      "status": "final",
+      "description": "Tek kanatlı dar pencere"
+    },
+    "prop_window_small": {
+      "id": "prop_window_small",
+      "type": "prop",
+      "path": "res://assets/sprites/props/window_small.png",
+      "size": [
+        24,
+        40
+      ],
+      "status": "final",
+      "description": "Küçük servis penceresi"
+    },
+    "window_small": {
+      "id": "prop_window_small",
+      "type": "prop",
+      "path": "res://assets/sprites/props/window_small.png",
+      "size": [
+        24,
+        40
+      ],
+      "status": "final",
+      "description": "Küçük servis penceresi"
+    },
+    "prop_stairs_mansion": {
+      "id": "prop_stairs_mansion",
+      "type": "prop",
+      "path": "res://assets/sprites/props/stairs_mansion.png",
+      "size": [
+        72,
+        76
+      ],
+      "status": "final",
+      "description": "Büyük ahşap merdiven trabzanı"
+    },
+    "stairs_mansion": {
+      "id": "prop_stairs_mansion",
+      "type": "prop",
+      "path": "res://assets/sprites/props/stairs_mansion.png",
+      "size": [
+        72,
+        76
+      ],
+      "status": "final",
+      "description": "Büyük ahşap merdiven trabzanı"
+    },
+    "fireplace": {
+      "id": "prop_fireplace",
+      "type": "prop",
+      "path": "res://assets/sprites/props/fireplace.png",
+      "size": [
+        56,
+        44
+      ],
+      "status": "final",
+      "description": "Yanan klasik taş şömine"
+    },
+    "prop_fireplace_marble": {
+      "id": "prop_fireplace_marble",
+      "type": "prop",
+      "path": "res://assets/sprites/props/fireplace_marble.png",
+      "size": [
+        56,
+        44
+      ],
+      "status": "final",
+      "description": "Mermer şömine"
+    },
+    "fireplace_marble": {
+      "id": "prop_fireplace_marble",
+      "type": "prop",
+      "path": "res://assets/sprites/props/fireplace_marble.png",
+      "size": [
+        56,
+        44
+      ],
+      "status": "final",
+      "description": "Mermer şömine"
+    },
+    "prop_wall_clock_pendulum": {
+      "id": "prop_wall_clock_pendulum",
+      "type": "prop",
+      "path": "res://assets/sprites/props/wall_clock_pendulum.png",
+      "size": [
+        14,
+        28
+      ],
+      "status": "final",
+      "description": "Sarkaçlı duvar saati"
+    },
+    "wall_clock_pendulum": {
+      "id": "prop_wall_clock_pendulum",
+      "type": "prop",
+      "path": "res://assets/sprites/props/wall_clock_pendulum.png",
+      "size": [
+        14,
+        28
+      ],
+      "status": "final",
+      "description": "Sarkaçlı duvar saati"
+    },
+    "prop_portrait_frame_oval": {
+      "id": "prop_portrait_frame_oval",
+      "type": "prop",
+      "path": "res://assets/sprites/props/portrait_frame_oval.png",
+      "size": [
+        18,
+        24
+      ],
+      "status": "final",
+      "description": "Oval portre tablosu"
+    },
+    "portrait_frame_oval": {
+      "id": "prop_portrait_frame_oval",
+      "type": "prop",
+      "path": "res://assets/sprites/props/portrait_frame_oval.png",
+      "size": [
+        18,
+        24
+      ],
+      "status": "final",
+      "description": "Oval portre tablosu"
+    },
+    "prop_portrait_frame_rect": {
+      "id": "prop_portrait_frame_rect",
+      "type": "prop",
+      "path": "res://assets/sprites/props/portrait_frame_rect.png",
+      "size": [
+        18,
+        22
+      ],
+      "status": "final",
+      "description": "Dikdörtgen tablo çerçevesi"
+    },
+    "portrait_frame_rect": {
+      "id": "prop_portrait_frame_rect",
+      "type": "prop",
+      "path": "res://assets/sprites/props/portrait_frame_rect.png",
+      "size": [
+        18,
+        22
+      ],
+      "status": "final",
+      "description": "Dikdörtgen tablo çerçevesi"
+    },
+    "prop_wall_sconce": {
+      "id": "prop_wall_sconce",
+      "type": "prop",
+      "path": "res://assets/sprites/props/wall_sconce.png",
+      "size": [
+        10,
+        14
+      ],
+      "status": "final",
+      "description": "Pirinç duvar apliği"
+    },
+    "wall_sconce": {
+      "id": "prop_wall_sconce",
+      "type": "prop",
+      "path": "res://assets/sprites/props/wall_sconce.png",
+      "size": [
+        10,
+        14
+      ],
+      "status": "final",
+      "description": "Pirinç duvar apliği"
+    },
+    "prop_landscape_painting": {
+      "id": "prop_landscape_painting",
+      "type": "prop",
+      "path": "res://assets/sprites/props/landscape_painting.png",
+      "size": [
+        28,
+        20
+      ],
+      "status": "final",
+      "description": "Geniş manzara tablosu"
+    },
+    "landscape_painting": {
+      "id": "prop_landscape_painting",
+      "type": "prop",
+      "path": "res://assets/sprites/props/landscape_painting.png",
+      "size": [
+        28,
+        20
+      ],
+      "status": "final",
+      "description": "Geniş manzara tablosu"
+    },
+    "prop_ceiling_lamp_pendant": {
+      "id": "prop_ceiling_lamp_pendant",
+      "type": "prop",
+      "path": "res://assets/sprites/props/ceiling_lamp_pendant.png",
+      "size": [
+        16,
+        28
+      ],
+      "status": "final",
+      "description": "Zincirli tekli tavan lambası"
+    },
+    "ceiling_lamp_pendant": {
+      "id": "prop_ceiling_lamp_pendant",
+      "type": "prop",
+      "path": "res://assets/sprites/props/ceiling_lamp_pendant.png",
+      "size": [
+        16,
+        28
+      ],
+      "status": "final",
+      "description": "Zincirli tekli tavan lambası"
+    },
+    "prop_chandelier_small": {
+      "id": "prop_chandelier_small",
+      "type": "prop",
+      "path": "res://assets/sprites/props/chandelier_small.png",
+      "size": [
+        28,
+        28
+      ],
+      "status": "final",
+      "description": "Oda avizesi"
+    },
+    "chandelier_small": {
+      "id": "prop_chandelier_small",
+      "type": "prop",
+      "path": "res://assets/sprites/props/chandelier_small.png",
+      "size": [
+        28,
+        28
+      ],
+      "status": "final",
+      "description": "Oda avizesi"
+    },
+    "prop_chandelier_grand": {
+      "id": "prop_chandelier_grand",
+      "type": "prop",
+      "path": "res://assets/sprites/props/chandelier_grand.png",
+      "size": [
+        36,
+        36
+      ],
+      "status": "final",
+      "description": "Büyük kristal avize"
+    },
+    "chandelier_grand": {
+      "id": "prop_chandelier_grand",
+      "type": "prop",
+      "path": "res://assets/sprites/props/chandelier_grand.png",
+      "size": [
+        36,
+        36
+      ],
+      "status": "final",
+      "description": "Büyük kristal avize"
+    },
+    "prop_silas_filing_cabinet": {
+      "id": "prop_silas_filing_cabinet",
+      "type": "prop",
+      "path": "res://assets/sprites/props/silas_filing_cabinet.png",
+      "size": [
+        24,
+        40
+      ],
+      "status": "final",
+      "description": "Silas'ın metal evrak dolabı"
+    },
+    "silas_filing_cabinet": {
+      "id": "prop_silas_filing_cabinet",
+      "type": "prop",
+      "path": "res://assets/sprites/props/silas_filing_cabinet.png",
+      "size": [
+        24,
+        40
+      ],
+      "status": "final",
+      "description": "Silas'ın metal evrak dolabı"
+    },
+    "prop_silas_coat_rack": {
+      "id": "prop_silas_coat_rack",
+      "type": "prop",
+      "path": "res://assets/sprites/props/silas_coat_rack.png",
+      "size": [
+        18,
+        54
+      ],
+      "status": "final",
+      "description": "Paltolu ve şapkalı ayaklı askılık"
+    },
+    "silas_coat_rack": {
+      "id": "prop_silas_coat_rack",
+      "type": "prop",
+      "path": "res://assets/sprites/props/silas_coat_rack.png",
+      "size": [
+        18,
+        54
+      ],
+      "status": "final",
+      "description": "Paltolu ve şapkalı ayaklı askılık"
+    },
+    "silas_telephone": {
+      "id": "prop_silas_telephone",
+      "type": "prop",
+      "path": "res://assets/sprites/props/silas_telephone.png",
+      "size": [
+        24,
+        28
+      ],
+      "status": "final",
+      "description": "Sehpa üstünde siyah antika telefon"
+    },
+    "prop_silas_drawer_small": {
+      "id": "prop_silas_drawer_small",
+      "type": "prop",
+      "path": "res://assets/sprites/props/silas_drawer_small.png",
+      "size": [
+        24,
+        24
+      ],
+      "status": "final",
+      "description": "3 çekmeceli kilitli komodin"
+    },
+    "silas_drawer_small": {
+      "id": "prop_silas_drawer_small",
+      "type": "prop",
+      "path": "res://assets/sprites/props/silas_drawer_small.png",
+      "size": [
+        24,
+        24
+      ],
+      "status": "final",
+      "description": "3 çekmeceli kilitli komodin"
+    },
+    "silas_desk": {
+      "id": "prop_silas_desk",
+      "type": "prop",
+      "path": "res://assets/sprites/props/silas_desk.png",
+      "size": [
+        64,
+        34
+      ],
+      "status": "final",
+      "description": "Silas'ın çalışma masası"
+    },
+    "prop_silas_bookcase_tall": {
+      "id": "prop_silas_bookcase_tall",
+      "type": "prop",
+      "path": "res://assets/sprites/props/silas_bookcase_tall.png",
+      "size": [
+        26,
+        60
+      ],
+      "status": "final",
+      "description": "Ofis kitaplığı"
+    },
+    "silas_bookcase_tall": {
+      "id": "prop_silas_bookcase_tall",
+      "type": "prop",
+      "path": "res://assets/sprites/props/silas_bookcase_tall.png",
+      "size": [
+        26,
+        60
+      ],
+      "status": "final",
+      "description": "Ofis kitaplığı"
+    },
+    "silas_memory_wall": {
+      "id": "prop_silas_memory_wall",
+      "type": "prop",
+      "path": "res://assets/sprites/props/silas_memory_wall.png",
+      "size": [
+        48,
+        32
+      ],
+      "status": "final",
+      "description": "İğneli anı ve ipucu panosu"
+    },
+    "silas_lamp": {
+      "id": "prop_silas_lamp",
+      "type": "prop",
+      "path": "res://assets/sprites/props/silas_lamp.png",
+      "size": [
+        12,
+        28
+      ],
+      "status": "final",
+      "description": "Yeşil pirinç banker lamba"
+    },
+    "silas_typewriter": {
+      "id": "prop_silas_typewriter",
+      "type": "prop",
+      "path": "res://assets/sprites/props/silas_typewriter.png",
+      "size": [
+        20,
+        16
+      ],
+      "status": "final",
+      "description": "Eski yazı daktilosu"
+    },
+    "silas_armchair": {
+      "id": "prop_silas_armchair",
+      "type": "prop",
+      "path": "res://assets/sprites/props/silas_armchair.png",
+      "size": [
+        64,
+        34
+      ],
+      "status": "final",
+      "description": "Deri berjer koltuk ve sehpa"
+    },
+    "silas_pocket_watch": {
+      "id": "silas_pocket_watch",
+      "type": "prop",
+      "path": "res://assets/sprites/props/silas_pocket_watch.png",
+      "size": [
+        8,
+        8
+      ],
+      "status": "final",
+      "description": "Real asset from new_assets for silas_pocket_watch"
+    },
+    "prop_silas_souvenir_shelf": {
+      "id": "prop_silas_souvenir_shelf",
+      "type": "prop",
+      "path": "res://assets/sprites/props/silas_souvenir_shelf.png",
+      "size": [
+        36,
+        18
+      ],
+      "status": "final",
+      "description": "Hatıra ve madalya rafı"
+    },
+    "silas_souvenir_shelf": {
+      "id": "prop_silas_souvenir_shelf",
+      "type": "prop",
+      "path": "res://assets/sprites/props/silas_souvenir_shelf.png",
+      "size": [
+        36,
+        18
+      ],
+      "status": "final",
+      "description": "Hatıra ve madalya rafı"
+    },
+    "silas_rejection_letter": {
+      "id": "prop_silas_rejection_letter",
+      "type": "prop",
+      "path": "res://assets/sprites/props/silas_rejection_letter.png",
+      "size": [
+        14,
+        10
+      ],
+      "status": "final",
+      "description": "Kırmızı mühürlü Bakanlık ret mektubu"
+    },
+    "study_desk": {
+      "id": "prop_study_desk",
+      "type": "prop",
+      "path": "res://assets/sprites/props/study_desk.png",
+      "size": [
+        64,
+        34
+      ],
+      "status": "final",
+      "description": "Harlow'un çalışma masası"
+    },
+    "prop_study_safe": {
+      "id": "prop_study_safe",
+      "type": "prop",
+      "path": "res://assets/sprites/props/study_safe.png",
+      "size": [
+        28,
+        32
+      ],
+      "status": "final",
+      "description": "Kilitli ağır çelik duvar kasası"
+    },
+    "study_safe": {
+      "id": "prop_study_safe",
+      "type": "prop",
+      "path": "res://assets/sprites/props/study_safe.png",
+      "size": [
+        28,
+        32
+      ],
+      "status": "final",
+      "description": "Kilitli ağır çelik duvar kasası"
+    },
+    "prop_study_portrait_harlow": {
+      "id": "prop_study_portrait_harlow",
+      "type": "prop",
+      "path": "res://assets/sprites/props/study_portrait_harlow.png",
+      "size": [
+        28,
+        28
+      ],
+      "status": "final",
+      "description": "Edmund Harlow yağlıboya portresi"
+    },
+    "study_portrait_harlow": {
+      "id": "prop_study_portrait_harlow",
+      "type": "prop",
+      "path": "res://assets/sprites/props/study_portrait_harlow.png",
+      "size": [
+        28,
+        28
+      ],
+      "status": "final",
+      "description": "Edmund Harlow yağlıboya portresi"
+    },
+    "study_armchair": {
+      "id": "prop_study_armchair",
+      "type": "prop",
+      "path": "res://assets/sprites/props/study_armchair.png",
+      "size": [
+        40,
+        36
+      ],
+      "status": "final",
+      "description": "Harlow'un deri koltuğu"
+    },
+    "prop_study_waste_basket": {
+      "id": "prop_study_waste_basket",
+      "type": "prop",
+      "path": "res://assets/sprites/props/study_waste_basket.png",
+      "size": [
+        16,
+        18
+      ],
+      "status": "final",
+      "description": "Yırtık kâğıtlı çöp sepeti"
+    },
+    "study_waste_basket": {
+      "id": "prop_study_waste_basket",
+      "type": "prop",
+      "path": "res://assets/sprites/props/study_waste_basket.png",
+      "size": [
+        16,
+        18
+      ],
+      "status": "final",
+      "description": "Yırtık kâğıtlı çöp sepeti"
+    },
+    "study_lamp": {
+      "id": "prop_study_lamp",
+      "type": "prop",
+      "path": "res://assets/sprites/props/study_lamp.png",
+      "size": [
+        12,
+        16
+      ],
+      "status": "final",
+      "description": "Pirinç şamdan ve yanan mum"
+    },
+    "prop_study_cognac_bottle": {
+      "id": "prop_study_cognac_bottle",
+      "type": "prop",
+      "path": "res://assets/sprites/props/study_cognac_bottle.png",
+      "size": [
+        12,
+        14
+      ],
+      "status": "final",
+      "description": "Konyak şişesi ve kadeh"
+    },
+    "study_cognac_bottle": {
+      "id": "prop_study_cognac_bottle",
+      "type": "prop",
+      "path": "res://assets/sprites/props/study_cognac_bottle.png",
+      "size": [
+        12,
+        14
+      ],
+      "status": "final",
+      "description": "Konyak şişesi ve kadeh"
+    },
+    "study_bookcase": {
+      "id": "prop_study_bookcase",
+      "type": "prop",
+      "path": "res://assets/sprites/props/study_bookcase.png",
+      "size": [
+        56,
+        90
+      ],
+      "status": "final",
+      "description": "Masif ceviz kitaplık"
+    },
+    "prop_study_cabinet": {
+      "id": "prop_study_cabinet",
+      "type": "prop",
+      "path": "res://assets/sprites/props/study_cabinet.png",
+      "size": [
+        48,
+        44
+      ],
+      "status": "final",
+      "description": "Camlı büfe dolabı"
+    },
+    "study_cabinet": {
+      "id": "prop_study_cabinet",
+      "type": "prop",
+      "path": "res://assets/sprites/props/study_cabinet.png",
+      "size": [
+        48,
+        44
+      ],
+      "status": "final",
+      "description": "Camlı büfe dolabı"
+    },
+    "library_bookcase": {
+      "id": "prop_library_bookcase",
+      "type": "prop",
+      "path": "res://assets/sprites/props/library_bookcase.png",
+      "size": [
+        56,
+        90
+      ],
+      "status": "final",
+      "description": "Oymalı ceviz kütüphane kitaplığı"
+    },
+    "prop_library_ladder": {
+      "id": "prop_library_ladder",
+      "type": "prop",
+      "path": "res://assets/sprites/props/library_ladder.png",
+      "size": [
+        18,
+        60
+      ],
+      "status": "final",
+      "description": "Raylı tekerlekli kütüphane merdiveni"
+    },
+    "library_ladder": {
+      "id": "prop_library_ladder",
+      "type": "prop",
+      "path": "res://assets/sprites/props/library_ladder.png",
+      "size": [
+        18,
+        60
+      ],
+      "status": "final",
+      "description": "Raylı tekerlekli kütüphane merdiveni"
+    },
+    "prop_library_bookcase_2": {
+      "id": "prop_library_bookcase_2",
+      "type": "prop",
+      "path": "res://assets/sprites/props/library_bookcase_2.png",
+      "size": [
+        56,
+        90
+      ],
+      "status": "final",
+      "description": "İkinci kütüphane kitaplığı"
+    },
+    "library_bookcase_2": {
+      "id": "prop_library_bookcase_2",
+      "type": "prop",
+      "path": "res://assets/sprites/props/library_bookcase_2.png",
+      "size": [
+        56,
+        90
+      ],
+      "status": "final",
+      "description": "İkinci kütüphane kitaplığı"
+    },
+    "prop_library_globe": {
+      "id": "prop_library_globe",
+      "type": "prop",
+      "path": "res://assets/sprites/props/library_globe.png",
+      "size": [
+        20,
+        32
+      ],
+      "status": "final",
+      "description": "Ayaklı pirinç dünya küresi"
+    },
+    "library_globe": {
+      "id": "prop_library_globe",
+      "type": "prop",
+      "path": "res://assets/sprites/props/library_globe.png",
+      "size": [
+        20,
+        32
+      ],
+      "status": "final",
+      "description": "Ayaklı pirinç dünya küresi"
+    },
+    "prop_library_books_stack": {
+      "id": "prop_library_books_stack",
+      "type": "prop",
+      "path": "res://assets/sprites/props/library_books_stack.png",
+      "size": [
+        24,
+        22
+      ],
+      "status": "final",
+      "description": "Büyük araştırma kitapları yığını"
+    },
+    "library_books_stack": {
+      "id": "prop_library_books_stack",
+      "type": "prop",
+      "path": "res://assets/sprites/props/library_books_stack.png",
+      "size": [
+        24,
+        22
+      ],
+      "status": "final",
+      "description": "Büyük araştırma kitapları yığını"
+    },
+    "prop_library_reading_chair": {
+      "id": "prop_library_reading_chair",
+      "type": "prop",
+      "path": "res://assets/sprites/props/library_reading_chair.png",
+      "size": [
+        28,
+        34
+      ],
+      "status": "final",
+      "description": "Deri kütüphane okuma koltuğu"
+    },
+    "library_reading_chair": {
+      "id": "prop_library_reading_chair",
+      "type": "prop",
+      "path": "res://assets/sprites/props/library_reading_chair.png",
+      "size": [
+        28,
+        34
+      ],
+      "status": "final",
+      "description": "Deri kütüphane okuma koltuğu"
+    },
+    "prop_library_reading_desk": {
+      "id": "prop_library_reading_desk",
+      "type": "prop",
+      "path": "res://assets/sprites/props/library_reading_desk.png",
+      "size": [
+        56,
+        34
+      ],
+      "status": "final",
+      "description": "Geniş okuma masası"
+    },
+    "library_reading_desk": {
+      "id": "prop_library_reading_desk",
+      "type": "prop",
+      "path": "res://assets/sprites/props/library_reading_desk.png",
+      "size": [
+        56,
+        34
+      ],
+      "status": "final",
+      "description": "Geniş okuma masası"
+    },
+    "prop_library_bust_pedestal": {
+      "id": "prop_library_bust_pedestal",
+      "type": "prop",
+      "path": "res://assets/sprites/props/library_bust_pedestal.png",
+      "size": [
+        18,
+        38
+      ],
+      "status": "final",
+      "description": "Mermer büst kaidesi"
+    },
+    "library_bust_pedestal": {
+      "id": "prop_library_bust_pedestal",
+      "type": "prop",
+      "path": "res://assets/sprites/props/library_bust_pedestal.png",
+      "size": [
+        18,
+        38
+      ],
+      "status": "final",
+      "description": "Mermer büst kaidesi"
+    },
+    "dining_table": {
+      "id": "prop_dining_table",
+      "type": "prop",
+      "path": "res://assets/sprites/props/dining_table.png",
+      "size": [
+        72,
+        34
+      ],
+      "status": "final",
+      "description": "Beyaz örtülü, kadehler ve şamdanlı ziyafet masası"
+    },
+    "prop_dining_chair_left": {
+      "id": "prop_dining_chair_left",
+      "type": "prop",
+      "path": "res://assets/sprites/props/dining_chair_left.png",
+      "size": [
+        18,
+        36
+      ],
+      "status": "final",
+      "description": "Deri yemek sandalyesi (sol)"
+    },
+    "dining_chair_left": {
+      "id": "prop_dining_chair_left",
+      "type": "prop",
+      "path": "res://assets/sprites/props/dining_chair_left.png",
+      "size": [
+        18,
+        36
+      ],
+      "status": "final",
+      "description": "Deri yemek sandalyesi (sol)"
+    },
+    "prop_dining_chair_right": {
+      "id": "prop_dining_chair_right",
+      "type": "prop",
+      "path": "res://assets/sprites/props/dining_chair_right.png",
+      "size": [
+        18,
+        36
+      ],
+      "status": "final",
+      "description": "Deri yemek sandalyesi (sağ)"
+    },
+    "dining_chair_right": {
+      "id": "prop_dining_chair_right",
+      "type": "prop",
+      "path": "res://assets/sprites/props/dining_chair_right.png",
+      "size": [
+        18,
+        36
+      ],
+      "status": "final",
+      "description": "Deri yemek sandalyesi (sağ)"
+    },
+    "prop_dining_candelabra": {
+      "id": "prop_dining_candelabra",
+      "type": "prop",
+      "path": "res://assets/sprites/props/dining_candelabra.png",
+      "size": [
+        28,
+        36
+      ],
+      "status": "final",
+      "description": "Yemek salonu kristal avizesi"
+    },
+    "dining_candelabra": {
+      "id": "prop_dining_candelabra",
+      "type": "prop",
+      "path": "res://assets/sprites/props/dining_candelabra.png",
+      "size": [
+        28,
+        36
+      ],
+      "status": "final",
+      "description": "Yemek salonu kristal avizesi"
+    },
+    "prop_dining_china_cabinet": {
+      "id": "prop_dining_china_cabinet",
+      "type": "prop",
+      "path": "res://assets/sprites/props/dining_china_cabinet.png",
+      "size": [
+        44,
+        68
+      ],
+      "status": "final",
+      "description": "Camlı porselen ve gümüş dolabı"
+    },
+    "dining_china_cabinet": {
+      "id": "prop_dining_china_cabinet",
+      "type": "prop",
+      "path": "res://assets/sprites/props/dining_china_cabinet.png",
+      "size": [
+        44,
+        68
+      ],
+      "status": "final",
+      "description": "Camlı porselen ve gümüş dolabı"
+    },
+    "prop_dining_sideboard": {
+      "id": "prop_dining_sideboard",
+      "type": "prop",
+      "path": "res://assets/sprites/props/dining_sideboard.png",
+      "size": [
+        64,
+        36
+      ],
+      "status": "final",
+      "description": "Büyük yemek büfesi"
+    },
+    "dining_sideboard": {
+      "id": "prop_dining_sideboard",
+      "type": "prop",
+      "path": "res://assets/sprites/props/dining_sideboard.png",
+      "size": [
+        64,
+        36
+      ],
+      "status": "final",
+      "description": "Büyük yemek büfesi"
+    },
+    "prop_dining_service_cart": {
+      "id": "prop_dining_service_cart",
+      "type": "prop",
+      "path": "res://assets/sprites/props/dining_service_cart.png",
+      "size": [
+        28,
+        28
+      ],
+      "status": "final",
+      "description": "Tekerlekli kapaklı servis arabası"
+    },
+    "dining_service_cart": {
+      "id": "prop_dining_service_cart",
+      "type": "prop",
+      "path": "res://assets/sprites/props/dining_service_cart.png",
+      "size": [
+        28,
+        28
+      ],
+      "status": "final",
+      "description": "Tekerlekli kapaklı servis arabası"
+    },
+    "kitchen_stove": {
+      "id": "prop_kitchen_stove",
+      "type": "prop",
+      "path": "res://assets/sprites/props/kitchen_stove.png",
+      "size": [
+        48,
+        44
+      ],
+      "status": "final",
+      "description": "Döküm demir kuzine ve çaydanlık"
+    },
+    "prop_kitchen_sink_counter": {
+      "id": "prop_kitchen_sink_counter",
+      "type": "prop",
+      "path": "res://assets/sprites/props/kitchen_sink_counter.png",
+      "size": [
+        64,
+        34
+      ],
+      "status": "final",
+      "description": "Pirinç musluklu lavabo tezgahı"
+    },
+    "kitchen_sink_counter": {
+      "id": "prop_kitchen_sink_counter",
+      "type": "prop",
+      "path": "res://assets/sprites/props/kitchen_sink_counter.png",
+      "size": [
+        64,
+        34
+      ],
+      "status": "final",
+      "description": "Pirinç musluklu lavabo tezgahı"
+    },
+    "kitchen_counter": {
+      "id": "prop_kitchen_counter",
+      "type": "prop",
+      "path": "res://assets/sprites/props/kitchen_counter.png",
+      "size": [
+        64,
+        34
+      ],
+      "status": "final",
+      "description": "Ahşap hazırlık tezgahı"
+    },
+    "prop_kitchen_wall_shelves": {
+      "id": "prop_kitchen_wall_shelves",
+      "type": "prop",
+      "path": "res://assets/sprites/props/kitchen_wall_shelves.png",
+      "size": [
+        48,
+        32
+      ],
+      "status": "final",
+      "description": "Duvara monte kavanoz ve baharat rafı"
+    },
+    "kitchen_wall_shelves": {
+      "id": "prop_kitchen_wall_shelves",
+      "type": "prop",
+      "path": "res://assets/sprites/props/kitchen_wall_shelves.png",
+      "size": [
+        48,
+        32
+      ],
+      "status": "final",
+      "description": "Duvara monte kavanoz ve baharat rafı"
+    },
+    "prop_kitchen_pantry_cupboard": {
+      "id": "prop_kitchen_pantry_cupboard",
+      "type": "prop",
+      "path": "res://assets/sprites/props/kitchen_pantry_cupboard.png",
+      "size": [
+        38,
+        56
+      ],
+      "status": "final",
+      "description": "Kiler dolabı"
+    },
+    "kitchen_pantry_cupboard": {
+      "id": "prop_kitchen_pantry_cupboard",
+      "type": "prop",
+      "path": "res://assets/sprites/props/kitchen_pantry_cupboard.png",
+      "size": [
+        38,
+        56
+      ],
+      "status": "final",
+      "description": "Kiler dolabı"
+    },
+    "prop_kitchen_meat_block": {
+      "id": "prop_kitchen_meat_block",
+      "type": "prop",
+      "path": "res://assets/sprites/props/kitchen_meat_block.png",
+      "size": [
+        32,
+        36
+      ],
+      "status": "final",
+      "description": "Masif et kütüğü ve soğutucu"
+    },
+    "kitchen_meat_block": {
+      "id": "prop_kitchen_meat_block",
+      "type": "prop",
+      "path": "res://assets/sprites/props/kitchen_meat_block.png",
+      "size": [
+        32,
+        36
+      ],
+      "status": "final",
+      "description": "Masif et kütüğü ve soğutucu"
+    },
+    "prop_kitchen_pot_rack": {
+      "id": "prop_kitchen_pot_rack",
+      "type": "prop",
+      "path": "res://assets/sprites/props/kitchen_pot_rack.png",
+      "size": [
+        52,
+        28
+      ],
+      "status": "final",
+      "description": "Tavandan asılı bakır tencere askılığı"
+    },
+    "kitchen_pot_rack": {
+      "id": "prop_kitchen_pot_rack",
+      "type": "prop",
+      "path": "res://assets/sprites/props/kitchen_pot_rack.png",
+      "size": [
+        52,
+        28
+      ],
+      "status": "final",
+      "description": "Tavandan asılı bakır tencere askılığı"
+    },
+    "prop_billiard_cue_rack": {
+      "id": "prop_billiard_cue_rack",
+      "type": "prop",
+      "path": "res://assets/sprites/props/billiard_cue_rack.png",
+      "size": [
+        22,
+        52
+      ],
+      "status": "final",
+      "description": "Duvara monte ahşap isteka rafı"
+    },
+    "billiard_cue_rack": {
+      "id": "prop_billiard_cue_rack",
+      "type": "prop",
+      "path": "res://assets/sprites/props/billiard_cue_rack.png",
+      "size": [
+        22,
+        52
+      ],
+      "status": "final",
+      "description": "Duvara monte ahşap isteka rafı"
+    },
+    "billiard_table": {
+      "id": "prop_billiard_table",
+      "type": "prop",
+      "path": "res://assets/sprites/props/billiard_table.png",
+      "size": [
+        72,
+        34
+      ],
+      "status": "final",
+      "description": "Yeşil çuha kaplı bilardo masası"
+    },
+    "prop_billiard_bar_cart": {
+      "id": "prop_billiard_bar_cart",
+      "type": "prop",
+      "path": "res://assets/sprites/props/billiard_bar_cart.png",
+      "size": [
+        30,
+        28
+      ],
+      "status": "final",
+      "description": "Tekerlekli pirinç içki arabası"
+    },
+    "billiard_bar_cart": {
+      "id": "prop_billiard_bar_cart",
+      "type": "prop",
+      "path": "res://assets/sprites/props/billiard_bar_cart.png",
+      "size": [
+        30,
+        28
+      ],
+      "status": "final",
+      "description": "Tekerlekli pirinç içki arabası"
+    },
+    "prop_billiard_trophy_stag": {
+      "id": "prop_billiard_trophy_stag",
+      "type": "prop",
+      "path": "res://assets/sprites/props/billiard_trophy_stag.png",
+      "size": [
+        24,
+        32
+      ],
+      "status": "final",
+      "description": "Duvara monte trofe geyik kafası"
+    },
+    "billiard_trophy_stag": {
+      "id": "prop_billiard_trophy_stag",
+      "type": "prop",
+      "path": "res://assets/sprites/props/billiard_trophy_stag.png",
+      "size": [
+        24,
+        32
+      ],
+      "status": "final",
+      "description": "Duvara monte trofe geyik kafası"
+    },
+    "prop_billiard_armchair": {
+      "id": "prop_billiard_armchair",
+      "type": "prop",
+      "path": "res://assets/sprites/props/billiard_armchair.png",
+      "size": [
+        32,
+        32
+      ],
+      "status": "final",
+      "description": "Kahverengi deri kulüp koltuğu"
+    },
+    "billiard_armchair": {
+      "id": "prop_billiard_armchair",
+      "type": "prop",
+      "path": "res://assets/sprites/props/billiard_armchair.png",
+      "size": [
+        32,
+        32
+      ],
+      "status": "final",
+      "description": "Kahverengi deri kulüp koltuğu"
+    },
+    "prop_billiard_lamp": {
+      "id": "prop_billiard_lamp",
+      "type": "prop",
+      "path": "res://assets/sprites/props/billiard_lamp.png",
+      "size": [
+        48,
+        20
+      ],
+      "status": "final",
+      "description": "Tavandan sarkan yeşil bilardo lambası"
+    },
+    "billiard_lamp": {
+      "id": "prop_billiard_lamp",
+      "type": "prop",
+      "path": "res://assets/sprites/props/billiard_lamp.png",
+      "size": [
+        48,
+        20
+      ],
+      "status": "final",
+      "description": "Tavandan sarkan yeşil bilardo lambası"
+    },
+    "prop_hall_coat_rack": {
+      "id": "prop_hall_coat_rack",
+      "type": "prop",
+      "path": "res://assets/sprites/props/hall_coat_rack.png",
+      "size": [
+        20,
+        58
+      ],
+      "status": "final",
+      "description": "Ayaklı palto ve şapka askılığı"
+    },
+    "hall_coat_rack": {
+      "id": "prop_hall_coat_rack",
+      "type": "prop",
+      "path": "res://assets/sprites/props/hall_coat_rack.png",
+      "size": [
+        20,
+        58
+      ],
+      "status": "final",
+      "description": "Ayaklı palto ve şapka askılığı"
+    },
+    "prop_hall_grandfather_clock": {
+      "id": "prop_hall_grandfather_clock",
+      "type": "prop",
+      "path": "res://assets/sprites/props/hall_grandfather_clock.png",
+      "size": [
+        24,
+        66
+      ],
+      "status": "final",
+      "description": "Büyükbaba saati"
+    },
+    "hall_grandfather_clock": {
+      "id": "prop_hall_grandfather_clock",
+      "type": "prop",
+      "path": "res://assets/sprites/props/hall_grandfather_clock.png",
+      "size": [
+        24,
+        66
+      ],
+      "status": "final",
+      "description": "Büyükbaba saati"
+    },
+    "prop_hall_umbrella_stand": {
+      "id": "prop_hall_umbrella_stand",
+      "type": "prop",
+      "path": "res://assets/sprites/props/hall_umbrella_stand.png",
+      "size": [
+        18,
+        38
+      ],
+      "status": "final",
+      "description": "Şemsiyelik ve ıslak şemsiyeler"
+    },
+    "hall_umbrella_stand": {
+      "id": "prop_hall_umbrella_stand",
+      "type": "prop",
+      "path": "res://assets/sprites/props/hall_umbrella_stand.png",
+      "size": [
+        18,
+        38
+      ],
+      "status": "final",
+      "description": "Şemsiyelik ve ıslak şemsiyeler"
+    },
+    "prop_main_hall_phone_table": {
+      "id": "prop_main_hall_phone_table",
+      "type": "prop",
+      "path": "res://assets/sprites/props/main_hall_phone_table.png",
+      "size": [
+        56,
+        34
+      ],
+      "status": "final",
+      "description": "Konsol telefon masası (Evidence E17)"
+    },
+    "main_hall_phone_table": {
+      "id": "prop_main_hall_phone_table",
+      "type": "prop",
+      "path": "res://assets/sprites/props/main_hall_phone_table.png",
+      "size": [
+        56,
+        34
+      ],
+      "status": "final",
+      "description": "Konsol telefon masası (Evidence E17)"
+    },
+    "prop_hall_marble_bust": {
+      "id": "prop_hall_marble_bust",
+      "type": "prop",
+      "path": "res://assets/sprites/props/hall_marble_bust.png",
+      "size": [
+        18,
+        38
+      ],
+      "status": "final",
+      "description": "Kaideli mermer büst"
+    },
+    "hall_marble_bust": {
+      "id": "prop_hall_marble_bust",
+      "type": "prop",
+      "path": "res://assets/sprites/props/hall_marble_bust.png",
+      "size": [
+        18,
+        38
+      ],
+      "status": "final",
+      "description": "Kaideli mermer büst"
+    },
+    "prop_hall_bench": {
+      "id": "prop_hall_bench",
+      "type": "prop",
+      "path": "res://assets/sprites/props/hall_bench.png",
+      "size": [
+        48,
+        28
+      ],
+      "status": "final",
+      "description": "Ahşap bekleme sırası"
+    },
+    "hall_bench": {
+      "id": "prop_hall_bench",
+      "type": "prop",
+      "path": "res://assets/sprites/props/hall_bench.png",
+      "size": [
+        48,
+        28
+      ],
+      "status": "final",
+      "description": "Ahşap bekleme sırası"
+    },
+    "prop_hall_grand_mirror": {
+      "id": "prop_hall_grand_mirror",
+      "type": "prop",
+      "path": "res://assets/sprites/props/hall_grand_mirror.png",
+      "size": [
+        30,
+        52
+      ],
+      "status": "final",
+      "description": "Büyük altın varaklı ayna"
+    },
+    "hall_grand_mirror": {
+      "id": "prop_hall_grand_mirror",
+      "type": "prop",
+      "path": "res://assets/sprites/props/hall_grand_mirror.png",
+      "size": [
+        30,
+        52
+      ],
+      "status": "final",
+      "description": "Büyük altın varaklı ayna"
+    },
+    "prop_hall_potted_fern": {
+      "id": "prop_hall_potted_fern",
+      "type": "prop",
+      "path": "res://assets/sprites/props/hall_potted_fern.png",
+      "size": [
+        24,
+        28
+      ],
+      "status": "final",
+      "description": "Büyük salon eğrelti otu"
+    },
+    "hall_potted_fern": {
+      "id": "prop_hall_potted_fern",
+      "type": "prop",
+      "path": "res://assets/sprites/props/hall_potted_fern.png",
+      "size": [
+        24,
+        28
+      ],
+      "status": "final",
+      "description": "Büyük salon eğrelti otu"
+    },
+    "prop_upper_wardrobe": {
+      "id": "prop_upper_wardrobe",
+      "type": "prop",
+      "path": "res://assets/sprites/props/upper_wardrobe.png",
+      "size": [
+        44,
+        60
+      ],
+      "status": "final",
+      "description": "Masif ahşap gardırop"
+    },
+    "upper_wardrobe": {
+      "id": "prop_upper_wardrobe",
+      "type": "prop",
+      "path": "res://assets/sprites/props/upper_wardrobe.png",
+      "size": [
+        44,
+        60
+      ],
+      "status": "final",
+      "description": "Masif ahşap gardırop"
+    },
+    "prop_upper_dresser_mirror": {
+      "id": "prop_upper_dresser_mirror",
+      "type": "prop",
+      "path": "res://assets/sprites/props/upper_dresser_mirror.png",
+      "size": [
+        38,
+        48
+      ],
+      "status": "final",
+      "description": "Aynalı tuvalet masası"
+    },
+    "upper_dresser_mirror": {
+      "id": "prop_upper_dresser_mirror",
+      "type": "prop",
+      "path": "res://assets/sprites/props/upper_dresser_mirror.png",
+      "size": [
+        38,
+        48
+      ],
+      "status": "final",
+      "description": "Aynalı tuvalet masası"
+    },
+    "prop_upper_bed_grand": {
+      "id": "prop_upper_bed_grand",
+      "type": "prop",
+      "path": "res://assets/sprites/props/upper_bed_grand.png",
+      "size": [
+        64,
+        36
+      ],
+      "status": "final",
+      "description": "Büyük kadife yatak"
+    },
+    "upper_bed_grand": {
+      "id": "prop_upper_bed_grand",
+      "type": "prop",
+      "path": "res://assets/sprites/props/upper_bed_grand.png",
+      "size": [
+        64,
+        36
+      ],
+      "status": "final",
+      "description": "Büyük kadife yatak"
+    },
+    "prop_upper_nightstand": {
+      "id": "prop_upper_nightstand",
+      "type": "prop",
+      "path": "res://assets/sprites/props/upper_nightstand.png",
+      "size": [
+        18,
+        28
+      ],
+      "status": "final",
+      "description": "Komodin ve abajur"
+    },
+    "upper_nightstand": {
+      "id": "prop_upper_nightstand",
+      "type": "prop",
+      "path": "res://assets/sprites/props/upper_nightstand.png",
+      "size": [
+        18,
+        28
+      ],
+      "status": "final",
+      "description": "Komodin ve abajur"
+    },
+    "prop_upper_window_seat": {
+      "id": "prop_upper_window_seat",
+      "type": "prop",
+      "path": "res://assets/sprites/props/upper_window_seat.png",
+      "size": [
+        34,
+        24
+      ],
+      "status": "final",
+      "description": "Minderli pencere önü sediri"
+    },
+    "upper_window_seat": {
+      "id": "prop_upper_window_seat",
+      "type": "prop",
+      "path": "res://assets/sprites/props/upper_window_seat.png",
+      "size": [
+        34,
+        24
+      ],
+      "status": "final",
+      "description": "Minderli pencere önü sediri"
+    },
+    "prop_upper_desk_letters": {
+      "id": "prop_upper_desk_letters",
+      "type": "prop",
+      "path": "res://assets/sprites/props/upper_desk_letters.png",
+      "size": [
+        46,
+        30
+      ],
+      "status": "final",
+      "description": "Mektuplu yazı masası"
+    },
+    "upper_desk_letters": {
+      "id": "prop_upper_desk_letters",
+      "type": "prop",
+      "path": "res://assets/sprites/props/upper_desk_letters.png",
+      "size": [
+        46,
+        30
+      ],
+      "status": "final",
+      "description": "Mektuplu yazı masası"
+    },
+    "prop_upper_chaise_lounge": {
+      "id": "prop_upper_chaise_lounge",
+      "type": "prop",
+      "path": "res://assets/sprites/props/upper_chaise_lounge.png",
+      "size": [
+        52,
+        30
+      ],
+      "status": "final",
+      "description": "Deri koridor dinlenme sediri"
+    },
+    "upper_chaise_lounge": {
+      "id": "prop_upper_chaise_lounge",
+      "type": "prop",
+      "path": "res://assets/sprites/props/upper_chaise_lounge.png",
+      "size": [
+        52,
+        30
+      ],
+      "status": "final",
+      "description": "Deri koridor dinlenme sediri"
+    },
+    "prop_upper_vintage_trunk": {
+      "id": "prop_upper_vintage_trunk",
+      "type": "prop",
+      "path": "res://assets/sprites/props/upper_vintage_trunk.png",
+      "size": [
+        30,
+        20
+      ],
+      "status": "final",
+      "description": "Julian'ın deri seyahat sandığı (Evidence E12)"
+    },
+    "upper_vintage_trunk": {
+      "id": "prop_upper_vintage_trunk",
+      "type": "prop",
+      "path": "res://assets/sprites/props/upper_vintage_trunk.png",
+      "size": [
+        30,
+        20
+      ],
+      "status": "final",
+      "description": "Julian'ın deri seyahat sandığı (Evidence E12)"
+    },
+    "prop_upper_leather_suitcase": {
+      "id": "prop_upper_leather_suitcase",
+      "type": "prop",
+      "path": "res://assets/sprites/props/upper_leather_suitcase.png",
+      "size": [
+        26,
+        18
+      ],
+      "status": "final",
+      "description": "Yolculuk bavulu"
+    },
+    "upper_leather_suitcase": {
+      "id": "prop_upper_leather_suitcase",
+      "type": "prop",
+      "path": "res://assets/sprites/props/upper_leather_suitcase.png",
+      "size": [
+        26,
+        18
+      ],
+      "status": "final",
+      "description": "Yolculuk bavulu"
+    },
+    "door_visual_study": {
+      "id": "door_visual_study",
+      "type": "prop",
+      "path": "res://assets/sprites/props/door_standard.png",
+      "size": [
+        40,
+        76
+      ],
+      "status": "final",
+      "description": "Real asset from new_assets for door_visual_study"
+    },
+    "prop_door_visual_study": {
+      "id": "door_visual_study",
+      "type": "prop",
+      "path": "res://assets/sprites/props/door_standard.png",
+      "size": [
+        40,
+        76
+      ],
+      "status": "final",
+      "description": "Real asset from new_assets for door_visual_study"
+    },
+    "door_visual_library": {
+      "id": "door_visual_library",
+      "type": "prop",
+      "path": "res://assets/sprites/props/door_standard.png",
+      "size": [
+        40,
+        76
+      ],
+      "status": "final",
+      "description": "Real asset from new_assets for door_visual_library"
+    },
+    "prop_door_visual_library": {
+      "id": "door_visual_library",
+      "type": "prop",
+      "path": "res://assets/sprites/props/door_standard.png",
+      "size": [
+        40,
+        76
+      ],
+      "status": "final",
+      "description": "Real asset from new_assets for door_visual_library"
+    },
+    "study_door": {
+      "id": "study_door",
+      "type": "prop",
+      "path": "res://assets/sprites/props/door_standard.png",
+      "size": [
+        40,
+        76
+      ],
+      "status": "final",
+      "description": "Real asset from new_assets for study_door"
+    },
+    "library_door": {
+      "id": "library_door",
+      "type": "prop",
+      "path": "res://assets/sprites/props/door_standard.png",
+      "size": [
+        40,
+        76
+      ],
+      "status": "final",
+      "description": "Real asset from new_assets for library_door"
+    },
+    "prop_library_door": {
+      "id": "library_door",
+      "type": "prop",
+      "path": "res://assets/sprites/props/door_standard.png",
+      "size": [
+        40,
+        76
+      ],
+      "status": "final",
+      "description": "Real asset from new_assets for library_door"
+    },
+    "dining_door": {
+      "id": "dining_door",
+      "type": "prop",
+      "path": "res://assets/sprites/props/door_standard.png",
+      "size": [
+        40,
+        76
+      ],
+      "status": "final",
+      "description": "Real asset from new_assets for dining_door"
+    },
+    "prop_dining_door": {
+      "id": "dining_door",
+      "type": "prop",
+      "path": "res://assets/sprites/props/door_standard.png",
+      "size": [
+        40,
+        76
+      ],
+      "status": "final",
+      "description": "Real asset from new_assets for dining_door"
+    },
+    "kitchen_door": {
+      "id": "kitchen_door",
+      "type": "prop",
+      "path": "res://assets/sprites/props/door_standard.png",
+      "size": [
+        40,
+        76
+      ],
+      "status": "final",
+      "description": "Real asset from new_assets for kitchen_door"
+    },
+    "prop_kitchen_door": {
+      "id": "kitchen_door",
+      "type": "prop",
+      "path": "res://assets/sprites/props/door_standard.png",
+      "size": [
+        40,
+        76
+      ],
+      "status": "final",
+      "description": "Real asset from new_assets for kitchen_door"
+    },
+    "kitchen_door_entry": {
+      "id": "kitchen_door_entry",
+      "type": "prop",
+      "path": "res://assets/sprites/props/door_standard.png",
+      "size": [
+        40,
+        76
+      ],
+      "status": "final",
+      "description": "Real asset from new_assets for kitchen_door_entry"
+    },
+    "prop_kitchen_door_entry": {
+      "id": "kitchen_door_entry",
+      "type": "prop",
+      "path": "res://assets/sprites/props/door_standard.png",
+      "size": [
+        40,
+        76
+      ],
+      "status": "final",
+      "description": "Real asset from new_assets for kitchen_door_entry"
+    },
+    "billiard_door": {
+      "id": "billiard_door",
+      "type": "prop",
+      "path": "res://assets/sprites/props/door_standard.png",
+      "size": [
+        40,
+        76
+      ],
+      "status": "final",
+      "description": "Real asset from new_assets for billiard_door"
+    },
+    "prop_billiard_door": {
+      "id": "billiard_door",
+      "type": "prop",
+      "path": "res://assets/sprites/props/door_standard.png",
+      "size": [
+        40,
+        76
+      ],
+      "status": "final",
+      "description": "Real asset from new_assets for billiard_door"
+    },
+    "harlow_room_door": {
+      "id": "prop_harlow_room_door",
+      "type": "prop",
+      "path": "res://assets/sprites/props/harlow_room_door.png",
+      "size": [
+        40,
+        76
+      ],
+      "status": "final",
+      "description": "Harlow'un yatak odası kapısı"
+    },
+    "prop_harlow_room_door": {
+      "id": "prop_harlow_room_door",
+      "type": "prop",
+      "path": "res://assets/sprites/props/harlow_room_door.png",
+      "size": [
+        40,
+        76
+      ],
+      "status": "final",
+      "description": "Harlow'un yatak odası kapısı"
+    },
+    "julian_room_door": {
+      "id": "prop_julian_room_door",
+      "type": "prop",
+      "path": "res://assets/sprites/props/julian_room_door.png",
+      "size": [
+        40,
+        76
+      ],
+      "status": "final",
+      "description": "Julian'ın oda kapısı"
+    },
+    "prop_julian_room_door": {
+      "id": "prop_julian_room_door",
+      "type": "prop",
+      "path": "res://assets/sprites/props/julian_room_door.png",
+      "size": [
+        40,
+        76
+      ],
+      "status": "final",
+      "description": "Julian'ın oda kapısı"
+    },
+    "pike_room_door": {
+      "id": "prop_pike_room_door",
+      "type": "prop",
+      "path": "res://assets/sprites/props/pike_room_door.png",
+      "size": [
+        40,
+        76
+      ],
+      "status": "final",
+      "description": "Pike'ın misafir odası kapısı"
+    },
+    "prop_pike_room_door": {
+      "id": "prop_pike_room_door",
+      "type": "prop",
+      "path": "res://assets/sprites/props/pike_room_door.png",
+      "size": [
+        40,
+        76
+      ],
+      "status": "final",
+      "description": "Pike'ın misafir odası kapısı"
+    },
+    "upper_stairs_door": {
+      "id": "upper_stairs_door",
+      "type": "prop",
+      "path": "res://assets/sprites/props/door_standard.png",
+      "size": [
+        40,
+        76
+      ],
+      "status": "final",
+      "description": "Real asset from new_assets for upper_stairs_door"
+    },
+    "prop_upper_stairs_door": {
+      "id": "upper_stairs_door",
+      "type": "prop",
+      "path": "res://assets/sprites/props/door_standard.png",
+      "size": [
+        40,
+        76
+      ],
+      "status": "final",
+      "description": "Real asset from new_assets for upper_stairs_door"
+    },
+    "hall_window": {
+      "id": "hall_window",
+      "type": "prop",
+      "path": "res://assets/sprites/props/window_mansion.png",
+      "size": [
+        48,
+        56
+      ],
+      "status": "final",
+      "description": "Real asset from new_assets for hall_window"
+    },
+    "prop_hall_window": {
+      "id": "hall_window",
+      "type": "prop",
+      "path": "res://assets/sprites/props/window_mansion.png",
+      "size": [
+        48,
+        56
+      ],
+      "status": "final",
+      "description": "Real asset from new_assets for hall_window"
+    },
+    "silas_rainy_window": {
+      "id": "prop_silas_rainy_window",
+      "type": "prop",
+      "path": "res://assets/sprites/props/silas_rainy_window.png",
+      "size": [
+        48,
+        56
+      ],
+      "status": "final",
+      "description": "Pencere pervazında durmuş cep saati"
+    },
+    "prop_silas_rainy_window": {
+      "id": "prop_silas_rainy_window",
+      "type": "prop",
+      "path": "res://assets/sprites/props/silas_rainy_window.png",
+      "size": [
+        48,
+        56
+      ],
+      "status": "final",
+      "description": "Pencere pervazında durmuş cep saati"
+    },
+    "study_window": {
+      "id": "study_window",
+      "type": "prop",
+      "path": "res://assets/sprites/props/window_mansion.png",
+      "size": [
+        48,
+        56
+      ],
+      "status": "final",
+      "description": "Real asset from new_assets for study_window"
+    },
+    "prop_study_window": {
+      "id": "study_window",
+      "type": "prop",
+      "path": "res://assets/sprites/props/window_mansion.png",
+      "size": [
+        48,
+        56
+      ],
+      "status": "final",
+      "description": "Real asset from new_assets for study_window"
+    },
+    "study_fireplace": {
+      "id": "study_fireplace",
+      "type": "prop",
+      "path": "res://assets/sprites/props/fireplace.png",
+      "size": [
+        56,
+        44
+      ],
+      "status": "final",
+      "description": "Real asset from new_assets for study_fireplace"
+    },
+    "prop_study_fireplace": {
+      "id": "study_fireplace",
+      "type": "prop",
+      "path": "res://assets/sprites/props/fireplace.png",
+      "size": [
+        56,
+        44
+      ],
+      "status": "final",
+      "description": "Real asset from new_assets for study_fireplace"
+    },
+    "hall_fireplace": {
+      "id": "hall_fireplace",
+      "type": "prop",
+      "path": "res://assets/sprites/props/fireplace.png",
+      "size": [
+        56,
+        44
+      ],
+      "status": "final",
+      "description": "Real asset from new_assets for hall_fireplace"
+    },
+    "prop_hall_fireplace": {
+      "id": "hall_fireplace",
+      "type": "prop",
+      "path": "res://assets/sprites/props/fireplace.png",
+      "size": [
+        56,
+        44
+      ],
+      "status": "final",
+      "description": "Real asset from new_assets for hall_fireplace"
+    },
+    "library_cold_fireplace": {
+      "id": "prop_library_cold_fireplace",
+      "type": "prop",
+      "path": "res://assets/sprites/props/library_cold_fireplace.png",
+      "size": [
+        60,
+        44
+      ],
+      "status": "final",
+      "description": "Soğuk şömine ve pervazdaki digitalis şişesi"
+    },
+    "prop_library_cold_fireplace": {
+      "id": "prop_library_cold_fireplace",
+      "type": "prop",
+      "path": "res://assets/sprites/props/library_cold_fireplace.png",
+      "size": [
+        60,
+        44
+      ],
+      "status": "final",
+      "description": "Soğuk şömine ve pervazdaki digitalis şişesi"
+    },
+    "library_bookcase_left": {
+      "id": "library_bookcase_left",
+      "type": "prop",
+      "path": "res://assets/sprites/props/library_bookcase.png",
+      "size": [
+        56,
+        90
+      ],
+      "status": "final",
+      "description": "Real asset from new_assets for library_bookcase_left"
+    },
+    "prop_library_bookcase_left": {
+      "id": "library_bookcase_left",
+      "type": "prop",
+      "path": "res://assets/sprites/props/library_bookcase.png",
+      "size": [
+        56,
+        90
+      ],
+      "status": "final",
+      "description": "Real asset from new_assets for library_bookcase_left"
+    },
+    "hall_armchair": {
+      "id": "hall_armchair",
+      "type": "prop",
+      "path": "res://assets/sprites/props/study_armchair.png",
+      "size": [
+        64,
+        34
+      ],
+      "status": "final",
+      "description": "Real asset from new_assets for hall_armchair"
+    },
+    "prop_hall_armchair": {
+      "id": "hall_armchair",
+      "type": "prop",
+      "path": "res://assets/sprites/props/study_armchair.png",
+      "size": [
+        64,
+        34
+      ],
+      "status": "final",
+      "description": "Real asset from new_assets for hall_armchair"
+    },
+    "library_armchair": {
+      "id": "library_armchair",
+      "type": "prop",
+      "path": "res://assets/sprites/props/library_reading_chair.png",
+      "size": [
+        26,
+        34
+      ],
+      "status": "final",
+      "description": "Real asset from new_assets for library_armchair"
+    },
+    "prop_library_armchair": {
+      "id": "library_armchair",
+      "type": "prop",
+      "path": "res://assets/sprites/props/library_reading_chair.png",
+      "size": [
+        26,
+        34
+      ],
+      "status": "final",
+      "description": "Real asset from new_assets for library_armchair"
+    },
+    "prop_window_large": {
+      "id": "prop_window_large",
+      "type": "prop",
+      "path": "res://assets/sprites/props/window_large.png",
+      "size": [
+        48,
+        56
+      ],
+      "status": "final",
+      "description": "Büyük 3 bölmeli pencere"
+    },
+    "window_large": {
+      "id": "prop_window_large",
+      "type": "prop",
+      "path": "res://assets/sprites/props/window_large.png",
+      "size": [
+        48,
+        56
+      ],
+      "status": "final",
+      "description": "Büyük 3 bölmeli pencere"
+    },
+    "prop_fireplace_cold": {
+      "id": "prop_fireplace_cold",
+      "type": "prop",
+      "path": "res://assets/sprites/props/fireplace_cold.png",
+      "size": [
+        56,
+        44
+      ],
+      "status": "final",
+      "description": "Sönmüş taş şömine"
+    },
+    "fireplace_cold": {
+      "id": "prop_fireplace_cold",
+      "type": "prop",
+      "path": "res://assets/sprites/props/fireplace_cold.png",
+      "size": [
+        56,
+        44
+      ],
+      "status": "final",
+      "description": "Sönmüş taş şömine"
+    },
+    "prop_family_crest_shield": {
+      "id": "prop_family_crest_shield",
+      "type": "prop",
+      "path": "res://assets/sprites/props/family_crest_shield.png",
+      "size": [
+        28,
+        34
+      ],
+      "status": "final",
+      "description": "Hanedan arması ve kalkan"
+    },
+    "family_crest_shield": {
+      "id": "prop_family_crest_shield",
+      "type": "prop",
+      "path": "res://assets/sprites/props/family_crest_shield.png",
+      "size": [
+        28,
+        34
+      ],
+      "status": "final",
+      "description": "Hanedan arması ve kalkan"
+    },
+    "prop_landscape_painting_small": {
+      "id": "prop_landscape_painting_small",
+      "type": "prop",
+      "path": "res://assets/sprites/props/landscape_painting_small.png",
+      "size": [
+        22,
+        18
+      ],
+      "status": "final",
+      "description": "Küçük manzara tablosu"
+    },
+    "landscape_painting_small": {
+      "id": "prop_landscape_painting_small",
+      "type": "prop",
+      "path": "res://assets/sprites/props/landscape_painting_small.png",
+      "size": [
+        22,
+        18
+      ],
+      "status": "final",
+      "description": "Küçük manzara tablosu"
+    },
+    "prop_wall_clock_round": {
+      "id": "prop_wall_clock_round",
+      "type": "prop",
+      "path": "res://assets/sprites/props/wall_clock_round.png",
+      "size": [
+        16,
+        16
+      ],
+      "status": "final",
+      "description": "Yuvarlak duvar saati"
+    },
+    "wall_clock_round": {
+      "id": "prop_wall_clock_round",
+      "type": "prop",
+      "path": "res://assets/sprites/props/wall_clock_round.png",
+      "size": [
+        16,
+        16
+      ],
+      "status": "final",
+      "description": "Yuvarlak duvar saati"
+    },
+    "prop_wall_sconce_lit": {
+      "id": "prop_wall_sconce_lit",
+      "type": "prop",
+      "path": "res://assets/sprites/props/wall_sconce_lit.png",
+      "size": [
+        10,
+        14
+      ],
+      "status": "final",
+      "description": "Yanan pirinç duvar apliği"
+    },
+    "wall_sconce_lit": {
+      "id": "prop_wall_sconce_lit",
+      "type": "prop",
+      "path": "res://assets/sprites/props/wall_sconce_lit.png",
+      "size": [
+        10,
+        14
+      ],
+      "status": "final",
+      "description": "Yanan pirinç duvar apliği"
+    },
+    "prop_silas_office_chair": {
+      "id": "prop_silas_office_chair",
+      "type": "prop",
+      "path": "res://assets/sprites/props/silas_office_chair.png",
+      "size": [
+        24,
+        34
+      ],
+      "status": "final",
+      "description": "Tekerlekli deri ofis koltuğu"
+    },
+    "silas_office_chair": {
+      "id": "prop_silas_office_chair",
+      "type": "prop",
+      "path": "res://assets/sprites/props/silas_office_chair.png",
+      "size": [
+        24,
+        34
+      ],
+      "status": "final",
+      "description": "Tekerlekli deri ofis koltuğu"
+    },
+    "prop_silas_vintage_radio": {
+      "id": "prop_silas_vintage_radio",
+      "type": "prop",
+      "path": "res://assets/sprites/props/silas_vintage_radio.png",
+      "size": [
+        24,
+        20
+      ],
+      "status": "final",
+      "description": "Eski ahşap radyo"
+    },
+    "silas_vintage_radio": {
+      "id": "prop_silas_vintage_radio",
+      "type": "prop",
+      "path": "res://assets/sprites/props/silas_vintage_radio.png",
+      "size": [
+        24,
+        20
+      ],
+      "status": "final",
+      "description": "Eski ahşap radyo"
+    },
+    "prop_silas_whiskey_tray": {
+      "id": "prop_silas_whiskey_tray",
+      "type": "prop",
+      "path": "res://assets/sprites/props/silas_whiskey_tray.png",
+      "size": [
+        24,
+        16
+      ],
+      "status": "final",
+      "description": "Viski şişesi ve kadeh tepsisi"
+    },
+    "silas_whiskey_tray": {
+      "id": "prop_silas_whiskey_tray",
+      "type": "prop",
+      "path": "res://assets/sprites/props/silas_whiskey_tray.png",
+      "size": [
+        24,
+        16
+      ],
+      "status": "final",
+      "description": "Viski şişesi ve kadeh tepsisi"
+    },
+    "prop_silas_books_stack": {
+      "id": "prop_silas_books_stack",
+      "type": "prop",
+      "path": "res://assets/sprites/props/silas_books_stack.png",
+      "size": [
+        20,
+        20
+      ],
+      "status": "final",
+      "description": "Eski ciltli kitap yığını"
+    },
+    "silas_books_stack": {
+      "id": "prop_silas_books_stack",
+      "type": "prop",
+      "path": "res://assets/sprites/props/silas_books_stack.png",
+      "size": [
+        20,
+        20
+      ],
+      "status": "final",
+      "description": "Eski ciltli kitap yığını"
+    },
+    "prop_study_chair": {
+      "id": "prop_study_chair",
+      "type": "prop",
+      "path": "res://assets/sprites/props/study_chair.png",
+      "size": [
+        24,
+        34
+      ],
+      "status": "final",
+      "description": "Boş çalışma koltuğu"
+    },
+    "study_chair": {
+      "id": "prop_study_chair",
+      "type": "prop",
+      "path": "res://assets/sprites/props/study_chair.png",
+      "size": [
+        24,
+        34
+      ],
+      "status": "final",
+      "description": "Boş çalışma koltuğu"
+    },
+    "prop_study_corpse_harlow": {
+      "id": "prop_study_corpse_harlow",
+      "type": "prop",
+      "path": "res://assets/sprites/props/study_corpse_harlow.png",
+      "size": [
+        34,
+        36
+      ],
+      "status": "final",
+      "description": "Koltukta yığılmış Harlow cesedi"
+    },
+    "study_corpse_harlow": {
+      "id": "prop_study_corpse_harlow",
+      "type": "prop",
+      "path": "res://assets/sprites/props/study_corpse_harlow.png",
+      "size": [
+        34,
+        36
+      ],
+      "status": "final",
+      "description": "Koltukta yığılmış Harlow cesedi"
+    },
+    "prop_study_desk_empty": {
+      "id": "prop_study_desk_empty",
+      "type": "prop",
+      "path": "res://assets/sprites/props/study_desk_empty.png",
+      "size": [
+        64,
+        34
+      ],
+      "status": "final",
+      "description": "Boş maun çalışma masası"
+    },
+    "study_desk_empty": {
+      "id": "prop_study_desk_empty",
+      "type": "prop",
+      "path": "res://assets/sprites/props/study_desk_empty.png",
+      "size": [
+        64,
+        34
+      ],
+      "status": "final",
+      "description": "Boş maun çalışma masası"
+    },
+    "prop_study_globe": {
+      "id": "prop_study_globe",
+      "type": "prop",
+      "path": "res://assets/sprites/props/study_globe.png",
+      "size": [
+        20,
+        30
+      ],
+      "status": "final",
+      "description": "Pirinç ayaklı dünya küresi"
+    },
+    "study_globe": {
+      "id": "prop_study_globe",
+      "type": "prop",
+      "path": "res://assets/sprites/props/study_globe.png",
+      "size": [
+        20,
+        30
+      ],
+      "status": "final",
+      "description": "Pirinç ayaklı dünya küresi"
+    },
+    "prop_study_nightstand": {
+      "id": "prop_study_nightstand",
+      "type": "prop",
+      "path": "res://assets/sprites/props/study_nightstand.png",
+      "size": [
+        22,
+        28
+      ],
+      "status": "final",
+      "description": "Komodin ve ilaç şişesi"
+    },
+    "study_nightstand": {
+      "id": "prop_study_nightstand",
+      "type": "prop",
+      "path": "res://assets/sprites/props/study_nightstand.png",
+      "size": [
+        22,
+        28
+      ],
+      "status": "final",
+      "description": "Komodin ve ilaç şişesi"
+    },
+    "prop_library_bookcase_arch": {
+      "id": "prop_library_bookcase_arch",
+      "type": "prop",
+      "path": "res://assets/sprites/props/library_bookcase_arch.png",
+      "size": [
+        48,
+        90
+      ],
+      "status": "final",
+      "description": "Gotik kemerli kitaplık"
+    },
+    "library_bookcase_arch": {
+      "id": "prop_library_bookcase_arch",
+      "type": "prop",
+      "path": "res://assets/sprites/props/library_bookcase_arch.png",
+      "size": [
+        48,
+        90
+      ],
+      "status": "final",
+      "description": "Gotik kemerli kitaplık"
+    },
+    "prop_library_footstool": {
+      "id": "prop_library_footstool",
+      "type": "prop",
+      "path": "res://assets/sprites/props/library_footstool.png",
+      "size": [
+        14,
+        10
+      ],
+      "status": "final",
+      "description": "Ayak pufu"
+    },
+    "library_footstool": {
+      "id": "prop_library_footstool",
+      "type": "prop",
+      "path": "res://assets/sprites/props/library_footstool.png",
+      "size": [
+        14,
+        10
+      ],
+      "status": "final",
+      "description": "Ayak pufu"
+    },
+    "prop_library_grandfather_clock": {
+      "id": "prop_library_grandfather_clock",
+      "type": "prop",
+      "path": "res://assets/sprites/props/library_grandfather_clock.png",
+      "size": [
+        24,
+        66
+      ],
+      "status": "final",
+      "description": "Büyükbaba saati"
+    },
+    "library_grandfather_clock": {
+      "id": "prop_library_grandfather_clock",
+      "type": "prop",
+      "path": "res://assets/sprites/props/library_grandfather_clock.png",
+      "size": [
+        24,
+        66
+      ],
+      "status": "final",
+      "description": "Büyükbaba saati"
+    },
+    "prop_library_table_lamp": {
+      "id": "prop_library_table_lamp",
+      "type": "prop",
+      "path": "res://assets/sprites/props/library_table_lamp.png",
+      "size": [
+        18,
+        28
+      ],
+      "status": "final",
+      "description": "Abajurlu okuma sehpası"
+    },
+    "library_table_lamp": {
+      "id": "prop_library_table_lamp",
+      "type": "prop",
+      "path": "res://assets/sprites/props/library_table_lamp.png",
+      "size": [
+        18,
+        28
+      ],
+      "status": "final",
+      "description": "Abajurlu okuma sehpası"
+    },
+    "prop_library_piano": {
+      "id": "prop_library_piano",
+      "type": "prop",
+      "path": "res://assets/sprites/props/library_piano.png",
+      "size": [
+        36,
+        50
+      ],
+      "status": "final",
+      "description": "Duvar piyanosu"
+    },
+    "library_piano": {
+      "id": "prop_library_piano",
+      "type": "prop",
+      "path": "res://assets/sprites/props/library_piano.png",
+      "size": [
+        36,
+        50
+      ],
+      "status": "final",
+      "description": "Duvar piyanosu"
+    },
+    "prop_dining_grandfather_clock": {
+      "id": "prop_dining_grandfather_clock",
+      "type": "prop",
+      "path": "res://assets/sprites/props/dining_grandfather_clock.png",
+      "size": [
+        24,
+        66
+      ],
+      "status": "final",
+      "description": "Yemek odası büyükbaba saati"
+    },
+    "dining_grandfather_clock": {
+      "id": "prop_dining_grandfather_clock",
+      "type": "prop",
+      "path": "res://assets/sprites/props/dining_grandfather_clock.png",
+      "size": [
+        24,
+        66
+      ],
+      "status": "final",
+      "description": "Yemek odası büyükbaba saati"
+    },
+    "prop_dining_drawer_chest": {
+      "id": "prop_dining_drawer_chest",
+      "type": "prop",
+      "path": "res://assets/sprites/props/dining_drawer_chest.png",
+      "size": [
+        28,
+        34
+      ],
+      "status": "final",
+      "description": "Çekmeceli servis dolabı"
+    },
+    "dining_drawer_chest": {
+      "id": "prop_dining_drawer_chest",
+      "type": "prop",
+      "path": "res://assets/sprites/props/dining_drawer_chest.png",
+      "size": [
+        28,
+        34
+      ],
+      "status": "final",
+      "description": "Çekmeceli servis dolabı"
+    },
+    "prop_kitchen_wash_basin": {
+      "id": "prop_kitchen_wash_basin",
+      "type": "prop",
+      "path": "res://assets/sprites/props/kitchen_wash_basin.png",
+      "size": [
+        20,
+        30
+      ],
+      "status": "final",
+      "description": "Ayaklı emaye yıkama teknesi"
+    },
+    "kitchen_wash_basin": {
+      "id": "prop_kitchen_wash_basin",
+      "type": "prop",
+      "path": "res://assets/sprites/props/kitchen_wash_basin.png",
+      "size": [
+        20,
+        30
+      ],
+      "status": "final",
+      "description": "Ayaklı emaye yıkama teknesi"
+    },
+    "prop_kitchen_veg_basket": {
+      "id": "prop_kitchen_veg_basket",
+      "type": "prop",
+      "path": "res://assets/sprites/props/kitchen_veg_basket.png",
+      "size": [
+        24,
+        20
+      ],
+      "status": "final",
+      "description": "Patates ve havuç sepeti"
+    },
+    "kitchen_veg_basket": {
+      "id": "prop_kitchen_veg_basket",
+      "type": "prop",
+      "path": "res://assets/sprites/props/kitchen_veg_basket.png",
+      "size": [
+        24,
+        20
+      ],
+      "status": "final",
+      "description": "Patates ve havuç sepeti"
+    },
+    "prop_kitchen_stool": {
+      "id": "prop_kitchen_stool",
+      "type": "prop",
+      "path": "res://assets/sprites/props/kitchen_stool.png",
+      "size": [
+        14,
+        20
+      ],
+      "status": "final",
+      "description": "Ahşap mutfak taburesi"
+    },
+    "kitchen_stool": {
+      "id": "prop_kitchen_stool",
+      "type": "prop",
+      "path": "res://assets/sprites/props/kitchen_stool.png",
+      "size": [
+        14,
+        20
+      ],
+      "status": "final",
+      "description": "Ahşap mutfak taburesi"
+    },
+    "prop_kitchen_clock": {
+      "id": "prop_kitchen_clock",
+      "type": "prop",
+      "path": "res://assets/sprites/props/kitchen_clock.png",
+      "size": [
+        16,
+        16
+      ],
+      "status": "final",
+      "description": "Duvar saati"
+    },
+    "kitchen_clock": {
+      "id": "prop_kitchen_clock",
+      "type": "prop",
+      "path": "res://assets/sprites/props/kitchen_clock.png",
+      "size": [
+        16,
+        16
+      ],
+      "status": "final",
+      "description": "Duvar saati"
+    },
+    "prop_billiard_scoreboard": {
+      "id": "prop_billiard_scoreboard",
+      "type": "prop",
+      "path": "res://assets/sprites/props/billiard_scoreboard.png",
+      "size": [
+        36,
+        18
+      ],
+      "status": "final",
+      "description": "Duvar skor tabelası"
+    },
+    "billiard_scoreboard": {
+      "id": "prop_billiard_scoreboard",
+      "type": "prop",
+      "path": "res://assets/sprites/props/billiard_scoreboard.png",
+      "size": [
+        36,
+        18
+      ],
+      "status": "final",
+      "description": "Duvar skor tabelası"
+    },
+    "prop_billiard_ashtray_stand": {
+      "id": "prop_billiard_ashtray_stand",
+      "type": "prop",
+      "path": "res://assets/sprites/props/billiard_ashtray_stand.png",
+      "size": [
+        12,
+        28
+      ],
+      "status": "final",
+      "description": "Ayaklı pirinç küllük"
+    },
+    "billiard_ashtray_stand": {
+      "id": "prop_billiard_ashtray_stand",
+      "type": "prop",
+      "path": "res://assets/sprites/props/billiard_ashtray_stand.png",
+      "size": [
+        12,
+        28
+      ],
+      "status": "final",
+      "description": "Ayaklı pirinç küllük"
+    },
+    "prop_billiard_whiskey_table": {
+      "id": "prop_billiard_whiskey_table",
+      "type": "prop",
+      "path": "res://assets/sprites/props/billiard_whiskey_table.png",
+      "size": [
+        20,
+        24
+      ],
+      "status": "final",
+      "description": "Viski kadehli sehpa (Evidence E11)"
+    },
+    "billiard_whiskey_table": {
+      "id": "prop_billiard_whiskey_table",
+      "type": "prop",
+      "path": "res://assets/sprites/props/billiard_whiskey_table.png",
+      "size": [
+        20,
+        24
+      ],
+      "status": "final",
+      "description": "Viski kadehli sehpa (Evidence E11)"
+    },
+    "prop_billiard_ball_tray": {
+      "id": "prop_billiard_ball_tray",
+      "type": "prop",
+      "path": "res://assets/sprites/props/billiard_ball_tray.png",
+      "size": [
+        18,
+        8
+      ],
+      "status": "final",
+      "description": "Bilardo topları tepsisi"
+    },
+    "billiard_ball_tray": {
+      "id": "prop_billiard_ball_tray",
+      "type": "prop",
+      "path": "res://assets/sprites/props/billiard_ball_tray.png",
+      "size": [
+        18,
+        8
+      ],
+      "status": "final",
+      "description": "Bilardo topları tepsisi"
+    },
+    "prop_hall_potted_plant": {
+      "id": "prop_hall_potted_plant",
+      "type": "prop",
+      "path": "res://assets/sprites/props/hall_potted_plant.png",
+      "size": [
+        20,
+        24
+      ],
+      "status": "final",
+      "description": "Pirinç saksılı salon bitkisi"
+    },
+    "hall_potted_plant": {
+      "id": "prop_hall_potted_plant",
+      "type": "prop",
+      "path": "res://assets/sprites/props/hall_potted_plant.png",
+      "size": [
+        20,
+        24
+      ],
+      "status": "final",
+      "description": "Pirinç saksılı salon bitkisi"
+    },
+    "prop_hall_carpet_runner": {
+      "id": "prop_hall_carpet_runner",
+      "type": "prop",
+      "path": "res://assets/sprites/props/hall_carpet_runner.png",
+      "size": [
+        72,
+        24
+      ],
+      "status": "final",
+      "description": "Koridor yolluğu halısı"
+    },
+    "hall_carpet_runner": {
+      "id": "prop_hall_carpet_runner",
+      "type": "prop",
+      "path": "res://assets/sprites/props/hall_carpet_runner.png",
+      "size": [
+        72,
+        24
+      ],
+      "status": "final",
+      "description": "Koridor yolluğu halısı"
+    },
+    "prop_upper_typewriter_desk": {
+      "id": "prop_upper_typewriter_desk",
+      "type": "prop",
+      "path": "res://assets/sprites/props/upper_typewriter_desk.png",
+      "size": [
+        24,
+        26
+      ],
+      "status": "final",
+      "description": "Pike'ın daktilolu masası (Evidence E13)"
+    },
+    "upper_typewriter_desk": {
+      "id": "prop_upper_typewriter_desk",
+      "type": "prop",
+      "path": "res://assets/sprites/props/upper_typewriter_desk.png",
+      "size": [
+        24,
+        26
+      ],
+      "status": "final",
+      "description": "Pike'ın daktilolu masası (Evidence E13)"
+    },
+    "prop_upper_carpet_runner": {
+      "id": "prop_upper_carpet_runner",
+      "type": "prop",
+      "path": "res://assets/sprites/props/upper_carpet_runner.png",
+      "size": [
+        72,
+        18
+      ],
+      "status": "final",
+      "description": "Koridor halı yolluğu"
+    },
+    "upper_carpet_runner": {
+      "id": "prop_upper_carpet_runner",
+      "type": "prop",
+      "path": "res://assets/sprites/props/upper_carpet_runner.png",
+      "size": [
+        72,
+        18
+      ],
+      "status": "final",
+      "description": "Koridor halı yolluğu"
+    },
+    "silas_locked_drawer": {
+      "id": "silas_locked_drawer",
+      "type": "prop",
+      "path": "res://assets/sprites/props/silas_drawer_small.png",
+      "status": "final",
+      "description": "Alias for silas_locked_drawer"
+    },
+    "prop_silas_locked_drawer": {
+      "id": "silas_locked_drawer",
+      "type": "prop",
+      "path": "res://assets/sprites/props/silas_drawer_small.png",
+      "status": "final",
+      "description": "Alias for silas_locked_drawer"
+    },
+    "clue_e01_pocket_watch": {
+      "path": "res://assets/sprites/clues/clue_e01_pocket_watch.png",
+      "size": [
+        32,
+        32
+      ],
+      "display_name": "E01 Kırık Cep Saati",
+      "category": "clue_icon",
+      "sheet": "L"
+    },
+    "clue_e02_half_written_letter": {
+      "path": "res://assets/sprites/clues/clue_e02_half_written_letter.png",
+      "size": [
+        32,
+        32
+      ],
+      "display_name": "E02 Yarım Kalmış Mektup",
+      "category": "clue_icon",
+      "sheet": "L"
+    },
+    "clue_e03_burned_candle": {
+      "path": "res://assets/sprites/clues/clue_e03_burned_candle.png",
+      "size": [
+        32,
+        32
+      ],
+      "display_name": "E03 Sönmüş Şamdan Mumu",
+      "category": "clue_icon",
+      "sheet": "L"
+    },
+    "clue_e04_brandy_glass": {
+      "path": "res://assets/sprites/clues/clue_e04_brandy_glass.png",
+      "size": [
+        32,
+        32
+      ],
+      "display_name": "E04 Zehirli Kadeh",
+      "category": "clue_icon",
+      "sheet": "L"
+    },
+    "clue_e05_dropper_bottle": {
+      "path": "res://assets/sprites/clues/clue_e05_dropper_bottle.png",
+      "size": [
+        32,
+        32
+      ],
+      "display_name": "E05 Kalp İlacı Damlalığı",
+      "category": "clue_icon",
+      "sheet": "L"
+    },
+    "clue_e06_prescription": {
+      "path": "res://assets/sprites/clues/clue_e06_prescription.png",
+      "size": [
+        32,
+        32
+      ],
+      "display_name": "E06 Dr. Hale'in Reçetesi",
+      "category": "clue_icon",
+      "sheet": "L"
+    },
+    "clue_e07_threat_letters": {
+      "path": "res://assets/sprites/clues/clue_e07_threat_letters.png",
+      "size": [
+        32,
+        32
+      ],
+      "display_name": "E07 Mühürlü Tehdit Mektupları",
+      "category": "clue_icon",
+      "sheet": "L"
+    },
+    "clue_e08_dismissal_notice": {
+      "path": "res://assets/sprites/clues/clue_e08_dismissal_notice.png",
+      "size": [
+        32,
+        32
+      ],
+      "display_name": "E08 Kovulma Bildirimi",
+      "category": "clue_icon",
+      "sheet": "L"
+    },
+    "clue_e09_digitalis_vial": {
+      "path": "res://assets/sprites/clues/clue_e09_digitalis_vial.png",
+      "size": [
+        32,
+        32
+      ],
+      "display_name": "E09 Boş Dijitalis Flakonu",
+      "category": "clue_icon",
+      "sheet": "L"
+    },
+    "clue_e10_fireplace_ash": {
+      "path": "res://assets/sprites/clues/clue_e10_fireplace_ash.png",
+      "size": [
+        32,
+        32
+      ],
+      "display_name": "E10 Şömine Külü",
+      "category": "clue_icon",
+      "sheet": "L"
+    },
+    "clue_e11_billiard_chalk": {
+      "path": "res://assets/sprites/clues/clue_e11_billiard_chalk.png",
+      "size": [
+        32,
+        32
+      ],
+      "display_name": "E11 Mavi Tebeşir Küpü",
+      "category": "clue_icon",
+      "sheet": "L"
+    },
+    "clue_e13_debt_letter": {
+      "path": "res://assets/sprites/clues/clue_e13_debt_letter.png",
+      "size": [
+        32,
+        32
+      ],
+      "display_name": "E13 Borç Senedi",
+      "category": "clue_icon",
+      "sheet": "L"
+    },
+    "clue_e14_typewriter_ribbon": {
+      "path": "res://assets/sprites/clues/clue_e14_typewriter_ribbon.png",
+      "size": [
+        32,
+        32
+      ],
+      "display_name": "E14 Daktilo Şeridi",
+      "category": "clue_icon",
+      "sheet": "L"
+    },
+    "clue_e15_brass_key": {
+      "path": "res://assets/sprites/clues/clue_e15_brass_key.png",
+      "size": [
+        32,
+        32
+      ],
+      "display_name": "E15 Pirinç Kapı Anahtarı",
+      "category": "clue_icon",
+      "sheet": "L"
+    },
+    "clue_e16_torn_photo": {
+      "path": "res://assets/sprites/clues/clue_e16_torn_photo.png",
+      "size": [
+        32,
+        32
+      ],
+      "display_name": "E16 Yırtık Fotoğraf",
+      "category": "clue_icon",
+      "sheet": "L"
+    },
+    "clue_e17_rotary_phone": {
+      "path": "res://assets/sprites/clues/clue_e17_rotary_phone.png",
+      "size": [
+        32,
+        32
+      ],
+      "display_name": "E17 Açık Bırakılmış Telefon",
+      "category": "clue_icon",
+      "sheet": "L"
+    },
+    "icon_medical_bag": {
+      "path": "res://assets/sprites/clues/icon_medical_bag.png",
+      "size": [
+        32,
+        32
+      ],
+      "display_name": "Doktor Çantası",
+      "category": "clue_icon",
+      "sheet": "L"
+    },
+    "icon_medic_registry": {
+      "path": "res://assets/sprites/clues/icon_medic_registry.png",
+      "size": [
+        32,
+        32
+      ],
+      "display_name": "Sıhhiye Kayıt Defteri",
+      "category": "clue_icon",
+      "sheet": "L"
+    },
+    "icon_matchbook": {
+      "path": "res://assets/sprites/clues/icon_matchbook.png",
+      "size": [
+        32,
+        32
+      ],
+      "display_name": "Kibrit Kutusu",
+      "category": "clue_icon",
+      "sheet": "L"
+    },
+    "icon_cigar_ashtray": {
+      "path": "res://assets/sprites/clues/icon_cigar_ashtray.png",
+      "size": [
+        32,
+        32
+      ],
+      "display_name": "Küllük ve Puro",
+      "category": "clue_icon",
+      "sheet": "L"
+    },
+    "icon_muddy_bootprint": {
+      "path": "res://assets/sprites/clues/icon_muddy_bootprint.png",
+      "size": [
+        32,
+        32
+      ],
+      "display_name": "Çamurlu Ayak İzi",
+      "category": "clue_icon",
+      "sheet": "L"
+    },
+    "icon_wet_umbrella": {
+      "path": "res://assets/sprites/clues/icon_wet_umbrella.png",
+      "size": [
+        32,
+        32
+      ],
+      "display_name": "Islak Şemsiye",
+      "category": "clue_icon",
+      "sheet": "L"
+    },
+    "icon_reading_glasses": {
+      "path": "res://assets/sprites/clues/icon_reading_glasses.png",
+      "size": [
+        32,
+        32
+      ],
+      "display_name": "Okuma Gözlüğü",
+      "category": "clue_icon",
+      "sheet": "L"
+    },
+    "icon_door_lock": {
+      "path": "res://assets/sprites/clues/icon_door_lock.png",
+      "size": [
+        32,
+        32
+      ],
+      "display_name": "Pirinç Kapı Kilidi",
+      "category": "clue_icon",
+      "sheet": "L"
+    },
+    "inspect_e04_brandy_poison": {
+      "path": "res://assets/sprites/inspect/inspect_e04_brandy_poison.png",
+      "size": [
+        160,
+        120
+      ],
+      "display_name": "Zehirli Kadeh ve Şişe Yakın Planı",
+      "category": "inspect_vignette",
+      "sheet": "M1"
+    },
+    "inspect_e01_pocket_watch": {
+      "path": "res://assets/sprites/inspect/inspect_e01_pocket_watch.png",
+      "size": [
+        160,
+        120
+      ],
+      "display_name": "Kırık Cep Saati ve Çatlak Cam Yakın Planı",
+      "category": "inspect_vignette",
+      "sheet": "M1"
+    },
+    "inspect_e07_threat_letters": {
+      "path": "res://assets/sprites/inspect/inspect_e07_threat_letters.png",
+      "size": [
+        160,
+        120
+      ],
+      "display_name": "Mühürlü Tehdit Mektupları Yakın Planı",
+      "category": "inspect_vignette",
+      "sheet": "M1"
+    },
+    "inspect_e05_desk_drawer": {
+      "path": "res://assets/sprites/inspect/inspect_e05_desk_drawer.png",
+      "size": [
+        160,
+        120
+      ],
+      "display_name": "Açık Çekmece, Damlalık ve Evrak Yakın Planı",
+      "category": "inspect_vignette",
+      "sheet": "M1"
+    },
+    "inspect_e16_torn_photo": {
+      "path": "res://assets/sprites/inspect/inspect_e16_torn_photo.png",
+      "size": [
+        160,
+        120
+      ],
+      "display_name": "İki Askerin Yırtık Fotoğrafı Yakın Planı",
+      "category": "inspect_vignette",
+      "sheet": "M2"
+    },
+    "inspect_e17_phone_off_hook": {
+      "path": "res://assets/sprites/inspect/inspect_e17_phone_off_hook.png",
+      "size": [
+        160,
+        120
+      ],
+      "display_name": "Açık Bırakılmış Telefon Yakın Planı",
+      "category": "inspect_vignette",
+      "sheet": "M2"
+    },
+    "inspect_silas_ministry_desk": {
+      "path": "res://assets/sprites/inspect/inspect_silas_ministry_desk.png",
+      "size": [
+        160,
+        120
+      ],
+      "display_name": "Silas'ın Masası ve Mühürlü Mektup",
+      "category": "inspect_vignette",
+      "sheet": "M2"
+    },
+    "inspect_e11_billiard_corner": {
+      "path": "res://assets/sprites/inspect/inspect_e11_billiard_corner.png",
+      "size": [
+        160,
+        120
+      ],
+      "display_name": "Bilardo Masası Köşesi ve Tebeşir",
+      "category": "inspect_vignette",
+      "sheet": "M2"
+    },
+    "inspect_e08_wastebasket": {
+      "path": "res://assets/sprites/inspect/inspect_e08_wastebasket.png",
+      "size": [
+        160,
+        120
+      ],
+      "display_name": "Çöp Kovası ve Kovulma Bildirimi",
+      "category": "inspect_vignette",
+      "sheet": "M3"
+    },
+    "inspect_e09_cold_fireplace": {
+      "path": "res://assets/sprites/inspect/inspect_e09_cold_fireplace.png",
+      "size": [
+        160,
+        120
+      ],
+      "display_name": "Küllü Şömine ve Boş Flakon",
+      "category": "inspect_vignette",
+      "sheet": "M3"
+    },
+    "inspect_e15_keyhole_key": {
+      "path": "res://assets/sprites/inspect/inspect_e15_keyhole_key.png",
+      "size": [
+        160,
+        120
+      ],
+      "display_name": "Kilit Deliğindeki Pirinç Anahtar",
+      "category": "inspect_vignette",
+      "sheet": "M3"
+    },
+    "inspect_e03_burned_candle": {
+      "path": "res://assets/sprites/inspect/inspect_e03_burned_candle.png",
+      "size": [
+        160,
+        120
+      ],
+      "display_name": "Erimiş Şamdan Mumu Yakın Planı",
+      "category": "inspect_vignette",
+      "sheet": "M3"
+    },
+    "ui_icon_folder": {
+      "path": "res://assets/sprites/ui/ui_icon_folder.png",
+      "size": [
+        24,
+        24
+      ],
+      "display_name": "Kanıt Klasörü İkonu",
+      "category": "ui_icon",
+      "sheet": "N"
+    },
+    "ui_icon_magnifier": {
+      "path": "res://assets/sprites/ui/ui_icon_magnifier.png",
+      "size": [
+        24,
+        24
+      ],
+      "display_name": "Büyüteç İncele İkonu",
+      "category": "ui_icon",
+      "sheet": "N"
+    },
+    "ui_icon_gear": {
+      "path": "res://assets/sprites/ui/ui_icon_gear.png",
+      "size": [
+        24,
+        24
+      ],
+      "display_name": "Ayarlar Çarkı İkonu",
+      "category": "ui_icon",
+      "sheet": "N"
+    },
+    "ui_icon_arrow_left": {
+      "path": "res://assets/sprites/ui/ui_icon_arrow_left.png",
+      "size": [
+        24,
+        24
+      ],
+      "display_name": "Sol Ok İkonu",
+      "category": "ui_icon",
+      "sheet": "N"
+    },
+    "ui_icon_arrow_right": {
+      "path": "res://assets/sprites/ui/ui_icon_arrow_right.png",
+      "size": [
+        24,
+        24
+      ],
+      "display_name": "Sağ Ok İkonu",
+      "category": "ui_icon",
+      "sheet": "N"
+    },
+    "ui_icon_phone": {
+      "path": "res://assets/sprites/ui/ui_icon_phone.png",
+      "size": [
+        24,
+        24
+      ],
+      "display_name": "Telefon İkonu",
+      "category": "ui_icon",
+      "sheet": "N"
+    },
+    "ui_icon_tab_evidence": {
+      "path": "res://assets/sprites/ui/ui_icon_tab_evidence.png",
+      "size": [
+        24,
+        24
+      ],
+      "display_name": "Kanıt Sekmesi (İğneli Kâğıt)",
+      "category": "ui_icon",
+      "sheet": "N"
+    },
+    "ui_icon_tab_statements": {
+      "path": "res://assets/sprites/ui/ui_icon_tab_statements.png",
+      "size": [
+        24,
+        24
+      ],
+      "display_name": "İfadeler Sekmesi (Balon)",
+      "category": "ui_icon",
+      "sheet": "N"
+    },
+    "ui_icon_tab_timeline": {
+      "path": "res://assets/sprites/ui/ui_icon_tab_timeline.png",
+      "size": [
+        24,
+        24
+      ],
+      "display_name": "Zaman Çizelgesi Sekmesi",
+      "category": "ui_icon",
+      "sheet": "N"
+    },
+    "ui_icon_tab_deductions": {
+      "path": "res://assets/sprites/ui/ui_icon_tab_deductions.png",
+      "size": [
+        24,
+        24
+      ],
+      "display_name": "Dedüksiyon Sekmesi (Halkalar)",
+      "category": "ui_icon",
+      "sheet": "N"
+    },
+    "ui_icon_tab_suspects": {
+      "path": "res://assets/sprites/ui/ui_icon_tab_suspects.png",
+      "size": [
+        24,
+        24
+      ],
+      "display_name": "Şüpheliler Sekmesi (Profil)",
+      "category": "ui_icon",
+      "sheet": "N"
+    },
+    "ui_icon_tab_map": {
+      "path": "res://assets/sprites/ui/ui_icon_tab_map.png",
+      "size": [
+        24,
+        24
+      ],
+      "display_name": "Harita Sekmesi (Kroki)",
+      "category": "ui_icon",
+      "sheet": "N"
+    },
+    "ui_icon_lock_closed": {
+      "path": "res://assets/sprites/ui/ui_icon_lock_closed.png",
+      "size": [
+        24,
+        24
+      ],
+      "display_name": "Kilitli Asma Kilit",
+      "category": "ui_icon",
+      "sheet": "N"
+    },
+    "ui_icon_lock_open": {
+      "path": "res://assets/sprites/ui/ui_icon_lock_open.png",
+      "size": [
+        24,
+        24
+      ],
+      "display_name": "Açık Asma Kilit",
+      "category": "ui_icon",
+      "sheet": "N"
+    },
+    "ui_icon_check": {
+      "path": "res://assets/sprites/ui/ui_icon_check.png",
+      "size": [
+        24,
+        24
+      ],
+      "display_name": "Onay İşareti",
+      "category": "ui_icon",
+      "sheet": "N"
+    },
+    "ui_icon_cross": {
+      "path": "res://assets/sprites/ui/ui_icon_cross.png",
+      "size": [
+        24,
+        24
+      ],
+      "display_name": "Çarpı / İptal İşareti",
+      "category": "ui_icon",
+      "sheet": "N"
+    },
+    "ui_icon_lightbulb": {
+      "path": "res://assets/sprites/ui/ui_icon_lightbulb.png",
+      "size": [
+        24,
+        24
+      ],
+      "display_name": "İpucu Ampulü",
+      "category": "ui_icon",
+      "sheet": "N"
+    },
+    "ui_icon_floppy": {
+      "path": "res://assets/sprites/ui/ui_icon_floppy.png",
+      "size": [
+        24,
+        24
+      ],
+      "display_name": "Kayıt Disketi",
+      "category": "ui_icon",
+      "sheet": "N"
+    },
+    "ui_icon_close": {
+      "path": "res://assets/sprites/ui/ui_icon_close.png",
+      "size": [
+        24,
+        24
+      ],
+      "display_name": "Kapat Çarpı Butonu",
+      "category": "ui_icon",
+      "sheet": "N"
+    },
+    "ui_icon_question": {
+      "path": "res://assets/sprites/ui/ui_icon_question.png",
+      "size": [
+        24,
+        24
+      ],
+      "display_name": "Soru İşareti",
+      "category": "ui_icon",
+      "sheet": "N"
+    },
+    "ui_icon_pause": {
+      "path": "res://assets/sprites/ui/ui_icon_pause.png",
+      "size": [
+        24,
+        24
+      ],
+      "display_name": "Duraklat İkonu",
+      "category": "ui_icon",
+      "sheet": "N"
+    },
+    "ui_icon_quotes": {
+      "path": "res://assets/sprites/ui/ui_icon_quotes.png",
+      "size": [
+        24,
+        24
+      ],
+      "display_name": "Tırnak / İç Ses İkonu",
+      "category": "ui_icon",
+      "sheet": "N"
+    },
+    "decal_crack_wall_round": {
+      "path": "res://assets/sprites/decals/decal_crack_wall_round.png",
+      "size": [
+        32,
+        32
+      ],
+      "display_name": "Yuvarlak Duvar Çatlağı",
+      "category": "decal",
+      "sheet": "O"
+    },
+    "decal_crack_wall_spider": {
+      "path": "res://assets/sprites/decals/decal_crack_wall_spider.png",
+      "size": [
+        36,
+        30
+      ],
+      "display_name": "Örümcek Ağı Duvar Çatlağı",
+      "category": "decal",
+      "sheet": "O"
+    },
+    "decal_crack_wall_vertical": {
+      "path": "res://assets/sprites/decals/decal_crack_wall_vertical.png",
+      "size": [
+        20,
+        38
+      ],
+      "display_name": "Dikey Duvar Çatlağı",
+      "category": "decal",
+      "sheet": "O"
+    },
+    "decal_wallpaper_peel": {
+      "path": "res://assets/sprites/decals/decal_wallpaper_peel.png",
+      "size": [
+        36,
+        38
+      ],
+      "display_name": "Soyulmuş Duvar Kâğıdı",
+      "category": "decal",
+      "sheet": "O"
+    },
+    "decal_water_stain": {
+      "path": "res://assets/sprites/decals/decal_water_stain.png",
+      "size": [
+        28,
+        38
+      ],
+      "display_name": "Duvar Su Lekesi ve Damlaları",
+      "category": "decal",
+      "sheet": "O"
+    },
+    "decal_mold_patch": {
+      "path": "res://assets/sprites/decals/decal_mold_patch.png",
+      "size": [
+        40,
+        48
+      ],
+      "display_name": "Küf Lekesi Kümesi",
+      "category": "decal",
+      "sheet": "O"
+    },
+    "decal_cobweb_corner": {
+      "path": "res://assets/sprites/decals/decal_cobweb_corner.png",
+      "size": [
+        38,
+        42
+      ],
+      "display_name": "Köşe Örümcek Ağı",
+      "category": "decal",
+      "sheet": "O"
+    },
+    "decal_paint_burgundy": {
+      "path": "res://assets/sprites/decals/decal_paint_burgundy.png",
+      "size": [
+        34,
+        34
+      ],
+      "display_name": "Bordo Boya Sıçraması",
+      "category": "decal",
+      "sheet": "O"
+    },
+    "decal_paint_gray": {
+      "path": "res://assets/sprites/decals/decal_paint_gray.png",
+      "size": [
+        34,
+        34
+      ],
+      "display_name": "Gri Boya Sıçraması",
+      "category": "decal",
+      "sheet": "O"
+    },
+    "decal_paint_cream": {
+      "path": "res://assets/sprites/decals/decal_paint_cream.png",
+      "size": [
+        34,
+        34
+      ],
+      "display_name": "Krem Boya Sıçraması",
+      "category": "decal",
+      "sheet": "O"
+    },
+    "decal_footprints_mud": {
+      "path": "res://assets/sprites/decals/decal_footprints_mud.png",
+      "size": [
+        38,
+        40
+      ],
+      "display_name": "Çamurlu Ayak İzi Patikası",
+      "category": "decal",
+      "sheet": "O"
+    },
+    "decal_footprints_wet": {
+      "path": "res://assets/sprites/decals/decal_footprints_wet.png",
+      "size": [
+        36,
+        48
+      ],
+      "display_name": "Islak Ayak İzi Patikası",
+      "category": "decal",
+      "sheet": "O"
+    },
+    "decal_scratches_floor": {
+      "path": "res://assets/sprites/decals/decal_scratches_floor.png",
+      "size": [
+        42,
+        40
+      ],
+      "display_name": "Zemin Tahta Çizikleri",
+      "category": "decal",
+      "sheet": "O"
+    },
+    "decal_glass_shards": {
+      "path": "res://assets/sprites/decals/decal_glass_shards.png",
+      "size": [
+        40,
+        36
+      ],
+      "display_name": "Kırık Cam Parçaları",
+      "category": "decal",
+      "sheet": "O"
+    },
+    "decal_water_puddle": {
+      "path": "res://assets/sprites/decals/decal_water_puddle.png",
+      "size": [
+        38,
+        32
+      ],
+      "display_name": "Su Birikintisi",
+      "category": "decal",
+      "sheet": "O"
+    },
+    "decal_newspaper_crumpled": {
+      "path": "res://assets/sprites/decals/decal_newspaper_crumpled.png",
+      "size": [
+        38,
+        36
+      ],
+      "display_name": "Buruşuk Gazete Parçası",
+      "category": "decal",
+      "sheet": "O"
+    },
+    "decal_dust_debris": {
+      "path": "res://assets/sprites/decals/decal_dust_debris.png",
+      "size": [
+        38,
+        38
+      ],
+      "display_name": "Dağılmış Toz ve Döküntü",
+      "category": "decal",
+      "sheet": "O"
+    },
+    "decal_frame_sunbleached": {
+      "path": "res://assets/sprites/decals/decal_frame_sunbleached.png",
+      "size": [
+        42,
+        48
+      ],
+      "display_name": "Duvarda Solmuş Tablo İzi",
+      "category": "decal",
+      "sheet": "O"
+    },
+    "cinematic_prologue_01": {
+      "path": "res://assets/sprites/cinematics/cinematic_prologue_01.png",
+      "size": [
+        320,
+        180
+      ],
+      "display_name": "Prolog 1: Silas Masasında Gece",
+      "category": "cinematic",
+      "sheet": "P"
+    },
+    "cinematic_prologue_02": {
+      "path": "res://assets/sprites/cinematics/cinematic_prologue_02.png",
+      "size": [
+        320,
+        180
+      ],
+      "display_name": "Prolog 2: Titreyen Siyah Telefon Yakın Planı",
+      "category": "cinematic",
+      "sheet": "P"
+    },
+    "cinematic_prologue_03": {
+      "path": "res://assets/sprites/cinematics/cinematic_prologue_03.png",
+      "size": [
+        320,
+        180
+      ],
+      "display_name": "Prolog 3: Yağmurda İlerleyen Sedan Araba",
+      "category": "cinematic",
+      "sheet": "P"
+    },
+    "cinematic_prologue_04": {
+      "path": "res://assets/sprites/cinematics/cinematic_prologue_04.png",
+      "size": [
+        320,
+        180
+      ],
+      "display_name": "Prolog 4: Taş Köprüden Geçiş ve Şimşek",
+      "category": "cinematic",
+      "sheet": "P"
+    },
+    "cinematic_prologue_05": {
+      "path": "res://assets/sprites/cinematics/cinematic_prologue_05.png",
+      "size": [
+        320,
+        180
+      ],
+      "display_name": "Prolog 5: Yıkılan Taş Köprü",
+      "category": "cinematic",
+      "sheet": "P"
+    },
+    "cinematic_prologue_06": {
+      "path": "res://assets/sprites/cinematics/cinematic_prologue_06.png",
+      "size": [
+        320,
+        180
+      ],
+      "display_name": "Prolog 6: Malikane Dış Cephesi Gece",
+      "category": "cinematic",
+      "sheet": "P"
+    },
+    "cinematic_prologue_07": {
+      "path": "res://assets/sprites/cinematics/cinematic_prologue_07.png",
+      "size": [
+        320,
+        180
+      ],
+      "display_name": "Prolog 7: 7 Odalı Malikane Kesit Maketi",
+      "category": "cinematic",
+      "sheet": "P"
+    },
+    "flashback_fb01_01_battlefield": {
+      "path": "res://assets/sprites/flashback/flashback_fb01_01_battlefield.png",
+      "size": [
+        320,
+        180
+      ],
+      "display_name": "FB01 Kare 1: Gece Karlı Savaş Alanı",
+      "category": "flashback",
+      "sheet": "Q"
+    },
+    "flashback_fb01_02_medic_bag": {
+      "path": "res://assets/sprites/flashback/flashback_fb01_02_medic_bag.png",
+      "size": [
+        320,
+        180
+      ],
+      "display_name": "FB01 Kare 2: Karda Kırmızı Haçlı Sıhhiye Çantası",
+      "category": "flashback",
+      "sheet": "Q"
+    },
+    "flashback_fb01_03_clutched_hand": {
+      "path": "res://assets/sprites/flashback/flashback_fb01_03_clutched_hand.png",
+      "size": [
+        320,
+        180
+      ],
+      "display_name": "FB01 Kare 3: Kıvranan El ve Kırmızı İplik",
+      "category": "flashback",
+      "sheet": "Q"
+    },
+    "flashback_fb01_04_explosion_flare": {
+      "path": "res://assets/sprites/flashback/flashback_fb01_04_explosion_flare.png",
+      "size": [
+        320,
+        180
+      ],
+      "display_name": "FB01 Kare 4: Ufuktaki Patlama ve Kırmızı Fişek",
+      "category": "flashback",
+      "sheet": "Q"
+    },
+    "story_pocket_watch_front": {
+      "path": "res://assets/sprites/story/story_pocket_watch_front.png",
+      "size": [
+        48,
+        48
+      ],
+      "display_name": "Kuzey Birimi Cep Saati (Ön Yüz 3:12)",
+      "category": "story_object",
+      "sheet": "Q"
+    },
+    "story_pocket_watch_back": {
+      "path": "res://assets/sprites/story/story_pocket_watch_back.png",
+      "size": [
+        48,
+        48
+      ],
+      "display_name": "Kuzey Birimi Cep Saati (Arka Amblem)",
+      "category": "story_object",
+      "sheet": "Q"
+    },
+    "story_unit_board_slots": {
+      "path": "res://assets/sprites/story/story_unit_board_slots.png",
+      "size": [
+        128,
+        32
+      ],
+      "display_name": "Gizli Kuzey Birimi 9 Madalya Yuvası",
+      "category": "story_object",
+      "sheet": "Q"
+    },
+    "story_torn_photo_soldiers_2": {
+      "path": "res://assets/sprites/story/story_torn_photo_soldiers_2.png",
+      "size": [
+        48,
+        56
+      ],
+      "display_name": "Yırtık Fotoğraf: 2 Asker",
+      "category": "story_object",
+      "sheet": "Q"
+    },
+    "story_torn_photo_soldiers_3": {
+      "path": "res://assets/sprites/story/story_torn_photo_soldiers_3.png",
+      "size": [
+        56,
+        56
+      ],
+      "display_name": "Yırtık Fotoğraf: 3 Asker",
+      "category": "story_object",
+      "sheet": "Q"
+    },
+    "story_handwritten_note": {
+      "path": "res://assets/sprites/story/story_handwritten_note.png",
+      "size": [
+        40,
+        48
+      ],
+      "display_name": "Gizli Not (Sarı Kâğıt)",
+      "category": "story_object",
+      "sheet": "Q"
+    },
+    "story_ministry_letter": {
+      "path": "res://assets/sprites/story/story_ministry_letter.png",
+      "size": [
+        44,
+        56
+      ],
+      "display_name": "Savaş Bakanlığı Ret Mektubu",
+      "category": "story_object",
+      "sheet": "Q"
+    },
+    "story_medic_badge": {
+      "path": "res://assets/sprites/story/story_medic_badge.png",
+      "size": [
+        32,
+        32
+      ],
+      "display_name": "Kırmızı Haç Sıhhiye Rozeti",
+      "category": "story_object",
+      "sheet": "Q"
+    },
+    "story_military_dog_tag": {
+      "path": "res://assets/sprites/story/story_military_dog_tag.png",
+      "size": [
+        32,
+        48
+      ],
+      "display_name": "Paslanmış Askeri Künye",
+      "category": "story_object",
+      "sheet": "Q"
+    },
+    "story_coat_hat_hook": {
+      "path": "res://assets/sprites/story/story_coat_hat_hook.png",
+      "size": [
+        32,
+        56
+      ],
+      "display_name": "Askıda Palto ve Şapka",
+      "category": "story_object",
+      "sheet": "Q"
+    }
+  },
+  "characters": {
+    "silas": {
+      "id": "char_silas_idle",
+      "type": "sprite",
+      "size": [
+        32,
+        48
+      ],
+      "status": "final",
+      "name": "Silas Crowe",
+      "portrait": "res://assets/portraits/silas.png",
+      "sprites": {
+        "idle_left": "res://assets/sprites/characters/silas_idle_left.png",
+        "idle_right": "res://assets/sprites/characters/silas_idle_right.png",
+        "idle_down": "res://assets/sprites/characters/silas_idle_down.png",
+        "idle_up": "res://assets/sprites/characters/silas_idle_up.png"
+      }
+    },
+    "dr_hale": {
+      "id": "char_hale",
+      "type": "sprite",
+      "size": [
+        32,
+        48
+      ],
+      "status": "final",
+      "name": "Dr. Victor Hale",
+      "portrait": "res://assets/portraits/hale.png",
+      "sprites": {
+        "idle_left": "res://assets/sprites/characters/hale_idle_left.png",
+        "idle_right": "res://assets/sprites/characters/hale_idle_right.png"
+      }
+    },
+    "margaret_doyle": {
+      "id": "char_margaret",
+      "type": "sprite",
+      "size": [
+        32,
+        48
+      ],
+      "status": "final",
+      "name": "Margaret Doyle",
+      "portrait": "res://assets/portraits/margaret.png",
+      "sprites": {
+        "idle_left": "res://assets/sprites/characters/margaret_idle_left.png",
+        "idle_right": "res://assets/sprites/characters/margaret_idle_right.png"
+      }
+    },
+    "julian_harlow": {
+      "id": "char_julian",
+      "type": "sprite",
+      "size": [
+        32,
+        48
+      ],
+      "status": "final",
+      "name": "Julian Harlow",
+      "portrait": "res://assets/portraits/julian.png",
+      "sprites": {
+        "idle_left": "res://assets/sprites/characters/julian_idle_left.png",
+        "idle_right": "res://assets/sprites/characters/julian_idle_right.png"
+      }
+    },
+    "raymond_pike": {
+      "id": "char_pike",
+      "type": "sprite",
+      "size": [
+        32,
+        48
+      ],
+      "status": "final",
+      "name": "Raymond Pike",
+      "portrait": "res://assets/portraits/pike.png",
+      "sprites": {
+        "idle_left": "res://assets/sprites/characters/pike_idle_left.png",
+        "idle_right": "res://assets/sprites/characters/pike_idle_right.png"
+      }
+    }
+  },
+  "props": {
+    "silas_desk": {
+      "id": "prop_silas_desk",
+      "type": "prop",
+      "size": [
+        48,
+        28
+      ],
+      "status": "placeholder",
+      "texture": "res://assets/sprites/props/silas_desk.png",
+      "description": "Dedektifin çalışma masası"
+    },
+    "silas_telephone": {
+      "id": "prop_silas_telephone",
+      "type": "prop",
+      "size": [
+        16,
+        16
+      ],
+      "status": "placeholder",
+      "texture": "res://assets/sprites/props/silas_telephone.png",
+      "description": "Antika siyah döner kadranlı masa telefonu"
+    },
+    "silas_rainy_window": {
+      "id": "prop_silas_window",
+      "type": "prop",
+      "size": [
+        36,
+        44
+      ],
+      "status": "placeholder",
+      "texture": "res://assets/sprites/props/silas_window.png",
+      "description": "Dışarıdaki yağmuru gösteren pencere"
+    },
+    "silas_pocket_watch": {
+      "id": "prop_study_watch",
+      "type": "prop",
+      "size": [
+        12,
+        12
+      ],
+      "status": "placeholder",
+      "texture": "res://assets/sprites/props/pocket_watch.png",
+      "description": "03:12'de durmuş gümüş cep saati"
+    },
+    "silas_typewriter": {
+      "id": "prop_silas_typewriter",
+      "type": "prop",
+      "size": [
+        20,
+        16
+      ],
+      "status": "placeholder",
+      "texture": "res://assets/sprites/props/typewriter.png",
+      "description": "Eski model daktilo"
+    },
+    "silas_rejection_letter": {
+      "id": "prop_rejection_letter",
+      "type": "prop",
+      "size": [
+        12,
+        14
+      ],
+      "status": "placeholder",
+      "texture": "res://assets/sprites/props/document.png",
+      "description": "Savaş Bakanlığı ret mektubu"
+    },
+    "silas_locked_drawer": {
+      "id": "prop_silas_drawer",
+      "type": "prop",
+      "size": [
+        18,
+        18
+      ],
+      "status": "placeholder",
+      "texture": "res://assets/sprites/props/drawer.png",
+      "description": "Kilitli kişisel çekmece"
+    },
+    "silas_memory_wall": {
+      "id": "prop_silas_memory_wall",
+      "type": "prop",
+      "size": [
+        40,
+        30
+      ],
+      "status": "placeholder",
+      "texture": "res://assets/sprites/props/memory_wall.png",
+      "description": "İpuçları ve fotoğrafların iğnelendiği mantar pano"
+    },
+    "silas_souvenir_shelf": {
+      "id": "prop_silas_souvenir_shelf",
+      "type": "prop",
+      "size": [
+        36,
+        20
+      ],
+      "status": "placeholder",
+      "texture": "res://assets/sprites/props/souvenir_shelf.png",
+      "description": "Vakalardan toplanan hatıraların sergilendiği ahşap raf"
+    },
+    "study_desk": {
+      "id": "prop_study_desk",
+      "type": "prop",
+      "size": [
+        48,
+        30
+      ],
+      "status": "placeholder",
+      "texture": "res://assets/sprites/props/study_desk.png",
+      "description": "Harlow'un çalışma masası ve olay yeri"
+    },
+    "armchair": {
+      "id": "prop_armchair",
+      "type": "prop",
+      "size": [
+        28,
+        28
+      ],
+      "status": "placeholder",
+      "texture": "res://assets/sprites/props/armchair.png",
+      "description": "Deri koltuk"
+    },
+    "bookcase": {
+      "id": "prop_bookcase",
+      "type": "prop",
+      "size": [
+        32,
+        52
+      ],
+      "status": "placeholder",
+      "texture": "res://assets/sprites/props/bookcase.png",
+      "description": "Kütüphane kitaplığı"
+    },
+    "fireplace": {
+      "id": "prop_fireplace",
+      "type": "prop",
+      "size": [
+        40,
+        36
+      ],
+      "status": "placeholder",
+      "texture": "res://assets/sprites/props/fireplace.png",
+      "description": "Şömine"
+    },
+    "lamp": {
+      "id": "prop_lamp",
+      "type": "prop",
+      "size": [
+        14,
+        22
+      ],
+      "status": "placeholder",
+      "texture": "res://assets/sprites/props/lamp.png",
+      "description": "Masa lambası / abajur"
+    },
+    "candle": {
+      "id": "prop_study_candle",
+      "type": "prop",
+      "size": [
+        10,
+        18
+      ],
+      "status": "placeholder",
+      "texture": "res://assets/sprites/props/candle.png",
+      "description": "Şamdan ve yanan mum"
+    },
+    "billiard_table": {
+      "id": "prop_billiard_table",
+      "type": "prop",
+      "size": [
+        56,
+        26
+      ],
+      "status": "placeholder",
+      "texture": "res://assets/sprites/props/billiard_table.png",
+      "description": "Yeşil çuhalı bilardo masası"
+    }
+  },
+  "rooms": {
+    "silas_office": {
+      "id": "bg_hub",
+      "type": "bg",
+      "size": [
+        320,
+        180
+      ],
+      "status": "placeholder",
+      "name": "Silas'ın Ofisi"
+    },
+    "main_hall": {
+      "id": "bg_main_hall",
+      "type": "bg",
+      "size": [
+        320,
+        180
+      ],
+      "status": "placeholder",
+      "name": "Ana Hol"
+    },
+    "study": {
+      "id": "bg_study",
+      "type": "bg",
+      "size": [
+        320,
+        180
+      ],
+      "status": "placeholder",
+      "name": "Çalışma Odası"
+    },
+    "library": {
+      "id": "bg_library",
+      "type": "bg",
+      "size": [
+        320,
+        180
+      ],
+      "status": "placeholder",
+      "name": "Kütüphane"
+    },
+    "dining_room": {
+      "id": "bg_dining_room",
+      "type": "bg",
+      "size": [
+        320,
+        180
+      ],
+      "status": "placeholder",
+      "name": "Yemek Odası"
+    },
+    "kitchen": {
+      "id": "bg_kitchen",
+      "type": "bg",
+      "size": [
+        320,
+        180
+      ],
+      "status": "placeholder",
+      "name": "Mutfak"
+    },
+    "billiard_room": {
+      "id": "bg_billiard_room",
+      "type": "bg",
+      "size": [
+        320,
+        180
+      ],
+      "status": "placeholder",
+      "name": "Bilardo Odası"
+    },
+    "upper_floor": {
+      "id": "bg_upper_floor",
+      "type": "bg",
+      "size": [
+        320,
+        180
+      ],
+      "status": "placeholder",
+      "name": "Üst Kat Holü"
+    }
+  }
+}

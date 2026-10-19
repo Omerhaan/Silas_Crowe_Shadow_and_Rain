@@ -1,0 +1,35 @@
+[
+  {
+    "id": "case01",
+    "title": "Karanlık Malikâne",
+    "subtitle": "Edmund Harlow Cinayeti",
+    "year": 1946,
+    "location": "Harlow Malikânesi",
+    "starting_room": "main_hall",
+    "unlocked": true,
+    "completed": false,
+    "folder": "res://cases/case01/"
+  },
+  {
+    "id": "case02",
+    "title": "Sisli Liman",
+    "subtitle": "Rıhtım Cinayeti ve Kayıp Sevkiyat",
+    "year": 1946,
+    "location": "Greywater Rıhtımı",
+    "starting_room": "silas_office",
+    "unlocked": true,
+    "completed": false,
+    "folder": "res://cases/case02/"
+  },
+  {
+    "id": "case03",
+    "title": "Kör Nokta",
+    "subtitle": "Opera Suikastı ve Kayıp Tüfek",
+    "year": 1946,
+    "location": "Greywater Kraliyet Operası",
+    "starting_room": "opera_foyer",
+    "unlocked": true,
+    "completed": false,
+    "folder": "res://cases/case03/"
+  }
+]

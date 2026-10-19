@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://btestmenuflow01"]
+
+[ext_resource type="Script" path="res://tests/test_menu_and_case_flow.gd" id="1_test"]
+
+[node name="TestMenuAndCaseFlow" type="Node"]
+script = ExtResource("1_test")

@@ -1,0 +1,96 @@
+[gd_scene load_steps=7 format=3 uid="uid://ced11xunm47ae"]
+
+[ext_resource type="Script" path="res://scripts/core/room_background.gd" id="1_bg"]
+[ext_resource type="PackedScene" uid="uid://bdoor01" path="res://scenes/entities/door.tscn" id="2_door"]
+[ext_resource type="PackedScene" uid="uid://d2m0tcvj7ds4k" path="res://scenes/entities/interactable.tscn" id="3_interact"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_floor"]
+size = Vector2(480, 26)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wall"]
+size = Vector2(16, 270)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_door"]
+size = Vector2(36, 100)
+
+[node name="HarlowBedroom" type="Node2D"]
+
+[node name="RoomBackground" type="Node2D" parent="."]
+script = ExtResource("1_bg")
+room_theme = "harlow_bedroom"
+
+[node name="Walls" type="StaticBody2D" parent="."]
+
+[node name="FloorShape" type="CollisionShape2D" parent="Walls"]
+position = Vector2(240, 260)
+shape = SubResource("RectangleShape2D_floor")
+
+[node name="LeftWall" type="CollisionShape2D" parent="Walls"]
+position = Vector2(8, 135)
+shape = SubResource("RectangleShape2D_wall")
+
+[node name="RightWall" type="CollisionShape2D" parent="Walls"]
+position = Vector2(472, 135)
+shape = SubResource("RectangleShape2D_wall")
+
+[node name="Spawn_default" type="Marker2D" parent="."]
+position = Vector2(45, 245)
+
+[node name="Spawn_from_upper_floor" type="Marker2D" parent="."]
+position = Vector2(45, 245)
+
+[node name="Door_To_Upper" parent="." instance=ExtResource("2_door")]
+position = Vector2(18, 245)
+target_room_id = "upper_floor"
+target_spawn = "from_harlow_bedroom"
+door_name = "Koridor"
+
+[node name="DoorCollision" type="CollisionShape2D" parent="Door_To_Upper"]
+position = Vector2(0, -50)
+shape = SubResource("RectangleShape2D_door")
+
+[node name="Prop_HarlowWardrobe" parent="." instance=ExtResource("3_interact")]
+position = Vector2(45, 160)
+object_id = "harlow_wardrobe"
+display_name = "Büyük Gardırop"
+prop_type = "wardrobe"
+is_hotspot = true
+hotspot_size = Vector2(70, 120)
+custom_inner_voice = "\"Harlow'un takım elbiseleri ve askeri üniformaları düzenle asılmış.\""
+
+[node name="Prop_HarlowBed" parent="." instance=ExtResource("3_interact")]
+position = Vector2(150, 205)
+object_id = "harlow_bed"
+display_name = "Harlow'un Yatağı"
+prop_type = "bed"
+is_hotspot = true
+hotspot_size = Vector2(100, 60)
+custom_inner_voice = "\"Yatak hiç bozulmamış. Harlow bu gece yatağına hiç yatmamış.\""
+
+[node name="Prop_HarlowLamp" parent="." instance=ExtResource("3_interact")]
+position = Vector2(241, 153)
+object_id = "harlow_nightstand_lamp"
+display_name = "Komodin Lambası"
+prop_type = "lamp"
+is_hotspot = true
+hotspot_size = Vector2(20, 30)
+
+[node name="Evidence_E16" parent="." instance=ExtResource("3_interact")]
+position = Vector2(363, 182)
+object_id = "harlow_bedroom_photo"
+display_name = "Kilitli Çekmece (E16 Birlik Fotoğrafı)"
+evidence_id = "E16"
+prop_type = "drawer"
+is_secret_drawer = true
+is_hotspot = true
+hotspot_size = Vector2(30, 30)
+custom_inner_voice = "\"Gizli bir bölme... 'Kuzey Operasyonu - 1944' yazılı yırtık bir fotoğraf parçası ve sağlık rozeti!\""
+
+[node name="Item_Key_Drawer" parent="." instance=ExtResource("3_interact")]
+position = Vector2(295, 183)
+object_id = "item_key_drawer"
+display_name = "Çalışma Masası Çekmece Anahtarı"
+prop_type = "key"
+is_hotspot = true
+hotspot_size = Vector2(25, 25)
+custom_inner_voice = "\"Komodinin gizli bölmesinde küçük pirinç bir anahtar... Üzerinde 'Çalışma Masası' etiketi var.\""

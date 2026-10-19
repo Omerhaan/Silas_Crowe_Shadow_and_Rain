@@ -1,0 +1,124 @@
+[gd_scene load_steps=8 format=3 uid="uid://bbilliard01"]
+
+[ext_resource type="Script" path="res://scripts/core/room_background.gd" id="1_bg"]
+[ext_resource type="PackedScene" uid="uid://bdoor01" path="res://scenes/entities/door.tscn" id="2_door"]
+[ext_resource type="PackedScene" uid="uid://bnpcentity01" path="res://scenes/entities/npc.tscn" id="3_npc"]
+[ext_resource type="PackedScene" uid="uid://d2m0tcvj7ds4k" path="res://scenes/entities/interactable.tscn" id="4_interact"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_floor"]
+size = Vector2(480, 26)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wall"]
+size = Vector2(16, 270)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_door"]
+size = Vector2(44, 90)
+
+[node name="BilliardRoom" type="Node2D"]
+
+[node name="RoomBackground" type="Node2D" parent="."]
+script = ExtResource("1_bg")
+room_theme = "billiard_room"
+
+[node name="Walls" type="StaticBody2D" parent="."]
+
+[node name="FloorShape" type="CollisionShape2D" parent="Walls"]
+position = Vector2(240, 260)
+shape = SubResource("RectangleShape2D_floor")
+
+[node name="LeftWall" type="CollisionShape2D" parent="Walls"]
+position = Vector2(8, 135)
+shape = SubResource("RectangleShape2D_wall")
+
+[node name="RightWall" type="CollisionShape2D" parent="Walls"]
+position = Vector2(472, 135)
+shape = SubResource("RectangleShape2D_wall")
+
+[node name="Spawn_default" type="Marker2D" parent="."]
+position = Vector2(65, 245)
+
+[node name="Spawn_from_library" type="Marker2D" parent="."]
+position = Vector2(65, 245)
+
+[node name="Door_To_Library" parent="." instance=ExtResource("2_door")]
+position = Vector2(18, 245)
+target_room_id = "library"
+target_spawn = "from_billiard_room"
+door_name = "Kütüphane"
+
+[node name="LibraryDoorCollision" type="CollisionShape2D" parent="Door_To_Library"]
+position = Vector2(0, -45)
+shape = SubResource("RectangleShape2D_door")
+
+[node name="Prop_BilliardArmchair" parent="." instance=ExtResource("4_interact")]
+position = Vector2(105, 205)
+object_id = "billiard_armchair"
+display_name = "Kulüp Koltuğu"
+prop_type = "armchair"
+is_hotspot = true
+hotspot_size = Vector2(50, 60)
+
+[node name="Prop_BilliardCueRack" parent="." instance=ExtResource("4_interact")]
+position = Vector2(135, 100)
+object_id = "billiard_cue_rack"
+display_name = "İsteka Rafı"
+prop_type = "prop"
+is_hotspot = true
+hotspot_size = Vector2(35, 65)
+
+[node name="BilliardTableVisual" parent="." instance=ExtResource("4_interact")]
+position = Vector2(235, 205)
+object_id = "billiard_table"
+display_name = "Bilardo Masası"
+prop_type = "billiard"
+is_hotspot = true
+hotspot_size = Vector2(140, 55)
+
+[node name="Prop_BilliardLamp" parent="." instance=ExtResource("4_interact")]
+position = Vector2(240, 63)
+object_id = "billiard_lamp"
+display_name = "Bilardo Lambası"
+prop_type = "ceiling"
+is_hotspot = true
+hotspot_size = Vector2(60, 30)
+
+[node name="NPC_Julian" parent="." instance=ExtResource("3_npc")]
+position = Vector2(330, 245)
+display_name = "Julian Harlow"
+custom_inner_voice = "\"Julian huzursuzca tırnaklarını kemiriyor. Amcasının ölümü onda yastan çok bir telaş yaratmış gibi.\""
+character_id = "npc_julian_harlow"
+character_name = "Julian Harlow"
+
+[node name="Evidence_E11" parent="." instance=ExtResource("4_interact")]
+position = Vector2(406, 183)
+object_id = "billiard_whiskey_table"
+display_name = "Viski Kadehi ve Ayak İzi"
+evidence_id = "E11"
+prop_type = "prop"
+is_hotspot = true
+hotspot_size = Vector2(35, 30)
+
+[node name="Prop_BilliardBarCart" parent="." instance=ExtResource("4_interact")]
+position = Vector2(373, 190)
+object_id = "billiard_bar_cart"
+display_name = "İçki Arabası"
+prop_type = "prop"
+is_hotspot = true
+hotspot_size = Vector2(35, 40)
+
+[node name="Item_Key_Chest" parent="." instance=ExtResource("4_interact")]
+position = Vector2(415, 205)
+object_id = "item_key_chest"
+display_name = "Antika Sandık Anahtarı"
+prop_type = "key"
+is_hotspot = true
+hotspot_size = Vector2(25, 25)
+custom_inner_voice = "\"İçki arabasındaki gümüş kül tablasının dibine gizlenmiş süslü bir demir anahtar... Julian bunu neden buraya saklamış?\""
+
+[node name="Prop_BilliardTrophy" parent="." instance=ExtResource("4_interact")]
+position = Vector2(360, 70)
+object_id = "billiard_trophy_stag"
+display_name = "Geyik Kafası Trofe"
+prop_type = "wall"
+is_hotspot = true
+hotspot_size = Vector2(40, 50)

@@ -1,0 +1,74 @@
+[gd_scene load_steps=7 format=3 uid="uid://cglv1slp7g7ee"]
+
+[ext_resource type="Script" path="res://scripts/core/room_background.gd" id="1_bg"]
+[ext_resource type="PackedScene" uid="uid://bdoor01" path="res://scenes/entities/door.tscn" id="2_door"]
+[ext_resource type="PackedScene" uid="uid://d2m0tcvj7ds4k" path="res://scenes/entities/interactable.tscn" id="3_interact"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_floor"]
+size = Vector2(480, 8)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wall"]
+size = Vector2(16, 270)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_door"]
+size = Vector2(36, 110)
+
+[node name="OperaAuditorium" type="Node2D"]
+
+[node name="RoomBackground" type="Node2D" parent="."]
+script = ExtResource("1_bg")
+room_theme = "opera_auditorium"
+
+[node name="Walls" type="StaticBody2D" parent="."]
+
+[node name="FloorShape" type="CollisionShape2D" parent="Walls"]
+position = Vector2(240, 269)
+shape = SubResource("RectangleShape2D_floor")
+
+[node name="LeftWall" type="CollisionShape2D" parent="Walls"]
+position = Vector2(8, 135)
+shape = SubResource("RectangleShape2D_wall")
+
+[node name="RightWall" type="CollisionShape2D" parent="Walls"]
+position = Vector2(78, 132)
+shape = SubResource("RectangleShape2D_wall")
+
+[node name="Spawn_default" type="Marker2D" parent="."]
+position = Vector2(50, 264)
+
+[node name="Spawn_from_foyer" type="Marker2D" parent="."]
+position = Vector2(50, 264)
+
+[node name="Door_To_Foyer" parent="." instance=ExtResource("2_door")]
+position = Vector2(25, 264)
+target_room_id = "opera_foyer"
+target_spawn = "from_auditorium"
+door_name = "Ana hol"
+
+[node name="FoyerDoorCollision" type="CollisionShape2D" parent="Door_To_Foyer"]
+position = Vector2(0, -55)
+shape = SubResource("RectangleShape2D_door")
+
+[node name="Prop_OrchestraPit" parent="." instance=ExtResource("3_interact")]
+position = Vector2(310, 219)
+object_id = "orchestra_pit"
+display_name = "Orkestra Çukuru ve Enstrümanlar"
+prop_type = "piano"
+is_hotspot = true
+hotspot_size = Vector2(60, 30)
+
+[node name="Prop_StageCurtain" parent="." instance=ExtResource("3_interact")]
+position = Vector2(370, 158)
+object_id = "stage_curtain"
+display_name = "Kadife Sahne Perdesi"
+prop_type = "curtains"
+is_hotspot = true
+hotspot_size = Vector2(50, 90)
+
+[node name="Prop_AuditoriumSeats" parent="." instance=ExtResource("3_interact")]
+position = Vector2(70, 153)
+object_id = "auditorium_seats"
+display_name = "Kırmızı Kadife Koltuk Sıraları"
+prop_type = "chair"
+is_hotspot = true
+hotspot_size = Vector2(50, 40)

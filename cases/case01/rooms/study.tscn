@@ -1,0 +1,157 @@
+[gd_scene load_steps=7 format=3 uid="uid://bstudy01"]
+
+[ext_resource type="Script" path="res://scripts/core/room_background.gd" id="1_bg"]
+[ext_resource type="PackedScene" uid="uid://bdoor01" path="res://scenes/entities/door.tscn" id="2_door"]
+[ext_resource type="PackedScene" uid="uid://d2m0tcvj7ds4k" path="res://scenes/entities/interactable.tscn" id="3_interact"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_floor"]
+size = Vector2(480, 26)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wall"]
+size = Vector2(16, 270)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_door"]
+size = Vector2(44, 90)
+
+[node name="Study" type="Node2D"]
+
+[node name="RoomBackground" type="Node2D" parent="."]
+script = ExtResource("1_bg")
+
+[node name="Walls" type="StaticBody2D" parent="."]
+
+[node name="FloorShape" type="CollisionShape2D" parent="Walls"]
+position = Vector2(240, 260)
+shape = SubResource("RectangleShape2D_floor")
+
+[node name="LeftWall" type="CollisionShape2D" parent="Walls"]
+position = Vector2(8, 135)
+shape = SubResource("RectangleShape2D_wall")
+
+[node name="RightWall" type="CollisionShape2D" parent="Walls"]
+position = Vector2(472, 135)
+shape = SubResource("RectangleShape2D_wall")
+
+[node name="Spawn_default" type="Marker2D" parent="."]
+position = Vector2(415, 245)
+
+[node name="Spawn_from_main_hall" type="Marker2D" parent="."]
+position = Vector2(415, 245)
+
+[node name="Door_To_MainHall" parent="." instance=ExtResource("2_door")]
+position = Vector2(418, 225)
+target_spawn = "from_study"
+door_name = "Ana Hol"
+
+[node name="DoorCollision" type="CollisionShape2D" parent="Door_To_MainHall"]
+position = Vector2(-1, -41)
+shape = SubResource("RectangleShape2D_door")
+
+[node name="Evidence_E02" parent="." instance=ExtResource("3_interact")]
+position = Vector2(454, 194)
+object_id = "study_door_lock"
+display_name = "Kilitteki Anahtar"
+evidence_id = "E02"
+prop_type = "key"
+is_hotspot = true
+hotspot_size = Vector2(16, 16)
+
+[node name="StudyDesk" parent="." instance=ExtResource("3_interact")]
+position = Vector2(352, 202)
+object_id = "study_desk"
+display_name = "Harlow'un Çalışma Masası"
+prop_type = "desk"
+is_hotspot = true
+hotspot_size = Vector2(90, 50)
+
+[node name="Evidence_E01" parent="." instance=ExtResource("3_interact")]
+position = Vector2(352, 179)
+object_id = "harlow_body_watch"
+display_name = "Ceset ve Kırık Saat"
+evidence_id = "E01"
+prop_type = "watch"
+is_hotspot = true
+hotspot_size = Vector2(50, 40)
+
+[node name="Evidence_E03" parent="." instance=ExtResource("3_interact")]
+position = Vector2(317, 182)
+object_id = "study_lawyer_note"
+display_name = "Avukat Mektubu"
+evidence_id = "E03"
+prop_type = "paper"
+is_hotspot = true
+hotspot_size = Vector2(25, 20)
+
+[node name="Evidence_E04" parent="." instance=ExtResource("3_interact")]
+position = Vector2(105, 195)
+object_id = "study_cognac_glass"
+display_name = "Konyak Kadehi"
+evidence_id = "E04"
+prop_type = "bottle"
+is_hotspot = true
+hotspot_size = Vector2(25, 25)
+
+[node name="Evidence_E05" parent="." instance=ExtResource("3_interact")]
+position = Vector2(380, 209)
+object_id = "study_secret_drawer_drops"
+display_name = "Gizli Çekmece (Kalp Damlası)"
+evidence_id = "E05"
+prop_type = "drawer"
+is_secret_drawer = true
+is_hotspot = true
+hotspot_size = Vector2(30, 20)
+
+[node name="Evidence_E06" parent="." instance=ExtResource("3_interact")]
+position = Vector2(288, 220)
+object_id = "study_waste_basket"
+display_name = "Çöp Sepeti"
+evidence_id = "E06"
+prop_type = "paper"
+is_hotspot = true
+hotspot_size = Vector2(25, 25)
+
+[node name="Evidence_E07" parent="." instance=ExtResource("3_interact")]
+position = Vector2(80, 105)
+object_id = "study_locked_safe_letters"
+display_name = "Portre Arkasındaki Kasa (Tehdit Mektupları)"
+evidence_id = "E07"
+prop_type = "safe"
+is_secret_drawer = true
+is_hotspot = true
+hotspot_size = Vector2(40, 40)
+required_key_id = "key_drawer"
+locked_message = "Portrenin arkasındaki çelik kasa kilitli. Harlow anahtarı yatak odasında saklıyor olmalı."
+
+[node name="Evidence_E08" parent="." instance=ExtResource("3_interact")]
+position = Vector2(302, 96)
+object_id = "study_wall_sconce"
+display_name = "Duvar Apliği ve Mum"
+evidence_id = "E08"
+prop_type = "lamp"
+is_hotspot = true
+hotspot_size = Vector2(16, 24)
+
+[node name="StudyWindowVisual" parent="." instance=ExtResource("3_interact")]
+position = Vector2(165, 110)
+object_id = "study_window"
+display_name = "Pencere"
+prop_type = "window"
+is_hotspot = true
+hotspot_size = Vector2(60, 100)
+custom_inner_voice = "\"Dışarıda köpüren deniz ve fırtına. Köprü çoktan çökmüş olmalı.\""
+
+[node name="StudyArmchair" parent="." instance=ExtResource("3_interact")]
+position = Vector2(69, 205)
+object_id = "study_armchair"
+display_name = "Deri Koltuk"
+prop_type = "armchair"
+is_hotspot = true
+hotspot_size = Vector2(45, 50)
+
+[node name="StudyLamp" parent="." instance=ExtResource("3_interact")]
+position = Vector2(99, 163)
+object_id = "study_lamp"
+display_name = "Masa Lambası"
+prop_type = "lamp"
+is_hotspot = true
+hotspot_size = Vector2(20, 30)

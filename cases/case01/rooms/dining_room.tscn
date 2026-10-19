@@ -1,0 +1,143 @@
+[gd_scene load_steps=8 format=3 uid="uid://bdining01"]
+
+[ext_resource type="Script" path="res://scripts/core/room_background.gd" id="1_bg"]
+[ext_resource type="PackedScene" uid="uid://bdoor01" path="res://scenes/entities/door.tscn" id="2_door"]
+[ext_resource type="PackedScene" uid="uid://bnpcentity01" path="res://scenes/entities/npc.tscn" id="3_npc"]
+[ext_resource type="PackedScene" uid="uid://d2m0tcvj7ds4k" path="res://scenes/entities/interactable.tscn" id="4_interact"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_floor"]
+size = Vector2(480, 26)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wall"]
+size = Vector2(16, 270)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_door"]
+size = Vector2(44, 95)
+
+[node name="DiningRoom" type="Node2D"]
+
+[node name="RoomBackground" type="Node2D" parent="."]
+script = ExtResource("1_bg")
+room_theme = "dining_room"
+
+[node name="Walls" type="StaticBody2D" parent="."]
+
+[node name="FloorShape" type="CollisionShape2D" parent="Walls"]
+position = Vector2(240, 260)
+shape = SubResource("RectangleShape2D_floor")
+
+[node name="LeftWall" type="CollisionShape2D" parent="Walls"]
+position = Vector2(8, 135)
+shape = SubResource("RectangleShape2D_wall")
+
+[node name="RightWall" type="CollisionShape2D" parent="Walls"]
+position = Vector2(472, 135)
+shape = SubResource("RectangleShape2D_wall")
+
+[node name="Spawn_default" type="Marker2D" parent="."]
+position = Vector2(240, 245)
+
+[node name="Spawn_from_main_hall" type="Marker2D" parent="."]
+position = Vector2(415, 245)
+
+[node name="Spawn_from_kitchen" type="Marker2D" parent="."]
+position = Vector2(65, 245)
+
+[node name="Door_To_Kitchen" parent="." instance=ExtResource("2_door")]
+position = Vector2(32, 245)
+target_room_id = "kitchen"
+target_spawn = "from_dining_room"
+door_name = "Mutfak"
+
+[node name="DoorKitchenCollision" type="CollisionShape2D" parent="Door_To_Kitchen"]
+position = Vector2(0, -48)
+shape = SubResource("RectangleShape2D_door")
+
+[node name="Door_To_MainHall" parent="." instance=ExtResource("2_door")]
+position = Vector2(448, 245)
+target_spawn = "from_dining_room"
+door_name = "Ana Hol"
+
+[node name="DoorMainHallCollision" type="CollisionShape2D" parent="Door_To_MainHall"]
+position = Vector2(0, -48)
+shape = SubResource("RectangleShape2D_door")
+
+[node name="Sideboard" parent="." instance=ExtResource("4_interact")]
+position = Vector2(85, 185)
+object_id = "dining_sideboard"
+display_name = "Yemek Büfesi"
+prop_type = "desk"
+is_hotspot = true
+hotspot_size = Vector2(50, 48)
+
+[node name="Prop_SideboardDrawer" parent="." instance=ExtResource("4_interact")]
+position = Vector2(85, 175)
+object_id = "dining_sideboard_drawer"
+display_name = "Büfe Çekmecesi"
+prop_type = "drawer"
+is_hotspot = true
+hotspot_size = Vector2(40, 25)
+custom_inner_voice = "\"Gümüş çatal bıçak takımları ve eski peçeteler duruyor.\""
+
+[node name="Prop_DiningSconce" parent="." instance=ExtResource("4_interact")]
+position = Vector2(135, 105)
+object_id = "dining_wall_sconce"
+display_name = "Duvar Mumu"
+prop_type = "prop"
+is_hotspot = true
+hotspot_size = Vector2(16, 25)
+
+[node name="NPC_Pike" parent="." instance=ExtResource("3_npc")]
+position = Vector2(135, 245)
+display_name = "Raymond Pike"
+custom_inner_voice = "\"Pike viski bardağını sımsıkı tutuyor. Gözlerinde öfke ve huzursuzluk açıkça okunuyor.\""
+character_id = "npc_raymond_pike"
+character_name = "Raymond Pike"
+
+[node name="DiningTable" parent="." instance=ExtResource("4_interact")]
+position = Vector2(240, 195)
+object_id = "dining_table"
+display_name = "Yemek Masası"
+prop_type = "desk"
+is_hotspot = true
+hotspot_size = Vector2(150, 55)
+
+[node name="Prop_DiningCandelabra" parent="." instance=ExtResource("4_interact")]
+position = Vector2(240, 145)
+object_id = "dining_candelabra"
+display_name = "Gümüş Şamdan"
+prop_type = "prop"
+is_hotspot = true
+hotspot_size = Vector2(24, 28)
+
+[node name="Prop_DiningWindow" parent="." instance=ExtResource("4_interact")]
+position = Vector2(240, 95)
+object_id = "dining_window"
+display_name = "Yağmurlu Pencere"
+prop_type = "wall"
+is_hotspot = true
+hotspot_size = Vector2(130, 90)
+
+[node name="Prop_DiningChandelier" parent="." instance=ExtResource("4_interact")]
+position = Vector2(240, 53)
+object_id = "dining_chandelier"
+display_name = "Kristal Avize"
+prop_type = "ceiling"
+is_hotspot = true
+hotspot_size = Vector2(55, 55)
+
+[node name="Prop_DiningClock" parent="." instance=ExtResource("4_interact")]
+position = Vector2(320, 135)
+object_id = "dining_grandfather_clock"
+display_name = "Köşe Saati"
+prop_type = "prop"
+is_hotspot = true
+hotspot_size = Vector2(24, 75)
+
+[node name="Prop_DiningChinaCabinet" parent="." instance=ExtResource("4_interact")]
+position = Vector2(368, 140)
+object_id = "dining_china_cabinet"
+display_name = "Porselen Vitrini"
+prop_type = "prop"
+is_hotspot = true
+hotspot_size = Vector2(65, 115)

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://clocend01"]
+
+[ext_resource type="Script" path="res://scripts/tests/test_localization_and_ending.gd" id="1_test"]
+
+[node name="TestLocalizationAndEnding" type="Node"]
+script = ExtResource("1_test")

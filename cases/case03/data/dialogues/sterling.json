@@ -1,0 +1,58 @@
+{
+  "suspect_id": "sterling",
+  "name": "Cyril Sterling",
+  "topics": [
+    {
+      "id": "night_events",
+      "label": "Olay Gecesi",
+      "response": "Kraliyet Locası'nda şehrin en seçkin protokolünü ağırlıyordum. 112. ölçüdeki top sesiyle salon ayağa kalktığında Reeve arkamda sendeledi ve masadaki şampanya kadehlerini devirdi.",
+      "statement_yield": "Sterling, cinayet anında locada protokol konuklarıyla birlikte olduğunu anlattı."
+    },
+    {
+      "id": "victim_relation",
+      "label": "Dalton Reeve ile İlişkisi",
+      "response": "Reeve güvenlik şefimdi. Maaşını ben ödüyordum. Eski bir askerdi, disiplinliydi ama son zamanlarda fazlasıyla gergindi. Şirketimin sevkiyat defterlerini karıştırdığını fark etmiştim.",
+      "statement_yield": "Sterling, kurbanın şirketinin mühimmat kayıtlarını araştırdığını kabul etti."
+    },
+    {
+      "id": "munitions_business",
+      "label": "Mühimmat Ticareti",
+      "response": "Ben yasal bir tüccarım Crowe! Ordu tasfiyesinden kalan hurda ve mühimmat ihalelerine girdim. Reeve bundan şüphelendi ama her şey nizamiydi!",
+      "statement_yield": "Sterling, mühimmat ticaretinin tamamen yasal olduğunu savundu."
+    },
+    {
+      "id": "alibi",
+      "label": "Neredeydiniz?",
+      "response": "Locanın ön sırasındaydım! Vali ve tümen komutanı hemen sağımda oturuyordu. Kurşun benim başımı iki santimle ıskaladı!",
+      "statement_yield": "Sterling, locada onlarca yüksek düzey tanığın önünde olduğunu belirtti."
+    },
+    {
+      "id": "present_evidence",
+      "label": "Kanıt Göster",
+      "response": "Eğer beni suçlayacak bir belgen yoksa Crowe, bu sorguyu hemen bitir.",
+      "statement_yield": ""
+    }
+  ],
+  "evidence_reactions": {
+    "E302": {
+      "response": "Askerî .303 kovanı... Birisi operanın kubbesine çıkıp profesyonel bir ordu tüfeğiyle ateş etmiş! Güvenlik zaafiyeti rezalet boyutta!",
+      "statement": "Sterling, cinayetin askerî kalibre bir silahla işlendiğini gördü.",
+      "emotion": "shocked"
+    },
+    "E306": {
+      "response": "Dalton bu kağıdı cebinde sıkı sıkıya tutuyordu. Temsilden önce yanıma gelip 'Bu gece locadan ayrılmayın bayım' demişti... O kurşunun bana geleceğini sanıyordu!",
+      "statement": "Sterling, Reeve'in kendisini hedef sanarak korumaya çalıştığını düşündüğünü söyledi.",
+      "emotion": "nervous"
+    },
+    "E309": {
+      "response": "K-4 damgalı cep saati... 20:52. Kurşun saati parçalamış. Tanrım... O mermi bir karış sola gelseydi şu an ben ölmüştüm.",
+      "statement": "Sterling, ölümün eşiğinden döndüğünü anlayarak ürperdi.",
+      "emotion": "shocked"
+    },
+    "default": {
+      "response": "Bunun benimle veya Kraliyet Locası'yla ne alakası var Crowe?",
+      "statement": "",
+      "emotion": "normal"
+    }
+  }
+}

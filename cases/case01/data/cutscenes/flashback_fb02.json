@@ -1,0 +1,49 @@
+{
+  "id": "FB02",
+  "title": "Telsiz (Kuzey 1944)",
+  "duration_seconds": 12.5,
+  "skippable": true,
+  "palette": {
+    "background": "#080c10",
+    "snow": "#e8f0f8",
+    "fog": "#50687c",
+    "highlight_accent": "#d98238"
+  },
+  "sequence": [
+    {
+      "time": 0.0,
+      "text": "14 Aralık 1944... Gece 02:50. Kar fırtınası sığınağı dövüyordu.",
+      "action": "snowfall_dense",
+      "visual": "wind_and_snow",
+      "speaker": "INNER_VOICE"
+    },
+    {
+      "time": 2.5,
+      "text": "Makineli tüfek ateşi telsiz direğini biçti. Teddy kulaklığı başına geçirmiş çaresizce haykırıyordu.",
+      "action": "radio_spark",
+      "visual": "radio_sparks_in_dark",
+      "speaker": "INNER_VOICE"
+    },
+    {
+      "time": 5.0,
+      "text": "'Mayday! Kuzey Birimi kuşatıldı! Destek çağırıyorum!' Ahizeden sadece uğultu ve cızırtı geliyordu.",
+      "action": "static_noise",
+      "visual": "radio_static_frequency",
+      "speaker": "INNER_VOICE"
+    },
+    {
+      "time": 7.5,
+      "text": "Teddy titreyen elleriyle bataryayı söktü, şalteri indirdi: 'Bizi duymuyorlar komutanım... Bizi unuttular!'",
+      "action": "switch_off",
+      "visual": "hand_cutting_wire",
+      "speaker": "INNER_VOICE"
+    },
+    {
+      "time": 10.0,
+      "text": "Frekans 312 sustu. Telsiz kapandı. Ve hepimiz bir diğerini o karanlıkta bıraktı.",
+      "action": "frequency_flatline",
+      "visual": "radio_dial_frozen",
+      "speaker": "INNER_VOICE"
+    }
+  ]
+}

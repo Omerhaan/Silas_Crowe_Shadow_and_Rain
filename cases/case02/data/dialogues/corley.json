@@ -1,0 +1,77 @@
+{
+  "suspect_id": "corley",
+  "name": "Victor 'Kuzgun' Corley",
+  "topics": [
+    {
+      "id": "night_events",
+      "label": "Olay Gecesi",
+      "label_en": "Night of the Murder",
+      "response": "Gece yarısından şafağa kadar bu masadaydım Crowe. Dört adamımla poker çeviriyorduk. Dilediğin adama sorabilirsin, yerimden bir santim kıpırdamadım.",
+      "response_en": "From midnight until dawn I sat right at this card table, Crowe. Playing high-stakes poker with four of my boys. Ask any of them; I never budged an inch.",
+      "statement_yield": "Corley, cinayet gecesi adamlarıyla kesintisiz poker oynadığını iddia ederek güçlü bir kanıt sundu.",
+      "statement_yield_en": "Corley provided a strong alibi, stating he played poker uninterrupted with his crew all night."
+    },
+    {
+      "id": "victim_debt",
+      "label": "Teddy Marsh'ın Kumar Borcu",
+      "label_en": "Teddy Marsh's Gambling Debt",
+      "response": "Teddy bana üç yüz sterlin borçluydu. Ama ben borçlularımı öldürmem dedektif. Ölü bir adam hikaye anlatamaz. Öldürmek korkakların işidir.",
+      "response_en": "Teddy was in my books for three hundred pounds. But I don't butcher my debtors, detective. A dead mark pays no interest. Violence is for cowards.",
+      "statement_yield": "Corley, kurbanın kendisine yüklü borcu olduğunu doğruladı ancak cinayet işlemeyi mantıksız bulduğunu belirtti.",
+      "statement_yield_en": "Corley confirmed the victim owed him a heavy gambling sum, but insisted murder made zero business sense."
+    },
+    {
+      "id": "vance_argument",
+      "label": "Vance ile Marsh Kavgası",
+      "label_en": "Vance and Marsh Altercation",
+      "required_evidence": "E210",
+      "alt_required_flag": "corley_confronted_e210",
+      "locked_response": "Corley purosundan derin bir nefes çeker: 'Vance ile Teddy mi? Kendi aralarındaki fısıldaşmalar beni ilgilendirmez dedektif. Rıhtımda herkes birbirinin kuyusunu kazar.' (Corley'nin dilini çözecek sağlam bir koz gerekiyor.)",
+      "locked_response_en": "Corley exhales rich cigar smoke: 'Vance and Teddy? Whatever they muttered between them is none of my concern, detective. Men scheme on these docks every night.'",
+      "locked_emotion": "defensive",
+      "response": "(Corley purosundaki külü döker, ciddileşir) Morris'in rüşvet defterini buldun demek... Pekala Crowe, karşılıklı dürüst olalım. Dün akşam Vance buraya uğradı. Rengi kül gibiydi. Marsh ile rıhtımda fena kapışmışlar. Teddy ona 'Beni kandırdın, sabah hem seni hem sandıkları polise ihbar edeceğim' diye kükremiş.",
+      "response_en": "(Corley taps his cigar ash, turning sober) So you found Morris's payoff ledger... Very well Crowe, cards on the table. Vance came in here last night white as a ghost. He had a vicious shouting match with Marsh down by the pier. Teddy screamed at him: 'You betrayed me; at first light I'm turning both you and the munitions crates over to Scotland Yard!'",
+      "statement_yield": "Corley, Teddy Marsh ın cinayet gecesi Kaptan Vance i polise ihbar etmekle tehdit ettiğine şahit olduğunu açıkladı.",
+      "statement_yield_en": "Corley testified that Teddy Marsh threatened to turn Captain Vance and the contraband crates over to the police."
+    },
+    {
+      "id": "present_evidence",
+      "label": "Kanıt Göster",
+      "label_en": "Present Evidence",
+      "response": "Rıhtımda işe yarar bir şey bulabildin mi Crowe? Göster bakalım.",
+      "response_en": "Uncovered anything of substance on the waterfront, Crowe? Let us see it then.",
+      "statement_yield": ""
+    }
+  ],
+  "evidence_reactions": {
+    "E205": {
+      "response": "(Purosundan derin bir duman çeker) Teddy bu defteri yanından hiç ayırmazdı. 'Eski günahların defteri' derdi sarhoşken. Demek Kuzey'de çağrıyı kesip yoldaşlarını feda etmiş ha? Askerler... Hepiniz bir gün kendi geçmişinizde boğuluyorsunuz.",
+      "response_en": "(Takes a slow drag from his cigar) Teddy never let that log out of his grasp. 'The ledger of old sins,' he called it when pickled. So he severed the radio transmission in the North and abandoned his brothers? Soldiers... You all drown in your own past sooner or later.",
+      "statement": "Corley, Teddy Marsh ın savaştaki telsiz ihanetinin vicdan azabıyla yaşadığını doğruladı.",
+      "statement_en": "Corley confirmed Teddy Marsh was consumed with guilt over his wartime radio transmission betrayal.",
+      "emotion": "normal"
+    },
+    "E210": {
+      "response": "(Corley purosundaki külü döker, ciddileşir) Morris'in rüşvet defterini buldun demek... Pekala Crowe, karşılıklı dürüst olalım. Dün akşam Vance buraya uğradı. Rengi kül gibiydi. Marsh ile rıhtımda fena kapışmışlar. Teddy ona 'Beni kandırdın, sabah hem seni hem sandıkları polise ihbar edeceğim' diye kükremiş.",
+      "response_en": "(Corley taps his cigar ash, turning sober) So you found Morris's payoff ledger... Very well Crowe, cards on the table. Vance came in here last night white as a ghost. He had a vicious shouting match with Marsh down by the pier. Teddy screamed at him: 'You betrayed me; at first light I'm turning both you and the munitions crates over to Scotland Yard!'",
+      "statement": "Corley, Teddy Marsh ın cinayet gecesi Kaptan Vance i polise ihbar etmekle tehdit ettiğine şahit olduğunu açıkladı.",
+      "statement_en": "Corley testified that Teddy Marsh threatened to turn Captain Vance and the contraband crates over to the police.",
+      "emotion": "thoughtful",
+      "set_flag": "corley_confronted_e210",
+      "refresh_topics": true
+    },
+    "E202": {
+      "response": "Vance o sandıkları karaborsada bana satmaya çalıştı. 'Savaştan kalma temiz altın ve mühimmat' dedi. Ama üstünde ordu damgası olan mala dokunmam, polisle başımı ağrıtmam dedim, kovdum.",
+      "response_en": "Vance tried brokering those crates to my black market syndicate. Said it was 'untraced military surplus.' But I touch nothing bearing crown ordnance insignia; told him to clear out.",
+      "statement": "Corley, Kaptan Vance in çalınan askerî sandıkları satmak için müşteri aradığını itiraf etti.",
+      "statement_en": "Corley revealed Captain Vance was actively soliciting black-market buyers for the military crates.",
+      "emotion": "confident"
+    },
+    "default": {
+      "response": "Bu rıhtımda beni sadece nakit para ve kanıtlar ilgilendirir dedektif. Bununla vakit kaybetme.",
+      "response_en": "Only hard cash and undeniable proof hold sway on these docks, detective. Do not squander my leisure.",
+      "statement": "",
+      "emotion": "normal"
+    }
+  }
+}

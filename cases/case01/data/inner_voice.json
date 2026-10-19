@@ -1,0 +1,23 @@
+{
+  "war_memories": [
+    "\"Kapalı odalar. Siperde de böyleydi: tek çıkış, tek bakış açısı.\"",
+    "\"Bu koku... barut değil. Daha eski bir şey. İhanet gibi.\"",
+    "\"Fırtınada çakan her şimşek bana 44 kışındaki Kuzey cephesini hatırlatıyor.\"",
+    "\"Savaşta birini zehirlemezsin. Yüzüne bakarsın. Bu cinayet korkakça işlenmiş.\"",
+    "\"Çamurlu ayak izleri... O gece de çamur dizlerimize kadardı ve kimse geri dönmedi.\"",
+    "\"Gök gürültüsü... Sol elim yine titriyor. Saate bakıyorum: 03:12. Hâlâ durmuş vaziyette.\""
+  ],
+  "generic_inspection": [
+    "\"Burada dikkat çeken başka bir ayrıntı yok.\"",
+    "\"Sıradan bir eşya, cinayetle doğrudan bağı görünmüyor.\"",
+    "\"Daha önce gözden kaçırdığım bir şey var mı diye tekrar baktım.\""
+  ],
+  "wrong_deduction": [
+    "\"Hayır... Bu iki ipucu arasında mantıklı bir bağ kuramıyorum.\"",
+    "\"Teorim aksıyor. Kanıtları başka bir açıdan değerlendirmeliyim.\""
+  ],
+  "correct_deduction": [
+    "\"İşte bu. Parçalar birbiriyle örtüşmeye başladı.\"",
+    "\"Zihnimdeki sis aralanıyor. Olay tam olarak böyle gelişmiş olmalı.\""
+  ]
+}

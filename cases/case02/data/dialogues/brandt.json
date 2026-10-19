@@ -1,0 +1,42 @@
+{
+  "suspect_id": "brandt",
+  "name": "Colin Brandt",
+  "topics": [
+    {
+      "id": "night_events",
+      "label": "Olay Gecesi",
+      "response": "Fırtına öyle bir uğulduyordu ki... Ambarda kuytu bir köşeye çekilip cebimdeki kaçak viskiyi bitirdim. Sonra sızmışım. Korkunç bir gümbürtüyle uyandığımda vinç çökmüştü!",
+      "statement_yield": "Brandt, kaza anında ambarda sarhoş vaziyette uyuyakaldığını itiraf etti."
+    },
+    {
+      "id": "crane_maintenance",
+      "label": "Vinç Halatının Durumu",
+      "response": "Vinci daha üç gün önce yağladım dedektif! O çelik halat on ton yük çeker. Kimyasal dökülmeden ya da testere vurulmadan hayatta kendiliğinden kopmazdı!",
+      "statement_yield": "Brandt, vincin sağlam olduğunu ve halatın dışarıdan kasıtlı olarak zayıflatıldığını doğruladı."
+    },
+    {
+      "id": "crane_key",
+      "label": "Kumanda Panosu",
+      "response": "Kumanda dolabının anahtarı ambar duvarındaki kancada asılı durur. Gece buraya giren herkes o vinci çalıştırabilirdi.",
+      "statement_yield": "Brandt, vinç kumandasına ambarı bilen herkesin erişebileceğini söyledi."
+    },
+    {
+      "id": "present_evidence",
+      "label": "Kanıt Göster",
+      "response": "Vinçle ilgili bir kanıt mı buldunuz dedektif?",
+      "statement_yield": ""
+    }
+  ],
+  "evidence_reactions": {
+    "E201": {
+      "response": "(Halat parçasına dehşetle bakar) Gördünüz mü?! Halat lifleri erimiş! Ben asit kullanmayı bile bilmem Crowe! O asidi limanda ancak makine dairesinde ya da Kaptan Vance in kamarasında bulursunuz!",
+      "statement": "Brandt, halatın asitle eritildiğini doğruladı ve şüpheleri kaptanın makine dairesine yönlendirdi.",
+      "emotion": "shocked"
+    },
+    "default": {
+      "response": "Ben sadece vinçleri kaldırıp indiririm dedektif. Bununla bir alakam yok.",
+      "statement": "",
+      "emotion": "normal"
+    }
+  }
+}

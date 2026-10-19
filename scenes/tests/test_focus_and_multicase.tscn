@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cfocuscase01"]
+
+[ext_resource type="Script" path="res://scripts/tests/test_focus_and_multicase.gd" id="1_test"]
+
+[node name="TestFocusAndMultiCase" type="Node"]
+script = ExtResource("1_test")

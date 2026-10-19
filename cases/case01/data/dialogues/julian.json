@@ -1,0 +1,92 @@
+{
+  "suspect_id": "julian",
+  "name": "Julian Harlow",
+  "topics": [
+    {
+      "id": "night_events",
+      "label": "Olay Gecesi",
+      "label_en": "Night of the Crime",
+      "response": "Yemekten sonra abimle tartıştık. Bana yine zırnık koklatmayacağını söyledi. Ben de hırsımdan bilardoya gidip şişeleri devirdim.",
+      "response_en": "I argued with my brother after dinner. He told me again that I wouldn't see a dime. Out of sheer spite, I went down to the billiard room and drowned my rage in booze.",
+      "statement_yield": "Julian, yemek sonrası miras ve borç yüzünden abisiyle kavga ettiğini itiraf ediyor.",
+      "statement_yield_en": "Julian admits fighting with his brother after dinner over debts and the inheritance."
+    },
+    {
+      "id": "harlow_relation",
+      "label": "Harlow ile İlişkisi",
+      "label_en": "Relationship with Harlow",
+      "response": "Edmund üvey abimdi. Babamın mirasını tek başına sahiplenmişti. Beni hep hor gördü, bir asalak gibi davrandı. Ama beni mirastan tamamen silemezdi!",
+      "response_en": "Edmund was my stepbrother. He hoarded our father's entire estate for himself. He always looked down on me, treated me like a parasite. But he had no right to write me off completely!",
+      "statement_yield": "Julian, üvey abisinin mirası üzerinde hak iddia ediyor ve ona kin beslediğini saklamıyor.",
+      "statement_yield_en": "Julian lays claim to his stepbrother's inheritance and makes no secret of his resentment."
+    },
+    {
+      "id": "alibi",
+      "label": "Neredeydiniz?",
+      "label_en": "Your Whereabouts",
+      "required_evidence": "E11",
+      "alt_required_flag": "julian_confronted",
+      "locked_response": "Bütün gece bilardo masasında tek başıma antrenman yapıp içtim, kimseyi görmedim dedektif. Boşuna üzerime gelme.",
+      "locked_response_en": "I spent all night alone at the billiard table practicing and drinking, detective. Don't waste your breath pinning this on me.",
+      "locked_emotion": "defensive",
+      "response": "(Julian masayı yumruklar) Tamam, lanet olsun! Yalan söyledim! Pike ile bilardo oynamıyordum. Borç için ona yalvardım, beni kovunca odada tek başıma sabaha kadar içtim. Ama abimi ben öldürmedim!",
+      "response_en": "(Julian pounds the table) Fine, damn it! I lied! I wasn't playing billiards with Pike. I begged him to help with my debts, and when he threw me out, I sat there drinking alone until morning. But I didn't murder my brother!",
+      "statement_yield": "Julian kumar borcunu ve delilinin yalan olduğunu itiraf etti.",
+      "statement_yield_en": "Julian confessed his gambling debts and admitted his alibi was fabricated."
+    },
+    {
+      "id": "who_called",
+      "label": "Beni Siz mi Çağırdınız?",
+      "label_en": "Did You Call Me?",
+      "response": "Ne araması be adam?! Köprü çökmüş, üvey abim içeride soğumuş, sen elini kolunu sallayarak içeri giriyorsun. Seni kim çağırdıysa yalan söylemiş!",
+      "response_en": "What call?! The bridge is washed away, my stepbrother is dead in there, and you waltz in like you own the place. Whoever called you was lying through their teeth!",
+      "statement_yield": "Julian, dedektifi kesinlikle aramadığını öfkeyle belirtiyor.",
+      "statement_yield_en": "Julian furiously denies ever placing a call to the detective."
+    },
+    {
+      "id": "present_evidence",
+      "label": "Kanıt Göster",
+      "label_en": "Present Evidence",
+      "response": "Neymiş o kanıt? Çıkar da görelim, boş blöflere karnım tok benim!",
+      "response_en": "What evidence? Produce it then. I'm sick of empty bluffs!",
+      "statement_yield": "",
+      "statement_yield_en": ""
+    }
+  ],
+  "evidence_reactions": {
+    "E11": {
+      "response": "(Julian masayı yumruklar) Tamam, lanet olsun! Yalan söyledim! Pike ile bilardo oynamıyordum. Borç için ona yalvardım, beni kovunca odada tek başıma sabaha kadar içtim. Ama abimi ben öldürmedim!",
+      "response_en": "(Julian pounds the table) Fine, damn it! I lied! I wasn't playing billiards with Pike. I begged him to help with my debts, and when he threw me out, I sat there drinking alone until morning. But I didn't murder my brother!",
+      "statement": "Julian kumar borcunu ve delilinin yalan olduğunu itiraf etti.",
+      "statement_en": "Julian confessed his gambling debts and admitted his alibi was fabricated.",
+      "emotion": "angry",
+      "set_flag": "julian_confronted",
+      "refresh_topics": true
+    },
+    "E12": {
+      "response": "(Julian masayı yumruklar) Tamam, lanet olsun! Yalan söyledim! Pike ile bilardo oynamıyordum. Borç için ona yalvardım, beni kovunca odada tek başıma sabaha kadar içtim. Ama abimi ben öldürmedim!",
+      "response_en": "(Julian pounds the table) Fine, damn it! I lied! I wasn't playing billiards with Pike. I begged him to help with my debts, and when he threw me out, I sat there drinking alone until morning. But I didn't murder my brother!",
+      "statement": "Julian kumar borcunu ve delilinin yalan olduğunu itiraf etti.",
+      "statement_en": "Julian confessed his gambling debts and admitted his alibi was fabricated.",
+      "emotion": "angry",
+      "set_flag": "julian_confronted",
+      "refresh_topics": true
+    },
+    "E13": {
+      "response": "(Julian'ın yüzü kül gibi olur) O senet... Pike bana borç vermişti. Ama bu yüzden abimi öldürecek değilim! Mirası bekliyordum, cinayet işlemeye gerek yoktu!",
+      "response_en": "(Julian's face turns ashen) That promissory note... Pike lent me the funds. But that doesn't make me a fratricide! I was counting on the bequest; I had no reason to slaughter him!",
+      "statement": "Julian senet borcunu kabul etti ama cinayet işlemediğinde ısrar etti.",
+      "statement_en": "Julian acknowledged the promissory debt but swore vehemently he did not kill his brother.",
+      "emotion": "shocked",
+      "set_flag": "julian_confronted",
+      "refresh_topics": true
+    },
+    "default": {
+      "response": "Bununla beni mi suçlamaya çalışıyorsun? Saçmalık!",
+      "response_en": "Are you attempting to pin this on me with that trinket? Pure nonsense!",
+      "statement": "",
+      "statement_en": "",
+      "emotion": "normal"
+    }
+  }
+}

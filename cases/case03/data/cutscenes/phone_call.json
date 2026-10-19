@@ -1,0 +1,42 @@
+{
+  "dialogue_id": "case03_phone_call",
+  "caller_name": "???",
+  "opening_lines": [
+    { "speaker": "SILAS", "text": "Crowe." },
+    { "speaker": "???", "text": "Crowe... Bu gece Greywater Kraliyet Operası'nda son perde erkenden kapanacak." },
+    { "speaker": "SILAS", "text": "Kimsin sen? Yine aynı ses... Ne istiyorsun?" },
+    { "speaker": "???", "text": "Dalton Reeve. Güvenlik şefi kılığındaki K-4. Birkaç dakika sonra Kraliyet Locası'nda can verecek." },
+    { "speaker": "INNER_VOICE", "text": "\"Reeve... Kuzey Birimi'nin en soğukkanlı nişancısıydı. Şimdi av sırası onda.\"" },
+    { "speaker": "SILAS", "text": "Onu durdurabilirim! Neredesin sen?!" },
+    { "speaker": "???", "text": "Artık çok geç Crowe. Partisyondaki 112. ölçüde top patladığında kulaklarını dört aç... İki kez gürleyecek." }
+  ],
+  "choices": [
+    {
+      "id": "choice_who_is_target",
+      "text": "[1] \"Reeve'i kim hedef alıyor?\"",
+      "attitude": "investigative",
+      "caller_reply": "1944 kışında karlar altında gözünüzü kırpmadan geride bıraktığınız hayalet.",
+      "inner_voice": "\"Kuzey dağlarında bıraktığımız adam... Elias mı?\""
+    },
+    {
+      "id": "choice_warning_authorities",
+      "text": "[2] \"Operayı hemen boşaltabilirim.\"",
+      "attitude": "cautious",
+      "caller_reply": "Kimse sana inanmaz dedektif. Yüzlerce asilzade arya dinlerken hiçbir güç o kapıları kapattıramaz.",
+      "inner_voice": "\"Zamanım yok. Doğrudan operaya gitmeliyim.\""
+    },
+    {
+      "id": "choice_depart_opera",
+      "text": "[3] \"Hemen yola çıkıyorum!\"",
+      "attitude": "determined",
+      "caller_reply": "Acele etsen iyi edersin Crowe. Çünkü bu cinayet, üçlemenin en kusursuz atışı olacak.",
+      "inner_voice": "\"Paltomu alıp çıkmalıyım. Dalton'a yetişebilmek için tek bir şansım var.\""
+    }
+  ],
+  "closing_lines": [
+    { "speaker": "???", "text": "Işıkların ardındaki karanlığa bakmayı unutma dedektif. Gerçek katil daima kör noktada durur." },
+    { "speaker": "SILAS", "text": "Bu gece o kör noktayı aydınlatacağım!" },
+    { "speaker": "SYSTEM", "text": "[Hat çıt sesiyle kesilir. Dışarıdaki gök gürültüsü eski ofisin pencerelerini titretir.]" },
+    { "speaker": "INNER_VOICE", "text": "\"Greywater Kraliyet Operası... Dalton, sakın gözlerini kapatma.\"" }
+  ]
+}

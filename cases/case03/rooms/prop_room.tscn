@@ -1,0 +1,98 @@
+[gd_scene load_steps=8 format=3 uid="uid://bproproom01"]
+
+[ext_resource type="Script" path="res://scripts/core/room_background.gd" id="1_bg"]
+[ext_resource type="PackedScene" uid="uid://bdoor01" path="res://scenes/entities/door.tscn" id="2_door"]
+[ext_resource type="PackedScene" uid="uid://d2m0tcvj7ds4k" path="res://scenes/entities/interactable.tscn" id="3_interact"]
+[ext_resource type="PackedScene" uid="uid://bnpcentity01" path="res://scenes/entities/npc.tscn" id="4_npc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_floor"]
+size = Vector2(480, 26)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wall"]
+size = Vector2(16, 270)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_door"]
+size = Vector2(36, 110)
+
+[node name="PropRoom" type="Node2D"]
+
+[node name="RoomBackground" type="Node2D" parent="."]
+script = ExtResource("1_bg")
+room_theme = "prop_room"
+
+[node name="Walls" type="StaticBody2D" parent="."]
+
+[node name="FloorShape" type="CollisionShape2D" parent="Walls"]
+position = Vector2(240, 260)
+shape = SubResource("RectangleShape2D_floor")
+
+[node name="LeftWall" type="CollisionShape2D" parent="Walls"]
+position = Vector2(8, 135)
+shape = SubResource("RectangleShape2D_wall")
+
+[node name="RightWall" type="CollisionShape2D" parent="Walls"]
+position = Vector2(472, 135)
+shape = SubResource("RectangleShape2D_wall")
+
+[node name="Spawn_default" type="Marker2D" parent="."]
+position = Vector2(400, 245)
+
+[node name="Spawn_from_backstage" type="Marker2D" parent="."]
+position = Vector2(60, 245)
+
+[node name="Door_To_Backstage" parent="." instance=ExtResource("2_door")]
+position = Vector2(20, 245)
+target_room_id = "backstage"
+target_spawn = "from_prop_room"
+door_name = "Kulise Dön"
+
+[node name="BackstageDoorCollision" type="CollisionShape2D" parent="Door_To_Backstage"]
+position = Vector2(0, -55)
+shape = SubResource("RectangleShape2D_door")
+
+[node name="NPC_Patch" parent="." instance=ExtResource("4_npc")]
+position = Vector2(180, 245)
+display_name = "Barnaby 'Patch' Miller"
+character_id = "npc_patch"
+character_name = "Barnaby 'Patch' Miller"
+
+[node name="Evidence_E305" parent="." instance=ExtResource("3_interact")]
+position = Vector2(313, 208)
+object_id = "wax_mold_key"
+display_name = "Balmumu Kalıbı"
+evidence_id = "E305"
+prop_type = "drawer"
+is_hotspot = true
+hotspot_size = Vector2(28, 20)
+
+[node name="Prop_TheatricalCannon" parent="." instance=ExtResource("3_interact")]
+position = Vector2(258, 193)
+object_id = "theatrical_cannon"
+display_name = "Teatral Barut Topu"
+is_hotspot = true
+hotspot_size = Vector2(50, 40)
+
+[node name="Prop_ArmorRacks" parent="." instance=ExtResource("3_interact")]
+position = Vector2(84, 197)
+object_id = "armor_racks"
+display_name = "Zırh ve Kılıç Standı"
+prop_type = "portrait"
+is_hotspot = true
+hotspot_size = Vector2(40, 60)
+
+[node name="Prop_Workbench" parent="." instance=ExtResource("3_interact")]
+position = Vector2(423, 190)
+object_id = "prop_workbench"
+display_name = "Marangoz Tezgahı"
+prop_type = "desk"
+is_hotspot = true
+hotspot_size = Vector2(50, 30)
+
+[node name="Prop_ToolChest" parent="." instance=ExtResource("3_interact")]
+position = Vector2(368, 208)
+object_id = "patch_tool_chest"
+display_name = "Patch'in Şifreli Sandığı"
+prop_type = "drawer"
+is_hotspot = true
+hotspot_size = Vector2(36, 26)
+

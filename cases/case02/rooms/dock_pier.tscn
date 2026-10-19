@@ -1,0 +1,135 @@
+[gd_scene load_steps=7 format=3 uid="uid://bdockpier01"]
+
+[ext_resource type="Script" path="res://scripts/core/room_background.gd" id="1_bg"]
+[ext_resource type="PackedScene" uid="uid://bdoor01" path="res://scenes/entities/door.tscn" id="2_door"]
+[ext_resource type="PackedScene" uid="uid://d2m0tcvj7ds4k" path="res://scenes/entities/interactable.tscn" id="3_interact"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_floor"]
+size = Vector2(480, 26)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wall"]
+size = Vector2(16, 270)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_door"]
+size = Vector2(36, 110)
+
+[node name="DockPier" type="Node2D"]
+
+[node name="RoomBackground" type="Node2D" parent="."]
+script = ExtResource("1_bg")
+room_theme = "dock_pier"
+
+[node name="Walls" type="StaticBody2D" parent="."]
+
+[node name="FloorShape" type="CollisionShape2D" parent="Walls"]
+position = Vector2(240, 260)
+shape = SubResource("RectangleShape2D_floor")
+
+[node name="LeftWall" type="CollisionShape2D" parent="Walls"]
+position = Vector2(8, 135)
+shape = SubResource("RectangleShape2D_wall")
+
+[node name="RightWall" type="CollisionShape2D" parent="Walls"]
+position = Vector2(472, 135)
+shape = SubResource("RectangleShape2D_wall")
+
+[node name="Spawn_default" type="Marker2D" parent="."]
+position = Vector2(180, 245)
+
+[node name="Spawn_from_office" type="Marker2D" parent="."]
+position = Vector2(75, 245)
+
+[node name="Spawn_from_cabin" type="Marker2D" parent="."]
+position = Vector2(200, 245)
+
+[node name="Spawn_from_warehouse" type="Marker2D" parent="."]
+position = Vector2(415, 245)
+
+[node name="Door_To_Office" parent="." instance=ExtResource("2_door")]
+position = Vector2(35, 245)
+target_room_id = "dock_office"
+target_spawn = "from_pier"
+door_name = "Gümrük İdaresi"
+
+[node name="OfficeDoorCollision" type="CollisionShape2D" parent="Door_To_Office"]
+position = Vector2(0, -55)
+shape = SubResource("RectangleShape2D_door")
+
+[node name="Door_To_Cabin" parent="." instance=ExtResource("2_door")]
+position = Vector2(240, 245)
+target_room_id = "captain_cabin"
+target_spawn = "from_pier"
+door_name = "Kargo Gemisi"
+
+[node name="CabinDoorCollision" type="CollisionShape2D" parent="Door_To_Cabin"]
+position = Vector2(0, -55)
+shape = SubResource("RectangleShape2D_door")
+
+[node name="Door_To_Warehouse" parent="." instance=ExtResource("2_door")]
+position = Vector2(455, 245)
+target_room_id = "dock_warehouse"
+target_spawn = "from_pier"
+door_name = "Liman Ambarı"
+
+[node name="WarehouseDoorCollision" type="CollisionShape2D" parent="Door_To_Warehouse"]
+position = Vector2(0, -55)
+shape = SubResource("RectangleShape2D_door")
+
+[node name="Evidence_E202" parent="." instance=ExtResource("3_interact")]
+position = Vector2(395, 205)
+object_id = "military_crate"
+display_name = "Mühürsüz Askerî Sandık"
+evidence_id = "E202"
+prop_type = "drawer"
+is_hotspot = true
+hotspot_size = Vector2(28, 24)
+
+[node name="Evidence_E203" parent="." instance=ExtResource("3_interact")]
+position = Vector2(330, 230)
+object_id = "bloody_lantern"
+display_name = "Kanlı Pirinç Fener"
+evidence_id = "E203"
+prop_type = "candlestick"
+is_hotspot = true
+hotspot_size = Vector2(20, 20)
+
+[node name="Evidence_E208" parent="." instance=ExtResource("3_interact")]
+position = Vector2(310, 240)
+object_id = "marsh_body"
+display_name = "Teddy Marsh (K-3 Cesedi)"
+evidence_id = "E208"
+prop_type = "corpse"
+is_hotspot = true
+hotspot_size = Vector2(34, 20)
+
+[node name="Prop_CranePulley" parent="." instance=ExtResource("3_interact")]
+position = Vector2(275, 140)
+object_id = "crane_pulley"
+display_name = "Vinç Makarası & Kopuk Kanca"
+custom_inner_voice = "\"Ağır yük makarasının emniyet dişlisi zorlanarak kırılmış... Halat kendiliğinden kopmamış, zayıflatılmış.\""
+is_hotspot = true
+hotspot_size = Vector2(36, 40)
+
+[node name="Prop_MooringRopes" parent="." instance=ExtResource("3_interact")]
+position = Vector2(115, 230)
+object_id = "mooring_ropes"
+display_name = "Gemi Palamar Halatları"
+custom_inner_voice = "\"SS Mary'yi rıhtıma bağlayan ıslak, kalın kenevir halatlar. Fırtınada gerilip inliyor.\""
+is_hotspot = true
+hotspot_size = Vector2(30, 24)
+
+[node name="Prop_BloodStain" parent="." instance=ExtResource("3_interact")]
+position = Vector2(295, 248)
+object_id = "blood_stain"
+display_name = "Kanlı Çelik Plaka"
+custom_inner_voice = "\"Kargonun altında kalıp ezilmiş çelik levha üzerinde taze kan izleri... Teddy kaçmaya çalışmış ama yetişememiş.\""
+is_hotspot = true
+hotspot_size = Vector2(26, 16)
+
+[node name="Prop_FogLamp" parent="." instance=ExtResource("3_interact")]
+position = Vector2(332, 130)
+object_id = "fog_lamp"
+display_name = "Rıhtım Sokak Lambası"
+custom_inner_voice = "\"Titreşen sarı ışığıyla liman sisini güçlükle delen eski sokak lambası. Yağmur damlaları camında cızırdıyor.\""
+is_hotspot = true
+hotspot_size = Vector2(22, 34)

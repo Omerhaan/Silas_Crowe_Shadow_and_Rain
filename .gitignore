@@ -1,0 +1,39 @@
+# Godot Engine .gitignore
+.godot/
+*.translation
+
+# Export and Build Outputs
+export/
+build/
+bin/
+*.pck
+*.apk
+*.zip
+paylasim/*.zip
+
+# Temporary and Cache files
+*.tmp
+*.temp
+*.bak
+*~
+.DS_Store
+Thumbs.db
+godot.log
+crash.log
+
+# Python Cache (tools)
+__pycache__/
+*.py[cod]
+*$py.class
+
+# IDE and OS files
+.vs/
+.idea/
+.vscode/
+desktop.ini
+
+# Test scratch outputs
+test_output.txt
+test_clean_raw.png*
+test_silas_*.png*
+

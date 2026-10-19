@@ -1,0 +1,126 @@
+[gd_scene load_steps=2 format=3 uid="uid://cmemorywall01"]
+
+[ext_resource type="Script" path="res://scripts/hub/memory_wall.gd" id="1_mem"]
+
+[node name="MemoryWall" type="Control"]
+process_mode = 3
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_mem")
+
+[node name="Backdrop" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.02, 0.03, 0.05, 0.9)
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -145.0
+offset_top = -80.0
+offset_right = 145.0
+offset_bottom = 80.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TitleLabel" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 6.0
+offset_right = 230.0
+offset_bottom = 18.0
+theme_override_colors/font_color = Color(0.9, 0.85, 0.7, 1)
+theme_override_font_sizes/font_size = 8
+text = "ANI DUVARI — KUZEY PARÇALARI"
+
+[node name="CloseBtn" type="Button" parent="Panel"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -34.0
+offset_top = 4.0
+offset_right = -6.0
+offset_bottom = 28.0
+grow_horizontal = 0
+theme_override_font_sizes/font_size = 7
+text = "X"
+
+[node name="PhotoBoard" type="Control" parent="Panel"]
+anchors_preset = 0
+offset_left = 10.0
+offset_top = 22.0
+offset_right = 280.0
+offset_bottom = 90.0
+
+[node name="PhotoRect" type="ColorRect" parent="Panel/PhotoBoard"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.18, 0.2, 0.25, 1)
+
+[node name="PhotoTexture" type="TextureRect" parent="Panel/PhotoBoard"]
+visible = false
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="PhotoLabel" type="Label" parent="Panel/PhotoBoard"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 6
+text = "Fotoğraf Panosu"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="WatchSlotsLabel" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 96.0
+offset_right = 260.0
+offset_bottom = 106.0
+theme_override_colors/font_color = Color(0.7, 0.75, 0.8, 1)
+theme_override_font_sizes/font_size = 6
+text = "Birlik Saat Yuvaları (K-1'den K-9'a):"
+
+[node name="WatchSlots" type="Control" parent="Panel"]
+anchors_preset = 0
+offset_left = 10.0
+offset_top = 108.0
+offset_right = 280.0
+offset_bottom = 150.0
+
+[node name="SlotsGrid" type="GridContainer" parent="Panel/WatchSlots"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+columns = 9

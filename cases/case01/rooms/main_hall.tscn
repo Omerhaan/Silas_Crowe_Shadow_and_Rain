@@ -1,0 +1,190 @@
+[gd_scene load_steps=9 format=3 uid="uid://bmainhall01"]
+
+[ext_resource type="Script" path="res://scripts/core/room_background.gd" id="1_bg"]
+[ext_resource type="PackedScene" uid="uid://bdoor01" path="res://scenes/entities/door.tscn" id="2_door"]
+[ext_resource type="PackedScene" uid="uid://d2m0tcvj7ds4k" path="res://scenes/entities/interactable.tscn" id="3_interact"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_floor"]
+size = Vector2(480, 26)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wall"]
+size = Vector2(16, 270)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_studydoor"]
+size = Vector2(40, 95)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_stairs"]
+size = Vector2(60, 110)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_frontdoor"]
+size = Vector2(44, 110)
+
+[node name="MainHall" type="Node2D"]
+
+[node name="RoomBackground" type="Node2D" parent="."]
+script = ExtResource("1_bg")
+room_theme = "main_hall"
+
+[node name="Walls" type="StaticBody2D" parent="."]
+
+[node name="FloorShape" type="CollisionShape2D" parent="Walls"]
+position = Vector2(240, 260)
+shape = SubResource("RectangleShape2D_floor")
+
+[node name="LeftWall" type="CollisionShape2D" parent="Walls"]
+position = Vector2(8, 135)
+shape = SubResource("RectangleShape2D_wall")
+
+[node name="RightWall" type="CollisionShape2D" parent="Walls"]
+position = Vector2(472, 135)
+shape = SubResource("RectangleShape2D_wall")
+
+[node name="Spawn_default" type="Marker2D" parent="."]
+position = Vector2(240, 245)
+
+[node name="Spawn_from_upper_floor" type="Marker2D" parent="."]
+position = Vector2(95, 245)
+
+[node name="Spawn_from_study" type="Marker2D" parent="."]
+position = Vector2(115, 245)
+
+[node name="Spawn_from_dining_room" type="Marker2D" parent="."]
+position = Vector2(40, 245)
+
+[node name="Spawn_from_library" type="Marker2D" parent="."]
+position = Vector2(440, 245)
+
+[node name="Door_To_Dining" parent="." instance=ExtResource("2_door")]
+position = Vector2(18, 245)
+target_room_id = "dining_room"
+target_spawn = "from_main_hall"
+door_name = "Yemek Odası"
+
+[node name="DiningDoorCollision" type="CollisionShape2D" parent="Door_To_Dining"]
+position = Vector2(0, -48)
+shape = SubResource("RectangleShape2D_studydoor")
+
+[node name="Door_To_Upper" parent="." instance=ExtResource("2_door")]
+position = Vector2(50, 245)
+target_room_id = "upper_floor"
+target_spawn = "from_main_hall"
+door_name = "Üst Kat Merdiveni"
+
+[node name="StairsCollision" type="CollisionShape2D" parent="Door_To_Upper"]
+position = Vector2(0, -55)
+shape = SubResource("RectangleShape2D_stairs")
+
+[node name="Door_To_Study" parent="." instance=ExtResource("2_door")]
+position = Vector2(95, 245)
+target_room_id = "study"
+target_spawn = "from_main_hall"
+door_name = "Çalışma Odası"
+
+[node name="StudyDoorCollision" type="CollisionShape2D" parent="Door_To_Study"]
+position = Vector2(0, -48)
+shape = SubResource("RectangleShape2D_studydoor")
+
+[node name="Door_FrontDoor" parent="." instance=ExtResource("2_door")]
+position = Vector2(415, 238)
+target_room_id = ""
+door_name = "Malikâne Giriş Kapısı"
+is_locked = true
+locked_message = "Köprü çöktü. Sabaha kadar kimse gelip gidemez."
+
+[node name="FrontDoorCollision" type="CollisionShape2D" parent="Door_FrontDoor"]
+position = Vector2(1, -55)
+shape = SubResource("RectangleShape2D_frontdoor")
+
+[node name="Door_To_Library" parent="." instance=ExtResource("2_door")]
+position = Vector2(462, 245)
+target_room_id = "library"
+target_spawn = "from_main_hall"
+door_name = "Kütüphane"
+
+[node name="LibraryDoorCollision" type="CollisionShape2D" parent="Door_To_Library"]
+position = Vector2(0, -48)
+shape = SubResource("RectangleShape2D_studydoor")
+
+[node name="Prop_GrandfatherClock" parent="." instance=ExtResource("3_interact")]
+position = Vector2(142, 165)
+object_id = "hall_grandfather_clock"
+display_name = "Büyükbaba Saati"
+prop_type = "prop"
+is_hotspot = true
+hotspot_size = Vector2(26, 120)
+
+[node name="Prop_PlantLeft" parent="." instance=ExtResource("3_interact")]
+position = Vector2(170, 205)
+object_id = "hall_plant_left"
+display_name = "Büyük Saksı Bitkisi"
+prop_type = "prop"
+is_hotspot = true
+hotspot_size = Vector2(28, 45)
+
+[node name="Prop_MarbleBust" parent="." instance=ExtResource("3_interact")]
+position = Vector2(205, 165)
+object_id = "hall_marble_bust"
+display_name = "Kaideli Mermer Büst"
+prop_type = "prop"
+is_hotspot = true
+hotspot_size = Vector2(28, 90)
+
+[node name="Prop_GrandMirror" parent="." instance=ExtResource("3_interact")]
+position = Vector2(258, 123)
+object_id = "hall_grand_mirror"
+display_name = "Altın Varaklı Ayna"
+prop_type = "wall"
+is_hotspot = true
+hotspot_size = Vector2(55, 75)
+
+[node name="Evidence_E17" parent="." instance=ExtResource("3_interact")]
+position = Vector2(265, 190)
+object_id = "main_hall_phone_table"
+display_name = "Kopuk Telefon Masası"
+evidence_id = "E17"
+prop_type = "telephone"
+is_hotspot = true
+hotspot_size = Vector2(85, 45)
+custom_inner_voice = "\"Telefon hattı sel sırasında kopmuş. Ahize tamamen sessiz... Ama Silas Crowe'un dairesindeki telefon nasıl çaldı?\""
+
+[node name="Prop_Chandelier" parent="." instance=ExtResource("3_interact")]
+visible = false
+position = Vector2(321, 59)
+object_id = "chandelier_grand"
+display_name = "Büyük Hol Avizesi"
+prop_type = "ceiling"
+is_hotspot = true
+hotspot_size = Vector2(55, 60)
+
+[node name="Prop_CoatRack" parent="." instance=ExtResource("3_interact")]
+position = Vector2(332, 170)
+object_id = "hall_coat_rack"
+display_name = "Palto ve Şapka Askılığı"
+prop_type = "prop"
+is_hotspot = true
+hotspot_size = Vector2(28, 110)
+
+[node name="Prop_PlantRight" parent="." instance=ExtResource("3_interact")]
+position = Vector2(385, 195)
+object_id = "hall_plant_right"
+display_name = "Palmiye Saksısı"
+prop_type = "prop"
+is_hotspot = true
+hotspot_size = Vector2(45, 55)
+
+[node name="Evidence_E15" parent="." instance=ExtResource("3_interact")]
+position = Vector2(371, 245)
+object_id = "main_hall_mat"
+display_name = "Giriş Kapısı Paspası"
+evidence_id = "E15"
+prop_type = "drawer"
+is_hotspot = true
+hotspot_size = Vector2(30, 20)
+
+[node name="Prop_UmbrellaStand" parent="." instance=ExtResource("3_interact")]
+position = Vector2(354, 199)
+object_id = "hall_umbrella_stand"
+display_name = "Islak Şemsiyelik"
+prop_type = "prop"
+is_hotspot = true
+hotspot_size = Vector2(22, 50)

@@ -1,0 +1,94 @@
+[gd_scene load_steps=8 format=3 uid="uid://broyalbox01"]
+
+[ext_resource type="Script" path="res://scripts/core/room_background.gd" id="1_bg"]
+[ext_resource type="PackedScene" uid="uid://bdoor01" path="res://scenes/entities/door.tscn" id="2_door"]
+[ext_resource type="PackedScene" uid="uid://d2m0tcvj7ds4k" path="res://scenes/entities/interactable.tscn" id="3_interact"]
+[ext_resource type="PackedScene" uid="uid://bnpcentity01" path="res://scenes/entities/npc.tscn" id="4_npc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_floor"]
+size = Vector2(480, 26)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wall"]
+size = Vector2(16, 270)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_door"]
+size = Vector2(36, 110)
+
+[node name="RoyalBox" type="Node2D"]
+
+[node name="RoomBackground" type="Node2D" parent="."]
+script = ExtResource("1_bg")
+room_theme = "royal_box"
+
+[node name="Walls" type="StaticBody2D" parent="."]
+
+[node name="FloorShape" type="CollisionShape2D" parent="Walls"]
+position = Vector2(240, 260)
+shape = SubResource("RectangleShape2D_floor")
+
+[node name="LeftWall" type="CollisionShape2D" parent="Walls"]
+position = Vector2(25, 135)
+shape = SubResource("RectangleShape2D_wall")
+
+[node name="RightWall" type="CollisionShape2D" parent="Walls"]
+position = Vector2(347, 135)
+shape = SubResource("RectangleShape2D_wall")
+
+[node name="Spawn_default" type="Marker2D" parent="."]
+position = Vector2(60, 245)
+
+[node name="Spawn_from_foyer" type="Marker2D" parent="."]
+position = Vector2(60, 245)
+
+[node name="Spawn_from_auditorium" type="Marker2D" parent="."]
+position = Vector2(60, 245)
+
+[node name="Door_To_Foyer" parent="." instance=ExtResource("2_door")]
+position = Vector2(30, 245)
+target_room_id = "opera_foyer"
+target_spawn = "from_royal_box"
+door_name = "Kraliyet Fuayesi"
+
+[node name="FoyerDoorCollision" type="CollisionShape2D" parent="Door_To_Foyer"]
+position = Vector2(0, -55)
+shape = SubResource("RectangleShape2D_door")
+
+[node name="NPC_Sterling" parent="." instance=ExtResource("4_npc")]
+position = Vector2(274, 249)
+display_name = "Cyril Sterling"
+character_id = "npc_sterling"
+character_name = "Cyril Sterling"
+
+[node name="Evidence_E306" parent="." instance=ExtResource("3_interact")]
+position = Vector2(317, 223)
+object_id = "marked_score"
+display_name = "İşaretli Partisyon"
+evidence_id = "E306"
+prop_type = "books"
+is_hotspot = true
+hotspot_size = Vector2(30, 24)
+
+[node name="Evidence_E309" parent="." instance=ExtResource("3_interact")]
+position = Vector2(170, 225)
+object_id = "reeve_pocket_watch"
+display_name = "K-4 Cep Saati"
+evidence_id = "E309"
+prop_type = "clock"
+is_hotspot = true
+hotspot_size = Vector2(24, 24)
+
+[node name="Prop_ReeveCorpse" parent="." instance=ExtResource("3_interact")]
+position = Vector2(130, 196)
+object_id = "reeve_corpse"
+display_name = "Dalton Reeve'in Bedeni"
+prop_type = "chair"
+is_hotspot = true
+hotspot_size = Vector2(40, 46)
+
+[node name="Prop_ChampagneTable" parent="." instance=ExtResource("3_interact")]
+position = Vector2(203, 196)
+object_id = "champagne_table"
+display_name = "Protokol Masası ve Devrilmiş Kadehler"
+prop_type = "desk"
+is_hotspot = true
+hotspot_size = Vector2(38, 30)

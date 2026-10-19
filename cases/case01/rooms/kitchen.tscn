@@ -1,0 +1,135 @@
+[gd_scene load_steps=8 format=3 uid="uid://bkitchen01"]
+
+[ext_resource type="Script" path="res://scripts/core/room_background.gd" id="1_bg"]
+[ext_resource type="PackedScene" uid="uid://bdoor01" path="res://scenes/entities/door.tscn" id="2_door"]
+[ext_resource type="PackedScene" uid="uid://bnpcentity01" path="res://scenes/entities/npc.tscn" id="3_npc"]
+[ext_resource type="PackedScene" uid="uid://d2m0tcvj7ds4k" path="res://scenes/entities/interactable.tscn" id="4_interact"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_floor"]
+size = Vector2(480, 26)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wall"]
+size = Vector2(16, 270)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_backdoor"]
+size = Vector2(40, 90)
+
+[node name="Kitchen" type="Node2D"]
+
+[node name="RoomBackground" type="Node2D" parent="."]
+script = ExtResource("1_bg")
+room_theme = "kitchen"
+
+[node name="Walls" type="StaticBody2D" parent="."]
+
+[node name="FloorShape" type="CollisionShape2D" parent="Walls"]
+position = Vector2(240, 260)
+shape = SubResource("RectangleShape2D_floor")
+
+[node name="LeftWall" type="CollisionShape2D" parent="Walls"]
+position = Vector2(8, 135)
+shape = SubResource("RectangleShape2D_wall")
+
+[node name="RightWall" type="CollisionShape2D" parent="Walls"]
+position = Vector2(472, 135)
+shape = SubResource("RectangleShape2D_wall")
+
+[node name="Spawn_default" type="Marker2D" parent="."]
+position = Vector2(415, 245)
+
+[node name="Spawn_from_dining_room" type="Marker2D" parent="."]
+position = Vector2(415, 245)
+
+[node name="Door_KitchenBackDoor" parent="." instance=ExtResource("2_door")]
+position = Vector2(25, 245)
+target_room_id = ""
+door_name = "Mutfak Arka Çıkışı"
+is_locked = true
+locked_message = "Köprü çöktü. Sabaha kadar kimse gelip gidemez."
+
+[node name="BackDoorCollision" type="CollisionShape2D" parent="Door_KitchenBackDoor"]
+position = Vector2(0, -45)
+shape = SubResource("RectangleShape2D_backdoor")
+
+[node name="Door_To_Dining" parent="." instance=ExtResource("2_door")]
+position = Vector2(462, 245)
+target_room_id = "dining_room"
+target_spawn = "from_kitchen"
+door_name = "Yemek Odası"
+
+[node name="DiningDoorCollision" type="CollisionShape2D" parent="Door_To_Dining"]
+position = Vector2(0, -45)
+shape = SubResource("RectangleShape2D_backdoor")
+
+[node name="Prop_KitchenPantry" parent="." instance=ExtResource("4_interact")]
+position = Vector2(58, 160)
+object_id = "kitchen_pantry_cupboard"
+display_name = "Kiler Dolabı"
+prop_type = "prop"
+is_hotspot = true
+hotspot_size = Vector2(50, 110)
+
+[node name="Evidence_E14" parent="." instance=ExtResource("4_interact")]
+position = Vector2(58, 150)
+object_id = "kitchen_cupboard_letter"
+display_name = "Mutfak Dolabı (Kovulma İhtarı)"
+evidence_id = "E14"
+prop_type = "drawer"
+is_secret_drawer = true
+is_hotspot = true
+hotspot_size = Vector2(35, 30)
+
+[node name="Prop_KitchenMeatBlock" parent="." instance=ExtResource("4_interact")]
+position = Vector2(115, 205)
+object_id = "kitchen_meat_block"
+display_name = "Masif Et Kütüğü"
+prop_type = "prop"
+is_hotspot = true
+hotspot_size = Vector2(36, 40)
+
+[node name="KitchenCounterVisual" parent="." instance=ExtResource("4_interact")]
+position = Vector2(165, 205)
+object_id = "kitchen_counter"
+display_name = "Mutfak Tezgâhı"
+prop_type = "counter"
+is_hotspot = true
+hotspot_size = Vector2(60, 45)
+
+[node name="NPC_Margaret" parent="." instance=ExtResource("3_npc")]
+position = Vector2(215, 245)
+display_name = "Margaret Doyle"
+custom_inner_voice = "\"Margaret önlüğünü ellerinde büküyor. Otuz yıldır bu evde, ama gözlerinde derin bir korku var.\""
+character_id = "npc_margaret_doyle"
+character_name = "Margaret Doyle"
+
+[node name="KitchenStoveVisual" parent="." instance=ExtResource("4_interact")]
+position = Vector2(275, 205)
+object_id = "kitchen_stove"
+display_name = "Döküm Kuzine & Ocak"
+prop_type = "counter"
+is_hotspot = true
+hotspot_size = Vector2(60, 50)
+
+[node name="Prop_KitchenSink" parent="." instance=ExtResource("4_interact")]
+position = Vector2(375, 205)
+object_id = "kitchen_sink_counter"
+display_name = "Evye ve Lavabo Tezgahı"
+prop_type = "prop"
+is_hotspot = true
+hotspot_size = Vector2(80, 45)
+
+[node name="Prop_KitchenShelves" parent="." instance=ExtResource("4_interact")]
+position = Vector2(375, 100)
+object_id = "kitchen_wall_shelves"
+display_name = "Duvar Tencere Rafı"
+prop_type = "wall"
+is_hotspot = true
+hotspot_size = Vector2(70, 40)
+
+[node name="Prop_KitchenPotRack" parent="." instance=ExtResource("4_interact")]
+position = Vector2(165, 80)
+object_id = "kitchen_pot_rack"
+display_name = "Tava ve Tencere Askılığı"
+prop_type = "ceiling"
+is_hotspot = true
+hotspot_size = Vector2(60, 30)

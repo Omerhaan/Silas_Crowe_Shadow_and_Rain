@@ -1,0 +1,88 @@
+{
+  "suspect_id": "hale",
+  "name": "Dr. Victor Hale",
+  "topics": [
+    {
+      "id": "night_events",
+      "label": "Olay Gecesi",
+      "label_en": "Night of the Crime",
+      "response": "Akşam yemeğinden sonra saat sekiz buçuk gibi ayrıldım. Edmund konyak içiyordu, neşesi yerindeydi. Fırtına kopmak üzereyken çalışma odasının lambasını yaktığını gördüm.",
+      "response_en": "I took my leave around eight-thirty after dinner. Edmund was sipping his brandy, in good spirits. As the storm began to brew, I saw him light the desk lamp in his study.",
+      "statement_yield": "Hale, yemekten sonra Harlow un odasında konyak içtiğini ve yalnız olduğunu gördüğünü söylüyor.",
+      "statement_yield_en": "Hale claims that after dinner, Harlow was drinking brandy alone in his study."
+    },
+    {
+      "id": "harlow_relation",
+      "label": "Harlow ile İlişkisi",
+      "label_en": "Relationship with Harlow",
+      "response": "Edmund ile tanışıklığımız eski... Çok eskiye, savaş yıllarına dayanır. O birlikte alay cerrahı, bense sağlık astsubayıydım. Ona hem dost hem hekim olarak hizmet ettim.",
+      "response_en": "Edmund and I go back a long way... All the way to the wartime years. He served as a medical NCO in the unit; I was the regiment surgeon. I attended to him as both a friend and physician.",
+      "statement_yield": "Hale ile Harlow un savaştan beri tanıştıkları ve ordu sağlık biriminde birlikte görev yaptıkları doğrulandı.",
+      "statement_yield_en": "Confirmed that Hale and Harlow knew each other since the war and served together in the military medical corps."
+    },
+    {
+      "id": "alibi",
+      "label": "Neredeydiniz?",
+      "label_en": "Your Whereabouts",
+      "required_evidence": "E06",
+      "alt_required_flag": "hale_confronted_e06",
+      "locked_response": "Yemekten sonra doğruca kütüphaneye geçtim. Fırtınada şömine karşısında saatlerce tıp tarihi okudum. Edmund'a akşam hiç uğramadım.",
+      "locked_response_en": "I headed straight to the library after dinner. I spent hours reading medical history by the fire during the storm. I never went near Edmund's study that evening.",
+      "locked_emotion": "defensive",
+      "response": "(Hale gözlüklerini düzeltir, elleri hafifçe titrer) Reçete mi? Şey... odaya uğradığımı tamamen unutmuşum. Sadece damlalarını verip hemen çıktım Crowe! Çıktığımda Edmund gayet iyiydi!",
+      "response_en": "(Hale adjusts his glasses, a slight tremor in his fingers) The prescription? Oh... I must have forgotten that brief visit. I merely delivered his cardiac drops and left at once, Crowe! Edmund was perfectly well when I stepped out!",
+      "statement_yield": "Dr. Hale, çalışma odasına saat 20:50'de girdiğini ve reçeteyi bıraktığını itiraf etti.",
+      "statement_yield_en": "Dr. Hale admitted entering the study at 20:50 and leaving the prescription slip."
+    },
+    {
+      "id": "who_called",
+      "label": "Beni Siz mi Çağırdınız?",
+      "label_en": "Did You Call Me?",
+      "response": "(Gözlerini kaçırarak) Ben çağırmadım dedektif. Ama köprü çökmüşken burada bulunmanız belki de... talihin bir cilvesidir.",
+      "response_en": "(Looking away) I did not summon you, detective. But with the bridge collapsed, your sudden appearance here... might just be an act of providence.",
+      "statement_yield": "Dr. Hale, Silas ı aramadığını söylüyor fakat bakışlarında gizli bir tanışıklık seziliyor.",
+      "statement_yield_en": "Dr. Hale denies calling Silas, yet a veiled familiarity flickers in his eyes."
+    },
+    {
+      "id": "present_evidence",
+      "label": "Kanıt Göster",
+      "label_en": "Present Evidence",
+      "response": "Bir kanıtınız varsa çekinmeden gösterin Crowe. Tıbbi ve mantıksal gerçekler dışında hiçbir şey beni ilgilendirmez.",
+      "response_en": "If you have evidence, do not hesitate to show it, Crowe. Only clinical and logical facts concern me.",
+      "statement_yield": "",
+      "statement_yield_en": ""
+    }
+  ],
+  "evidence_reactions": {
+    "E06": {
+      "response": "(Hale gözlüklerini düzeltir, sesinde ilk defa bir titreme belirir) Reçete mi? Şey... odaya uğradığımı tamamen unutmuşum. Sadece damlalarını verip hemen çıktım Crowe! Çıktığımda Edmund gayet iyiydi!",
+      "response_en": "(Hale adjusts his glasses, a tremor surfacing in his voice for the first time) The prescription? Oh... I must have forgotten that brief visit. I merely delivered his cardiac drops and left at once, Crowe! Edmund was perfectly well when I stepped out!",
+      "statement": "Dr. Hale, çalışma odasına saat 20:50'de girdiğini ve reçeteyi bıraktığını itiraf etti.",
+      "statement_en": "Dr. Hale admitted entering the study at 20:50 and leaving the prescription slip.",
+      "emotion": "nervous",
+      "set_flag": "hale_confronted_e06",
+      "refresh_topics": true
+    },
+    "E09": {
+      "response": "(Hale çenesini sıkar) Kütüphane şöminesi mi? O flakon tıbbi çantamdan düşmüş olmalı. Hava soğuk olsa da kitap okurken dikkat etmedim. Neyi ima etmeye çalışıyorsunuz?!",
+      "response_en": "(Hale clenches his jaw) The library hearth? That vial must have fallen from my medical kit. Although the room was frigid, I paid no heed while immersed in reading. What are you implying?!",
+      "statement": "Hale kütüphane şöminesinin yanmadığını kabul etti ve digitalis şişesini açıklamaya çalıştı.",
+      "statement_en": "Hale conceded the library fireplace was unlit and fumbled to explain the discarded digitalis vial.",
+      "emotion": "nervous"
+    },
+    "E10": {
+      "response": "(Hale'in yüzü kireç gibi beyazlar) Dijitalis... Kalp glikoziti. Evet, Edmund'a yazdığım ilaç. Ama o şişenin kütüphane kitaplarının arkasında ne işi var bilmiyorum! Birisi beni tuzağa düşürmeye çalışıyor!",
+      "response_en": "(Hale's face blanches pale as chalk) Digitalis... A cardiac glycoside. Yes, the medication I prescribed Edmund. But how that vial ended up hidden behind library folios, I cannot fathom! Someone is framing me!",
+      "statement": "Hale, gizlenmiş boş digitalis şişesinin kendi reçetesi olduğunu tanıdı ama tuzağa düşürüldüğünü iddia etti.",
+      "statement_en": "Hale identified the concealed empty digitalis bottle as his prescription, but claimed he was being framed.",
+      "emotion": "nervous"
+    },
+    "default": {
+      "response": "Bu nesnenin Edmund'un ani ölümüyle doğrudan bir ilgisini göremiyorum.",
+      "response_en": "I fail to see any clinical bearing this article has on Edmund's sudden demise.",
+      "statement": "",
+      "statement_en": "",
+      "emotion": "normal"
+    }
+  }
+}

@@ -1,0 +1,113 @@
+[gd_scene load_steps=9 format=3 uid="uid://bupper01"]
+
+[ext_resource type="Script" path="res://scripts/core/room_background.gd" id="1_bg"]
+[ext_resource type="PackedScene" uid="uid://bdoor01" path="res://scenes/entities/door.tscn" id="2_door"]
+[ext_resource type="PackedScene" uid="uid://d2m0tcvj7ds4k" path="res://scenes/entities/interactable.tscn" id="3_interact"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_floor"]
+size = Vector2(480, 26)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wall"]
+size = Vector2(16, 270)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_stairs"]
+size = Vector2(20, 110)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_door_single"]
+size = Vector2(32, 95)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_door_double"]
+size = Vector2(68, 95)
+
+[node name="UpperFloor" type="Node2D"]
+
+[node name="RoomBackground" type="Node2D" parent="."]
+script = ExtResource("1_bg")
+room_theme = "upper_floor"
+
+[node name="Walls" type="StaticBody2D" parent="."]
+
+[node name="FloorShape" type="CollisionShape2D" parent="Walls"]
+position = Vector2(240, 260)
+shape = SubResource("RectangleShape2D_floor")
+
+[node name="LeftWall" type="CollisionShape2D" parent="Walls"]
+position = Vector2(8, 135)
+shape = SubResource("RectangleShape2D_wall")
+
+[node name="RightWall" type="CollisionShape2D" parent="Walls"]
+position = Vector2(472, 135)
+shape = SubResource("RectangleShape2D_wall")
+
+[node name="Spawn_default" type="Marker2D" parent="."]
+position = Vector2(30, 245)
+
+[node name="Spawn_from_main_hall" type="Marker2D" parent="."]
+position = Vector2(30, 245)
+
+[node name="Spawn_from_julian_room" type="Marker2D" parent="."]
+position = Vector2(62, 245)
+
+[node name="Spawn_from_harlow_bedroom" type="Marker2D" parent="."]
+position = Vector2(236, 245)
+
+[node name="Spawn_from_pike_room" type="Marker2D" parent="."]
+position = Vector2(444, 245)
+
+[node name="Door_To_MainHall" parent="." instance=ExtResource("2_door")]
+position = Vector2(10, 245)
+target_spawn = "from_upper_floor"
+door_name = "Aşağı İnen Merdiven"
+
+[node name="StairsCollision" type="CollisionShape2D" parent="Door_To_MainHall"]
+position = Vector2(0, -55)
+shape = SubResource("RectangleShape2D_stairs")
+
+[node name="Door_To_Julian" parent="." instance=ExtResource("2_door")]
+position = Vector2(62, 245)
+target_room_id = "julian_room"
+target_spawn = "from_upper_floor"
+door_name = "Julian'ın Odası"
+
+[node name="JulianDoorCollision" type="CollisionShape2D" parent="Door_To_Julian"]
+position = Vector2(0, -47)
+shape = SubResource("RectangleShape2D_door_single")
+
+[node name="Prop_UpperChaise" parent="." instance=ExtResource("3_interact")]
+position = Vector2(131, 210)
+object_id = "upper_chaise_lounge"
+display_name = "Koridor Dinlenme Sediri"
+prop_type = "armchair"
+is_hotspot = true
+hotspot_size = Vector2(60, 45)
+
+[node name="Door_To_Harlow" parent="." instance=ExtResource("2_door")]
+position = Vector2(236, 245)
+target_room_id = "harlow_bedroom"
+target_spawn = "from_upper_floor"
+door_name = "Harlow'un Odası"
+
+[node name="HarlowDoorCollision" type="CollisionShape2D" parent="Door_To_Harlow"]
+position = Vector2(0, -47)
+shape = SubResource("RectangleShape2D_door_double")
+
+[node name="Door_To_Pike" parent="." instance=ExtResource("2_door")]
+position = Vector2(444, 245)
+target_room_id = "pike_room"
+target_spawn = "from_upper_floor"
+door_name = "Pike'ın Odası"
+is_locked = true
+locked_message = "Pike'ın odası kilitli. Kâhya Margaret'ta yedek bir anahtar olmalı."
+required_key_id = "key_ring"
+
+[node name="PikeDoorCollision" type="CollisionShape2D" parent="Door_To_Pike"]
+position = Vector2(0, -47)
+shape = SubResource("RectangleShape2D_door_single")
+
+[node name="Prop_UpperChandelier" parent="." instance=ExtResource("3_interact")]
+position = Vector2(240, 57)
+object_id = "chandelier_grand"
+display_name = "Koridor Avizesi"
+prop_type = "ceiling"
+is_hotspot = true
+hotspot_size = Vector2(50, 60)

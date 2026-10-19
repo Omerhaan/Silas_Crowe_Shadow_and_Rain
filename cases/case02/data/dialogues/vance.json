@@ -1,0 +1,93 @@
+{
+  "suspect_id": "vance",
+  "name": "Kaptan Thomas Vance",
+  "topics": [
+    {
+      "id": "night_events",
+      "label": "Olay Gecesi",
+      "label_en": "Night of the Murder",
+      "response": "Gece boyunca kamarada seyir defterini yazıyordum. Fırtınada güverteye adım atmadım.",
+      "response_en": "I spent the entire night in my cabin logging the ship's journal. I never stepped foot on the stormy deck.",
+      "statement_yield": "Kaptan Vance, olay anında kamarada yalnız olduğunu ve seyir defteri yazdığını iddia ediyor.",
+      "statement_yield_en": "Captain Vance claims he remained alone in his cabin logging the ship's journal during the murder."
+    },
+    {
+      "id": "victim_relation",
+      "label": "Teddy Marsh ile İlişkisi",
+      "label_en": "Relationship with Teddy Marsh",
+      "response": "Teddy limanın ayyaş telsizcisiydi. Bazen bana hava raporu ve frekans getirirdi, hepsi bu.",
+      "response_en": "Teddy was the dock's drunken radio operator. Occasionally he brought me barometric reports and frequencies, nothing more.",
+      "statement_yield": "Vance, kurbanla sadece yüzeysel bir liman iş ilişkisi olduğunu söylüyor.",
+      "statement_yield_en": "Vance insists he maintained only a superficial harbor acquaintance with the victim."
+    },
+    {
+      "id": "cargo",
+      "label": "Kuzey İntikal Sandıkları",
+      "label_en": "Northern Contraband Crates",
+      "required_evidence": "E202",
+      "alt_required_flag": "vance_confronted_cargo",
+      "locked_response": "Vance piposunu tüttürür: 'Ben sadece yasal kereste ve kömür taşırım Crowe. Ne askerî sandığından bahsediyorsun? Gemimde öyle şeyler olmaz.'",
+      "locked_response_en": "Vance puffs his pipe: 'I carry legitimate timber and coal, Crowe. What military crates? My ship carries no such contraband.'",
+      "locked_emotion": "defensive",
+      "response": "(Vance alnındaki teri siler) Lanet olsun... O mühürsüz sandıkları ambara indirmişler demek. Corley ile Morris organize etti Crowe! Kuzey birliklerinden kalan o silahları gemime gizlice yüklediler!",
+      "response_en": "(Vance wipes cold sweat from his brow) Damn it all... So they lowered those unsealed crates to the warehouse floor. Corley and Morris engineered it, Crowe! They smuggled surplus weaponry from the Northern units onto my cargo ship!",
+      "statement_yield": "Vance, mühürsüz askerî cephane sandıklarının gemisine gizlice yüklendiğini itiraf etti.",
+      "statement_yield_en": "Vance confessed that unsealed military contraband crates were secretly stashed aboard his vessel."
+    },
+    {
+      "id": "alibi",
+      "label": "Neredeydiniz?",
+      "label_en": "Where Were You?",
+      "response": "Kamaradaydım dedim ya! Kapım kilitliydi, fırtınanın dinmesini bekliyordum.",
+      "response_en": "I was in my quarters as I said! Bolted in tight, waiting for the gale to blow over.",
+      "statement_yield": "Vance'in kamarada yalnız olduğuna dair bağımsız bir tanığı yok.",
+      "statement_yield_en": "Vance has no independent witnesses confirming he was inside his cabin."
+    },
+    {
+      "id": "present_evidence",
+      "label": "Kanıt Göster",
+      "label_en": "Present Evidence",
+      "response": "Bir kanıtın varsa masaya koy Crowe, yoksa gemimden defol.",
+      "response_en": "If you have proof, set it on the desk, Crowe; otherwise get off my ship.",
+      "statement_yield": ""
+    }
+  ],
+  "evidence_reactions": {
+    "E201": {
+      "response": "Halat koptuysa bunun sorumlusu ben değilim! Liman işletmesine git de hesap sor!",
+      "response_en": "If the cable snapped, that is harbor management's fault, not mine! Take it up with the port authority!",
+      "statement": "Vance kopan halat konusunda öfkeyle savunmaya geçti.",
+      "statement_en": "Vance turned fiercely defensive when confronted with the snapped crane cable.",
+      "emotion": "defensive"
+    },
+    "E202": {
+      "response": "(Vance alnındaki teri siler) Lanet olsun... O mühürsüz sandıkları ambara indirmişler demek. Corley ile Morris organize etti Crowe! Kuzey birliklerinden kalan o silahları gemime gizlice yüklediler!",
+      "response_en": "(Vance wipes cold sweat from his brow) Damn it all... So they lowered those unsealed crates to the warehouse floor. Corley and Morris engineered it, Crowe! They smuggled surplus weaponry from the Northern units onto my cargo ship!",
+      "statement": "Vance, mühürsüz askerî cephane sandıklarının gemisine gizlice yüklendiğini itiraf etti.",
+      "statement_en": "Vance confessed that unsealed military contraband crates were secretly stashed aboard his vessel.",
+      "emotion": "nervous",
+      "set_flag": "vance_confronted_cargo",
+      "refresh_topics": true
+    },
+    "E204": {
+      "response": "(Yutkunur, sağ kolunu arkasına saklamaya çalışır) O mu? O sadece akü asidi dedektif! Makine dairesinde jeneratör tamir ederken sıçradı!",
+      "response_en": "(Swallows dryly, shielding his right arm) That? Just battery acid, detective! Splashed while repairing the auxiliary generator below decks!",
+      "statement": "Kaptan Vance, ceketindeki asit yanığını makine dairesi kazası diyerek açıklamaya çalıştı.",
+      "statement_en": "Vance attempted to excuse the acid burns on his coat as an engine room mishap.",
+      "emotion": "nervous"
+    },
+    "E207": {
+      "response": "(Rengi bembeyaz kesilir, masaya tutunur) O mektup... Onu nereden buldun sen?! Tanrım... O hırıltılı ses aradı... 'Marsh sabah polise gidecek, sandıkları anlatacak' dedi! Bütün hayatım bitecekti!",
+      "response_en": "(Pales to the bone, gripping the table) That note... Where on earth did you uncover that?! Heavens... That wheezing phantom voice phoned... 'Marsh goes to the police at dawn to blow the whistle on the crates,' he said! My entire career was finished!",
+      "statement": "Kaptan Vance, isimsiz mektubu aldığını ve cinayete sürüklendiğini itiraf etti.",
+      "statement_en": "Captain Vance confessed receiving the anonymous ultimatum that drove him to murder.",
+      "emotion": "shocked"
+    },
+    "default": {
+      "response": "Bunun cinayetle ya da benim gemimle ne ilgisi var Crowe? Vaktimi çalma.",
+      "response_en": "What does that curio have to do with murder or my vessel, Crowe? Cease wasting my hours.",
+      "statement": "",
+      "emotion": "normal"
+    }
+  }
+}

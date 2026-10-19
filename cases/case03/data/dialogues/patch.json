@@ -1,0 +1,87 @@
+{
+  "suspect_id": "patch",
+  "name": "Barnaby 'Patch' Miller",
+  "topics": [
+    {
+      "id": "night_events",
+      "label": "Olay Gecesi",
+      "label_en": "Night of the Murder",
+      "response": "20:52'de partisyondaki 112. ölçü işaretini aldım ve uvertürün teatral topunu ateşledim! Salon inledi, duman sahneye yayıldı!",
+      "response_en": "At 20:52 I caught the cue for measure 112 in the score and fired the theatrical cannon! The hall rumbled, smoke billowed across the stage!",
+      "statement_yield": "Patch, tam 20:52'de 112. ölçüdeki efekt topunu bizzat patlattığını söyledi.",
+      "statement_yield_en": "Patch confirmed he personally fired the pyrotechnic cannon at 20:52 upon measure 112."
+    },
+    {
+      "id": "two_blasts",
+      "label": "İkinci Patlama Sesi",
+      "label_en": "Second Blast Sound",
+      "required_flag": "patch_chest_opened",
+      "alt_required_evidence": "E305",
+      "alt_required_flag": "patch_confronted_e305",
+      "locked_response": "Ben sadece işimi yaptım dedektif. 112. ölçüde topun ipini çektim, ortalık gümbürdedi. O gürültüde başka ne duyabilirdim ki?",
+      "locked_response_en": "I just did my job, detective. At measure 112 I pulled the lanyard and the auditorium thundered. What else could I possibly hear in that din?",
+      "locked_emotion": "defensive",
+      "response": "Pekala Crowe... Sandığımı açtığına göre yalan söylemenin anlamı yok. O an, tam o salisede daha tiz, madeni ve kırbaç gibi keskin ikinci bir patlama sesi duydum! Kulaklarım savaştan kalmadır dedektif, mermi sesini tanırım!",
+      "response_en": "Fine, Crowe... Since you cracked my chest, no use denying it. Right on the split-second of that blast, I heard a sharper, metallic, whip-crack second report! My ears survived the war; I know a high-velocity rifle shot when I hear one!",
+      "statement_yield": "Patch, top patlamasıyla tamı tamına aynı anda keskin bir mermi sesi duyduğunu belirtti.",
+      "statement_yield_en": "Patch revealed hearing a sharp, metallic rifle crack simultaneous with the pyrotechnic blast."
+    },
+    {
+      "id": "prop_workshop",
+      "label": "Aksesuar Atölyesi",
+      "label_en": "Prop Workshop",
+      "response": "Burası benim dünyam. Peruklar, zırhlar, kılıçlar, sis tozları... Her şey burada yapılır. Ama yabancılar pek girmez.",
+      "response_en": "This room is my sanctuary. Wigs, armor, stage rapiers, smoke powder... Everything is forged here. Outsiders are rarely permitted.",
+      "statement_yield": "Patch, atölyeye yetkisiz kimsenin girmemesi gerektiğini ifade etti.",
+      "statement_yield_en": "Patch explained unauthorized persons should never have gained workshop access."
+    },
+    {
+      "id": "alibi",
+      "label": "Neredeydiniz?",
+      "label_en": "Where Were You?",
+      "response": "Efekt balkonunda fünye kordonunun başındaydım. Parmaklarımdaki barut isi hâlâ duruyor.",
+      "response_en": "Up on the effects perch clutching the lanyard. Powder soot still cakes my fingertips.",
+      "statement_yield": "Patch'in ellerindeki taze barut izleri fünye başında olduğunu doğruluyor.",
+      "statement_yield_en": "Fresh powder residue on Patch's hands confirms he was operating the detonator."
+    },
+    {
+      "id": "present_evidence",
+      "label": "Kanıt Göster",
+      "label_en": "Present Evidence",
+      "response": "Bana ilginç bir şey göster Crowe, tiyatro hilelerini iyi bilirim.",
+      "response_en": "Show me something genuine, Crowe. I've seen every stage trick in the book.",
+      "statement_yield": ""
+    }
+  ],
+  "evidence_reactions": {
+    "E305": {
+      "response": "(Gözlüğünü düzeltip muma bakar) Vay canına... Bu marangoz tezgahımdaki peruk balmumu! Geçen hafta kutudan bir parça eksilmişti. Birisi içine köprü anahtarını bastırıp kalıp çıkarmış! Atölyeme gizlice sızmışlar!",
+      "response_en": "(Adjusting spectacles toward candlelight) Heavens above... That's modeling wax from my carpentry table! A block vanished last week. Someone pressed Finch's bridge key into this to cast a duplicate! An intruder breached my workshop!",
+      "statement": "Patch, balmumu kalıbının kendi atölyesinden çalınan malzemeyle yapıldığını teşhis etti.",
+      "statement_en": "Patch recognized the wax cast as material stolen from his workshop bench to duplicate the bridge key.",
+      "emotion": "shocked",
+      "set_flag": "patch_confronted_e305",
+      "refresh_topics": true
+    },
+    "E302": {
+      "response": "İşte bu! Duyduğum o kırbaç gibi sesin kaynağı bu pirinç kovan! Benim döküm topum değil, bu ordu mermisi gürledi salonda!",
+      "response_en": "That is it! That brass casing is the origin of the whip-crack I heard! Not my iron mortar, but this military cartridge roared across the hall!",
+      "statement": "Patch, .303 kovanın duyduğu ikinci patlamayı kanıtladığını onayladı.",
+      "statement_en": "Patch confirmed the .303 cartridge produced the sharp second blast he identified.",
+      "emotion": "thoughtful"
+    },
+    "E306": {
+      "response": "Reeve dün yanıma gelip 'Patch, topun ateşleme gecikmesi kaç salise?' diye sormuştu. Gözlerindeki o korkuyu unutamıyorum. Kendisini bekleyen pusuya kafa yoruyordu.",
+      "response_en": "Reeve came to me yesterday asking, 'Patch, what is the exact split-second delay on the cannon detonation?' I will never forget that dread in his eyes. He was dissecting the very ambush arranged for him.",
+      "statement": "Patch, Reeve'in topun patlama süresini önceden sorguladığını hatırladı.",
+      "statement_en": "Patch recalled Reeve inquiring beforehand about the exact timing of the cannon blast.",
+      "emotion": "sad"
+    },
+    "default": {
+      "response": "Bu tiyatro aksesuarı değil dedektif, bende kaydı yok.",
+      "response_en": "Not an opera theatrical prop, detective; I keep no inventory of this.",
+      "statement": "",
+      "emotion": "normal"
+    }
+  }
+}

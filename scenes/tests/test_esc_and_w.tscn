@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://btescandw01"]
+
+[ext_resource type="Script" path="res://scripts/tests/test_esc_and_w.gd" id="1_test"]
+
+[node name="TestEscAndW" type="Node2D"]
+script = ExtResource("1_test")

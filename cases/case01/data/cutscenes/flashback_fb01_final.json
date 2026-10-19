@@ -1,0 +1,56 @@
+{
+  "id": "FB01_FINAL",
+  "title": "Kar (Tam Anı - Final)",
+  "duration_seconds": 18.0,
+  "skippable": true,
+  "palette": {
+    "background": "#0b1016",
+    "snow": "#e8f0f8",
+    "fog": "#8ba4b4",
+    "highlight_accent": "#d9383a"
+  },
+  "sequence": [
+    {
+      "time": 0.0,
+      "text": "1944 Kışı... Kuzey Operasyonu.",
+      "action": "snowfall_dense",
+      "visual": "wind_and_snow",
+      "speaker": "INNER_VOICE"
+    },
+    {
+      "time": 3.0,
+      "text": "Pusu. Herkes gözlerimin önünde devrildi.",
+      "action": "reveal_badge",
+      "visual": "red_medic_badge_in_snow",
+      "speaker": "INNER_VOICE"
+    },
+    {
+      "time": 6.5,
+      "text": "Elias'ın eli paltonun kolunu sıkıyordu. İtmiyordu... gitmemem için yalvarıyordu.",
+      "action": "holding_hand_reveal",
+      "visual": "hand_grasping_arm",
+      "speaker": "INNER_VOICE"
+    },
+    {
+      "time": 10.0,
+      "text": "Harlow nabza dokundu: 'Öldü.' dedi.",
+      "action": "medic_pronouncement",
+      "visual": "medic_kneeling",
+      "speaker": "INNER_VOICE"
+    },
+    {
+      "time": 13.0,
+      "text": "Elini çektim ve koştum. Nefes alıyordu... Ben arkamı döndüm.",
+      "action": "pulling_away",
+      "visual": "hand_letting_go",
+      "speaker": "INNER_VOICE"
+    },
+    {
+      "time": 16.0,
+      "text": "03:12.",
+      "action": "watch_clock_0312",
+      "visual": "pocket_watch_frozen",
+      "speaker": "INNER_VOICE"
+    }
+  ]
+}

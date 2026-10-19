@@ -1,0 +1,54 @@
+{
+  "ambient_audio": "rain",
+  "fade_duration": 0.8,
+  "cards": [
+    {
+      "id": 1,
+      "text": "1946. Kış.",
+      "duration": 3.5
+    },
+    {
+      "id": 2,
+      "text": "Savaş bitti. Şehir, kazananların ve unutanların şehri oldu.",
+      "duration": 4.5
+    },
+    {
+      "id": 3,
+      "text": "Yağmur üç gündür dinmiyor.",
+      "duration": 3.5
+    },
+    {
+      "id": 4,
+      "text": "Silas Crowe. Otuz sekiz yaşında. Eski bir istihbaratçı.",
+      "duration": 4.0
+    },
+    {
+      "id": 5,
+      "text": "Savaştan birkaç ay önce döndü. Kuzey'e giden birliğinden kimseyle bir daha karşılaşmadı.",
+      "duration": 5.0
+    },
+    {
+      "id": 6,
+      "text": "Resmî kayıtlara göre Kuzey Operasyonu hiç yaşanmadı.",
+      "duration": 4.5
+    },
+    {
+      "id": 7,
+      "text": "Silas'ın uykusu yok. Gök gürlediğinde elleri titriyor. Nedenini tam olarak hatırlamıyor.",
+      "duration": 5.5,
+      "sfx": "thunder"
+    },
+    {
+      "id": 8,
+      "text": "Şehirde ölüm hâlâ iş çıkarıyor. Ve bazı geceler, telefon yanlış kişiyi arıyor.",
+      "duration": 5.0
+    }
+  ],
+  "title_card": {
+    "title": "SILAS CROWE: SHADOW & RAIN",
+    "prompt": "Başlamak için dokun"
+  },
+  "ui": {
+    "skip_button": "Atla"
+  }
+}

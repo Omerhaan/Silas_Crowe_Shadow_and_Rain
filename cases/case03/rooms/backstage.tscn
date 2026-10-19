@@ -1,0 +1,120 @@
+[gd_scene load_steps=8 format=3 uid="uid://bbackstage01"]
+
+[ext_resource type="Script" path="res://scripts/core/room_background.gd" id="1_bg"]
+[ext_resource type="PackedScene" uid="uid://bdoor01" path="res://scenes/entities/door.tscn" id="2_door"]
+[ext_resource type="PackedScene" uid="uid://d2m0tcvj7ds4k" path="res://scenes/entities/interactable.tscn" id="3_interact"]
+[ext_resource type="PackedScene" uid="uid://bnpcentity01" path="res://scenes/entities/npc.tscn" id="4_npc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_floor"]
+size = Vector2(480, 26)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wall"]
+size = Vector2(16, 270)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_door"]
+size = Vector2(36, 110)
+
+[node name="Backstage" type="Node2D"]
+
+[node name="RoomBackground" type="Node2D" parent="."]
+script = ExtResource("1_bg")
+room_theme = "backstage"
+
+[node name="Walls" type="StaticBody2D" parent="."]
+
+[node name="FloorShape" type="CollisionShape2D" parent="Walls"]
+position = Vector2(240, 260)
+shape = SubResource("RectangleShape2D_floor")
+
+[node name="LeftWall" type="CollisionShape2D" parent="Walls"]
+position = Vector2(8, 135)
+shape = SubResource("RectangleShape2D_wall")
+
+[node name="RightWall" type="CollisionShape2D" parent="Walls"]
+position = Vector2(472, 135)
+shape = SubResource("RectangleShape2D_wall")
+
+[node name="Spawn_default" type="Marker2D" parent="."]
+position = Vector2(62, 245)
+
+[node name="Spawn_from_foyer" type="Marker2D" parent="."]
+position = Vector2(45, 245)
+
+[node name="Spawn_from_auditorium" type="Marker2D" parent="."]
+position = Vector2(32, 245)
+
+[node name="Spawn_from_prop_room" type="Marker2D" parent="."]
+position = Vector2(439, 243)
+
+[node name="Spawn_from_light_bridge" type="Marker2D" parent="."]
+position = Vector2(255, 245)
+
+[node name="Door_To_Foyer" parent="." instance=ExtResource("2_door")]
+position = Vector2(22, 246)
+target_room_id = "opera_foyer"
+target_spawn = "from_backstage2"
+door_name = "Kraliyet Fuayesi"
+
+[node name="FoyerDoorCollision" type="CollisionShape2D" parent="Door_To_Foyer"]
+position = Vector2(-1, -55)
+shape = SubResource("RectangleShape2D_door")
+
+[node name="Door_To_Prop_Room" parent="." instance=ExtResource("2_door")]
+position = Vector2(461, 245)
+target_room_id = "prop_room"
+target_spawn = "from_backstage"
+door_name = "Aksesuar Atölyesi"
+
+[node name="PropRoomDoorCollision" type="CollisionShape2D" parent="Door_To_Prop_Room"]
+position = Vector2(0, -55)
+shape = SubResource("RectangleShape2D_door")
+
+[node name="Door_To_Light_Bridge" parent="." instance=ExtResource("2_door")]
+position = Vector2(252, 213)
+target_room_id = "light_bridge"
+target_spawn = "from_backstage"
+door_name = "Işık Köprüsü Merdiveni"
+is_locked = true
+locked_message = "Işık köprüsünün demir parmaklıklı kapısında ağır bir asma kilit var. Finch'in anahtarı ya da bir kopyası gerekiyor."
+required_key_id = "bridge_key"
+
+[node name="LightBridgeDoorCollision" type="CollisionShape2D" parent="Door_To_Light_Bridge"]
+position = Vector2(0, -55)
+shape = SubResource("RectangleShape2D_door")
+
+[node name="NPC_Finch" parent="." instance=ExtResource("4_npc")]
+position = Vector2(195, 235)
+display_name = "Arthur Finch"
+character_id = "npc_finch"
+character_name = "Arthur Finch"
+
+[node name="NPC_Elena" parent="." instance=ExtResource("4_npc")]
+position = Vector2(339, 246)
+display_name = "Elena Vane"
+character_id = "npc_elena"
+character_name = "Elena Vane"
+
+[node name="Evidence_E303" parent="." instance=ExtResource("3_interact")]
+position = Vector2(123, 195)
+object_id = "light_cue_book"
+display_name = "Işık Cue Defteri"
+evidence_id = "E303"
+prop_type = "books"
+is_hotspot = true
+hotspot_size = Vector2(30, 24)
+
+[node name="Prop_LightConsole" parent="." instance=ExtResource("3_interact")]
+position = Vector2(71, 162)
+object_id = "light_range_board"
+display_name = "Işık ve Menzil Panosu"
+prop_type = "desk"
+is_hotspot = true
+hotspot_size = Vector2(46, 36)
+
+[node name="Prop_DressingMirror" parent="." instance=ExtResource("3_interact")]
+position = Vector2(385, 170)
+object_id = "dressing_mirror"
+display_name = "Makyaj Aynası ve Kostümler"
+prop_type = "portrait"
+is_hotspot = true
+hotspot_size = Vector2(40, 50)

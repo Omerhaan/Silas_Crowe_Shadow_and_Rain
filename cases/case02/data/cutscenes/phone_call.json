@@ -1,0 +1,42 @@
+{
+  "dialogue_id": "case02_phone_call",
+  "caller_name": "???",
+  "opening_lines": [
+    { "speaker": "SILAS", "text": "Crowe." },
+    { "speaker": "???", "text": "Crowe... Bu gece Greywater Rıhtımı'nda bir 'kaza' oldu." },
+    { "speaker": "SILAS", "text": "Liman polisi ilgilensin. Gece yarısı beni neden arıyorsun?" },
+    { "speaker": "???", "text": "Çünkü ezilen adamı tanıyorsun. Teddy Marsh. Kuzey Birimi'nden eski ortağın." },
+    { "speaker": "INNER_VOICE", "text": "\"Teddy... K-3. ölü olduğunu sanıyordum.\"" },
+    { "speaker": "SILAS", "text": "Teddy mi?! Tanrım... Ne oldu ona?" },
+    { "speaker": "???", "text": "4 numaralı kargo vinci sabote edildi. Tonlarca çelik üzerine düştü. Yerel şef Morris olayı örtbas etmek üzere." }
+  ],
+  "choices": [
+    {
+      "id": "choice_who_did_it",
+      "text": "[1] \"Kimin yaptığını biliyor musun?\"",
+      "attitude": "investigative",
+      "caller_reply": "Kargo gemisi kaptanı Vance ve liman ofisi şefi Morris işin içinde. Ama ipleri çeken liman mafyası Corley olabilir.",
+      "inner_voice": "\"Morris ve Vance... İsimleri aklımın bir köşesine yazdım.\""
+    },
+    {
+      "id": "choice_why_call_me",
+      "text": "[2] \"Beni neden bu işe çekiyorsun?\"",
+      "attitude": "cautious",
+      "caller_reply": "Çünkü zorundasın crowe . Kuzey Birimi'nin sırrı onunla mezara gidemez.",
+      "inner_voice": "\"Kuzey Birimi... Geçmiş asla gömülü kalmıyor.\""
+    },
+    {
+      "id": "choice_depart_now",
+      "text": "[3] \"Hemen rıhtıma gidiyorum.\"",
+      "attitude": "determined",
+      "caller_reply": "Çabuk ol Crowe. Yağmur ve sis izleri silmeden önce orada olmalısın. tik.tak.",
+      "inner_voice": "\"Paltomu alıp çıkmalıyım. Teddy bunu hak ediyor.\""
+    }
+  ],
+  "closing_lines": [
+    { "speaker": "???", "text": "Rıhtımda kimseye güvenme Crowe.Geceleri sis ve yalanlarla doludur." },
+    { "speaker": "SILAS", "text": "Gerçeği bulana kadar oradan ayrılmam." },
+    { "speaker": "SYSTEM", "text": "[Hat kapanır. Silas çantasını ve paltosunu kuşanıp yağmura doğru adım atar.]" },
+    { "speaker": "INNER_VOICE", "text": "\"Greywater Rıhtımı... Teddy, seni kimin ezdiğini bulacağım.\"" }
+  ]
+}

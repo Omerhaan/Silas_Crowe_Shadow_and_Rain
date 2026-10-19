@@ -1,0 +1,74 @@
+{
+  "suspect_id": "pike",
+  "name": "Raymond Pike",
+  "topics": [
+    {
+      "id": "night_events",
+      "label": "Olay Gecesi",
+      "label_en": "Night of the Crime",
+      "response": "Yemek zehir gibi geçti! Harlow her zamanki kibirli tavrıyla paramı vermeyeceğini ima etti. Masadan hışımla kalkıp odama çıktım.",
+      "response_en": "Dinner was bitter as gall! Harlow implied in his usual arrogant way that he wouldn't return my money. I left the table in fury and retired to my room.",
+      "statement_yield": "Pike, akşam yemeğinde Harlow ile para yüzünden şiddetli bir tartışma yaşadıklarını kabul ediyor.",
+      "statement_yield_en": "Pike admits having a fierce argument with Harlow over money during dinner."
+    },
+    {
+      "id": "harlow_relation",
+      "label": "Harlow ile İlişkisi",
+      "label_en": "Relationship with Harlow",
+      "response": "Savaştan sonra maden şirketinde ortak olduk. Beni yüzüstü bıraktı! Bana yüklü bir borcu vardı. Ona haddini bildirmek istiyordum ama onu zehirlemedim!",
+      "response_en": "After the war, we partnered in a mining venture. He betrayed me! He owed me a massive sum. I wanted to teach him a lesson, but I didn't poison him!",
+      "statement_yield": "Pike, savaş sonrası ortaklıkta Harlow a borç yüzünden derin öfke duyduğunu itiraf ediyor.",
+      "statement_yield_en": "Pike confesses deep resentment toward Harlow over unpaid debts from their post-war venture."
+    },
+    {
+      "id": "alibi",
+      "label": "Neredeydiniz?",
+      "label_en": "Your Whereabouts",
+      "response": "Yemekten hemen sonra üst kattaki odama çekildim. Julian beni bilardo odasında gördüğünü mü söylüyor? Yalan! Onu yemekten sonra hiç görmedim.",
+      "response_en": "Right after dinner, I went up to my guest room on the upper floor. Julian says he saw me in the billiard room? Lies! I didn't lay eyes on him after dinner.",
+      "statement_yield": "Pike, Julian ile birlikte olmadığını belirterek Julian ın delilini yalanlıyor.",
+      "statement_yield_en": "Pike refutes Julian's alibi, denying being with him in the billiard room."
+    },
+    {
+      "id": "who_called",
+      "label": "Beni Siz mi Çağırdınız?",
+      "label_en": "Did You Call Me?",
+      "response": "Seni ilk defa görüyorum, kim olduğunu bile bilmiyorum! Bu evde herkes birbirini suçlamak için yabancı arıyor zaten.",
+      "response_en": "I've never laid eyes on you before; I don't even know who you are! Everyone in this house is already hunting for an outsider to pin this on.",
+      "statement_yield": "Pike, dedektifi kesinlikle tanımadığını ve aramadığını iddia ediyor.",
+      "statement_yield_en": "Pike insists he has never met the detective and certainly never called him."
+    },
+    {
+      "id": "present_evidence",
+      "label": "Kanıt Göster",
+      "label_en": "Present Evidence",
+      "response": "Neyin peşindesin Crowe? Elinde ne varsa çıkar ortaya, kimseden saklayacak bir şeyim yok!",
+      "response_en": "What are you after, Crowe? Whatever you have, lay it on the table. I've got nothing to hide from anyone!",
+      "statement_yield": "",
+      "statement_yield_en": ""
+    }
+  ],
+  "evidence_reactions": {
+    "E07": {
+      "response": "(Pike dişlerini sıkar) Evet Crowe, mektupları ben yazdım! Harlow hakkım olan maden hisselerini çaldı. Onu korkutmak istedim, inkâr etmiyorum. Ama ben zehirci değilim, bir adamı arkasından vurmam!",
+      "response_en": "(Pike grinds his teeth) Yes, Crowe, I typed those letters! Harlow cheated me out of my rightful mining shares. I wanted to scare him; I won't deny that. But I'm no poisoner — I don't stab a man in the back!",
+      "statement": "Pike tehdit mektuplarını kendi daktilosuyla yazdığını kabul etti.",
+      "statement_en": "Pike admitted to typing the threat notes on his typewriter.",
+      "emotion": "defensive"
+    },
+    "E13": {
+      "response": "(Pike dişlerini sıkar) Evet Crowe, mektupları ben yazdım! Harlow hakkım olan maden hisselerini çaldı. Onu korkutmak istedim, inkâr etmiyorum. Ama ben zehirci değilim, bir adamı arkasından vurmam!",
+      "response_en": "(Pike grinds his teeth) Yes, Crowe, I typed those letters! Harlow cheated me out of my rightful mining shares. I wanted to scare him; I won't deny that. But I'm no poisoner — I don't stab a man in the back!",
+      "statement": "Pike tehdit mektuplarını kendi daktilosuyla yazdığını kabul etti.",
+      "statement_en": "Pike admitted to typing the threat notes on his typewriter.",
+      "emotion": "defensive"
+    },
+    "default": {
+      "response": "Bunu bana değil, o kokuşmuş cesede göster.",
+      "response_en": "Don't show this to me, show it to that rotting corpse.",
+      "statement": "",
+      "statement_en": "",
+      "emotion": "normal"
+    }
+  }
+}

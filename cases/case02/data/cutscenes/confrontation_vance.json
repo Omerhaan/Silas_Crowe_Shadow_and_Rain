@@ -1,0 +1,50 @@
+[
+  {
+    "speaker": "Silas Crowe",
+    "text": "Bu bir kaza değildi Kaptan Vance. Kargo vincinin halatını asit banyosu ve demir testeresiyle bilerek kestin.",
+    "en": "This was no accident, Captain Vance. You deliberately cut that cargo crane cable using acid and a hacksaw.",
+    "portrait": "silas"
+  },
+  {
+    "speaker": "Silas Crowe",
+    "text": "Teddy Marsh'ı önce arkadan pirinç fenerle vurup sersemlettin, ardından yükün altına bıraktın. Pardösünün sağ kolundaki asit yanığı ve metal talaşları bunu kanıtlıyor.",
+    "en": "You stunned Teddy Marsh with a brass nautical lantern from behind, then left him beneath the cargo. The acid burns and steel filings on your coat cuff prove it.",
+    "portrait": "silas"
+  },
+  {
+    "speaker": "Silas Crowe",
+    "text": "Marsh, 1944 Kuzey İntikal damgalı çalıntı askerî mühimmat sandıklarını limandan kaçırdığını öğrenmişti. Sabah polise gitmeye hazırlanıyordu.",
+    "en": "Marsh uncovered the stolen 1944 Northern Unit munitions crates being smuggled through your ship. He was about to go to the police in the morning.",
+    "portrait": "silas"
+  },
+  {
+    "speaker": "Kaptan Donald Vance",
+    "text": "(Vance piposunu yere fırlatır, elleri titreyerek harita masasına tutunur) Yeter Crowe! Yeter... Her şeyi çözmüşsün.",
+    "en": "(Vance hurls his pipe to the deck, his trembling hands gripping the chart table) Enough, Crowe! Enough... You figured out every single thing.",
+    "portrait": "vance"
+  },
+  {
+    "speaker": "Kaptan Donald Vance",
+    "text": "Marsh açgözlü bir telsizciydi! Şimdi de beni sandıklar yüzünden şantajla soyup soğana çeviriyordu.",
+    "en": "Marsh was a greedy radio operator! And now he was bleeding me dry over the crates.",
+    "portrait": "vance"
+  },
+  {
+    "speaker": "Kaptan Donald Vance",
+    "text": "Ama beni cinayete iten masamdaki o daktilo mektubuydu! 'Marsh sabah polise gidecek, ikimiz de batarız' diye yazıyordu! Masama o mektubu kim bıraktı bilmiyorum?!",
+    "en": "But what truly pushed me over the edge was that typewriter letter on my desk! It warned me that Marsh was going to the police! Who left that letter on my desk ?!",
+    "portrait": "vance"
+  },
+  {
+    "speaker": "Kaptan Donald Vance",
+    "text": "o hayalet... Bütün limanı ve beni bir kukla gibi oynattı!",
+    "en": "That ghost ... He played this entire harbor and me like marionettes!",
+    "portrait": "vance"
+  },
+  {
+    "speaker": "Silas Crowe",
+    "text": "\"Teddy Marsh'ın cebinden çıkan su almış K-3 saati artık çalışmıyor. İkinci yoldaş da geçmişin hesabını ödedi... Ama o mektubu yazan gölge, beni uzaktan izlemeye devam ediyor.\"",
+    "en": "\"The waterlogged K-3 watch in Marsh's pocket ticks no more. A second comrade has paid for the past... but the shadow behind that letter watches me still.\"",
+    "portrait": "silas"
+  }
+]

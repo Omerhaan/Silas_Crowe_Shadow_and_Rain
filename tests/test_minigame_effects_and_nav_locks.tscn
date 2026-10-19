@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://testminigameslocks001"]
+
+[ext_resource type="Script" path="res://tests/test_minigame_effects_and_nav_locks.gd" id="1_test"]
+
+[node name="TestMinigameEffectsAndNavLocks" type="Node"]
+script = ExtResource("1_test")

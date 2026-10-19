@@ -1,0 +1,124 @@
+[gd_scene load_steps=8 format=3 uid="uid://bcaptaincabin01"]
+
+[ext_resource type="Script" path="res://scripts/core/room_background.gd" id="1_bg"]
+[ext_resource type="PackedScene" uid="uid://bdoor01" path="res://scenes/entities/door.tscn" id="2_door"]
+[ext_resource type="PackedScene" uid="uid://d2m0tcvj7ds4k" path="res://scenes/entities/interactable.tscn" id="3_interact"]
+[ext_resource type="PackedScene" uid="uid://bnpcentity01" path="res://scenes/entities/npc.tscn" id="4_npc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_floor"]
+size = Vector2(480, 26)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wall"]
+size = Vector2(16, 270)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_door"]
+size = Vector2(36, 110)
+
+[node name="CaptainCabin" type="Node2D"]
+
+[node name="RoomBackground" type="Node2D" parent="."]
+script = ExtResource("1_bg")
+room_theme = "captain_cabin"
+
+[node name="Walls" type="StaticBody2D" parent="."]
+
+[node name="FloorShape" type="CollisionShape2D" parent="Walls"]
+position = Vector2(240, 260)
+shape = SubResource("RectangleShape2D_floor")
+
+[node name="LeftWall" type="CollisionShape2D" parent="Walls"]
+position = Vector2(8, 135)
+shape = SubResource("RectangleShape2D_wall")
+
+[node name="RightWall" type="CollisionShape2D" parent="Walls"]
+position = Vector2(472, 135)
+shape = SubResource("RectangleShape2D_wall")
+
+[node name="Spawn_default" type="Marker2D" parent="."]
+position = Vector2(410, 245)
+
+[node name="Spawn_from_pier" type="Marker2D" parent="."]
+position = Vector2(410, 245)
+
+[node name="Door_To_Pier" parent="." instance=ExtResource("2_door")]
+position = Vector2(455, 245)
+target_room_id = "dock_pier"
+target_spawn = "from_cabin"
+door_name = "Sisli Rıhtım"
+
+[node name="PierDoorCollision" type="CollisionShape2D" parent="Door_To_Pier"]
+position = Vector2(0, -55)
+shape = SubResource("RectangleShape2D_door")
+
+[node name="NPC_Vance" parent="." instance=ExtResource("4_npc")]
+position = Vector2(275, 245)
+character_id = "npc_vance"
+display_name = "Kaptan Thomas Vance"
+character_name = "Kaptan Thomas Vance"
+
+[node name="Evidence_E204" parent="." instance=ExtResource("3_interact")]
+position = Vector2(155, 175)
+object_id = "acid_coat"
+display_name = "Asit Lekeli Pardösü"
+evidence_id = "E204"
+prop_type = "drawer"
+is_hotspot = true
+hotspot_size = Vector2(24, 38)
+
+[node name="Evidence_E207" parent="." instance=ExtResource("3_interact")]
+position = Vector2(310, 195)
+object_id = "typewriter_note"
+display_name = "İsimsiz Daktilo Notu"
+evidence_id = "E207"
+prop_type = "drawer"
+is_hotspot = true
+hotspot_size = Vector2(24, 16)
+
+[node name="Evidence_E211" parent="." instance=ExtResource("3_interact")]
+position = Vector2(280, 190)
+object_id = "ships_logbook"
+display_name = "Seyir Defteri"
+evidence_id = "E211"
+prop_type = "drawer"
+is_hotspot = true
+hotspot_size = Vector2(22, 18)
+
+[node name="Prop_Porthole" parent="." instance=ExtResource("3_interact")]
+position = Vector2(240, 115)
+object_id = "cabin_porthole"
+display_name = "Fırtınalı Lomboz Pencere"
+custom_inner_voice = "\"Dışarıdaki sert yağmur ve İrlanda Denizi'nin siyah dalgaları pirinç lomboz camına çarpıyor.\""
+is_hotspot = true
+hotspot_size = Vector2(32, 32)
+
+[node name="Prop_RadioTransmitter" parent="." instance=ExtResource("3_interact")]
+position = Vector2(370, 155)
+object_id = "radio_transmitter"
+display_name = "Kısa Dalga Deniz Telsizi"
+custom_inner_voice = "\"Vakumlu lambaları hafifçe kızarmış bir telsiz alıcısı. Askeri şifreli frekansa ayarlanmış.\""
+is_hotspot = true
+hotspot_size = Vector2(24, 20)
+
+[node name="Prop_ShipBunk" parent="." instance=ExtResource("3_interact")]
+position = Vector2(75, 210)
+object_id = "captain_bunk"
+display_name = "Kaptan Ranzası"
+custom_inner_voice = "\"Dağınık denizci battaniyesi ve yastığın altına saklanmış boş bir tabanca kılıfı.\""
+is_hotspot = true
+hotspot_size = Vector2(50, 30)
+
+[node name="Prop_CompassTable" parent="." instance=ExtResource("3_interact")]
+position = Vector2(335, 195)
+object_id = "compass_table"
+display_name = "Pusula & Harita Masası"
+custom_inner_voice = "\"Pirinç seyir pergeli ve İspanya'ya doğru çizilmiş yasadışı kargo rotası masanın üzerine serilmiş.\""
+is_hotspot = true
+hotspot_size = Vector2(30, 20)
+
+[node name="Prop_SeaChest" parent="." instance=ExtResource("3_interact")]
+position = Vector2(195, 225)
+object_id = "sea_chest"
+display_name = "Kilitli Ağır Sandık"
+custom_inner_voice = "\"Pirinç köşebentleri kararmış ağır bir denizci sandığı. Üzerinde 'SS Mary - 1938' damgası kazılı.\""
+is_hotspot = true
+hotspot_size = Vector2(28, 22)

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "C201",
+    "baslik": "Rıhtım Kulübesindeki Arama",
+    "aciklama": "Liman ambarının dışındaki ankesörlü telefon çaldı. Hırıltılı ses 'Rıhtımda bir telsiz sustu Crowe... Git ve frekansı dinle' dedi.",
+    "kilitli": false
+  },
+  {
+    "id": "C202",
+    "baslik": "Tik-Tak Sesi Yineleniyor",
+    "aciklama": "Ahize kapanmadan hemen önce fonda çalışan bir askeri cep saatinin ritmik tıkırtısı duyuldu. Tıpkı Silas'ın K-1 saati gibi bir subay saati.",
+    "kilitli": false
+  },
+  {
+    "id": "C203",
+    "baslik": "Zamanlanmış İhbar Mektubu",
+    "aciklama": "Kaptan Vance'e bırakılan daktilo notunun üzerindeki liman mührü, mektubun cinayetten saatler önce bırakıldığını kanıtlıyor.",
+    "kilitli": true
+  },
+  {
+    "id": "C204",
+    "baslik": "Birliğin İkinci Hayaleti",
+    "aciklama": "Harlow'dan sonra Teddy Marsh... Gizemli arayan, karlar altında birliği ölüme terk edenleri tek tek avlıyor.",
+    "kilitli": true
+  }
+]

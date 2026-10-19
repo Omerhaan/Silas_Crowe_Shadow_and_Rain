@@ -1,0 +1,72 @@
+[gd_scene load_steps=3 format=3 uid="uid://b8v2jpujofmxo"]
+
+[ext_resource type="Script" path="res://scripts/cutscenes/confrontation_hale.gd" id="1_conf"]
+[ext_resource type="PackedScene" uid="uid://cplrdxk37u265" path="res://scenes/ui/dialogue_box.tscn" id="2_dbox"]
+
+[node name="ConfrontationHale" type="Control"]
+process_mode = 3
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_conf")
+
+[node name="Backdrop" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.04, 0.05, 0.07, 0.95)
+
+[node name="BackdropImage" type="TextureRect" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+stretch_mode = 6
+
+[node name="ImageDimmer" type="ColorRect" parent="BackdropImage"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.02, 0.03, 0.05, 0.5)
+
+[node name="CenterBox" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -190.0
+offset_top = -50.0
+offset_right = 190.0
+offset_bottom = 50.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 6
+
+[node name="DialogueBox" parent="CenterBox" instance=ExtResource("2_dbox")]
+layout_mode = 2
+
+[node name="Controls" type="HBoxContainer" parent="CenterBox"]
+layout_mode = 2
+alignment = 2
+
+[node name="NextBtn" type="Button" parent="CenterBox/Controls"]
+custom_minimum_size = Vector2(70, 22)
+layout_mode = 2
+theme_override_font_sizes/font_size = 7
+text = "İlerle ▶"

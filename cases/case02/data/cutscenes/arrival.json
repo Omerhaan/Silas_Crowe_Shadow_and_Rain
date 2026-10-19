@@ -1,0 +1,34 @@
+{
+  "cutscene_id": "arrival_case02",
+  "title": "4 Numaralı Rıhtım",
+  "slides": [
+    {
+      "text": "Greywater 4 Numaralı Rıhtım. Rüzgâr İrlanda Denizi'nden tuzlu ve buz gibi bir sis üflüyordu.",
+      "duration": 3.0,
+      "sfx": "rain_loop",
+      "image": "res://assets/sprites/cinematics/cinematic_case02_arrival.jpg",
+      "speaker": "SILAS"
+    },
+    {
+      "text": "Kopmuş çelik vinç kablosu rüzgârda tekinsizce sallanıyordu.",
+      "duration": 3.5,
+      "sfx": "thunder_soft",
+      "image": "res://assets/sprites/cinematics/cinematic_case02_06_crane_sabotage.jpg",
+      "speaker": "SILAS"
+    },
+    {
+      "text": "Yerde, tonlarca kargonun altında ezilmiş brandanın altında K-3 yatıyordu. Çamurlu suyun içinde kırık bir köstekli saat...",
+      "duration": 3.5,
+      "sfx": "",
+      "image": "res://assets/sprites/cinematics/cinematic_case02_07_body_k3.jpg",
+      "speaker": "SILAS"
+    },
+    {
+      "text": "Ortalıkta ne polis vardı ne de bekçi. Katil izlerini gizlemeye bile gerek görmemiş. Ama ben buradayım.",
+      "duration": 3.0,
+      "sfx": "",
+      "image": "res://assets/sprites/cinematics/cinematic_case02_07_body_k3.jpg",
+      "speaker": "SILAS"
+    }
+  ]
+}

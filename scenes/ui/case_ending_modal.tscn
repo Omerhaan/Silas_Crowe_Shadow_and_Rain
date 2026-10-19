@@ -1,0 +1,292 @@
+[gd_scene load_steps=2 format=3 uid="uid://ccaseending01"]
+
+[ext_resource type="Script" path="res://scripts/ui/case_ending_modal.gd" id="1_ending"]
+
+[node name="CaseEndingModal" type="Control"]
+process_mode = 3
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ending")
+
+[node name="Backdrop" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.02, 0.03, 0.05, 0.94)
+
+[node name="NewspaperPanel" type="PanelContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -215.0
+offset_top = -120.0
+offset_right = 215.0
+offset_bottom = 120.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="NewspaperPanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 8
+
+[node name="VBox" type="VBoxContainer" parent="NewspaperPanel/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="HeaderBox" type="HBoxContainer" parent="NewspaperPanel/MarginContainer/VBox"]
+layout_mode = 2
+
+[node name="PaperName" type="Label" parent="NewspaperPanel/MarginContainer/VBox/HeaderBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.96, 0.89, 0.63, 1)
+theme_override_font_sizes/font_size = 7
+text = "★ KARA VADİ POSTASI • ÖZEL BASKI ★"
+
+[node name="PaperDate" type="Label" parent="NewspaperPanel/MarginContainer/VBox/HeaderBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.65, 0.7, 0.75, 0.9)
+theme_override_font_sizes/font_size = 6
+text = "15 ARALIK 1946 • SABAH BASKISI"
+horizontal_alignment = 2
+
+[node name="HeaderSeparator" type="HSeparator" parent="NewspaperPanel/MarginContainer/VBox"]
+layout_mode = 2
+
+[node name="Headline" type="Label" parent="NewspaperPanel/MarginContainer/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.94, 0.75, 1)
+theme_override_font_sizes/font_size = 8
+text = "HARLOW CİNAYETİ AYDINLATILDI! DOKTOR HALE TUTUKLANDI!"
+horizontal_alignment = 1
+
+[node name="Subhead" type="Label" parent="NewspaperPanel/MarginContainer/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.75, 0.8, 0.85, 0.85)
+theme_override_font_sizes/font_size = 6
+text = "Dedektif Silas Crowe zehirli kadeh ve kilitli kapı sırrını çözerek adaleti sağladı."
+horizontal_alignment = 1
+
+[node name="BodyHBox" type="HBoxContainer" parent="NewspaperPanel/MarginContainer/VBox"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 8
+
+[node name="PhotoBox" type="PanelContainer" parent="NewspaperPanel/MarginContainer/VBox/BodyHBox"]
+custom_minimum_size = Vector2(130, 110)
+layout_mode = 2
+
+[node name="PhotoTexture" type="TextureRect" parent="NewspaperPanel/MarginContainer/VBox/BodyHBox/PhotoBox"]
+texture_filter = 1
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="ArticleText" type="Label" parent="NewspaperPanel/MarginContainer/VBox/BodyHBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme_override_colors/font_color = Color(0.85, 0.88, 0.92, 1)
+theme_override_font_sizes/font_size = 6
+text = "Kara Vadi malikânesinde işlenen gizemli cinayet, dedektif Silas Crowe'un keskin dikkatiyle son buldu. Aile hekimi Dr. Victor Hale, cinayeti kaza gibi göstermek istese de geride bıraktığı digitalis izleri ve kütüphanedeki soğuk şömine delilini yerle bir etti. Silas Crowe'un soruşturması şafak vakti polis ekiplerinin malikâneye ulaşmasıyla tamamlandı."
+autowrap_mode = 2
+
+[node name="NewspaperNextBtn" type="Button" parent="NewspaperPanel/MarginContainer/VBox"]
+custom_minimum_size = Vector2(120, 22)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0.96, 0.89, 0.63, 1)
+theme_override_font_sizes/font_size = 7
+text = "Vaka Değerlendirmesi ▶"
+
+[node name="RatingPanel" type="PanelContainer" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -215.0
+offset_top = -120.0
+offset_right = 215.0
+offset_bottom = 120.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="RatingPanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 8
+
+[node name="VBox" type="VBoxContainer" parent="RatingPanel/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="ReportTitle" type="Label" parent="RatingPanel/MarginContainer/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.96, 0.89, 0.63, 1)
+theme_override_font_sizes/font_size = 8
+text = "📋 VAKA DEĞERLENDİRME RAPORU"
+horizontal_alignment = 1
+
+[node name="Sep1" type="HSeparator" parent="RatingPanel/MarginContainer/VBox"]
+layout_mode = 2
+
+[node name="StatsGrid" type="GridContainer" parent="RatingPanel/MarginContainer/VBox"]
+layout_mode = 2
+columns = 2
+theme_override_constants/h_separation = 16
+theme_override_constants/v_separation = 2
+
+[node name="StatClues" type="Label" parent="RatingPanel/MarginContainer/VBox/StatsGrid"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 6
+text = "Toplanan Kanıtlar: 17 / 17"
+
+[node name="StatDeds" type="Label" parent="RatingPanel/MarginContainer/VBox/StatsGrid"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 6
+text = "Çözülen Çıkarımlar: 10 / 10"
+
+[node name="StatAcc" type="Label" parent="RatingPanel/MarginContainer/VBox/StatsGrid"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 6
+text = "Suçlama İsabeti: Kusursuz"
+
+[node name="StatDrawers" type="Label" parent="RatingPanel/MarginContainer/VBox/StatsGrid"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 6
+text = "Gizli Bölmeler: 3 / 3"
+
+[node name="Sep2" type="HSeparator" parent="RatingPanel/MarginContainer/VBox"]
+layout_mode = 2
+
+[node name="RankBadge" type="Label" parent="RatingPanel/MarginContainer/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.88, 0.25, 1)
+theme_override_font_sizes/font_size = 14
+text = "★ S ★"
+horizontal_alignment = 1
+
+[node name="RankTitle" type="Label" parent="RatingPanel/MarginContainer/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.88, 0.25, 1)
+theme_override_font_sizes/font_size = 7
+text = "[S DERECE] — EFSANEVİ NOİR DEDEKTİF"
+horizontal_alignment = 1
+
+[node name="SilasMonologue" type="Label" parent="RatingPanel/MarginContainer/VBox"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.8, 0.85, 0.9, 0.9)
+theme_override_font_sizes/font_size = 6
+text = "\"Fırtına dindi, kar malikânenin üzerini örttü. Ama Harlow'un cebindeki K-5 saati... o oyma zihnimden silinmeyecek. Bu cinayet bitti, fakat 1941 Kuzey Birliği dosyası asıl şimdi açılıyor.\""
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="RatingNextBtn" type="Button" parent="RatingPanel/MarginContainer/VBox"]
+custom_minimum_size = Vector2(120, 22)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0.96, 0.89, 0.63, 1)
+theme_override_font_sizes/font_size = 7
+text = "Kapanış Jeneriği ▶"
+
+[node name="CreditsPanel" type="PanelContainer" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -215.0
+offset_top = -120.0
+offset_right = 215.0
+offset_bottom = 120.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="CreditsPanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 10
+
+[node name="VBox" type="VBoxContainer" parent="CreditsPanel/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="CreditsTitle" type="Label" parent="CreditsPanel/MarginContainer/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.96, 0.89, 0.63, 1)
+theme_override_font_sizes/font_size = 10
+text = "SILAS CROWE: SHADOW & RAIN"
+horizontal_alignment = 1
+
+[node name="CreditsSub" type="Label" parent="CreditsPanel/MarginContainer/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.65, 0.7, 0.75, 0.85)
+theme_override_font_sizes/font_size = 6
+text = "Bir 1946 Piksel Kara Dedektiflik Macerası — Vaka 1: Karanlık Malikâne"
+horizontal_alignment = 1
+
+[node name="CreditsSep" type="HSeparator" parent="CreditsPanel/MarginContainer/VBox"]
+layout_mode = 2
+
+[node name="CreditsBody" type="Label" parent="CreditsPanel/MarginContainer/VBox"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.85, 0.88, 0.92, 1)
+theme_override_font_sizes/font_size = 6
+text = "Geliştirme & Sistem Mimarisi: Bağımsız Stüdyo\nÖzgün Hikâye & Dedektiflik Kurgusu\nPiksel Sanatı & 1940'lar Atmosferi\nMüzik: Erik Satie — Gymnopédie No. 1\n\n★ Tüm Polisiye ve Kara Film Severlere İthaf Edilmiştir ★"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ButtonsHBox" type="HBoxContainer" parent="CreditsPanel/MarginContainer/VBox"]
+layout_mode = 2
+theme_override_constants/separation = 8
+alignment = 1
+
+[node name="NextCaseBtn" type="Button" parent="CreditsPanel/MarginContainer/VBox/ButtonsHBox"]
+custom_minimum_size = Vector2(150, 22)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.88, 0.25, 1)
+theme_override_font_sizes/font_size = 6
+text = "Bölüm 2'ye Devam Et ▶"
+
+[node name="ReturnOfficeBtn" type="Button" parent="CreditsPanel/MarginContainer/VBox/ButtonsHBox"]
+custom_minimum_size = Vector2(110, 22)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.96, 0.89, 0.63, 1)
+theme_override_font_sizes/font_size = 6
+text = "Ofise Dön"
+
+[node name="MainMenuBtn" type="Button" parent="CreditsPanel/MarginContainer/VBox/ButtonsHBox"]
+custom_minimum_size = Vector2(80, 22)
+layout_mode = 2
+theme_override_font_sizes/font_size = 6
+text = "Ana Menü"

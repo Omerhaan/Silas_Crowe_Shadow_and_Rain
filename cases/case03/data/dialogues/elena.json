@@ -1,0 +1,108 @@
+{
+  "suspect_id": "elena",
+  "name": "Elena Vane",
+  "topics": [
+    {
+      "id": "offer_smelling_salts",
+      "label": "Yatıştırıcı Koklama Tuzunu Ver",
+      "label_en": "Offer Smelling Salts",
+      "required_item": "smelling_salts",
+      "hide_if_flag": "elena_calmed",
+      "hide_if_unmet": true,
+      "set_flag": "elena_calmed",
+      "refresh_topics": true,
+      "response": "(Elena şişeyi koklar, derin bir nefes alır ve titremesi yavaşça durur) 'Teşekkür ederim dedektif... Başım dönüyordu, nefesim kesilmişti. Şimdi daha iyiyim... Sorularınızı sorabilirsiniz.'",
+      "response_en": "(Elena inhales from the vial, takes a deep breath, and her trembling slowly subsides) 'Thank you detective... My head was spinning, I couldn't catch my breath. I am much calmer now... Please, ask what you must.'",
+      "emotion": "normal"
+    },
+    {
+      "id": "night_events",
+      "label": "Olay Gecesi",
+      "label_en": "Night of the Murder",
+      "required_flag": "elena_calmed",
+      "locked_response": "Elena panik içinde titriyor ve ellerine bakıyor: 'Nefes alamıyorum... O kurşun... Dalton... Konuşamam!' (Kendine gelebilmesi için gişeden yatıştırıcı bir koklama tuzu gerekiyor.)",
+      "locked_response_en": "Elena is trembling in panic: 'I can't breathe... That gunshot... Dalton... I can't speak!' (She needs soothing smelling salts from the ticket booth to calm down.)",
+      "locked_emotion": "nervous",
+      "response": "20:52'de sahnede solo aryamı söylüyordum. Divalar solo söyler. Top patladığı an seyirciler önce uvertürün parçası sandı... Sonra locadan çığlıklar koptu.",
+      "response_en": "At 20:52 I was performing my solo aria center stage. The moment the cannon fired, the audience thought it was part of the overture... Then shrieks erupted from the Royal Box.",
+      "statement_yield": "Elena Vane, cinayet anında yüzlerce seyircinin önünde sahnede arya söylediğini belirtti.",
+      "statement_yield_en": "Elena Vane stated she was singing center stage before hundreds of spectators when the murder occurred."
+    },
+    {
+      "id": "glint_claim",
+      "label": "Dürbün Parıltısı İddiası",
+      "label_en": "Glint on the Bridge Claim",
+      "required_flag": "elena_calmed",
+      "locked_response": "Elena panik içinde titriyor: 'Nefes alamıyorum... Lütfen beni yalnız bırakın!' (Yatıştırıcı koklama tuzu gerekiyor.)",
+      "locked_response_en": "Elena is trembling in panic: 'I can't breathe... Please leave me be!' (Needs soothing smelling salts.)",
+      "locked_emotion": "nervous",
+      "response": "Aryamın tiz notasını uzatırken yukarı baktım... Işık köprüsünün kuzey ucunda metalik ve soğuk bir parıltı gördüm! Sanki bir tüfek dürbünü bana bakıyordu!",
+      "response_en": "Holding the high soprano note, I glanced up... At the north edge of the light bridge, I saw a cold metallic glint! As if a rifle scope was aimed toward the hall!",
+      "statement_yield": "Elena, ışık köprüsünde bir dürbün parıltısı gördüğünü iddia etti.",
+      "statement_yield_en": "Elena claimed seeing a metallic scope glint on the light bridge."
+    },
+    {
+      "id": "victim_relation",
+      "label": "Dalton Reeve ile İlişkisi",
+      "label_en": "Relation to Dalton Reeve",
+      "required_flag": "elena_calmed",
+      "locked_response": "Elena ellerini yüzüne kapatmış ağlıyor... (Yatıştırıcı koklama tuzu gerekiyor.)",
+      "locked_response_en": "Elena buries her face in her hands and weeps... (Needs soothing smelling salts.)",
+      "locked_emotion": "nervous",
+      "response": "Dalton savaştan önce hayat dolu, cesur bir adamdı. 1944 kışından sonra geri döndüğünde ise bir hayalete dönüşmüştü. Sürekli gölgelerden ve 'karda bıraktığı' birinden bahsederdi.",
+      "response_en": "Before the war Dalton was vibrant and brave. When he returned after the winter of 1944, he was a hollow shell. He constantly spoke of shadows and someone he 'left behind in the snow.'",
+      "statement_yield": "Elena, Reeve'in savaştan sonra vicdan azabı ve takip edilme korkusuyla yaşadığını açıkladı.",
+      "statement_yield_en": "Elena revealed Reeve lived in remorse and paranoid fear of an avenging shadow."
+    },
+    {
+      "id": "alibi",
+      "label": "Neredeydiniz?",
+      "label_en": "Where Were You?",
+      "required_flag": "elena_calmed",
+      "locked_response": "Elena nefes alamıyor... (Yatıştırıcı koklama tuzu gerekiyor.)",
+      "locked_response_en": "Elena cannot catch her breath... (Needs soothing smelling salts.)",
+      "locked_emotion": "nervous",
+      "response": "Bütün salon ve şef orkestrası bana bakıyordu dedektif. Divalar sahneden ayrılmaz.",
+      "response_en": "The entire auditorium and conductor had their eyes glued on me, detective. Divas do not leave the stage.",
+      "statement_yield": "Elena'nın cinayet anında sahnede olduğuna dair yüzlerce tanığı var.",
+      "statement_yield_en": "Elena has hundreds of eyewitnesses confirming she was center stage."
+    },
+    {
+      "id": "present_evidence",
+      "label": "Kanıt Göster",
+      "label_en": "Present Evidence",
+      "response": "Eğer Dalton'un katilini bulacaksan elindekileri göster Crowe.",
+      "response_en": "If you intend to catch Dalton's murderer, show what you have found, Crowe.",
+      "statement_yield": ""
+    }
+  ],
+  "evidence_reactions": {
+    "E306": {
+      "response": "(Elleri titreyerek notaya dokunur) 'Burada mı?'... Dalton kendi ölüm fermanını çizmiş. Tehdit edildiğini biliyordu ama polise gitmedi...",
+      "response_en": "(Touching the score with trembling fingers) 'Here?'... Dalton circled his own death sentence. He knew he was being hunted, yet refused to summon police...",
+      "statement": "Elena, Reeve'in tehdit edildiğini ve beklediği anı partisyona yazdığını doğruladı.",
+      "statement_en": "Elena confirmed Reeve was blackmailed and annotated his own ambush moment on the score.",
+      "emotion": "sad"
+    },
+    "E307": {
+      "response": "İslenmiş bir spot jeli... Demek köprüdeki lambanın önüne bunu koymuşlar. Işık süzülürken köprü karanlıkta kalmış...",
+      "response_en": "A smoked spotlight gel... So that was placed in front of the catwalk lamp. While brilliance lit the stage, the bridge lay invisible in pitch black...",
+      "statement": "Elena, karartılmış jelin ışık köprüsünü görünmez kıldığını fark etti.",
+      "statement_en": "Elena realized the smoked gel shrouded the light bridge in total darkness.",
+      "emotion": "thoughtful"
+    },
+    "E303": {
+      "response": "O anda yüzüme 2000 vatlık Spot B vuruyordu. Haklısınız Crowe... O kör edici ışık selinde yukarıyı net görmem imkânsızdı. Gördüğüm parıltı belki de sadece avizenin yansımasıydı.",
+      "response_en": "At that exact measure, 2000-watt Spot B beamed directly into my face. You are right Crowe... In that blinding glare, seeing above was impossible. What I saw was merely chandelier glare.",
+      "statement": "Elena, sahne ışıkları yüzünden dürbün parıltısı görmüş olmasının bir yanılsama olduğunu itiraf etti.",
+      "statement_en": "Elena admitted the scope glint she reported was an optical glare caused by stage lights.",
+      "emotion": "thoughtful"
+    },
+    "default": {
+      "response": "Bunu opera kulisinde hiç görmedim dedektif.",
+      "response_en": "I haven't seen this around the opera backstage, detective.",
+      "statement": "",
+      "emotion": "normal"
+    }
+  }
+}

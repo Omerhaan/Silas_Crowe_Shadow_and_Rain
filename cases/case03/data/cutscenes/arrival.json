@@ -1,0 +1,55 @@
+{
+  "cutscene_id": "arrival_case03",
+  "title": "Kör Noktada Bir Kurşun",
+  "title_en": "A Bullet in the Blind Spot",
+  "slides": [
+    {
+      "text": "Operanın ışıltılı kapıları açıldığında salondan yükselen çığlıklar giriş müziğinin yankısını bastırdı. Tiyatro sahnesinde panik başlamıştı.",
+      "en": "As the gilded opera doors burst open, terror echoed across the grand auditorium. Pandemonium had gripped the hall.",
+      "duration": 3.0,
+      "sfx": "rain_loop",
+      "image": "res://cases/case03/assets/cinematics/cinematic_case03_02_soprano_aria.jpg",
+      "speaker": "SILAS"
+    },
+    {
+      "text": "112. ölçünün barutlu tiyatro topu gürlediği anda, karanlık ışık köprüsünden tek bir namlu parladı. Ses perdesinin ardında ölümcül bir atış.",
+      "en": "At measure 112, as the gunpowder stage cannon roared, a muzzle flashed high above on the shadowed light bridge. A lethal strike masked by theatrical thunder.",
+      "duration": 3.5,
+      "sfx": "thunder",
+      "image": "res://cases/case03/assets/cinematics/cinematic_case03_04_cannon_blast.jpg",
+      "speaker": "SILAS"
+    },
+    {
+      "text": "Spot lambalarının kör noktasından hedefe kilitlenen bir silüet... Tüfeğin tetiği topun yankısıyla aynı salisede çekildi.",
+      "en": "A figure concealed within the spotlight blind spot... The rifle trigger squeezed in the exact millisecond of the blast.",
+      "duration": 3.5,
+      "sfx": "",
+      "image": "res://cases/case03/assets/cinematics/cinematic_case03_03_sniper_aim.jpg",
+      "speaker": "SILAS"
+    },
+    {
+      "text": "Kraliyet Locası'nda Dalton Reeve koltuğuna yığılmıştı. Göğsündeki delikten sızan taze kan kadife koltuğu kızıla boyuyordu.",
+      "en": "In the Royal Box, Dalton Reeve slumped motionless against his chair. Fresh blood seeped from his chest, crimson soaking the velvet seat.",
+      "duration": 3.5,
+      "sfx": "thunder_soft",
+      "image": "res://cases/case03/assets/cinematics/cinematic_case03_body_k4.jpg",
+      "speaker": "SILAS"
+    },
+    {
+      "text": "14 Aralık 1944... Kuzey dağlarındaki fırtınada terk edilen o nişancı birliği. Hayaletler sekiz yıl sonra hesap sormak için dönmüştü.",
+      "en": "December 14, 1944... The sniper detachment abandoned in the freezing blizzard of the North Ridge. The ghosts had returned to collect their debt.",
+      "duration": 3.5,
+      "sfx": "",
+      "image": "res://cases/case03/assets/cinematics/flashback_fb03_snow_sniper.jpg",
+      "speaker": "SILAS"
+    },
+    {
+      "text": "Locanın masasında kanlı bir nota kağıdı ve camı çatlak bir K-4 saati... Tetikçi tam bir hayalet gibi vurdu ve kayboldu. Ama arkasında kör noktasını bıraktı.",
+      "en": "Upon the box table lay a bloodstained musical score and a cracked K-4 pocket watch... The phantom struck and vanished. But he left his blind spot behind.",
+      "duration": 3.5,
+      "sfx": "",
+      "image": "res://cases/case03/assets/cinematics/cinematic_case03_body_k4.jpg",
+      "speaker": "SILAS"
+    }
+  ]
+}

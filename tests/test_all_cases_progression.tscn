@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://ballprogtest01"]
+
+[ext_resource type="Script" path="res://tests/test_all_cases_progression.gd" id="1_test"]
+
+[node name="TestAllCasesProgression" type="Node"]
+script = ExtResource("1_test")

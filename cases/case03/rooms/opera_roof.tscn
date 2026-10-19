@@ -1,0 +1,101 @@
+[gd_scene load_steps=7 format=3 uid="uid://boperaroof01"]
+
+[ext_resource type="Script" path="res://scripts/core/room_background.gd" id="1_bg"]
+[ext_resource type="PackedScene" uid="uid://bdoor01" path="res://scenes/entities/door.tscn" id="2_door"]
+[ext_resource type="PackedScene" uid="uid://d2m0tcvj7ds4k" path="res://scenes/entities/interactable.tscn" id="3_interact"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_floor"]
+size = Vector2(480, 79)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wall"]
+size = Vector2(16, 270)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_door"]
+size = Vector2(36, 110)
+
+[node name="OperaRoof" type="Node2D"]
+
+[node name="RoomBackground" type="Node2D" parent="."]
+script = ExtResource("1_bg")
+room_theme = "opera_roof"
+
+[node name="Walls" type="StaticBody2D" parent="."]
+
+[node name="FloorShape" type="CollisionShape2D" parent="Walls"]
+position = Vector2(240, 233.5)
+shape = SubResource("RectangleShape2D_floor")
+
+[node name="LeftWall" type="CollisionShape2D" parent="Walls"]
+position = Vector2(256, 135)
+shape = SubResource("RectangleShape2D_wall")
+
+[node name="RightWall" type="CollisionShape2D" parent="Walls"]
+position = Vector2(472, 135)
+shape = SubResource("RectangleShape2D_wall")
+
+[node name="Spawn_default" type="Marker2D" parent="."]
+position = Vector2(444, 172)
+
+[node name="Spawn_from_light_bridge" type="Marker2D" parent="."]
+position = Vector2(446, 172)
+
+[node name="Door_To_Light_Bridge" parent="." instance=ExtResource("2_door")]
+position = Vector2(454, 173)
+target_room_id = "light_bridge"
+target_spawn = "from_roof"
+door_name = "Çatı Kapağı (İçeri)"
+
+[node name="LightBridgeDoorCollision" type="CollisionShape2D" parent="Door_To_Light_Bridge"]
+position = Vector2(0, -55)
+shape = SubResource("RectangleShape2D_door")
+
+[node name="Evidence_E301" parent="." instance=ExtResource("3_interact")]
+position = Vector2(359, 170)
+object_id = "k4_sniper_rifle"
+display_name = "K-4 Gravürlü Tüfek"
+evidence_id = "E301"
+prop_type = "books"
+is_hotspot = true
+hotspot_size = Vector2(36, 24)
+
+[node name="Evidence_E308" parent="." instance=ExtResource("3_interact")]
+position = Vector2(277, 170)
+object_id = "typed_revenge_note"
+display_name = "Daktilo İntikam Notu"
+evidence_id = "E308"
+prop_type = "drawer"
+is_hotspot = true
+hotspot_size = Vector2(24, 20)
+
+[node name="Evidence_E310" parent="." instance=ExtResource("3_interact")]
+position = Vector2(320, 170)
+object_id = "wet_footprints_glove"
+display_name = "Ayak İzleri ve Deri Eldiven"
+evidence_id = "E310"
+prop_type = "clock"
+is_hotspot = true
+hotspot_size = Vector2(30, 24)
+
+[node name="Prop_Gargoyle" parent="." instance=ExtResource("3_interact")]
+position = Vector2(162, 165)
+object_id = "roof_gargoyle"
+display_name = "Taş Çörten Heykeli"
+prop_type = "portrait"
+is_hotspot = true
+hotspot_size = Vector2(40, 50)
+
+[node name="Prop_FireEscape" parent="." instance=ExtResource("3_interact")]
+position = Vector2(403, 172)
+object_id = "roof_fire_escape"
+display_name = "Arka Sokak Yangın Merdiveni"
+prop_type = "chair"
+is_hotspot = true
+hotspot_size = Vector2(40, 50)
+
+[node name="Prop_RoofParapet" parent="." instance=ExtResource("3_interact")]
+position = Vector2(79, 89)
+scale = Vector2(0.2, 0.2)
+object_id = "roof_parapet"
+display_name = "Çatı Parapeti"
+is_hotspot = true
+hotspot_size = Vector2(50, 40)

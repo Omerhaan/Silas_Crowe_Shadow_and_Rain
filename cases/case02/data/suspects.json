@@ -1,0 +1,62 @@
+[
+  {
+    "id": "vance",
+    "ad": "Kaptan Thomas Vance",
+    "yas": 48,
+    "rol": "Yük Gemisi Kaptanı",
+    "initial_trust": 30,
+    "gorunur_motif": "Teddy Marsh ile mal ve para anlaşmazlığı.",
+    "gercek": "KATİL. İsimsiz bir ihbar mektubu aldı; Marsh'ın kendisini polise teslim edeceğini sanarak vinç halatını asitle kesip kaza süsü verdi.",
+    "alibi_ozeti": "Olay saatinde gemi kamarasında seyir defteri yazdığını iddia ediyor.",
+    "kilit_nokta": "Ceketindeki asit yanığı kopan vinç halatındaki kimyasalla uyuşuyor. Kamarasında gizemli daktilo notu var.",
+    "initial_room": "captain_cabin"
+  },
+  {
+    "id": "morris",
+    "ad": "Arthur Morris",
+    "yas": 52,
+    "rol": "Baş Gümrük Şefi",
+    "initial_trust": 50,
+    "gorunur_motif": "Kurbanla eski rüşvet anlaşmazlığı ve sahte mühür şantajı.",
+    "gercek": "Masum ama rüşvet aldığı için korkudan delilleri saklamaya çalıştı. Masasında fedaiye verilecek gece izin belgesi var.",
+    "alibi_ozeti": "Gece nöbetinde gümrük binasında uyuduğunu söylüyor.",
+    "kilit_nokta": "Kurbanın cebindeki mühürlü izin belgesi Morris'e ait; masasında mafyadan aldığı rüşvet defteri var.",
+    "initial_room": "dock_office"
+  },
+  {
+    "id": "corley",
+    "ad": "Victor 'Kuzgun' Corley",
+    "yas": 55,
+    "rol": "Rıhtım Mafyası Lideri",
+    "initial_trust": 40,
+    "gorunur_motif": "Teddy Marsh'ın kendisine yüklü kumar ve haraç borcu vardı.",
+    "gercek": "Masum. Cinayet saatinde barında adamlarıyla poker oynuyordu. Kurban ile Vance arasındaki son kavgayı teyit eder.",
+    "alibi_ozeti": "Gece yarısından sabaha kadar kumar masasında olduğunu söylüyor.",
+    "kilit_nokta": "Güçlü çete alibisi; ancak Kaptan Vance'in telaşını ve kaçış hazırlığını ortaya çıkarır.",
+    "initial_room": "dock_saloon"
+  },
+  {
+    "id": "brandt",
+    "ad": "Colin Brandt",
+    "yas": 36,
+    "rol": "Liman Vinç Operatörü",
+    "initial_trust": 45,
+    "gorunur_motif": "Vinç mekanizmasını bilen tek kişi; kurbanla eski husumeti var.",
+    "gercek": "Kızıl ringa. Kaza anında ambarda sarhoş uyuyakaldı, ihmalkarlığı yüzünden şüpheli duruma düştü.",
+    "alibi_ozeti": "Ambar köşesinde fırtınadan sığındığını ve sızıp kaldığını söylüyor.",
+    "kilit_nokta": "Vinç kumandasının anahtarı dolaptaydı; asit kullanmayı bilmez.",
+    "initial_room": "dock_warehouse"
+  },
+  {
+    "id": "boris",
+    "ad": "'Kaya' Boris",
+    "yas": 40,
+    "rol": "Mafya Fedaisi",
+    "initial_trust": 20,
+    "gorunur_motif": "Patronun emir kulu.",
+    "gercek": "Bar kapısını tutar. Silas ona gümrükten mühürlü Gece İzin Belgesi vermedikçe içeri sokmaz.",
+    "alibi_ozeti": "Sabaha kadar ambardaki demir kapının önünde dikildiğini söylüyor.",
+    "kilit_nokta": "Eşya takası yapılınca kenara çekilir.",
+    "initial_room": "dock_warehouse"
+  }
+]

@@ -1,0 +1,34 @@
+{
+  "cutscene_id": "travel_case03",
+  "title": "Kraliyet Operası'na Gece Sürüşü",
+  "slides": [
+    {
+      "text": "Gece yarısı ofisimin telefonu kulak tırmalayıcı bir ısrarla çaldı. Hattın diğer ucundaki ses, 1944 kışından kalma bir hayaletti.",
+      "duration": 3.0,
+      "sfx": "rain_loop",
+      "image": "res://cases/case03/assets/cinematics/cinematic_case03_01_office_call.jpg",
+      "speaker": "SILAS"
+    },
+    {
+      "text": "Şiddetli sağanak yağmur sileceklerin yetişemeyeceği kadar hızlanmıştı. Greywater'ın puslu sokaklarında motorun uğultusu gecenin sessizliğini yarıyordu.",
+      "duration": 3.5,
+      "sfx": "thunder_soft",
+      "image": "res://cases/case03/assets/cinematics/cinematic_case03_travel.jpg",
+      "speaker": "SILAS"
+    },
+    {
+      "text": "Aristokratların siyah limuzinleri ön avluda sıralanmıştı. Salondan yükselen uvertür sesleri yağmurun şakırtısına karışıyordu.",
+      "duration": 3.5,
+      "sfx": "rain_loop",
+      "image": "res://cases/case03/assets/cinematics/cinematic_case03_travel.jpg",
+      "speaker": "SILAS"
+    },
+    {
+      "text": "Merdivenleri ikişer ikişer tırmandım. Salonda Elena Vane'in aryası yükselirken 112. ölçünün barutlu top patlaması duvarları sarstı.",
+      "duration": 3.5,
+      "sfx": "thunder",
+      "image": "res://cases/case03/assets/cinematics/cinematic_case03_02_soprano_aria.jpg",
+      "speaker": "SILAS"
+    }
+  ]
+}

@@ -1,0 +1,281 @@
+[gd_scene load_steps=3 format=3 uid="uid://bhud01"]
+
+[ext_resource type="Script" path="res://scripts/ui/hud.gd" id="1_hud"]
+[ext_resource type="PackedScene" uid="uid://bdialoguebox01" path="res://scenes/ui/dialogue_box.tscn" id="2_dbox"]
+[ext_resource type="PackedScene" uid="uid://cinventory01" path="res://scenes/ui/inventory_modal.tscn" id="3_inv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_top"]
+
+[node name="HUD" type="CanvasLayer"]
+layer = 10
+script = ExtResource("1_hud")
+
+[node name="SafeArea" type="MarginContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_constants/margin_left = 2
+theme_override_constants/margin_top = 1
+theme_override_constants/margin_right = 2
+theme_override_constants/margin_bottom = 1
+
+[node name="TopBar" type="PanelContainer" parent="SafeArea"]
+custom_minimum_size = Vector2(0, 38)
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_top")
+
+[node name="MarginContainer" type="MarginContainer" parent="SafeArea/TopBar"]
+layout_mode = 2
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_top = 2
+theme_override_constants/margin_right = 4
+theme_override_constants/margin_bottom = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="SafeArea/TopBar/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 3
+
+[node name="RoomNameLabel" type="Label" parent="SafeArea/TopBar/MarginContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.96, 0.89, 0.63, 1)
+theme_override_font_sizes/font_size = 7
+text = "Silas'ın Ofisi"
+vertical_alignment = 1
+
+[node name="BarSeparator" type="VSeparator" parent="SafeArea/TopBar/MarginContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="HintLabel" type="Label" parent="SafeArea/TopBar/MarginContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.55, 0.60, 0.65, 0.8)
+theme_override_font_sizes/font_size = 6
+text = "[A/D]: Yürü  •  [E]: İncele  •  [X]: Odak"
+clip_text = true
+text_overrun_behavior = 3
+vertical_alignment = 1
+
+[node name="FocusButton" type="Button" parent="SafeArea/TopBar/MarginContainer/HBoxContainer"]
+custom_minimum_size = Vector2(38, 30)
+layout_mode = 2
+focus_mode = 0
+theme_override_colors/font_color = Color(0.96, 0.89, 0.63, 1)
+theme_override_font_sizes/font_size = 6
+text = "🔍 Odak"
+
+[node name="BagButton" type="Button" parent="SafeArea/TopBar/MarginContainer/HBoxContainer"]
+custom_minimum_size = Vector2(36, 30)
+layout_mode = 2
+focus_mode = 0
+theme_override_font_sizes/font_size = 6
+text = "🎒 Çanta"
+
+[node name="NotebookButton" type="Button" parent="SafeArea/TopBar/MarginContainer/HBoxContainer"]
+custom_minimum_size = Vector2(44, 30)
+layout_mode = 2
+focus_mode = 0
+theme_override_font_sizes/font_size = 6
+text = "Defter [Q]"
+
+[node name="AccuseButton" type="Button" parent="SafeArea/TopBar/MarginContainer/HBoxContainer"]
+custom_minimum_size = Vector2(34, 30)
+layout_mode = 2
+focus_mode = 0
+theme_override_colors/font_color = Color(1, 0.45, 0.45, 1)
+theme_override_font_sizes/font_size = 6
+text = "Suçla"
+
+[node name="MenuButton" type="Button" parent="SafeArea/TopBar/MarginContainer/HBoxContainer"]
+custom_minimum_size = Vector2(28, 30)
+layout_mode = 2
+focus_mode = 0
+theme_override_font_sizes/font_size = 8
+text = "⚙"
+
+
+[node name="NavLeftButton" type="Button" parent="."]
+custom_minimum_size = Vector2(88, 36)
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 6.0
+offset_top = -42.0
+offset_right = 96.0
+offset_bottom = -6.0
+grow_vertical = 0
+focus_mode = 0
+theme_override_colors/font_color = Color(0.96, 0.89, 0.63, 1)
+theme_override_font_sizes/font_size = 7
+text = "◀"
+
+[node name="NavRightButton" type="Button" parent="."]
+custom_minimum_size = Vector2(88, 36)
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -96.0
+offset_top = -42.0
+offset_right = -6.0
+offset_bottom = -6.0
+grow_horizontal = 0
+grow_vertical = 0
+focus_mode = 0
+theme_override_colors/font_color = Color(0.96, 0.89, 0.63, 1)
+theme_override_font_sizes/font_size = 7
+text = "▶"
+
+[node name="NavExtraButton" type="Button" parent="."]
+visible = false
+custom_minimum_size = Vector2(88, 36)
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -96.0
+offset_top = -82.0
+offset_right = -6.0
+offset_bottom = -46.0
+grow_horizontal = 0
+grow_vertical = 0
+focus_mode = 0
+theme_override_colors/font_color = Color(0.96, 0.89, 0.63, 1)
+theme_override_font_sizes/font_size = 7
+text = "▶"
+
+[node name="PromptPanel" type="PanelContainer" parent="SafeArea"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+
+[node name="PromptButton" type="Button" parent="SafeArea/PromptPanel"]
+custom_minimum_size = Vector2(56, 20)
+layout_mode = 2
+focus_mode = 0
+theme_override_colors/font_color = Color(1, 0.85, 0.4, 1)
+theme_override_font_sizes/font_size = 6
+text = "[E] İncele"
+
+[node name="DialogueBox" parent="SafeArea" instance=ExtResource("2_dbox")]
+visible = false
+layout_mode = 2
+size_flags_vertical = 8
+
+[node name="InnerVoicePanel" type="PanelContainer" parent="SafeArea"]
+custom_minimum_size = Vector2(0, 42)
+layout_mode = 2
+size_flags_vertical = 8
+
+[node name="MarginContainer" type="MarginContainer" parent="SafeArea/InnerVoicePanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 6
+theme_override_constants/margin_top = 3
+theme_override_constants/margin_right = 6
+theme_override_constants/margin_bottom = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="SafeArea/InnerVoicePanel/MarginContainer"]
+layout_mode = 2
+
+[node name="VoiceLabel" type="Label" parent="SafeArea/InnerVoicePanel/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(280, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.75, 0.82, 0.9, 1)
+theme_override_font_sizes/font_size = 6
+text = "\"Bu koku... barut değil. Daha eski bir şey.\""
+autowrap_mode = 2
+
+[node name="AdvanceHint" type="Label" parent="SafeArea/InnerVoicePanel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9, 0.75, 0.3, 1)
+theme_override_font_sizes/font_size = 5
+text = "[Dokun / E ile Kapat]"
+horizontal_alignment = 2
+
+[node name="ToastPanel" type="PanelContainer" parent="."]
+visible = false
+z_index = 25
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -130.0
+offset_top = 42.0
+offset_right = 130.0
+offset_bottom = 66.0
+grow_horizontal = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="ToastPanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 6
+theme_override_constants/margin_right = 6
+
+[node name="ToastLabel" type="Label" parent="ToastPanel/MarginContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.85, 0.3, 1)
+theme_override_font_sizes/font_size = 8
+text = "★ Yeni Kanıt: Kırık Cep Saati"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AchievementBanner" type="PanelContainer" parent="."]
+visible = false
+z_index = 30
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -135.0
+offset_top = 42.0
+offset_right = 135.0
+offset_bottom = 76.0
+grow_horizontal = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="AchievementBanner"]
+layout_mode = 2
+theme_override_constants/margin_left = 6
+theme_override_constants/margin_top = 2
+theme_override_constants/margin_right = 6
+theme_override_constants/margin_bottom = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="AchievementBanner/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="IconLabel" type="Label" parent="AchievementBanner/MarginContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 14
+text = "🏆"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="AchievementBanner/MarginContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 1
+
+[node name="HeaderLabel" type="Label" parent="AchievementBanner/MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.96, 0.82, 0.35, 1)
+theme_override_font_sizes/font_size = 5
+text = "BAŞARIM KAZANILDI"
+
+[node name="TitleLabel" type="Label" parent="AchievementBanner/MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 7
+text = "Başarım Başlığı"
+
+[node name="DescLabel" type="Label" parent="AchievementBanner/MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.75, 0.82, 0.9, 0.9)
+theme_override_font_sizes/font_size = 5
+text = "Başarım açıklaması burada yer alır."
+clip_text = true
+
+[node name="InventoryModal" parent="." instance=ExtResource("3_inv")]
+

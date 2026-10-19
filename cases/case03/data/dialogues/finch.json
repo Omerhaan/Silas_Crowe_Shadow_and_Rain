@@ -1,0 +1,86 @@
+{
+  "suspect_id": "finch",
+  "name": "Arthur Finch",
+  "topics": [
+    {
+      "id": "night_events",
+      "label": "Olay Gecesi",
+      "label_en": "Night of the Murder",
+      "response": "20:50'den itibaren sahne arkasındaki ışık konsolunun başındaydım. 112. ölçüdeki top efektine kadar tüm spotları cue defterine göre yönlendirdim.",
+      "response_en": "From 20:50 onwards I was stationed at the backstage switchboard. Until the measure 112 cannon blast, I operated all spotlights strictly according to the cue book.",
+      "statement_yield": "Arthur Finch, cinayet anında kulisteki ışık konsolunun başında olduğunu söyledi.",
+      "statement_yield_en": "Arthur Finch claimed he was operating the lighting console backstage during the shooting."
+    },
+    {
+      "id": "light_bridge_key",
+      "label": "Işık Köprüsü Anahtarı",
+      "label_en": "Light Bridge Key",
+      "required_evidence": "E303",
+      "alt_required_flag": "finch_confronted_e303",
+      "locked_response": "Köprü anahtarı bende durur dedektif, kapı da kilitliydi. Boş sorularla vaktimi almayın, tiyatroda binbir işim var.",
+      "locked_response_en": "The bridge key stays in my pocket, detective, and the gate was locked tight. Stop wasting my time; I have a theater to run.",
+      "locked_emotion": "defensive",
+      "response": "Pekala, pekala! O defteri bulduğunuza göre saklamanın manası yok... Geçen hafta anahtar ceketimin cebinden kaybolmuştu. Ertesi gün marangoz atölyesinde masanın üstünde buldum! Düşürdüğümü sanmıştım!",
+      "response_en": "Fine, fine! Since you found that cue book, there's no point hiding it... Last week the bridge key vanished from my coat pocket. The next morning I found it sitting on the workbench in the prop workshop! I thought I had just dropped it!",
+      "statement_yield": "Finch, köprü anahtarını bir hafta önce kaybedip atölyede bulduğunu açıkladı.",
+      "statement_yield_en": "Finch confessed he misplaced his bridge key a week ago and found it in the prop workshop."
+    },
+    {
+      "id": "victim_relation",
+      "label": "Dalton Reeve ile İlişkisi",
+      "label_en": "Relation to Dalton Reeve",
+      "response": "Reeve eski bir askerdi, disiplinli bir güvenlik şefiydi. Birkaç gündür gergindi, sanki arkasında bir gölge varmış gibi sürekli locaları ve çatı kapağını kontrol ediyordu.",
+      "response_en": "Reeve was a veteran and a strict security chief. He was on edge for days, checking boxes and roof access as if chased by a ghost.",
+      "statement_yield": "Finch, Reeve'in son günlerde paranoyakça arkasını kolladığını belirtti.",
+      "statement_yield_en": "Finch noted Reeve spent recent days paranoidly watching his own back."
+    },
+    {
+      "id": "alibi",
+      "label": "Neredeydiniz?",
+      "label_en": "Where Were You?",
+      "response": "Konsolun başındaydım dedim ya! Çıraklar ve sahne teknisyenleri beni gördü. Köprüye çıkmadım!",
+      "response_en": "I was at the console as I said! Apprentices and technicians witnessed me. I never ascended the bridge!",
+      "statement_yield": "Finch, cinayet anında kulisteki teknisyenlerin gözü önünde olduğunu savundu.",
+      "statement_yield_en": "Finch insisted crew members saw him managing the console during the shot."
+    },
+    {
+      "id": "present_evidence",
+      "label": "Kanıt Göster",
+      "label_en": "Present Evidence",
+      "response": "Bir şüphen varsa kanıtını çıkar dedektif, sahnede işimiz başımızdan aşkın.",
+      "response_en": "If you have suspicions, present your proof, detective. We have endless work backstage.",
+      "statement_yield": ""
+    }
+  ],
+  "evidence_reactions": {
+    "E303": {
+      "response": "Cue defterine o satır sonradan karalanmış dedektif! 'Spot A kapa, Spot B aç'... Yönetmenin el yazısı değildi bu, birisi prova arasında listeye eklemiş!",
+      "response_en": "That line was scribbled into the cue book afterwards, detective! 'Kill Spot A, raise Spot B'... That wasn't the director's script; an intruder slipped it into the log during rehearsal!",
+      "statement": "Finch, cue defterindeki kör nokta ayarının sonradan yabancı biri tarafından eklendiğini iddia etti.",
+      "statement_en": "Finch stated the blind-spot cue in the log was forged by an unknown infiltrator.",
+      "emotion": "nervous",
+      "set_flag": "finch_confronted_e303",
+      "refresh_topics": true
+    },
+    "E304": {
+      "response": "Kilit zorlanmamış mı? Aman Tanrım... Demek köprüye çıkan kişi kapıyı anahtarla açtı!",
+      "response_en": "The lock wasn't picked? Good heavens... That means whoever ascended opened the gate with a key!",
+      "statement": "Finch, kilidin anahtarla açıldığını öğrenince dehşete kapıldı.",
+      "statement_en": "Finch was horrified to learn the catwalk padlock was unlocked with a matching key.",
+      "emotion": "shocked"
+    },
+    "E305": {
+      "response": "(Yüzü kireç gibi olur) Bu... Marangoz masasındaki balmumu kalıbı! Anahtarımı kaybettiğim o gün... Birisi anahtarımı alıp bu kalıbı çıkarmış ve sonra geri koymuş! Beni tuzağa düşürdüler!",
+      "response_en": "(Pales visibly) That... That's the sculpting wax from the carpentry bench! The day my key vanished... Someone took it, molded this cast, and returned it! I was framed!",
+      "statement": "Finch, anahtarının çalınıp balmumuyla kopyalandığını anlayarak aklanma delilini doğruladı.",
+      "statement_en": "Finch confirmed his key had been molded in wax and duplicated to frame him.",
+      "emotion": "shocked"
+    },
+    "default": {
+      "response": "Bunun sahne ışıklarıyla ya da köprüyle hiçbir ilgisi yok dedektif.",
+      "response_en": "This has nothing to do with stage illumination or the catwalk, detective.",
+      "statement": "",
+      "emotion": "normal"
+    }
+  }
+}

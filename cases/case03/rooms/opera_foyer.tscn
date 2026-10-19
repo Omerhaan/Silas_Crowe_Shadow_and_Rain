@@ -1,0 +1,116 @@
+[gd_scene load_steps=10 format=3 uid="uid://boperafoyer01"]
+
+[ext_resource type="Script" path="res://scripts/core/room_background.gd" id="1_bg"]
+[ext_resource type="PackedScene" uid="uid://bdoor01" path="res://scenes/entities/door.tscn" id="2_door"]
+[ext_resource type="PackedScene" uid="uid://d2m0tcvj7ds4k" path="res://scenes/entities/interactable.tscn" id="3_interact"]
+[ext_resource type="PackedScene" uid="uid://bnpcentity01" path="res://scenes/entities/npc.tscn" id="4_npc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_floor"]
+size = Vector2(480, 26)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wall"]
+size = Vector2(16, 270)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_door"]
+size = Vector2(36, 110)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n84cj"]
+size = Vector2(36, 110)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bkopr"]
+size = Vector2(36, 110)
+
+[node name="OperaFoyer" type="Node2D"]
+
+[node name="RoomBackground" type="Node2D" parent="."]
+script = ExtResource("1_bg")
+room_theme = "opera_foyer"
+
+[node name="Walls" type="StaticBody2D" parent="."]
+
+[node name="FloorShape" type="CollisionShape2D" parent="Walls"]
+position = Vector2(240, 260)
+shape = SubResource("RectangleShape2D_floor")
+
+[node name="LeftWall" type="CollisionShape2D" parent="Walls"]
+position = Vector2(8, 135)
+shape = SubResource("RectangleShape2D_wall")
+
+[node name="RightWall" type="CollisionShape2D" parent="Walls"]
+position = Vector2(472, 135)
+shape = SubResource("RectangleShape2D_wall")
+
+[node name="Spawn_default" type="Marker2D" parent="."]
+position = Vector2(72, 245)
+
+[node name="Spawn_from_auditorium" type="Marker2D" parent="."]
+position = Vector2(400, 245)
+
+[node name="Door_To_Auditorium" parent="." instance=ExtResource("2_door")]
+position = Vector2(450, 245)
+target_room_id = "opera_auditorium"
+target_spawn = "from_foyer"
+door_name = "Tiyatro Salonu"
+
+[node name="AuditoriumDoorCollision" type="CollisionShape2D" parent="Door_To_Auditorium"]
+position = Vector2(0, -55)
+shape = SubResource("RectangleShape2D_door")
+
+[node name="NPC_Henderson" parent="." instance=ExtResource("4_npc")]
+position = Vector2(117, 248)
+display_name = "Archie Henderson"
+character_id = "npc_henderson"
+character_name = "Archie Henderson"
+
+[node name="Prop_TicketBooth" parent="." instance=ExtResource("3_interact")]
+position = Vector2(67, 173)
+object_id = "ticket_booth"
+display_name = "Bilet Gişesi"
+prop_type = "desk"
+is_hotspot = true
+hotspot_size = Vector2(44, 40)
+
+[node name="Prop_PosterBoard" parent="." instance=ExtResource("3_interact")]
+position = Vector2(218, 141)
+object_id = "opera_poster"
+display_name = "Temsil Afişi: 1812 Tören Uvertürü"
+prop_type = "portrait"
+is_hotspot = true
+hotspot_size = Vector2(36, 48)
+
+[node name="Prop_Chandelier" parent="." instance=ExtResource("3_interact")]
+position = Vector2(240, 64)
+object_id = "crystal_chandelier"
+display_name = "Kristal Avize"
+prop_type = "painting"
+is_hotspot = true
+hotspot_size = Vector2(50, 40)
+
+[node name="Spawn_from_royal_box" type="Marker2D" parent="."]
+position = Vector2(355, 245)
+
+[node name="Door_To_Royal_Box" parent="." instance=ExtResource("2_door")]
+position = Vector2(368, 233)
+target_room_id = "royal_box"
+target_spawn = "from_foyer"
+door_name = "Kraliyet Locası Merdiveni"
+
+[node name="RoyalBoxDoorCollision" type="CollisionShape2D" parent="Door_To_Royal_Box"]
+position = Vector2(0, -56)
+shape = SubResource("RectangleShape2D_n84cj")
+
+[node name="Spawn_from_backstage2" type="Marker2D" parent="."]
+position = Vector2(278, 245)
+
+[node name="Door_To_Backstage2" parent="." instance=ExtResource("2_door")]
+position = Vector2(289, 210)
+target_room_id = "backstage"
+target_spawn = "from_foyer"
+door_name = "Sahne Arkası (Kulis)"
+is_locked = true
+locked_message = "Kulis kapısı kilitli. Giriş için gişedeki nöbetçi anahtarı gerekiyor."
+required_key_id = "backstage_key"
+
+[node name="BackstageDoorCollision" type="CollisionShape2D" parent="Door_To_Backstage2"]
+position = Vector2(0, -55)
+shape = SubResource("RectangleShape2D_bkopr")

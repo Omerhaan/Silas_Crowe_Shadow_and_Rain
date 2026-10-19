@@ -1,0 +1,112 @@
+[
+  {
+    "id": "E201",
+    "ad": "Kopmuş Vinç Çelik Halatı",
+    "aciklama": "Kargo vincinin tamburundan kopan çelik halat. Lifleri aşınmamış; bilerek zayıflatılmış.",
+    "bulundugu_yer": "dock_warehouse",
+    "nasil_bulunur": "Kargo vincinin makarasını incele",
+    "ic_ses_yorumu": "\"Bu bir kaza değil. Birisi halatın vinç yüke bindiği anda kopmasını garantiye almış... Profesyonel bir sabotaj.\"",
+    "kritik_mi": true,
+    "kizil_ringa_mi": false
+  },
+  {
+    "id": "E202",
+    "ad": "Mühürsüz Askerî Sandık",
+    "aciklama": "Üzerinde solmuş '1944 - KUZEY İNTİKAL' mührü bulunan ahşap sandık. İçi boşaltılmış, ağırlık yapsın diye moloz doldurulmuş.",
+    "bulundugu_yer": "dock_pier",
+    "nasil_bulunur": "Rıhtım kenarındaki düşmüş sandığı aç",
+    "ic_ses_yorumu": "\"1944 Kuzey İntikal damgası... Bu sandıklar sekiz yıl önce karların altında kalmıştı. Limanda ne arıyorlar? Karaborsaya sürülmüşler.\"",
+    "kritik_mi": true,
+    "kizil_ringa_mi": false
+  },
+  {
+    "id": "E203",
+    "ad": "Kanlı Pirinç Denizci Feneri",
+    "aciklama": "Rıhtım babasının dibinde bulunmuş ağır fener. Camı kırık, tabanında kurbanın kanı ve saç teli var. Kurban vinç düşmeden önce darbe almış.",
+    "bulundugu_yer": "dock_pier",
+    "nasil_bulunur": "Rıhtım babalarının arkasını ara",
+    "ic_ses_yorumu": "\"Teddy önce arkadan kafasına fenerle vurulup sersemletilmiş, ardından vinç üzerine düşürülmüş. Kaza süsü vermek için iki aşamalı plan.\"",
+    "kritik_mi": true,
+    "kizil_ringa_mi": false
+  },
+  {
+    "id": "E204",
+    "ad": "Lekeli Kaptan Pardösüsü",
+    "aciklama": "Kaptan Vance'in dolabında asılı denizci paltosu. Sağ kol manşetinde eskime ve demir talaşı kalıntıları var.",
+    "bulundugu_yer": "captain_cabin",
+    "nasil_bulunur": "Kamaradaki elbise dolabını incele",
+    "ic_ses_yorumu": "\" böyle bir kaptanın eski bir pardösü giymesi mantıklı gelmiyor\"",
+    "kritik_mi": true,
+    "kizil_ringa_mi": false
+  },
+  {
+    "id": "E205",
+    "ad": "Telsiz Defterinin Yırtık Sayfası",
+    "aciklama": "Teddy Marsh'ın ceketinden çıkan ıslak defter. '14 Aralık 1944... Frekans 312... Çağrı kesildi, affet beni K-1' notu karalanmış.",
+    "bulundugu_yer": "dock_warehouse",
+    "nasil_bulunur": "Ambar telsiz masasını araştır",
+    "ic_ses_yorumu": "\"Marsh... Kuzey Birimi'nin telsizcisi. 'Affet beni K-1' diye yazmış. O gece sığınakta çağrıyı kesen oydu. Sekiz yıl sonra günahı onu burada buldu.\"",
+    "kritik_mi": true,
+    "kizil_ringa_mi": false
+  },
+  {
+    "id": "E206",
+    "ad": "Rıhtım Gelgit ve Nöbet Tablosu",
+    "aciklama": "Gümrük duvarındaki gelgit tablosu. Su seviyesinin en yüksek olduğu saat 02:30. Cinayetin saat 02:15 - 02:45 arasında gerçekleştiğini kanıtlıyor.",
+    "bulundugu_yer": "dock_office",
+    "nasil_bulunur": "Gümrük duvarındaki çizelgeyi incele",
+    "ic_ses_yorumu": "\"Gelgit suları rıhtımı 02:30'da vurmuş. Cinayet tam da vardiya değişimindeki o karanlık yarım saatte işlenmiş.\"",
+    "kritik_mi": false,
+    "kizil_ringa_mi": false
+  },
+  {
+    "id": "E207",
+    "ad": "İsimsiz Daktilo Notu (Kuklacı)",
+    "aciklama": "Kaptan Vance'in çekmecesindeki mektup: 'Marsh sabah polise gidip sandıkları anlatacak. Onu susturmazsan ikimiz de batarız.' 'r' harfi aşağı kayık.",
+    "bulundugu_yer": "captain_cabin",
+    "nasil_bulunur": "Kaptanın çalışma masasını ara",
+    "ic_ses_yorumu": "\"Aşağı kaymış 'r' harfi... Tıpkı Hale'e gelen o imzasız not gibi! Vance tek başına hareket etmedi. İpleri çeken aynı gölge...\"",
+    "kritik_mi": true,
+    "kizil_ringa_mi": false
+  },
+  {
+    "id": "E208",
+    "ad": "Deniz Suyu Almış K-3 Saati",
+    "aciklama": "Teddy Marsh'ın cebindeki gümüş kurmalı saat. Arka kapağında 'K-3' damgası var. Akreple yelkovan tuzlu suyun etkisiyle 02:40'ta durmuş.",
+    "bulundugu_yer": "dock_pier",
+    "nasil_bulunur": "Kurbanın cesedini incele",
+    "ic_ses_yorumu": "\"K-3... Teddy Marsh. Cebimdeki K-1'e bakıyorum. Birisi birliğin üyelerini tek tek kendi günahlarıyla yok ediyor... Ama kim?\"",
+    "kritik_mi": false,
+    "kizil_ringa_mi": false
+  },
+  {
+    "id": "E209",
+    "ad": "Mühürlü Gece İzin Belgesi",
+    "aciklama": "Arthur Morris'in kilitli çekmecesinden çıkan,gümrük onaylı gece izin belgesi.",
+    "bulundugu_yer": "dock_office",
+    "nasil_bulunur": "Gümrük şefinin kilitli çekmecesini aç",
+    "ic_ses_yorumu": "\"Gümrük şefinin mührü.her kapıyı açabilir.\"",
+    "kritik_mi": true,
+    "kizil_ringa_mi": false
+  },
+  {
+    "id": "E210",
+    "ad": "Gümrük Rüşvet Çetelesi",
+    "aciklama": "Morris'in gizli kasasındaki defter. Victor Corley ve Vance'ten her ay 'gece tarifesi' adı altında alınan rüşvet miktarları yazılı.",
+    "bulundugu_yer": "dock_office",
+    "nasil_bulunur": "Gümrük arkasındaki küçük çelik kasayı aç",
+    "ic_ses_yorumu": "\"rüşvet çetelesi ortaya çıkacak diye korkudan titriyormuş. açgözlü bir memur.\"",
+    "kritik_mi": false,
+    "kizil_ringa_mi": true
+  },
+  {
+    "id": "E211",
+    "ad": "Seyir Defteri",
+    "aciklama": "Kaptan Vance'in seyir defteri. 23:15 - 23:50 arasındaki satırlar sonradan aynı kalemle aceleyle yazılmış; Vance'in o saatlerde kamarada olduğu iddiasını çürütüyor.",
+    "bulundugu_yer": "captain_cabin",
+    "nasil_bulunur": "Kaptanın masasındaki seyir defterini incele",
+    "ic_ses_yorumu": "\"23:15 - 23:50 satırları sonradan aynı kalemle alelacele yazılmış... Vance'in kamarada olduğu yalan.\"",
+    "kritik_mi": true,
+    "kizil_ringa_mi": false
+  }
+]

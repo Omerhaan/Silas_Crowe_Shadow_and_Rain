@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bmyvalx1s2ge"]
+
+[ext_resource type="Script" path="res://scripts/tests/export_screenshots.gd" id="1_exp"]
+
+[node name="ExportScreenshots" type="Node"]
+script = ExtResource("1_exp")

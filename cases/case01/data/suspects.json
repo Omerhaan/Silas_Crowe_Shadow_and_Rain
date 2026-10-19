@@ -1,0 +1,50 @@
+[
+  {
+    "id": "margaret",
+    "ad": "Margaret Doyle",
+    "yas": 55,
+    "rol": "Hizmetçi / Kâhya (30 yıldır malikanede)",
+    "initial_trust": 50,
+    "gorunur_motif": "Yedek anahtar onda, kovulmak üzereydi",
+    "gercek": "Masum. Kovulma tehdidi gerçek ama olayla ilgisi yok.",
+    "alibi_ozeti": "20:30'dan sonra mutfakta bulaşık yıkıyordu. Tepsiyi 20:45'te çalışma odasına götürdü.",
+    "kilit_nokta": "Dr. Hale'in çalışma odasına girdiğini gören tek tanık. Ayrıca Harlow'un savaştan beri kapısını kilitlediğini söyler.",
+    "initial_room": "kitchen"
+  },
+  {
+    "id": "julian",
+    "ad": "Julian Harlow",
+    "yas": 29,
+    "rol": "Üvey Kardeş / Kumarbaz Mirasçı",
+    "initial_trust": 30,
+    "gorunur_motif": "Ağır kumar borcu ve vasiyetten çıkarılma korkusu",
+    "gercek": "Masum. Borç yüzünden yalan söylüyor ama katil değil.",
+    "alibi_ozeti": "Yemekten sonra bilardo odasında Pike ile içtiğini iddia ediyor.",
+    "kilit_nokta": "Delili yalan; bilardo odasında tek başına içiyordu.",
+    "initial_room": "billiard_room"
+  },
+  {
+    "id": "hale",
+    "ad": "Dr. Victor Hale",
+    "yas": 45,
+    "rol": "Aile Hekimi ve Eski Askerî Doktor",
+    "initial_trust": 70,
+    "gorunur_motif": "Harlow sahte ölüm raporunu ihbar etmek üzereydi",
+    "gercek": "KATİL. Digitalis ile gecikmeli zehirledi. İsimsiz bir ihbar notu aldı.",
+    "alibi_ozeti": "Yemekten sonra doğrudan kütüphaneye geçip kitap okuduğunu iddia ediyor.",
+    "kilit_nokta": "Kütüphane şöminesi hiç yanmamış, reçetesi çalışma odasında, Margaret onu odaya girerken gördü.",
+    "initial_room": "library"
+  },
+  {
+    "id": "pike",
+    "ad": "Raymond Pike",
+    "yas": 50,
+    "rol": "Harlow'un Savaş Sonrası Eski İş Ortağı",
+    "initial_trust": 25,
+    "gorunur_motif": "Dolandırıldığını düşünüyor, tehdit mektuplarının yazarı",
+    "gercek": "Masum. Tehdit mektuplarını yazdı ama cinayet işlemedi.",
+    "alibi_ozeti": "Yemekten sonra odasına çıktığını, Julian ile birlikte olmadığını söylüyor.",
+    "kilit_nokta": "Kızıl ringa. Tehdit mektuplarını kabul edecek ama katil olmadığını kanıtlayacak.",
+    "initial_room": "dining_room"
+  }
+]

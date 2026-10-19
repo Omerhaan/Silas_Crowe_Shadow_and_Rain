@@ -1,0 +1,56 @@
+[
+  {
+    "speaker": "Silas Crowe",
+    "text": "Kilitli oda bir aldatmaca değildi. Harlow kapıyı kendisi kilitledi. Çünkü korkuyordu.",
+    "en": "The locked room was no trick. Harlow locked that door himself. Because he was terrified.",
+    "portrait": "silas"
+  },
+  {
+    "speaker": "Silas Crowe",
+    "text": "Soru odaya nasıl girildiği değil, zehrin odaya nasıl girdiğidir. Saat 20:45'te odaya bizzat sen girdin, Doktor Hale. Kadehe ve kalp damlalarına ölümcül dozda digitalis kattın.",
+    "en": "The question is not how someone entered, but how the poison entered. You walked into that study at 20:45 yourself, Dr. Hale. You spiked his goblet and heart medicine with a lethal dose of digitalis.",
+    "portrait": "silas"
+  },
+  {
+    "speaker": "Silas Crowe",
+    "text": "Kütüphanede saatlerce kitap okuduğunu iddia ettin. Ama şömine hiç yakılmamıştı. Oraya sadece boş zehir flakonunu gizlemek için uğradın.",
+    "en": "You claimed to have read for hours by the library fire. But the fireplace was never lit. You only went in there to conceal the empty poison vial.",
+    "portrait": "silas"
+  },
+  {
+    "speaker": "Dr. Victor Hale",
+    "text": "(Hale gözlüklerini çıkarır, yorgun ve yenik bir tebessümle masaya bakar) Demek her parçayı birleştirdin Crowe... Haklısın. İnkâr etmenin faydası yok.",
+    "en": "(Hale removes his glasses, looking at the desk with a weary, defeated smile) So you pieced every thread together, Crowe... You're right. Denial is futile.",
+    "portrait": "hale"
+  },
+  {
+    "speaker": "Dr. Victor Hale",
+    "text": "Edmund, hasta kayıtlarımdaki sahte bir ölüm raporunu fark etmişti. Beni ihbar etmeye hazırlanıyordu. Bütün hayatım bir anda bitecekti.",
+    "en": "Edmund had uncovered a falsified death certificate in my post-war clinical records. He was preparing to turn me in. My entire life was going to end in an instant.",
+    "portrait": "hale"
+  },
+  {
+    "speaker": "Dr. Victor Hale",
+    "text": "Ama beni asıl harekete geçiren neydi biliyor musun? Bir not aldım. İmzasız bir daktilo notu... (Cebinden katlanmış sarı bir kâğıt çıkarıp masaya bırakır) Bak Crowe: 'Edmund seni ihbar edecek.' Notta tuhaf bir şey var... 'r' harfi hafifçe aşağı kaymış. Beni buraya birisi bilerek sürükledi.",
+    "en": "But do you know what truly forced my hand? I received a note. An unsigned typed note... (He pulls a folded yellowed paper from his pocket and sets it on the table) Look, Crowe: 'Edmund will turn you in.' There's something peculiar about it... the letter 'r' is slightly sunken downward. Someone deliberately baited me here.",
+    "portrait": "hale"
+  },
+  {
+    "speaker": "Silas Crowe",
+    "text": "(Kâğıdı eline alır, daktilo yazı karakterini inceler) Kaymış bir 'r' harfi... Bu daktiloyu daha önce nerede gördüm? Malikâne sakinlerinden hiçbirine ait değil.",
+    "en": "(Silas picks up the note, inspecting the typeface) A sunken letter 'r'... Where have I seen this typewriter before? It belongs to none of the manor's residents.",
+    "portrait": "silas"
+  },
+  {
+    "speaker": "Dr. Victor Hale",
+    "text": "(Gözlerini Silas'ın gözlerine diker, fısıltıyla konuşur) Kimin sağ döndüğünü hâlâ bilmiyorsun, değil mi Crowe?",
+    "en": "(He locks eyes with Silas, speaking in a chill whisper) You still don't know who made it back alive, do you, Crowe?",
+    "portrait": "hale"
+  },
+  {
+    "speaker": "Silas Crowe",
+    "text": "\"Hale kelepçelenip götürülürken fırtına dindi. Katil bulundu... Ama arkasındaki o ses... hâlâ zihnimde yankılanıyor.\"",
+    "en": "\"As Hale was handcuffed and led into the night, the tempest broke. The killer was unmasked... but that voice behind the curtain still echoes in my mind.\"",
+    "portrait": "silas"
+  }
+]

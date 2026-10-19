@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://audit_transitions_01"]
+
+[ext_resource type="Script" path="res://scratch/audit_transitions.gd" id="1_audit"]
+
+[node name="AuditTransitions" type="Node"]
+script = ExtResource("1_audit")

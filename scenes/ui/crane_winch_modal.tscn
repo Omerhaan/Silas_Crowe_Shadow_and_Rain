@@ -1,0 +1,201 @@
+[gd_scene load_steps=3 format=3 uid="uid://bcranewinch01"]
+
+[ext_resource type="Script" path="res://scripts/ui/crane_winch_modal.gd" id="1_script"]
+[ext_resource type="FontFile" uid="uid://ibmj5ix7fhf" path="res://assets/fonts/CourierPrime-Regular.ttf" id="2_font"]
+
+[node name="CraneWinchModal" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_script")
+
+[node name="Dimmer" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.75)
+
+[node name="ModalPanel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -160.0
+offset_top = -92.0
+offset_right = 160.0
+offset_bottom = 92.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TitleLabel" type="Label" parent="ModalPanel"]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 8.0
+offset_right = 305.0
+offset_bottom = 22.0
+theme_override_colors/font_color = Color(0.96, 0.89, 0.63, 1)
+theme_override_fonts/font = ExtResource("2_font")
+theme_override_font_sizes/font_size = 9
+text = "VİNÇ MAKARA VE ŞALTER PANOSU"
+
+[node name="SubtitleLabel" type="Label" parent="ModalPanel"]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 22.0
+offset_right = 305.0
+offset_bottom = 34.0
+theme_override_colors/font_color = Color(0.7, 0.7, 0.7, 1)
+theme_override_fonts/font = ExtResource("2_font")
+theme_override_font_sizes/font_size = 6
+text = "Endüstriyel Faz Senkronizasyonu — Frekansı ayarlayın"
+
+[node name="StatusLabel" type="Label" parent="ModalPanel"]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 36.0
+offset_right = 305.0
+offset_bottom = 58.0
+theme_override_colors/font_color = Color(0.8, 0.8, 0.8, 1)
+theme_override_fonts/font = ExtResource("2_font")
+theme_override_font_sizes/font_size = 6
+text = "Konteynerin indirildiği gelgit zirve saatini (E206) hatırlayın."
+autowrap_mode = 2
+
+[node name="LockBox" type="HBoxContainer" parent="ModalPanel"]
+layout_mode = 0
+offset_left = 75.0
+offset_top = 64.0
+offset_right = 245.0
+offset_bottom = 142.0
+theme_override_constants/separation = 16
+alignment = 1
+
+[node name="Col0" type="VBoxContainer" parent="ModalPanel/LockBox"]
+custom_minimum_size = Vector2(44, 0)
+layout_mode = 2
+theme_override_constants/separation = 3
+alignment = 1
+
+[node name="UpBtn0" type="Button" parent="ModalPanel/LockBox/Col0"]
+custom_minimum_size = Vector2(40, 16)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_font")
+theme_override_font_sizes/font_size = 8
+text = "▲"
+
+[node name="DigitPanel" type="PanelContainer" parent="ModalPanel/LockBox/Col0"]
+custom_minimum_size = Vector2(44, 34)
+layout_mode = 2
+
+[node name="Digit0" type="Label" parent="ModalPanel/LockBox/Col0/DigitPanel"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.96, 0.89, 0.63, 1)
+theme_override_fonts/font = ExtResource("2_font")
+theme_override_font_sizes/font_size = 14
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="DnBtn0" type="Button" parent="ModalPanel/LockBox/Col0"]
+custom_minimum_size = Vector2(40, 16)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_font")
+theme_override_font_sizes/font_size = 8
+text = "▼"
+
+[node name="Col1" type="VBoxContainer" parent="ModalPanel/LockBox"]
+custom_minimum_size = Vector2(44, 0)
+layout_mode = 2
+theme_override_constants/separation = 3
+alignment = 1
+
+[node name="UpBtn1" type="Button" parent="ModalPanel/LockBox/Col1"]
+custom_minimum_size = Vector2(40, 16)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_font")
+theme_override_font_sizes/font_size = 8
+text = "▲"
+
+[node name="DigitPanel" type="PanelContainer" parent="ModalPanel/LockBox/Col1"]
+custom_minimum_size = Vector2(44, 34)
+layout_mode = 2
+
+[node name="Digit1" type="Label" parent="ModalPanel/LockBox/Col1/DigitPanel"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.96, 0.89, 0.63, 1)
+theme_override_fonts/font = ExtResource("2_font")
+theme_override_font_sizes/font_size = 14
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="DnBtn1" type="Button" parent="ModalPanel/LockBox/Col1"]
+custom_minimum_size = Vector2(40, 16)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_font")
+theme_override_font_sizes/font_size = 8
+text = "▼"
+
+[node name="Col2" type="VBoxContainer" parent="ModalPanel/LockBox"]
+custom_minimum_size = Vector2(44, 0)
+layout_mode = 2
+theme_override_constants/separation = 3
+alignment = 1
+
+[node name="UpBtn2" type="Button" parent="ModalPanel/LockBox/Col2"]
+custom_minimum_size = Vector2(40, 16)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_font")
+theme_override_font_sizes/font_size = 8
+text = "▲"
+
+[node name="DigitPanel" type="PanelContainer" parent="ModalPanel/LockBox/Col2"]
+custom_minimum_size = Vector2(44, 34)
+layout_mode = 2
+
+[node name="Digit2" type="Label" parent="ModalPanel/LockBox/Col2/DigitPanel"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.96, 0.89, 0.63, 1)
+theme_override_fonts/font = ExtResource("2_font")
+theme_override_font_sizes/font_size = 14
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="DnBtn2" type="Button" parent="ModalPanel/LockBox/Col2"]
+custom_minimum_size = Vector2(40, 16)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_font")
+theme_override_font_sizes/font_size = 8
+text = "▼"
+
+[node name="ActionButtons" type="HBoxContainer" parent="ModalPanel"]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 150.0
+offset_right = 270.0
+offset_bottom = 172.0
+theme_override_constants/separation = 16
+alignment = 1
+
+[node name="ActivateBtn" type="Button" parent="ModalPanel/ActionButtons"]
+custom_minimum_size = Vector2(100, 20)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_font")
+theme_override_font_sizes/font_size = 7
+text = "VİNCİ ÇALIŞTIR"
+
+[node name="CloseBtn" type="Button" parent="ModalPanel/ActionButtons"]
+custom_minimum_size = Vector2(100, 20)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_font")
+theme_override_font_sizes/font_size = 7
+text = "KAPAT"

@@ -1,0 +1,104 @@
+[gd_scene load_steps=3 format=3 uid="uid://bdialoguebox01"]
+
+[ext_resource type="Script" path="res://scripts/ui/dialogue_box.gd" id="1_dbox"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_panel"]
+bg_color = Color(0.06, 0.08, 0.12, 0.94)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.85, 0.75, 0.45, 0.8)
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+
+[node name="DialogueBox" type="PanelContainer"]
+custom_minimum_size = Vector2(0, 56)
+offset_right = 380.0
+offset_bottom = 56.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_panel")
+script = ExtResource("1_dbox")
+
+[node name="Margin" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 6
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 6
+theme_override_constants/margin_bottom = 4
+
+[node name="HBox" type="HBoxContainer" parent="Margin"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="PortraitBox" type="Control" parent="Margin/HBox"]
+custom_minimum_size = Vector2(48, 48)
+layout_mode = 2
+
+[node name="PortraitBackground" type="ColorRect" parent="Margin/HBox/PortraitBox"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.04, 0.05, 0.08, 1)
+
+[node name="PortraitTexture" type="TextureRect" parent="Margin/HBox/PortraitBox"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="PortraitBorder" type="ReferenceRect" parent="Margin/HBox/PortraitBox"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+border_color = Color(0.85, 0.75, 0.4, 0.8)
+border_width = 1.0
+editor_only = false
+
+[node name="ContentBox" type="VBoxContainer" parent="Margin/HBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 2
+
+[node name="Header" type="HBoxContainer" parent="Margin/HBox/ContentBox"]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="SpeakerName" type="Label" parent="Margin/HBox/ContentBox/Header"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.96, 0.89, 0.63, 1)
+theme_override_font_sizes/font_size = 8
+text = "KONUŞMACI ADI"
+
+[node name="InnerVoiceBadge" type="Label" parent="Margin/HBox/ContentBox/Header"]
+visible = false
+layout_mode = 2
+theme_override_colors/font_color = Color(0.4, 0.85, 1, 1)
+theme_override_font_sizes/font_size = 6
+text = "[İÇ SES]"
+
+[node name="DialogueLabel" type="Label" parent="Margin/HBox/ContentBox"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 8
+text = "Diyalog metni buraya gelir."
+autowrap_mode = 3
+
+[node name="AdvanceHint" type="Label" parent="Margin/HBox/ContentBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.85, 0.75, 0.4, 0.8)
+theme_override_font_sizes/font_size = 6
+text = "[Dokun / E]"
+horizontal_alignment = 2

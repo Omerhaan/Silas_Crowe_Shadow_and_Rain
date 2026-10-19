@@ -1,0 +1,490 @@
+[gd_scene load_steps=2 format=3 uid="uid://cnotebook01"]
+
+[ext_resource type="Script" path="res://scripts/ui/notebook.gd" id="1_nb"]
+
+[node name="Notebook" type="Control"]
+process_mode = 3
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_nb")
+
+[node name="Backdrop" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.02, 0.03, 0.05, 0.85)
+
+[node name="NotebookPanel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -215.0
+offset_top = -120.0
+offset_right = 215.0
+offset_bottom = 120.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TitleLabel" type="Label" parent="NotebookPanel"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 4.0
+offset_right = 330.0
+offset_bottom = 18.0
+theme_override_colors/font_color = Color(0.96, 0.89, 0.63, 1)
+theme_override_font_sizes/font_size = 7
+text = "📋 DEDEKTİF VAKA DOSYASI — VAKA 1: KARANLIK MALİKÂNE"
+
+[node name="CloseBtn" type="Button" parent="NotebookPanel"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -78.0
+offset_top = 3.0
+offset_right = -6.0
+offset_bottom = 19.0
+grow_horizontal = 0
+theme_override_font_sizes/font_size = 6
+text = "Kapat [Q]"
+
+[node name="TabContainer" type="TabContainer" parent="NotebookPanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 6.0
+offset_top = 22.0
+offset_right = -6.0
+offset_bottom = -6.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 6
+current_tab = 0
+
+[node name="Kanıtlar" type="Control" parent="NotebookPanel/TabContainer"]
+layout_mode = 2
+metadata/_tab_index = 0
+
+[node name="CountLabel" type="Label" parent="NotebookPanel/TabContainer/Kanıtlar"]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 2.0
+offset_right = 200.0
+offset_bottom = 14.0
+theme_override_font_sizes/font_size = 6
+theme_override_colors/font_color = Color(0.9, 0.8, 0.5, 1)
+text = "Toplanan Kanıt: 0 / 17"
+
+[node name="Scroll" type="ScrollContainer" parent="NotebookPanel/TabContainer/Kanıtlar"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 4.0
+offset_top = 16.0
+offset_right = -4.0
+offset_bottom = -4.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ListContainer" type="VBoxContainer" parent="NotebookPanel/TabContainer/Kanıtlar/Scroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="İfadeler" type="Control" parent="NotebookPanel/TabContainer"]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 1
+
+[node name="Scroll" type="ScrollContainer" parent="NotebookPanel/TabContainer/İfadeler"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 4.0
+offset_top = 4.0
+offset_right = -4.0
+offset_bottom = -4.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="StatementsList" type="VBoxContainer" parent="NotebookPanel/TabContainer/İfadeler/Scroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ZamanÇizelgesi" type="Control" parent="NotebookPanel/TabContainer"]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 2
+
+[node name="Scroll" type="ScrollContainer" parent="NotebookPanel/TabContainer/ZamanÇizelgesi"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 4.0
+offset_top = 4.0
+offset_right = -4.0
+offset_bottom = -4.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TimelineList" type="VBoxContainer" parent="NotebookPanel/TabContainer/ZamanÇizelgesi/Scroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Çıkarımlar" type="Control" parent="NotebookPanel/TabContainer"]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 3
+
+[node name="DeductionVBox" type="VBoxContainer" parent="NotebookPanel/TabContainer/Çıkarımlar"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 4.0
+offset_top = 4.0
+offset_right = -4.0
+offset_bottom = -4.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 3
+
+[node name="CombineArea" type="HBoxContainer" parent="NotebookPanel/TabContainer/Çıkarımlar/DeductionVBox"]
+custom_minimum_size = Vector2(0, 26)
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="Slot1Btn" type="Button" parent="NotebookPanel/TabContainer/Çıkarımlar/DeductionVBox/CombineArea"]
+custom_minimum_size = Vector2(90, 26)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 6
+text = "❶ 1. İpucu: [Seçiniz]"
+
+[node name="PlusLabel" type="Label" parent="NotebookPanel/TabContainer/Çıkarımlar/DeductionVBox/CombineArea"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 8
+theme_override_colors/font_color = Color(0.8, 0.8, 0.85, 1)
+text = "+"
+horizontal_alignment = 1
+
+[node name="Slot2Btn" type="Button" parent="NotebookPanel/TabContainer/Çıkarımlar/DeductionVBox/CombineArea"]
+custom_minimum_size = Vector2(90, 26)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 6
+text = "❷ 2. İpucu: [Seçiniz]"
+
+[node name="CombineBtn" type="Button" parent="NotebookPanel/TabContainer/Çıkarımlar/DeductionVBox/CombineArea"]
+custom_minimum_size = Vector2(62, 26)
+layout_mode = 2
+theme_override_font_sizes/font_size = 6
+text = "⚡ Birleştir"
+
+[node name="ClearBtn" type="Button" parent="NotebookPanel/TabContainer/Çıkarımlar/DeductionVBox/CombineArea"]
+custom_minimum_size = Vector2(38, 26)
+layout_mode = 2
+theme_override_font_sizes/font_size = 6
+text = "✖ Sil"
+
+[node name="StatusLabel" type="Label" parent="NotebookPanel/TabContainer/Çıkarımlar/DeductionVBox"]
+custom_minimum_size = Vector2(0, 13)
+layout_mode = 2
+theme_override_font_sizes/font_size = 6
+theme_override_colors/font_color = Color(0.95, 0.85, 0.45, 1)
+text = "Bağlantı kurmak için iki ipucu seçin ve 'Birleştir'e basın."
+autowrap_mode = 2
+
+[node name="CluesSectionHeader" type="Label" parent="NotebookPanel/TabContainer/Çıkarımlar/DeductionVBox"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 6
+theme_override_colors/font_color = Color(0.85, 0.75, 0.45, 1)
+text = "── KANIT VE İPUCU KARTLARI ──"
+horizontal_alignment = 1
+
+[node name="CluesScroll" type="ScrollContainer" parent="NotebookPanel/TabContainer/Çıkarımlar/DeductionVBox"]
+custom_minimum_size = Vector2(0, 52)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="CluesContainer" type="HFlowContainer" parent="NotebookPanel/TabContainer/Çıkarımlar/DeductionVBox/CluesScroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/h_separation = 3
+theme_override_constants/v_separation = 3
+
+[node name="UnlockedSectionHeader" type="Label" parent="NotebookPanel/TabContainer/Çıkarımlar/DeductionVBox"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 6
+theme_override_colors/font_color = Color(0.4, 0.9, 0.5, 1)
+text = "── ÇÖZÜLEN ÇIKARIMLAR ──"
+horizontal_alignment = 1
+
+[node name="UnlockedScroll" type="ScrollContainer" parent="NotebookPanel/TabContainer/Çıkarımlar/DeductionVBox"]
+custom_minimum_size = Vector2(0, 48)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="UnlockedList" type="VBoxContainer" parent="NotebookPanel/TabContainer/Çıkarımlar/DeductionVBox/UnlockedScroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 4
+
+[node name="Şüpheliler" type="Control" parent="NotebookPanel/TabContainer"]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 4
+
+[node name="Scroll" type="ScrollContainer" parent="NotebookPanel/TabContainer/Şüpheliler"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 4.0
+offset_top = 4.0
+offset_right = -4.0
+offset_bottom = -4.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="SuspectsList" type="VBoxContainer" parent="NotebookPanel/TabContainer/Şüpheliler/Scroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Harita" type="Control" parent="NotebookPanel/TabContainer"]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 5
+
+[node name="MapContainer" type="VBoxContainer" parent="NotebookPanel/TabContainer/Harita"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 6.0
+offset_top = 4.0
+offset_right = -6.0
+offset_bottom = -4.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="UpperFloorLabel" type="Label" parent="NotebookPanel/TabContainer/Harita/MapContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 6
+theme_override_colors/font_color = Color(0.9, 0.8, 0.5, 1)
+text = "▲ ÜST KAT"
+
+[node name="UpperFloorGrid" type="HBoxContainer" parent="NotebookPanel/TabContainer/Harita/MapContainer"]
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="RoomJulian" type="Panel" parent="NotebookPanel/TabContainer/Harita/MapContainer/UpperFloorGrid"]
+custom_minimum_size = Vector2(78, 22)
+layout_mode = 2
+
+[node name="Lbl" type="Label" parent="NotebookPanel/TabContainer/Harita/MapContainer/UpperFloorGrid/RoomJulian"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 5
+text = "Julian Odası\n[E12 Borç]"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RoomHarlow" type="Panel" parent="NotebookPanel/TabContainer/Harita/MapContainer/UpperFloorGrid"]
+custom_minimum_size = Vector2(82, 22)
+layout_mode = 2
+
+[node name="Lbl" type="Label" parent="NotebookPanel/TabContainer/Harita/MapContainer/UpperFloorGrid/RoomHarlow"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 5
+text = "Harlow Odası\n[E16 Rozet]"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RoomPike" type="Panel" parent="NotebookPanel/TabContainer/Harita/MapContainer/UpperFloorGrid"]
+custom_minimum_size = Vector2(78, 22)
+layout_mode = 2
+
+[node name="Lbl" type="Label" parent="NotebookPanel/TabContainer/Harita/MapContainer/UpperFloorGrid/RoomPike"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 5
+text = "Pike Odası\n[E13 Daktilo]"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RoomUpperFloor" type="Panel" parent="NotebookPanel/TabContainer/Harita/MapContainer/UpperFloorGrid"]
+custom_minimum_size = Vector2(46, 22)
+layout_mode = 2
+
+[node name="Lbl" type="Label" parent="NotebookPanel/TabContainer/Harita/MapContainer/UpperFloorGrid/RoomUpperFloor"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 5
+text = "Koridor\n[Merdiven]"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="GroundFloorLabel" type="Label" parent="NotebookPanel/TabContainer/Harita/MapContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 6
+theme_override_colors/font_color = Color(0.9, 0.8, 0.5, 1)
+text = "▼ ZEMİN KAT (Mutfak ◀──▶ Yemek ◀──▶ Hol ◀──▶ Kütüphane ◀──▶ Bilardo)"
+
+[node name="GroundFloorGrid" type="GridContainer" parent="NotebookPanel/TabContainer/Harita/MapContainer"]
+layout_mode = 2
+theme_override_constants/h_separation = 4
+theme_override_constants/v_separation = 3
+columns = 5
+
+[node name="Spacer1" type="Control" parent="NotebookPanel/TabContainer/Harita/MapContainer/GroundFloorGrid"]
+custom_minimum_size = Vector2(74, 22)
+layout_mode = 2
+
+[node name="Spacer2" type="Control" parent="NotebookPanel/TabContainer/Harita/MapContainer/GroundFloorGrid"]
+custom_minimum_size = Vector2(74, 22)
+layout_mode = 2
+
+[node name="RoomStudy" type="Panel" parent="NotebookPanel/TabContainer/Harita/MapContainer/GroundFloorGrid"]
+custom_minimum_size = Vector2(74, 22)
+layout_mode = 2
+
+[node name="Lbl" type="Label" parent="NotebookPanel/TabContainer/Harita/MapContainer/GroundFloorGrid/RoomStudy"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 5
+theme_override_colors/font_color = Color(1, 0.45, 0.45, 1)
+text = "Çalışma [Suç]\n▲ Tek Giriş: Hol"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Spacer3" type="Control" parent="NotebookPanel/TabContainer/Harita/MapContainer/GroundFloorGrid"]
+custom_minimum_size = Vector2(74, 22)
+layout_mode = 2
+
+[node name="Spacer4" type="Control" parent="NotebookPanel/TabContainer/Harita/MapContainer/GroundFloorGrid"]
+custom_minimum_size = Vector2(74, 22)
+layout_mode = 2
+
+[node name="RoomKitchen" type="Panel" parent="NotebookPanel/TabContainer/Harita/MapContainer/GroundFloorGrid"]
+custom_minimum_size = Vector2(74, 22)
+layout_mode = 2
+
+[node name="Lbl" type="Label" parent="NotebookPanel/TabContainer/Harita/MapContainer/GroundFloorGrid/RoomKitchen"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 5
+text = "Mutfak [Margaret]\n(Çıkmaz) ▶"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RoomDining" type="Panel" parent="NotebookPanel/TabContainer/Harita/MapContainer/GroundFloorGrid"]
+custom_minimum_size = Vector2(74, 22)
+layout_mode = 2
+
+[node name="Lbl" type="Label" parent="NotebookPanel/TabContainer/Harita/MapContainer/GroundFloorGrid/RoomDining"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 5
+text = "Yemek [Pike]\n◀ Mutfak  Hol ▶"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RoomHall" type="Panel" parent="NotebookPanel/TabContainer/Harita/MapContainer/GroundFloorGrid"]
+custom_minimum_size = Vector2(74, 22)
+layout_mode = 2
+
+[node name="Lbl" type="Label" parent="NotebookPanel/TabContainer/Harita/MapContainer/GroundFloorGrid/RoomHall"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 5
+text = "Ana Hol [Giriş]\n◀ Yemek  Küt. ▶"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RoomLibrary" type="Panel" parent="NotebookPanel/TabContainer/Harita/MapContainer/GroundFloorGrid"]
+custom_minimum_size = Vector2(74, 22)
+layout_mode = 2
+
+[node name="Lbl" type="Label" parent="NotebookPanel/TabContainer/Harita/MapContainer/GroundFloorGrid/RoomLibrary"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 5
+text = "Kütüphane [Hale]\n◀ Hol  Bilardo ▶"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RoomBilliard" type="Panel" parent="NotebookPanel/TabContainer/Harita/MapContainer/GroundFloorGrid"]
+custom_minimum_size = Vector2(74, 22)
+layout_mode = 2
+
+[node name="Lbl" type="Label" parent="NotebookPanel/TabContainer/Harita/MapContainer/GroundFloorGrid/RoomBilliard"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 5
+text = "Bilardo [Julian]\n◀ (Çıkmaz)"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CurrentRoomLabel" type="Label" parent="NotebookPanel/TabContainer/Harita/MapContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 6
+theme_override_colors/font_color = Color(0.4, 0.9, 0.6, 1)
+text = "Mevcut Konum: Ana Hol"

@@ -1,0 +1,45 @@
+{
+  "cutscene_id": "arrival",
+  "lines": [
+    {
+      "speaker": "SYSTEM",
+      "text": "[Fırtına malikanenin pencerelerini dövüyor. Silas ıslak basamakları tırmanıp kapıyı tıklar. Kapı aralanır.]",
+      "en": "[The storm lashes against the manor windows. Silas climbs the rain-slicked steps and knocks. The heavy door creeps open.]"
+    },
+    {
+      "speaker": "MARGARET",
+      "text": "Evet efendim? Bu fırtınada da kimsiniz?",
+      "en": "Yes, sir? Who could possibly be out in such a tempest?"
+    },
+    {
+      "speaker": "SILAS",
+      "text": "Dedektif Silas Crowe. Beni telefonla çağırdınız. Edmund Harlow nerede?",
+      "en": "Detective Silas Crowe. I received an urgent telephone call. Where is Edmund Harlow?"
+    },
+    {
+      "speaker": "MARGARET",
+      "text": "Telefon mu? Kimse sizi aramadı efendim! Fırtınada saat sekizde telefon hatlarımız koptu. Ayrıca efendim... Efendi Harlow öldü!",
+      "en": "A telephone call? No one phoned you, sir! Our lines snapped around eight in the storm. And sir... Master Harlow is dead!"
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "[Koridordan yavaş adımlarla koyu renk paltolu bir adam yaklaşır: Dr. Victor Hale. Silas'a bir an gereğinden fazla bakar.]",
+      "en": "[A man in a dark trench coat approaches slowly down the hallway: Dr. Victor Hale. He stares at Silas a moment too long, a glint of recognition freezing in his eyes.]"
+    },
+    {
+      "speaker": "DR. HALE",
+      "text": "Sakin ol Margaret. Köprü selde çöktü, dış dünyayla bağımız kesildi. Bu beyefendinin kimin tarafından arandığını bilmiyorum... ama belki de gelmesi bir şanstır.",
+      "en": "Calm yourself, Margaret. The bridge washed out in the flood; we are cut off from the outside world. I know not who summoned this gentleman... but his arrival may be our only salvation."
+    },
+    {
+      "speaker": "SILAS",
+      "text": "Beni kimin çağırdığını bilmiyorum. Ama bir adam ölmüş ve ben buradayım.",
+      "en": "I don't know who summoned me either. But a man is dead, and I am here."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "[Silas malikanenin mermer giriş holüne adım atar. Kapı arkasından gıcırtıyla kapanır.]",
+      "en": "[Silas steps onto the cold marble of the entry hall. The oak door groans shut behind him.]"
+    }
+  ]
+}

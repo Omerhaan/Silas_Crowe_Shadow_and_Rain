@@ -1,0 +1,32 @@
+[
+  {
+    "id": "C01",
+    "baslik": "Arayan 'Kuzey'i Biliyor",
+    "aciklama": "Telefondaki hırıltılı ses 'Kuzey'den beri kapalı kapıların nasıl açıldığını bilen son kişisin' dedi. kuzeyi nereden biliyor....",
+    "kilitli": false
+  },
+  {
+    "id": "C02",
+    "baslik": "Ölümden Önceki Haber",
+    "aciklama": "Arama 21:30'da geldi ('Harlow öldü'). Oysa kurbandaki mum ve deliller ölümün 21:40 civarında gerçekleştiğini gösteriyor. Arayan ölümü önceden biliyordu.",
+    "kilitli": true
+  },
+  {
+    "id": "C03",
+    "baslik": "Kopuk Telefon Hattı",
+    "aciklama": "Harlow Malikanesi'nin telefon hattı fırtına yüzünden saat 20:00'de koptu. Arama kesinlikle malikanenin içinden yapılamazdı.",
+    "kilitli": true
+  },
+  {
+    "id": "C04",
+    "baslik": "Hattaki Tik Tak Sesi",
+    "aciklama": "Konuşma biterken ahizeden mekanik, ritmik bir saat sesi geliyordu. Tıpkı benim cebimdeki K-1 modeli gibi.",
+    "kilitli": false
+  },
+  {
+    "id": "C05",
+    "baslik": "Hiçbiri Aramadı",
+    "aciklama": "Margaret, Julian, Hale ve Pike'ın dördü de Silas'ı aramadıklarını ve çağrılmamış bir misafir olduğunu doğruladı.",
+    "kilitli": true
+  }
+]

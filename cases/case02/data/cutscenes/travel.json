@@ -1,0 +1,34 @@
+{
+  "cutscene_id": "travel_case02",
+  "title": "Sisli Limana Yolculuk",
+  "slides": [
+    {
+      "text": "Gece yarısı yağmuru Londra sokaklarını siyaha boyarken, paltomu kuşanıp eski arabama bindim.",
+      "duration": 3.0,
+      "sfx": "rain_loop",
+      "image": "res://assets/sprites/cinematics/cinematic_case02_01_office_exit.jpg",
+      "speaker": "SILAS"
+    },
+    {
+      "text": "Şehrin ışıkları geride kaldı. Farların aydınlattığı ıslak tabelada soğuk harfler parıldıyordu: 'GREYWATER RIHTIMI — 3 MİL'.",
+      "duration": 3.5,
+      "sfx": "thunder_soft",
+      "image": "res://assets/sprites/cinematics/cinematic_case02_02_road_sign.jpg",
+      "speaker": "SILAS"
+    },
+    {
+      "text": "Kıyı şeridine yaklaştıkça sis yoğunlaştı. Kömür dumanı, paslı demir ve yaklaşan fırtınanın kokusu havayı kaplamıştı.",
+      "duration": 3.5,
+      "sfx": "",
+      "image": "res://assets/sprites/cinematics/cinematic_case02_travel.jpg",
+      "speaker": "SILAS"
+    },
+    {
+      "text": "Limanın paslı demir kapıları rüzgârda gıcırdıyordu. Nöbetçi kulübesi terk edilmişti... Burası artık kanunsuz bir bölgeydi.",
+      "duration": 3.5,
+      "sfx": "thunder",
+      "image": "res://assets/sprites/cinematics/cinematic_case02_04_dock_gates.jpg",
+      "speaker": "SILAS"
+    }
+  ]
+}

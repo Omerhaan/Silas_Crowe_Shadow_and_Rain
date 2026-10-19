@@ -1,0 +1,61 @@
+[gd_scene load_steps=4 format=3 uid="uid://bambientvfx01"]
+
+[ext_resource type="Script" path="res://scripts/vfx/ambient_vfx.gd" id="1_ambient"]
+[ext_resource type="Shader" path="res://shaders/film_grain_vignette.gdshader" id="2_shader"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_grain"]
+shader = ExtResource("2_shader")
+shader_parameter/enable_grain = true
+shader_parameter/enable_vignette = true
+shader_parameter/grain_amount = 0.04
+shader_parameter/vignette_intensity = 0.5
+shader_parameter/vignette_color = Color(0.043, 0.059, 0.102, 1)
+
+[node name="AmbientVFX" type="CanvasLayer"]
+layer = 8
+script = ExtResource("1_ambient")
+
+[node name="RainParticles" type="CPUParticles2D" parent="."]
+position = Vector2(240, -10)
+amount = 80
+lifetime = 1.8
+preprocess = 2.0
+emission_shape = 3
+emission_rect_extents = Vector2(250, 5)
+direction = Vector2(0.2, 1)
+spread = 5.0
+gravity = Vector2(0, 98)
+initial_velocity_min = 120.0
+initial_velocity_max = 160.0
+color = Color(0.7, 0.78, 0.88, 0.28)
+
+[node name="AmbientGlow" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(1, 0.85, 0.55, 0.02)
+
+[node name="VignetteGrainRect" type="ColorRect" parent="."]
+material = SubResource("ShaderMaterial_grain")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(1, 1, 1, 1)
+
+[node name="FlashRect" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(1, 1, 1, 0)
+
+[node name="LightningTimer" type="Timer" parent="."]
+one_shot = true

@@ -1,0 +1,164 @@
+[gd_scene load_steps=6 format=3 uid="uid://caax4xg45o053"]
+
+[ext_resource type="Script" path="res://scripts/hub/silas_office.gd" id="1_office"]
+[ext_resource type="Script" path="res://scripts/core/room_background.gd" id="2_bg"]
+[ext_resource type="PackedScene" uid="uid://d2m0tcvj7ds4k" path="res://scenes/entities/interactable.tscn" id="3_interact"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_floor"]
+size = Vector2(480, 26)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wall"]
+size = Vector2(16, 270)
+
+[node name="SilasOffice" type="Node2D"]
+script = ExtResource("1_office")
+
+[node name="RoomBackground" type="Node2D" parent="."]
+script = ExtResource("2_bg")
+room_theme = "hub_office"
+
+[node name="FloorCollision" type="StaticBody2D" parent="."]
+
+[node name="BottomFloor" type="CollisionShape2D" parent="FloorCollision"]
+position = Vector2(240, 260)
+shape = SubResource("RectangleShape2D_floor")
+
+[node name="LeftWall" type="CollisionShape2D" parent="FloorCollision"]
+position = Vector2(8, 135)
+shape = SubResource("RectangleShape2D_wall")
+
+[node name="RightWall" type="CollisionShape2D" parent="FloorCollision"]
+position = Vector2(472, 135)
+shape = SubResource("RectangleShape2D_wall")
+
+[node name="Spawn_default" type="Marker2D" parent="."]
+position = Vector2(200, 245)
+
+[node name="Spawn_from_case" type="Marker2D" parent="."]
+position = Vector2(200, 245)
+
+[node name="PhoneRingTimer" type="Timer" parent="."]
+wait_time = 3.5
+
+[node name="Interact_Books" parent="." instance=ExtResource("3_interact")]
+position = Vector2(35, 230)
+object_id = "silas_books_stack"
+display_name = "Eski Kitap Yığını"
+is_hotspot = true
+hotspot_size = Vector2(39, 45)
+custom_inner_voice = "\"Kriminalistik ve askeri tıp kitapları. Çoğunun sayfaları sararmış.\""
+
+[node name="Prop_Armchair" parent="." instance=ExtResource("3_interact")]
+position = Vector2(72, 195)
+object_id = "silas_armchair"
+display_name = "Deri Berjer Koltuk"
+is_hotspot = true
+hotspot_size = Vector2(80, 75)
+
+[node name="Interact_WhiskeyTable" parent="." instance=ExtResource("3_interact")]
+position = Vector2(135, 201)
+object_id = "silas_whiskey_tray"
+display_name = "Viski Sehpasında Küllük"
+is_hotspot = true
+hotspot_size = Vector2(42, 57)
+custom_inner_voice = "\"Yarım kadeh ucuz viski ve sönmüş bir sigara. Uzun gecelerin tek arkadaşı.\""
+
+[node name="Interact_RadioCabinet" parent="." instance=ExtResource("3_interact")]
+position = Vector2(202, 180)
+object_id = "silas_vintage_radio"
+display_name = "Eski Ahşap Radyo"
+is_hotspot = true
+hotspot_size = Vector2(45, 78)
+custom_inner_voice = "\"Radyoda cızırtıdan başka bir şey yok. Bu fırtınada dalgalar birbirine karışmış.\""
+
+[node name="Prop_CoatRack" parent="." instance=ExtResource("3_interact")]
+position = Vector2(244, 167)
+object_id = "silas_coat_rack"
+display_name = "Palto ve Şapka Askılığı"
+is_hotspot = true
+hotspot_size = Vector2(33, 129)
+
+[node name="TelephoneInteract" parent="." instance=ExtResource("3_interact")]
+position = Vector2(282, 186)
+object_id = "silas_telephone"
+display_name = "Telefon"
+is_hotspot = true
+hotspot_size = Vector2(39, 66)
+custom_inner_voice = "\"Siyah antika masa telefonu. Bu fırtınada çalması hayra alamet değil.\""
+
+[node name="Interact_MemoryWall" parent="." instance=ExtResource("3_interact")]
+position = Vector2(327, 105)
+object_id = "silas_memory_wall"
+display_name = "Anı Duvarı"
+is_hotspot = true
+hotspot_size = Vector2(84, 51)
+
+[node name="Interact_SouvenirShelf" parent="." instance=ExtResource("3_interact")]
+position = Vector2(164, 118)
+object_id = "silas_souvenir_shelf"
+display_name = "Hatıra Rafı"
+prop_type = "shelf"
+is_hotspot = true
+hotspot_size = Vector2(164, 30)
+custom_inner_voice = "\"Vakalardan geriye kalan hatıralar bu rafta duruyor.\""
+
+[node name="Interact_Lamp" parent="." instance=ExtResource("3_interact")]
+position = Vector2(348, 143)
+object_id = "silas_lamp"
+display_name = "Banker Lambası"
+is_hotspot = true
+hotspot_size = Vector2(33, 39)
+custom_inner_voice = "\"Yeşil opal camlı banker lambası. Titrek ışığı sadece önümdeki davayı aydınlatıyor.\""
+
+[node name="Interact_Typewriter" parent="." instance=ExtResource("3_interact")]
+position = Vector2(375, 160)
+object_id = "silas_typewriter"
+display_name = "Eski Daktilo"
+is_hotspot = true
+hotspot_size = Vector2(36, 30)
+custom_inner_voice = "\"Müvekkil raporları. Son aylarda bu masaya sadece toz ve unutulmuş dosyalar uğruyor.\""
+
+[node name="Interact_RejectionLetter" parent="." instance=ExtResource("3_interact")]
+position = Vector2(381, 180)
+object_id = "silas_rejection_letter"
+display_name = "Bakanlık Ret Mektubu"
+is_hotspot = true
+hotspot_size = Vector2(30, 21)
+custom_inner_voice = "\"Belirttiğiniz operasyona ilişkin kayıtlarımızda herhangi bir bilgiye rastlanmamıştır.\" — Üç ayda dördüncü ret. Demek ki hiç yaşanmadı. Peki ben neden hâlâ kar kokusu alıyorum?"
+
+[node name="Interact_Desk" parent="." instance=ExtResource("3_interact")]
+position = Vector2(382, 210)
+object_id = "silas_desk"
+display_name = "Çalışma Masası"
+is_hotspot = true
+hotspot_size = Vector2(99, 69)
+
+[node name="Prop_FilingCabinet" parent="." instance=ExtResource("3_interact")]
+position = Vector2(400, 142)
+object_id = "silas_filing_cabinet"
+display_name = "Metal Evrak Dolabı"
+is_hotspot = true
+hotspot_size = Vector2(42, 66)
+
+[node name="Interact_Window" parent="." instance=ExtResource("3_interact")]
+position = Vector2(451, 111)
+object_id = "silas_rainy_window"
+display_name = "Yağmurlu Pencere"
+is_hotspot = true
+hotspot_size = Vector2(45, 138)
+custom_inner_voice = "\"Dışarıda dinmek bilmeyen bir fırtına. Şimşek çaktıkça sol elimin titrediğini hissediyorum.\""
+
+[node name="Interact_Watch" parent="." instance=ExtResource("3_interact")]
+position = Vector2(444, 162)
+object_id = "silas_pocket_watch"
+display_name = "Durmuş Cep Saati"
+is_hotspot = true
+hotspot_size = Vector2(24, 33)
+custom_inner_voice = "\"03:12'de durmuş gümüş cep saatim. Yıllardır aynı nokta... Zaman o geceden beri kıpırdamadı.\""
+
+[node name="Interact_OfficeDoor" parent="." instance=ExtResource("3_interact")]
+position = Vector2(465, 230)
+object_id = "silas_office_door"
+display_name = "Ofis Kapısı"
+is_hotspot = true
+hotspot_size = Vector2(28, 70)
